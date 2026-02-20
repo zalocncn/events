@@ -227,9 +227,115 @@
   ],
   "2026-02-20": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "VER MÁS",
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SPLASH JUNGLE POOL PARTY",
+      "url": "https://teleticket.com.pe/splash-jungle-pool-jungle-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 20 Feb al 4 Mar"
+    },
+    {
+      "time": "11:00 am",
+      "type": "Especiales",
+      "title": "MUSEO DE EFECTOS VISUALES AREQUIPA TEMPORADA 2026",
+      "url": "https://teleticket.com.pe/evento/museo-de-efectos-visuales-arequipa-temporada-2026-museo-de-efectos-visuales-arequipa",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 20 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 20 Feb al 15 Mar"
+    },
+    {
+      "time": "6:20 pm",
+      "type": "Entretención",
+      "title": "TOUR DEL MIEDO 2026 - CEMENTERIO PRESBITERO MATIAS MAESTRO",
+      "url": "https://teleticket.com.pe/evento/tour-del-miedo-2026-cementerio-presbitero-matias-maestro-2026_cercado-de-lima",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 20 Feb al 20 Dic"
+    },
+    {
+      "time": "9:30 am",
+      "type": "Teatro",
+      "title": "LAS CAZADORAS KPOP LLEGAN AL TEATRO PERUANO JAPONES",
+      "url": "https://teleticket.com.pe/las-cazadoras-kpop-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 20 Feb al 22 Feb"
+    },
+    {
+      "time": "7:30 pm",
+      "type": "Humor",
+      "title": "HABLANDO HUEVADAS",
+      "url": "https://teleticket.com.pe/evento/hablando-huevadas-teatro-canout-20260220",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "7:45 pm",
+      "type": "Teatro",
+      "title": "CONECTA CON TU MEDIA NARANJA",
+      "url": "https://teleticket.com.pe/evento/conecta-con-tu-media-naranja-la-estacion-de-barranco-2026-02",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "BARTÓK Y BRAHMS",
+      "url": "https://teleticket.com.pe/bartok-y-brahms",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Humor",
+      "title": "MEMORIAS DE UN CRIOLLO",
+      "url": "https://teleticket.com.pe/evento/memorias-de-un-criollo-lima-comedy-club",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "COMEDY SESSIONS",
+      "url": "https://teleticket.com.pe/evento/comedy-sessions-hotel-bth-lima-golf-2025",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 20 Feb al 28 Feb"
+    },
+    {
+      "time": "9:30 am",
+      "type": "Teatro",
+      "title": "LA SUITE",
       "url": "https://teleticket.com.pe/la-suite-2026",
       "venue": "",
       "district": "Lima",
@@ -238,129 +344,20 @@
       "schedule": "Del 20 Feb al 7 Mar"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "BOULEVARD DE ASIA - ASIA - CAÑETE/ ExhibiciónSPLASH JUNGLE POOL PARTY20 de febrero 2026 - 04 de m...",
-      "url": "https://teleticket.com.pe/splash-jungle-pool-jungle-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "MUSEO DE EFECTOS VISUALES AREQUIPA/ EspecialesMUSEO DE EFECTOS VISUALES AREQUIPA TEMPORADA 202620...",
-      "url": "https://teleticket.com.pe/evento/museo-de-efectos-visuales-arequipa-temporada-2026-museo-de-efectos-visuales-arequipa",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "INFINITY PARK  - SANTIAGO DE SURCO - LIMA/ ExhibiciónSUBMARINO INFINITY20 de febrero 2026 - 15 de...",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "PUNTO DE  REUNIÓN - LIMA/ EntretenciónTOUR DEL MIEDO 2026 - CEMENTERIO PRESBITERO MATIAS MAESTRO2...",
-      "url": "https://teleticket.com.pe/evento/tour-del-miedo-2026-cementerio-presbitero-matias-maestro-2026_cercado-de-lima",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO PERUANO JAPONES - JESUS MARIA - LIMA/ TeatroLAS CAZADORAS KPOP LLEGAN AL TEATRO PERUANO JA...",
-      "url": "https://teleticket.com.pe/las-cazadoras-kpop-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO CANOUT - MIRAFLORES - LIMA/ HumorHABLANDO HUEVADAS20 de febrero 2026",
-      "url": "https://teleticket.com.pe/evento/hablando-huevadas-teatro-canout-20260220",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "LA ESTACIÓN DE BARRANCO - BARRANCO - LIMA/ TeatroCONECTA CON TU MEDIA NARANJA20 de febrero 2026",
-      "url": "https://teleticket.com.pe/evento/conecta-con-tu-media-naranja-la-estacion-de-barranco-2026-02",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "GRAN TEATRO NACIONAL - SAN BORJA - LIMA/ MúsicaBARTÓK Y BRAHMS20 de febrero 2026",
-      "url": "https://teleticket.com.pe/bartok-y-brahms",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Lima Comedy Club - MIRAFLORES - LIMA/ HumorMEMORIAS DE UN CRIOLLO20 de febrero 2026",
-      "url": "https://teleticket.com.pe/evento/memorias-de-un-criollo-lima-comedy-club",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "HOTEL LUOXO - SAN ISIDRO - LIMA/ TeatroCOMEDY SESSIONS20 de febrero 2026 - 28 de febrero 2026",
-      "url": "https://teleticket.com.pe/evento/comedy-sessions-hotel-bth-lima-golf-2025",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO MARSANO - MIRAFLORES - LIMA/ TeatroLA SUITE20 de febrero 2026 - 07 de marzo 2026",
-      "url": "https://teleticket.com.pe/la-suite-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO AUDITORIO MIRAFLORES - MIRAFLORES - LIMA/ TeatroNOCHE DE ENREDOS20 de febrero 2026 - 22 de...",
+      "time": "8:30 pm",
+      "type": "Teatro",
+      "title": "NOCHE DE ENREDOS",
       "url": "https://teleticket.com.pe/evento/noche-de-enredos-teatro-auditorio-miraflores",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 20 Feb al 22 Feb"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "DISCOTECA VOCE SUR - PUNTA HERMOSA - LIMA/ MúsicaANIVERSARIO CHARANGA HABANERA - VOCE SUR20 de fe...",
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "ANIVERSARIO CHARANGA HABANERA - VOCE SUR",
       "url": "https://teleticket.com.pe/charanga-habanera-voce-sur",
       "venue": "",
       "district": "Lima",
@@ -368,9 +365,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "LA ESTACIÓN DE BARRANCO - BARRANCO - LIMA/ FiestaROMÁNTICOS DE SIEMPRE – VOL. 3 LA ESTACION20 de ...",
+      "time": "10:00 pm",
+      "type": "Fiesta",
+      "title": "ROMÁNTICOS DE SIEMPRE – VOL. 3 LA ESTACION",
       "url": "https://teleticket.com.pe/evento/romanticos-de-siempre-vol-3-la-estacion-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
@@ -380,9 +377,309 @@
   ],
   "2026-02-21": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "VER MÁS",
+      "time": "09:00",
+      "type": "Eventbrite",
+      "title": "La venta se termina pronto Festival Cafesazo Peruano 2026 -",
+      "url": "https://www.eventbrite.com.pe/e/festival-cafesazo-peruano-2026-edicion-verano-tickets-1980791187764?aff=ebdssbcitybrowse",
+      "venue": "Miraflores",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "3:50 am",
+      "type": "Especiales",
+      "title": "¡FULL DAY PARACAS + ICA CON RUTAS INCAS!",
+      "url": "https://teleticket.com.pe/evento/full-day-paracas--ica-con-rutas-incas-full-day-paracas--ica-con-rutas-incas",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 31 Dic"
+    },
+    {
+      "time": "3:50 am",
+      "type": "Exhibición",
+      "title": "¡TOUR PARACAS + ICA + HUACACHINA 2D/1N CON RUTAS INCAS! - Hospedaje, Islas Ballestas, Piscina, Vinos y más",
+      "url": "https://teleticket.com.pe/evento/tour-paracas--ica--huacachina-2d1n-con-rutas-incas-hospedaje-islas-ballestas-piscina-vinos-y-mas-tour-paracas-ica-huacachina-2d_1n-rutas-incas",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 am",
+      "type": "Especiales",
+      "title": "FULL DAY PARACAS - ICA",
+      "url": "https://teleticket.com.pe/evento/full-day-paracas-ica-punto-de-reunion-ccplaza-norte",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 31 Dic"
+    },
+    {
+      "time": "4:10 am",
+      "type": "Entretención",
+      "title": "FULL DAY LUNAHUANÁ CON RUTAS INCAS - Cerro Azul, Catapalla, Vitivinícola, Apícola y más",
+      "url": "https://teleticket.com.pe/evento/full-day-lunahuana-con-rutas-incas-cerro-azul-catapalla-vitivinicola-apicola-y-mas-full-day-lunahuana-con-rutas-incas",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 31 Dic"
+    },
+    {
+      "time": "4:20 am",
+      "type": "Entretención",
+      "title": "FULL DAY LUNAHUANA DESDE LIMA - CANOTAJE Y CANOPY 2026",
+      "url": "https://teleticket.com.pe/evento/full-day-lunahuana-desde-lima-canotaje-y-canopy-2026-punto-de-reunion-ccplaza-norte",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 27 Dic"
+    },
+    {
+      "time": "5:00 am",
+      "type": "Especiales",
+      "title": "¡FULL DAY CHANCAY + HUARAL CON RUTAS INCAS! - Castillo de Chancay, Eco Truly Park, Hacienda Huando y más",
+      "url": "https://teleticket.com.pe/evento/full-day-chancay--huaral-con-rutas-incas-castillo-de-chancay-eco-truly-park-hacienda-huando-y-mas-full-day-chancay--huaral-con-rutas-incas",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 31 Dic"
+    },
+    {
+      "time": "5:15 am",
+      "type": "Especiales",
+      "title": "¡FULL DAY ANTIOQUÍA CON RUTAS INCAS!",
+      "url": "https://teleticket.com.pe/evento/full-day-antioquia-con-rutas-incas-full-day-antioquia-con-rutas-incas-cieneguilla",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 31 Dic"
+    },
+    {
+      "time": "7:45 am",
+      "type": "Humor",
+      "title": "¡TOUR RESERVA NACIONAL DE PARACAS - + ISLAS BALLESTAS!",
+      "url": "https://teleticket.com.pe/evento/tour-reserva-nacional-de-paracas--islas-ballestas-oficina-like-xplorer-peru-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 9 Ene"
+    },
+    {
+      "time": "8:00 am",
+      "type": "Exhibición",
+      "title": "TOUR ISLAS BALLESTAS EN PARACAS - SALIDA DESDE EL BOULEVARD DE PARACAS",
+      "url": "https://teleticket.com.pe/evento/tour-islas-ballestas-en-paracas-salida-desde-el-boulevard-de-paracas-oficina-like-xplorer-peru-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 6 Ene"
+    },
+    {
+      "time": "9:00 am",
+      "type": "Especiales",
+      "title": "PASEO EN DUNE BUGGY POR LA RESERVA NACIONAL DE PARACAS - +PLAYA ROJA + DESIERTO LUNAR",
+      "url": "https://teleticket.com.pe/evento/paseo-en-dune-buggy-por-la-reserva-nacional-de-paracas-playa-roja--desierto-lunar-oficina-like-xplorer-peru-",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 9 Ene"
+    },
+    {
+      "time": "10:45 am",
+      "type": "Humor",
+      "title": "¡TOUR RESERVA NACIONAL DE PARACAS - + PLAYA LA MINA!",
+      "url": "https://teleticket.com.pe/evento/tour-reserva-nacional-de-paracas--playa-la-mina-oficina-like-xplorer-peru-",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 9 Ene"
+    },
+    {
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "AMARANTA DÉCIMO ANIVERSARIO",
+      "url": "https://teleticket.com.pe/amaranta10aniversario",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 22 Feb"
+    },
+    {
+      "time": "3:00 pm",
+      "type": "Música",
+      "title": "CARNAVAL LIMEÑO",
+      "url": "https://teleticket.com.pe/carnaval-limeno-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 1 Mar"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "CUENTA CUENTOS",
+      "url": "https://teleticket.com.pe/evento/cuenta-cuentos-la-estacion-de-barranco",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 1 Mar"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 29 Mar"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Exhibición",
+      "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
+      "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 31 Dic"
+    },
+    {
+      "time": "5:00 pm",
+      "type": "Entretención",
+      "title": "TRIBUTO BTS - CONCIERTO JUVENIL EN VIVO",
+      "url": "https://teleticket.com.pe/evento/tributo-bts-concierto-juvenil-en-vivo-parque-zonal-sinchi-roca",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 22 Feb"
+    },
+    {
+      "time": "5:00 pm",
+      "type": "Teatro",
+      "title": "UN CUENTO MAGICO",
+      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 8 Mar"
+    },
+    {
+      "time": "5:30 pm",
+      "type": "Teatro",
+      "title": "EL REY LEÓN: ARLEQUIN TEATRO",
+      "url": "https://teleticket.com.pe/evento/el-rey-leon-arlequin-teatro-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 26 Abr"
+    },
+    {
+      "time": "6:00 pm",
+      "type": "Familia",
+      "title": "TOUR DEL MIEDO NOCTURNO 2026 - FORTALEZA REAL FELIPE",
+      "url": "https://teleticket.com.pe/evento/tour-del-miedo-nocturno-2026-fortaleza-real-felipe-punto-de-reunion",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 19 Dic"
+    },
+    {
+      "time": "7:00 pm",
+      "type": "Familia",
+      "title": "Brutalidad Politica - Antifranja Electoral",
+      "url": "https://teleticket.com.pe/brutalidad-politica",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "ELLAS EN CONCIERTO: - CANTANDO AL AMOR Y DESAMOR EN CUSCO",
+      "url": "https://teleticket.com.pe/evento/ellas-en-conciertocantando-al-amor-y-desamor-en-cusco",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "MARIO CAVAGNARO - LA HISTORIA DE MI VIDA",
+      "url": "https://teleticket.com.pe/evento/mario-cavagnaro-100-anios-de-tradicion-gran-teatro-nacional",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "ATRAPADOS EN EL TIEMPO Festi VERANO Retro 80s Y 90s",
+      "url": "https://teleticket.com.pe/evento/atrapados-en-el-tiempo-la-fiesta-de-los-80-y-90-2026-1",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "VERANO 2000 - RETRO",
+      "url": "https://teleticket.com.pe/evento/verano-2000-retro-rock-and-pez-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "ANIVERSARIO DE MEJIA 2026",
+      "url": "https://teleticket.com.pe/evento/aniversario-de-mejia-2026-estadio-de-mejia",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "9:30 am",
+      "type": "Teatro",
+      "title": "ANIMATISSIMO MOONLIGHT SYMPHONY",
       "url": "https://teleticket.com.pe/moonlightsymphony",
       "venue": "",
       "district": "Lima",
@@ -391,319 +688,42 @@
       "schedule": "Del 21 Feb al 22 Feb"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "¡Full Day Paracas + Ica con Rutas Incas! - LIMA/ Especiales¡FULL DAY PARACAS + ICA CON RUTAS INCA...",
-      "url": "https://teleticket.com.pe/evento/full-day-paracas--ica-con-rutas-incas-full-day-paracas--ica-con-rutas-incas",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TOUR PARACAS -ICA - HUACACHINA 2D_1N RUTAS INCAS/ Exhibición¡TOUR PARACAS + ICA + HUACACHINA 2D/1...",
-      "url": "https://teleticket.com.pe/evento/tour-paracas--ica--huacachina-2d1n-con-rutas-incas-hospedaje-islas-ballestas-piscina-vinos-y-mas-tour-paracas-ica-huacachina-2d_1n-rutas-incas",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "PUNTO DE REUNION CC.PLAZA NORTE - LIMA/ EspecialesFULL DAY PARACAS - ICA21 de febrero 2026 - 31 d...",
-      "url": "https://teleticket.com.pe/evento/full-day-paracas-ica-punto-de-reunion-ccplaza-norte",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "¡FULL DAY LUNAHUANÁ CON RUTAS INCAS! - LIMA/ EntretenciónFULL DAY LUNAHUANÁ CON RUTAS INCAS - Cer...",
-      "url": "https://teleticket.com.pe/evento/full-day-lunahuana-con-rutas-incas-cerro-azul-catapalla-vitivinicola-apicola-y-mas-full-day-lunahuana-con-rutas-incas",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "PUNTO DE REUNION CC.PLAZA NORTE - LIMA/ EntretenciónFULL DAY LUNAHUANA DESDE LIMA - CANOTAJE Y CA...",
-      "url": "https://teleticket.com.pe/evento/full-day-lunahuana-desde-lima-canotaje-y-canopy-2026-punto-de-reunion-ccplaza-norte",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "¡FULL DAY CHANCAY + HUARAL CON RUTAS INCAS! - CHANCAY - HUARAL/ Especiales¡FULL DAY CHANCAY + HUA...",
-      "url": "https://teleticket.com.pe/evento/full-day-chancay--huaral-con-rutas-incas-castillo-de-chancay-eco-truly-park-hacienda-huando-y-mas-full-day-chancay--huaral-con-rutas-incas",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "¡Full Day Antioquía con Rutas Incas! - Cieneguilla - LIMA/ Especiales¡FULL DAY ANTIOQUÍA CON RUTA...",
-      "url": "https://teleticket.com.pe/evento/full-day-antioquia-con-rutas-incas-full-day-antioquia-con-rutas-incas-cieneguilla",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "OFICINA LIKE XPLORER PERU  - PARACAS - PISCO/ Humor¡TOUR RESERVA NACIONAL DE PARACAS - + ISLAS BA...",
-      "url": "https://teleticket.com.pe/evento/tour-reserva-nacional-de-paracas--islas-ballestas-oficina-like-xplorer-peru-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "OFICINA LIKE XPLORER PERU  - PARACAS - PISCO/ ExhibiciónTOUR ISLAS BALLESTAS EN PARACAS - SALIDA ...",
-      "url": "https://teleticket.com.pe/evento/tour-islas-ballestas-en-paracas-salida-desde-el-boulevard-de-paracas-oficina-like-xplorer-peru-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "OFICINA LIKE XPLORER PERU  - PARACAS - PISCO/ EspecialesPASEO EN DUNE BUGGY POR LA RESERVA NACION...",
-      "url": "https://teleticket.com.pe/evento/paseo-en-dune-buggy-por-la-reserva-nacional-de-paracas-playa-roja--desierto-lunar-oficina-like-xplorer-peru-",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "OFICINA LIKE XPLORER PERU  - PARACAS - PISCO/ Humor¡TOUR RESERVA NACIONAL DE PARACAS - + PLAYA LA...",
-      "url": "https://teleticket.com.pe/evento/tour-reserva-nacional-de-paracas--playa-la-mina-oficina-like-xplorer-peru-",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Anfiteatro Del Parque De La Exposición - LIMA/ MúsicaAMARANTA DÉCIMO ANIVERSARIO21 de febrero 202...",
-      "url": "https://teleticket.com.pe/amaranta10aniversario",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "ESTADIO MUNICIPAL DE SAN LUIS - SAN LUIS - LIMA/ MúsicaCARNAVAL LIMEÑO21 de febrero 2026",
-      "url": "https://teleticket.com.pe/carnaval-limeno-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO AUDITORIO MIRAFLORES - MIRAFLORES - LIMA/ MúsicaLAS HEROINAS DEL KPOP21 de febrero 2026 - ...",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO BARRANCO - BARRANCO - LIMA/ TeatroCUENTA CUENTOS21 de febrero 2026 - 01 de marzo 2026",
-      "url": "https://teleticket.com.pe/evento/cuenta-cuentos-la-estacion-de-barranco",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO JUANITA TARNAWIECKI EX MOCHA GRAÑA - BARRANCO - LIMA/ TeatroHANSEL Y GRETEL21 de febrero 2...",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "FULL DAY CHURIN CON RUTAS INCAS - LIMA/ Exhibición¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Terma...",
-      "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "PARQUE ZONAL SINCHI ROCA - COMAS - LIMA/ EntretenciónTRIBUTO BTS - CONCIERTO JUVENIL EN VIVO21 de...",
-      "url": "https://teleticket.com.pe/evento/tributo-bts-concierto-juvenil-en-vivo-parque-zonal-sinchi-roca",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "KASA KAMBALACHE - BARRANCO - LIMA/ TeatroUN CUENTO MAGICO21 de febrero 2026 - 08 de marzo 2026",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO AUDITORIO MIRAFLORES - MIRAFLORES - LIMA/ TeatroEL REY LEÓN: ARLEQUIN TEATRO21 de febrero ...",
-      "url": "https://teleticket.com.pe/evento/el-rey-leon-arlequin-teatro-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "PUNTO DE  REUNIÓN - LIMA/ FamiliaTOUR DEL MIEDO NOCTURNO 2026 - FORTALEZA REAL FELIPE21 de febrer...",
-      "url": "https://teleticket.com.pe/evento/tour-del-miedo-nocturno-2026-fortaleza-real-felipe-punto-de-reunion",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO CANOUT - MIRAFLORES - LIMA/ FamiliaBrutalidad Politica - Antifranja Electoral21 de febrero...",
-      "url": "https://teleticket.com.pe/brutalidad-politica",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO MUNICIPAL DE CUSCO/ MúsicaELLAS EN CONCIERTO: - CANTANDO AL AMOR Y DESAMOR EN CUSCO21 de f...",
-      "url": "https://teleticket.com.pe/evento/ellas-en-conciertocantando-al-amor-y-desamor-en-cusco",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "GRAN TEATRO NACIONAL - SAN BORJA - LIMA/ MúsicaMARIO CAVAGNARO - LA HISTORIA DE MI VIDA21 de febr...",
-      "url": "https://teleticket.com.pe/evento/mario-cavagnaro-100-anios-de-tradicion-gran-teatro-nacional",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "PEÑA LOS ANDES - INDEPENDENCIA - LIMA/ MúsicaATRAPADOS EN EL TIEMPO Festi VERANO Retro 80s Y 90s2...",
-      "url": "https://teleticket.com.pe/evento/atrapados-en-el-tiempo-la-fiesta-de-los-80-y-90-2026-1",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "ROCK AND PEZ - MIRAFLORES - MIRAFLORES - LIMA/ MúsicaVERANO 2000 - RETRO21 de febrero 2026",
-      "url": "https://teleticket.com.pe/evento/verano-2000-retro-rock-and-pez-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Estadio de Mejía - AREQUIPA/ MúsicaANIVERSARIO DE MEJIA 202621 de febrero 2026",
-      "url": "https://teleticket.com.pe/evento/aniversario-de-mejia-2026-estadio-de-mejia",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO NOS PUCP - SAN ISIDRO - LIMA/ TeatroANIMATISSIMO MOONLIGHT SYMPHONY21 de febrero 2026 - 22...",
-      "url": "https://teleticket.com.pe/moonlightsymphony",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "JAZZ ZONE - MIRAFLORES - LIMA/ FamiliaNOS CASAMOS LA CAGAMOS21 de febrero 2026 - 28 de febrero 2026",
+      "time": "8:00 pm",
+      "type": "Familia",
+      "title": "NOS CASAMOS LA CAGAMOS",
       "url": "https://teleticket.com.pe/evento/nos-casamos-la-cagamos-jazz-zone-2026",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 28 Feb"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "C.C. BIANCA - BARRANCO - LIMA/ TeatroSE BUSCA MARIDO CAMA AFUERA21 de febrero 2026 - 28 de febrer...",
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "SE BUSCA MARIDO CAMA AFUERA",
       "url": "https://teleticket.com.pe/sebuscamaridocamaafuera2026",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 28 Feb"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "CENTRO CULTURAL CAFAE - SE - LIMA/ Teatro¿QUIEN ES EL PRESIDENTE?21 de febrero 2026 - 28 de febre...",
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "¿QUIEN ES EL PRESIDENTE?",
       "url": "https://teleticket.com.pe/evento/quien-es-el-presidente-centro-cultural-cafae-se",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 21 Feb al 28 Feb"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "ALAMO DISCO PEÑA - ICA/ MusicalNuevaOleras Vol. 3 - ICA21 de febrero 2026",
+      "time": "9:30 pm",
+      "type": "Musical",
+      "title": "NuevaOleras Vol. 3 - ICA",
       "url": "https://teleticket.com.pe/evento/nuevaoleras-vol-3-ica-alamo-disco-penia-ica",
       "venue": "",
       "district": "Lima",
@@ -713,33 +733,35 @@
   ],
   "2026-02-22": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO JUANITA TARNAWIECKI EX MOCHA GRAÑA - BARRANCO - LIMA/ TeatroJUGANDO CON EL LOBO FEROZ22 de...",
+      "time": "5:00 pm",
+      "type": "Teatro",
+      "title": "JUGANDO CON EL LOBO FEROZ",
       "url": "https://teleticket.com.pe/evento/jugando-con-el-lobo-feroz-teatro-juanita-tarnawiecki-ex-mocha-grania-2026",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 1 Mar"
     }
   ],
   "2026-02-23": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO AUDITORIO MIRAFLORES - MIRAFLORES - LIMA/ TeatroNOSOTRAS QUE NOS QUEREMOS TANTO23 de febre...",
+      "time": "8:30 pm",
+      "type": "Teatro",
+      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
       "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 28 Mar"
     }
   ],
   "2026-02-24": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO CANOUT - MIRAFLORES - LIMA/ HumorCONCIERTO TALENTO24 de febrero 2026",
+      "time": "8:00 pm",
+      "type": "Humor",
+      "title": "CONCIERTO TALENTO",
       "url": "https://teleticket.com.pe/concierto-talento-24feb-2026",
       "venue": "",
       "district": "Lima",
@@ -747,31 +769,33 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO JUANITA TARNAWIECKI EX MOCHA GRAÑA - BARRANCO - LIMA/ TeatroLAS POLÍTICAMENTE INCORRECTAS ...",
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "LAS POLÍTICAMENTE INCORRECTAS 4 OBRAS BREVES",
       "url": "https://teleticket.com.pe/evento/las-politicamente-incorrectas-4-obras-breves-teatro-juanita-tarnawiecki-ex-mocha-grania",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 3 Mar"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO AUDITORIO MIRAFLORES - MIRAFLORES - LIMA/ TeatroLA SEMILLA DE LA AURORA24 de febrero 2026 ...",
+      "time": "8:30 pm",
+      "type": "Teatro",
+      "title": "LA SEMILLA DE LA AURORA",
       "url": "https://teleticket.com.pe/evento/la-semilla-de-la-aurora-teatro-auditorio-miraflores-2026-enero",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 14 Mar"
     }
   ],
   "2026-02-25": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO MUNICIPAL DE SURCO - SANTIAGO DE SURCO - LIMA/ TeatroTALLER MONTAJE SCHOOL OF ROCK, EL MUS...",
+      "time": "5:00 pm",
+      "type": "Teatro",
+      "title": "TALLER MONTAJE SCHOOL OF ROCK, EL MUSICAL",
       "url": "https://teleticket.com.pe/school-of-rock-2026",
       "venue": "",
       "district": "Lima",
@@ -779,44 +803,47 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "PARROQUIA NUESTRA SEÑORA DE FÁTIMA - MIRAFLORES - LIMA/ MúsicaCICLO CUERDAS DE VERANO 202625 de f...",
-      "url": "https://teleticket.com.pe/evento/ciclo-cuerdas-de-verano-2026-parroquia-nuestra-seniora-de-fatima",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Estadio Nacional - LIMA/ MúsicaALEJANDRO SANZ EN LIMA25 de febrero 2026 - 26 de febrero 2026",
-      "url": "https://teleticket.com.pe/alejandro-sanz-lima-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Estadio Nacional - LIMA/ MúsicaALEJANDRO SANZ - SUPER LOUNGE LOUNGE LOUNGE25 de febrero 2026 - 26...",
-      "url": "https://teleticket.com.pe/alejandrosanzsupervipexperience",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO CANOUT - MIRAFLORES - LIMA/ HumorCHAPA TU MONEY25 de febrero 2026",
+      "time": "8:00 pm",
+      "type": "Humor",
+      "title": "CHAPA TU MONEY",
       "url": "https://teleticket.com.pe/chapa-tu-money-25feb-2026",
       "venue": "",
       "district": "Lima",
       "price": "",
       "source": "Teleticket"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "CICLO CUERDAS DE VERANO 2026",
+      "url": "https://teleticket.com.pe/evento/ciclo-cuerdas-de-verano-2026-parroquia-nuestra-seniora-de-fatima",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 25 Feb al 29 Abr"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "ALEJANDRO SANZ EN LIMA",
+      "url": "https://teleticket.com.pe/alejandro-sanz-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 25 Feb al 26 Feb"
+    },
+    {
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "ALEJANDRO SANZ - SUPER LOUNGE LOUNGE LOUNGE",
+      "url": "https://teleticket.com.pe/alejandrosanzsupervipexperience",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 25 Feb al 26 Feb"
     }
   ],
   "2026-02-26": [
@@ -830,9 +857,19 @@
       "price": "S/ 194 a S/ 282"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO CANOUT - MIRAFLORES - LIMA/ HumorHABLANDO HUEVADAS26 de febrero 2026",
+      "time": "7:00 PM",
+      "type": "Eventbrite",
+      "title": "BE THE VOICE - VOL. 2",
+      "url": "https://www.eventbrite.com/e/be-the-voice-vol-2-tickets-1982716394108?aff=ebdssbcitybrowse",
+      "venue": "Rock and Pez",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "7:30 pm",
+      "type": "Humor",
+      "title": "HABLANDO HUEVADAS",
       "url": "https://teleticket.com.pe/evento/hablando-huevadas-teatro-canout-20260226",
       "venue": "",
       "district": "Lima",
@@ -840,9 +877,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "LA POSADA DEL MIRADOR - BARRANCO - LIMA/ EntretenciónLA HISTORIA QUE NO SE SUBE - SHOW DE COMEDIA...",
+      "time": "8:00 pm",
+      "type": "Entretención",
+      "title": "LA HISTORIA QUE NO SE SUBE - SHOW DE COMEDIA DIEGO GUPIOC",
       "url": "https://teleticket.com.pe/evento/la-historia-que-no-se-sube-show-de-comedia-diego-gupioc-la-posada-del-mirador",
       "venue": "",
       "district": "Lima",
@@ -850,9 +887,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "GRAN TEATRO NACIONAL - SAN BORJA - LIMA/ TeatroLAS NUEVE SINFONÍAS DE BEETHOVEN: SINFONÍAS Nº1 Y ...",
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "LAS NUEVE SINFONÍAS DE BEETHOVEN: SINFONÍAS Nº1 Y Nº2",
       "url": "https://teleticket.com.pe/las-nueve-sinfonias-de-beethoven-gtn-2026",
       "venue": "",
       "district": "Lima",
@@ -860,9 +897,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "CENTRO CULTURAL RICARDO PALMA - MIRAFLORES - LIMA/ TeatroCAOS EN FAMILIA26 de febrero 2026",
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "CAOS EN FAMILIA",
       "url": "https://teleticket.com.pe/evento/caos-en-familia-centro-cultural-ricardo-palma",
       "venue": "",
       "district": "Lima",
@@ -870,9 +907,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Lima Comedy Club - MIRAFLORES - LIMA/ TeatroMENSAJES DEL ALMA26 de febrero 2026",
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "MENSAJES DEL ALMA",
       "url": "https://teleticket.com.pe/evento/mensajes-del-alma-lima-comedy-club",
       "venue": "",
       "district": "Lima",
@@ -880,120 +917,32 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "DUOMO DE MULTIESPACIO COSTA 21 - SAN MIGUEL - LIMA/ MúsicaBIG TIME RUSH - IN REAL LIFE WORLDWIDE2...",
+      "time": "11:00 am",
+      "type": "Música",
+      "title": "BIG TIME RUSH - IN REAL LIFE WORLDWIDE",
       "url": "https://teleticket.com.pe/btr-2026",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 26 Feb al 27 Feb"
     }
   ],
   "2026-02-27": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Inicio",
-      "url": "https://teleticket.com.pe/",
-      "venue": "",
-      "district": "Lima",
+      "time": "9:00 AM",
+      "type": "Eventbrite",
+      "title": "Se venden rápido Career Fair: Exclusive Tech Hiring Event-New Tickets Available",
+      "url": "https://www.eventbrite.com/e/career-fair-exclusive-tech-hiring-event-new-tickets-available-tickets-63049080497?aff=ebdssbcitybrowse",
+      "venue": "PST",
+      "district": "Miraflores",
       "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
+      "source": "Eventbrite"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Inicio Punto Ticket Bienvenido MIS COMPRAS E-TICKETS Mis Devoluciones Cambiar Co",
-      "url": "https://teleticket.com.pe",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "VER MÁS",
-      "url": "https://teleticket.com.pe/cuentos-de-princesas-bml-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "VER MÁS",
-      "url": "https://teleticket.com.pe/humbe-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "VER MÁS",
-      "url": "https://teleticket.com.pe/paulo-londra-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "VER MÁS",
-      "url": "https://teleticket.com.pe/tony-succar-los-suenos-se-cumplen",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "VER MÁS",
-      "url": "https://teleticket.com.pe/av-larco-el-musical-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "VER MÁS",
-      "url": "https://teleticket.com.pe/romeo-santos-prince-royce-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "VER MÁS",
-      "url": "https://teleticket.com.pe/bunbury",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO CANOUT - MIRAFLORES - LIMA/ MúsicaREVIVE EL REY DEL POP - GABRIELA VILLANUEVA27 de febrero...",
+      "time": "7:00 pm",
+      "type": "Música",
+      "title": "REVIVE EL REY DEL POP - GABRIELA VILLANUEVA",
       "url": "https://teleticket.com.pe/evento/revive-el-rey-del-pop-gabriela-villanueva-teatro-canout-teatro-canout",
       "venue": "",
       "district": "Lima",
@@ -1001,19 +950,20 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO NOS PUCP - SAN ISIDRO - LIMA/ TeatroCUENTOS DE PRINCESAS- BALLET MUNICIPAL DE LIMA27 de fe...",
+      "time": "7:00 pm",
+      "type": "Teatro",
+      "title": "CUENTOS DE PRINCESAS- BALLET MUNICIPAL DE LIMA",
       "url": "https://teleticket.com.pe/cuentos-de-princesas-bml-2026",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 27 Feb al 1 Mar"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "EL ROBLE - BARRANCO - LIMA/ MúsicaFESTIVAL 70´S VOL. 227 de febrero 2026",
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "FESTIVAL 70´S VOL. 2",
       "url": "https://teleticket.com.pe/evento/festival-70s-vol-2-el-roble",
       "venue": "",
       "district": "Lima",
@@ -1021,109 +971,21 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "C.C. BIANCA - BARRANCO - LIMA/ MúsicaFELIZ CUMPLEAÑOS RONALD HIDALGO27 de febrero 2026",
+      "time": "10:30 pm",
+      "type": "Música",
+      "title": "FELIZ CUMPLEAÑOS RONALD HIDALGO",
       "url": "https://teleticket.com.pe/evento/feliz-cumpleanios-ronald-hidalgo-cc-bianca",
       "venue": "",
       "district": "Lima",
       "price": "",
       "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Acerca de nosotros",
-      "url": "https://teleticket.com.pe/paginas/somos",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Términos y condiciones",
-      "url": "https://teleticket.com.pe/paginas/TerminoCondiciones",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Política de cookies",
-      "url": "https://teleticket.com.pe/paginas/politica_Cookies",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Política de privacidad",
-      "url": "https://teleticket.com.pe/paginas/politica_privacidad",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Derechos Arco",
-      "url": "https://teleticket.com.pe/paginas/DerechosArco",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Revisa tu boleta",
-      "url": "https://teleticket.com.pe/comprobantePago",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Código de ética",
-      "url": "https://cdn.teleticket.com.pe/docs/codigoetica.pdf",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Módulo promotores",
-      "url": "https://backoffice.teleticket.com.pe",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 27 Feb al 1 Mar"
     }
   ],
   "2026-02-28": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "ESTADIO HÉROES DE SAN RAMÓN - CAJAMARCA/ FútbolUTC VS ALIANZA LIMA28 de febrero 2026",
+      "time": "1:15 pm",
+      "type": "Fútbol",
+      "title": "UTC VS ALIANZA LIMA",
       "url": "https://teleticket.com.pe/utc-vs-alianzalima-liga1-apertura-2026",
       "venue": "",
       "district": "Lima",
@@ -1131,29 +993,31 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "PUNTO DE REUNIÓN - LIMA/ FamiliaLIMA FANTASMAL28 de febrero 2026 - 06 de diciembre 2026",
+      "time": "5:00 pm",
+      "type": "Familia",
+      "title": "LIMA FANTASMAL",
       "url": "https://teleticket.com.pe/evento/lima-fantasmal-punto-de-reunion",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 6 Dic"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "GRAN TEATRO NACIONAL - SAN BORJA - LIMA/ TeatroPATO PATITO28 de febrero 2026 - 01 de marzo 2026",
+      "time": "6:00 pm",
+      "type": "Teatro",
+      "title": "PATO PATITO",
       "url": "https://teleticket.com.pe/pato-patito-gtn-2026",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 1 Mar"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "LUMMA - MIRAFLORES - LIMA/ EntretenciónFIESTA TEMATICA IMAGINE - ROCK EN LUMMA28 de febrero 2026",
+      "time": "7:00 pm",
+      "type": "Entretención",
+      "title": "FIESTA TEMATICA IMAGINE - ROCK EN LUMMA",
       "url": "https://teleticket.com.pe/evento/fiesta-tematica-imagine-rock-en-lumma-lumma",
       "venue": "",
       "district": "Lima",
@@ -1161,9 +1025,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TAYTA BARANCO - BARRANCO - LIMA/ MúsicaEL CLUB DE LOS ANONIMOS VOL228 de febrero 2026",
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "EL CLUB DE LOS ANONIMOS VOL2",
       "url": "https://teleticket.com.pe/evento/el-club-de-los-anonimos-vol2-tayta-baranco",
       "venue": "",
       "district": "Lima",
@@ -1171,9 +1035,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO PLAZA NORTE - INDEPENDENCIA - LIMA/ MúsicaMAC SALVADOR AMOR, AMISTAD Y CARNAVAL EN TEATRO ...",
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "MAC SALVADOR AMOR, AMISTAD Y CARNAVAL EN TEATRO PLAZA NORTE",
       "url": "https://teleticket.com.pe/mac-salavador-en-el-teatro-2026",
       "venue": "",
       "district": "Lima",
@@ -1181,19 +1045,20 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Lima Comedy Club - MIRAFLORES - LIMA/ HumorYACO Y EL LOCO28 de febrero 2026 - 06 de marzo 2026",
+      "time": "8:00 pm",
+      "type": "Humor",
+      "title": "YACO Y EL LOCO",
       "url": "https://teleticket.com.pe/evento/yaco-y-el-loco-lima-comedy-club",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 6 Mar"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO MUNICIPAL DE SAN JUAN DE LURIGANCHO - LURIGANCHO - LIMA/ HumorGAYOSO EN VIVO28 de febrero ...",
+      "time": "8:30 pm",
+      "type": "Humor",
+      "title": "GAYOSO EN VIVO",
       "url": "https://teleticket.com.pe/evento/gayoso-en-vivo-maria-pastor-cevicheria-peruana-teatro-municipal-de-san-juan-de-lurigancho",
       "venue": "",
       "district": "Lima",
@@ -1201,9 +1066,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "LA ESTACIÓN DE BARRANCO - BARRANCO - LIMA/ MúsicaCARNAVALENADO CON PUEBLO ANDINO28 de febrero 2026",
+      "time": "10:30 pm",
+      "type": "Música",
+      "title": "CARNAVALENADO CON PUEBLO ANDINO",
       "url": "https://teleticket.com.pe/evento/carnavalenado-con-pueblo-andino-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
@@ -1211,9 +1076,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "EL ROSEDAL - SANTIAGO DE SURCO - LIMA/ MúsicaSALSA CON AMOR EL ROSEDAL28 de febrero 2026",
+      "time": "10:30 pm",
+      "type": "Música",
+      "title": "SALSA CON AMOR EL ROSEDAL",
       "url": "https://teleticket.com.pe/evento/salsa-con-amor-el-rosedal-el-rosedal",
       "venue": "",
       "district": "Lima",
@@ -1223,9 +1088,9 @@
   ],
   "2026-03-01": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO CANOUT - MIRAFLORES - LIMA/ HumorHABLANDO HUEVADAS01 de marzo 2026",
+      "time": "6:00 pm",
+      "type": "Humor",
+      "title": "HABLANDO HUEVADAS",
       "url": "https://teleticket.com.pe/evento/hablando-huevadas-teatro-canout-20260301",
       "venue": "",
       "district": "Lima",
@@ -1233,13 +1098,24 @@
       "source": "Teleticket"
     }
   ],
-  "2026-03-02": [],
+  "2026-03-02": [
+    {
+      "time": "10:00 AM",
+      "type": "Eventbrite",
+      "title": "Casi lleno Pink La Blonde X Dia Light : Le Duo Parfait pour un Balayage Magnifié",
+      "url": "https://www.eventbrite.ca/e/billets-pink-la-blonde-x-dia-light-le-duo-parfait-pour-un-balayage-magnifie-1965600934307?aff=ebdssbcitybrowse",
+      "venue": "GMT-5",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    }
+  ],
   "2026-03-03": [],
   "2026-03-04": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO CANOUT - MIRAFLORES - LIMA/ HumorCHAPA TU MONEY04 de marzo 2026",
+      "time": "8:00 pm",
+      "type": "Humor",
+      "title": "CHAPA TU MONEY",
       "url": "https://teleticket.com.pe/chapa-tu-money-4mar-2026",
       "venue": "",
       "district": "Lima",
@@ -1247,41 +1123,44 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO JUANITA TARNAWIECKI EX MOCHA GRAÑA - BARRANCO - LIMA/ TeatroLA SEÑORA K04 de marzo 2026 - ...",
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "LA SEÑORA K",
       "url": "https://teleticket.com.pe/evento/la-seniora-k-teatro-juanita-tarnawiecki-ex-mocha-grania-3",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 4 Mar al 25 Mar"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "LA ESTACIÓN DE BARRANCO - BARRANCO - LIMA/ HumorEDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCI...",
+      "time": "8:00 pm",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
       "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 4 Mar al 25 Mar"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "JAZZ ZONE - MIRAFLORES - LIMA/ MúsicaSE ACABARON LAS EX-CUSAS04 de marzo 2026 - 25 de marzo 2026",
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
       "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 4 Mar al 25 Mar"
     }
   ],
   "2026-03-05": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO CANOUT - MIRAFLORES - LIMA/ HumorRILUX PRESENTA: UN RECORRIDO AL CEREBRO ENAMORADO05 de ma...",
+      "time": "7:00 pm",
+      "type": "Humor",
+      "title": "RILUX PRESENTA: UN RECORRIDO AL CEREBRO ENAMORADO",
       "url": "https://teleticket.com.pe/evento/rilux-presenta-un-recorrido-al-cerebro-enamorado-teatro-canout",
       "venue": "",
       "district": "Lima",
@@ -1291,9 +1170,19 @@
   ],
   "2026-03-06": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "DISCOTECA VOCE DE LINCE - LINCE - LIMA/ FestivalFESTIVAL DE REPARTO 506 de marzo 2026",
+      "time": "7:00 PM",
+      "type": "Eventbrite",
+      "title": "FUN x Mujeres sin Filtro Ed. Las mujeres no lloran las mujeres facturan",
+      "url": "https://www.eventbrite.com.pe/e/fun-x-mujeres-sin-filtro-ed-las-mujeres-no-lloran-las-mujeres-facturan-tickets-1981786992242?aff=ebdssbcitybrowse",
+      "venue": "Seedspace Lima - Swiss Tower",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Festival",
+      "title": "FESTIVAL DE REPARTO 5",
       "url": "https://teleticket.com.pe/evento/festival-de-reparto-5-discoteca-voce-de-lince",
       "venue": "",
       "district": "Lima",
@@ -1301,9 +1190,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO AUDITORIO MIRAFLORES - MIRAFLORES - LIMA/ HumorMACHO06 de marzo 2026",
+      "time": "8:00 pm",
+      "type": "Humor",
+      "title": "MACHO",
       "url": "https://teleticket.com.pe/evento/macho-teatro-auditorio-miraflores",
       "venue": "",
       "district": "Lima",
@@ -1311,9 +1200,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO PLAZA NORTE - INDEPENDENCIA - LIMA/ MúsicaVIVO ARJONA - POR SEBASTIAN MOLINA TRIBUTO OFICI...",
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "VIVO ARJONA - POR SEBASTIAN MOLINA TRIBUTO OFICIAL",
       "url": "https://teleticket.com.pe/vivo-arjona-tributo-2026",
       "venue": "",
       "district": "Lima",
@@ -1321,9 +1210,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO MUNICIPAL DE AREQUIPA/ TeatroWILLIAM LUNA CONCIERTO INTIMO HOMENAJE A LA MUJER - AREQUIPA0...",
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "WILLIAM LUNA CONCIERTO INTIMO HOMENAJE A LA MUJER - AREQUIPA",
       "url": "https://teleticket.com.pe/evento/william-luna-concierto-intimo-homenaje-a-la-mujer-teatro-municipal-de-arequipa-2026",
       "venue": "",
       "district": "Lima",
@@ -1331,9 +1220,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "GRAN TEATRO NACIONAL - SAN BORJA - LIMA/ MúsicaLA NOVENA DE DVORAK06 de marzo 2026",
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "LA NOVENA DE DVORAK",
       "url": "https://teleticket.com.pe/la-novena-de-dvorak",
       "venue": "",
       "district": "Lima",
@@ -1341,9 +1230,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Discoteca MAUI - HUANUCO/ MúsicaLA CHARANGA HABANERA EN HUÁNUCO06 de marzo 2026",
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "LA CHARANGA HABANERA EN HUÁNUCO",
       "url": "https://teleticket.com.pe/evento/la-charanga-habanera-en-huanuco-discoteca-maui",
       "venue": "",
       "district": "Lima",
@@ -1351,29 +1240,31 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO MUNICIPAL DE SURCO -  - SANTIAGO DE SURCO - LIMA/ TeatroMADRES, EL MUSICAL06 de marzo 2026...",
+      "time": "9:30 am",
+      "type": "Teatro",
+      "title": "MADRES, EL MUSICAL",
       "url": "https://teleticket.com.pe/madres-el-musical-2026",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 6 Mar al 19 Mar"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO MUNICIPAL DE SURCO -  - SANTIAGO DE SURCO - LIMA/ TeatroMADRES, EL MUSICAL06 de marzo 2026...",
+      "time": "12:00 am",
+      "type": "Teatro",
+      "title": "MADRES, EL MUSICAL",
       "url": "https://teleticket.com.pe/madres-el-musical-show-2026",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 6 Mar al 12 Abr"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "MULTIESPACIO COSTA 21 - SAN MIGUEL - LIMA/ MúsicaMELENDI06 de marzo 2026",
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "MELENDI",
       "url": "https://teleticket.com.pe/melendi-world-tour-lima-2026",
       "venue": "",
       "district": "Lima",
@@ -1381,9 +1272,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "LA ESTACIÓN DE BARRANCO - BARRANCO - LIMA/ MúsicaYO SOY ROMÁNTICO - JAYRO TAFUR06 de marzo 2026",
+      "time": "10:30 pm",
+      "type": "Música",
+      "title": "YO SOY ROMÁNTICO - JAYRO TAFUR",
       "url": "https://teleticket.com.pe/evento/yo-soy-romantico-jayro-tafur-la-estacion-de-barranco-2026",
       "venue": "",
       "district": "Lima",
@@ -1393,19 +1284,30 @@
   ],
   "2026-03-07": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Explanada Costa Verde - MAGDALENA DEL MAR - LIMA/ FestivalPERUANAZO CARNAVALERO07 de marzo 2026 -...",
+      "time": "8:00 AM",
+      "type": "Eventbrite",
+      "title": "UnderHouse 2",
+      "url": "https://www.eventbrite.com/e/underhouse-2-tickets-1980578479548?aff=ebdssbcitybrowse",
+      "venue": "Tierra Baldía - Restaurante Cultural",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "11:00 am",
+      "type": "Festival",
+      "title": "PERUANAZO CARNAVALERO",
       "url": "https://teleticket.com.pe/evento/peruanazo-carnavalero-explanada-costa-verde-–-magdalena",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 7 Mar al 8 Mar"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "COSTA VERDE - EXPLANADA ARENA 1 - SAN MIGUEL - LIMA/ MúsicaCOKE STUDIO07 de marzo 2026",
+      "time": "12:00 am",
+      "type": "Música",
+      "title": "COKE STUDIO",
       "url": "https://teleticket.com.pe/cokestudio_lima_2026",
       "venue": "",
       "district": "Lima",
@@ -1413,9 +1315,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO CANOUT - MIRAFLORES - LIMA/ HumorHABLANDO HUEVADAS07 de marzo 2026",
+      "time": "7:30 pm",
+      "type": "Humor",
+      "title": "HABLANDO HUEVADAS",
       "url": "https://teleticket.com.pe/evento/hablando-huevadas-teatro-canout-20260307",
       "venue": "",
       "district": "Lima",
@@ -1423,9 +1325,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO MUNICIPAL DE CUSCO/ TeatroWILLIAM LUNA EN CUSCO HOMENAJE A LA MUJER07 de marzo 2026",
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "WILLIAM LUNA EN CUSCO HOMENAJE A LA MUJER",
       "url": "https://teleticket.com.pe/evento/william-luna-en-cusco-homenaje-a-la-mujer-teatro-municipal-de-cusco",
       "venue": "",
       "district": "Lima",
@@ -1433,9 +1335,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO PLAZA NORTE - INDEPENDENCIA - LIMA/ MúsicaSUSAN OCHOA - HOMENAJE PARA TI MUJER07 de marzo ...",
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "SUSAN OCHOA - HOMENAJE PARA TI MUJER",
       "url": "https://teleticket.com.pe/evento/susan-ochoa-homenaje-para-ti-mujer-teatro-plaza-norte",
       "venue": "",
       "district": "Lima",
@@ -1443,19 +1345,20 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Lima Comedy Club - MIRAFLORES - LIMA/ HumorAPRENDE A SER UN PAPÁ FELIZ07 de marzo 2026 - 14 de ma...",
+      "time": "8:00 pm",
+      "type": "Humor",
+      "title": "APRENDE A SER UN PAPÁ FELIZ",
       "url": "https://teleticket.com.pe/aprende-a-ser-un-papa-feliz-2026",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 7 Mar al 14 Mar"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "PATIO JARANA - PUEBLO LIBRE - LIMA/ MúsicaA TI MUJER07 de marzo 2026",
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "A TI MUJER",
       "url": "https://teleticket.com.pe/evento/a-ti-mujer-patio-jarana-2026",
       "venue": "",
       "district": "Lima",
@@ -1463,9 +1366,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "RESTAURANTE TURISTICO EL ROSEDAL  - SANTIAGO DE SURCO - LIMA/ MúsicaSERENATA POR EL DIA DE LA MUJ...",
+      "time": "10:30 pm",
+      "type": "Música",
+      "title": "SERENATA POR EL DIA DE LA MUJER",
       "url": "https://teleticket.com.pe/evento/serenata-por-el-dia-de-la-mujer-restaurante-turistico-el-rosedal-2026",
       "venue": "",
       "district": "Lima",
@@ -1473,9 +1376,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "C.C. BIANCA - BARRANCO - LIMA/ MúsicaROMANTICOS DEL AMOR07 de marzo 2026",
+      "time": "10:30 pm",
+      "type": "Música",
+      "title": "ROMANTICOS DEL AMOR",
       "url": "https://teleticket.com.pe/evento/romanticos-del-amor-cc-bianca-2026",
       "venue": "",
       "district": "Lima",
@@ -1483,9 +1386,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "LA ESTACIÓN DE BARRANCO - BARRANCO - LIMA/ MúsicaSEBASTIAN MOLINA - ARJONA A LA CARTA07 de marzo ...",
+      "time": "10:30 pm",
+      "type": "Música",
+      "title": "SEBASTIAN MOLINA - ARJONA A LA CARTA",
       "url": "https://teleticket.com.pe/evento/sebastian-molina-arjona-a-la-carta-la-estacion-de-barranco-2026",
       "venue": "",
       "district": "Lima",
@@ -1495,9 +1398,9 @@
   ],
   "2026-03-08": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "EL ROSEDAL - SANTIAGO DE SURCO - LIMA/ MúsicaBRINDEMOS POR ELLA: DIA DE LA MUJER08 de marzo 2026",
+      "time": "1:30 pm",
+      "type": "Música",
+      "title": "BRINDEMOS POR ELLA: DIA DE LA MUJER",
       "url": "https://teleticket.com.pe/evento/brindemos-por-ella-dia-de-la-mujer-el-rosedal",
       "venue": "",
       "district": "Lima",
@@ -1505,9 +1408,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "C.C. BIANCA - BARRANCO - LIMA/ MúsicaVOCES DEL AMOR POR EL DIA DE LA MUJER08 de marzo 2026",
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "VOCES DEL AMOR POR EL DIA DE LA MUJER",
       "url": "https://teleticket.com.pe/evento/voces-del-amor-por-el-dia-de-la-mujer-c-c-bianca-2026",
       "venue": "",
       "district": "Lima",
@@ -1515,13 +1418,34 @@
       "source": "Teleticket"
     }
   ],
-  "2026-03-09": [],
+  "2026-03-09": [
+    {
+      "time": "3:00 PM",
+      "type": "Eventbrite",
+      "title": "EXPLORANDO LA NUEVA ERA DE LA ESTÉTICA",
+      "url": "https://www.eventbrite.com.ar/e/explorando-la-nueva-era-de-la-estetica-tickets-1982442028473?aff=ebdssbcitybrowse",
+      "venue": "Av. del Ejército 250",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "5:30 PM",
+      "type": "Eventbrite",
+      "title": "Su inversion segura en la Florida Central, USA",
+      "url": "https://www.eventbrite.com/e/su-inversion-segura-en-la-florida-central-usa-tickets-1980648801884?aff=ebdssbcitybrowse",
+      "venue": "Casa Andina Premium Miraflores",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    }
+  ],
   "2026-03-10": [],
   "2026-03-11": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO MUNICIPAL DE SURCO -  - SANTIAGO DE SURCO - LIMA/ MusicalMUESTRA DE TALLER APASIONADOS VER...",
+      "time": "5:45 pm",
+      "type": "Musical",
+      "title": "MUESTRA DE TALLER APASIONADOS VERANO 2026 - TURNO 1 - (URBAN KIDS, APASIONADITOS 1, APASIONADITOS 2, KIDS 1, KIDS 2, STA",
       "url": "https://teleticket.com.pe/evento/muestra-de-taller-apasionados-verano-2026-turno-1-urban-kids-apasionaditos-1-apasionaditos-2-kids-1-kids-2-star-kids-tap-teatro-municipal-de-surco-",
       "venue": "",
       "district": "Lima",
@@ -1529,9 +1453,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO MUNICIPAL DE SURCO -  - SANTIAGO DE SURCO - LIMA/ MusicalMUESTRA DE TALLER APASIONADOS VER...",
+      "time": "8:00 pm",
+      "type": "Musical",
+      "title": "MUESTRA DE TALLER APASIONADOS VERANO 2026 - TURNO 2 - (URBAN TEENS, TEENS 1, TEENS 2, STAR TEENS, BÁSICO, INTERMEDIO)",
       "url": "https://teleticket.com.pe/evento/muestra-de-taller-apasionados-verano-2026-turno-2-urban-kids-apasionaditos-1-apasionaditos-2-kids-1-kids-2-star-kids-tap-teatro-municipal-de-surco-",
       "venue": "",
       "district": "Lima",
@@ -1541,9 +1465,9 @@
   ],
   "2026-03-12": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO CANOUT - MIRAFLORES - LIMA/ EspecialesHABLA GOOD EN EL CANOUT12 de marzo 2026",
+      "time": "7:30 pm",
+      "type": "Especiales",
+      "title": "HABLA GOOD EN EL CANOUT",
       "url": "https://teleticket.com.pe/habla-good-partido-cepepe",
       "venue": "",
       "district": "Lima",
@@ -1551,9 +1475,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "DUOMO DE MULTIESPACIO COSTA 21 - SAN MIGUEL - LIMA/ MúsicaJASON MRAZ12 de marzo 2026",
+      "time": "10:00 am",
+      "type": "Música",
+      "title": "JASON MRAZ",
       "url": "https://teleticket.com.pe/jasonmraz",
       "venue": "",
       "district": "Lima",
@@ -1563,9 +1487,9 @@
   ],
   "2026-03-13": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Lima Comedy Club - MIRAFLORES - LIMA/ EntretenciónERES BASURA EDICION PICANTE - EL TOBI13 de marz...",
+      "time": "8:00 pm",
+      "type": "Entretención",
+      "title": "ERES BASURA EDICION PICANTE - EL TOBI",
       "url": "https://teleticket.com.pe/evento/eres-basura-edicion-picante--el-tobi-lima-comedy-club",
       "venue": "",
       "district": "Lima",
@@ -1573,9 +1497,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "CENTRO DE CONVENCIONES SCENCIA DE LA MOLINA - LA MOLINA - LIMA/ MúsicaNOCHE DE CUMBIA - ARMONIA 1...",
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "NOCHE DE CUMBIA - ARMONIA 10 - INVITADO BRAYAM KAMUS",
       "url": "https://teleticket.com.pe/noche-de-cumbia-con-armonia10",
       "venue": "",
       "district": "Lima",
@@ -1583,9 +1507,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "PARADISO - CLUB CULTURAL LIMA - CHORRILLOS - LIMA/ Música44 X THE GRID LIMA13 de marzo 2026",
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "44 X THE GRID LIMA",
       "url": "https://teleticket.com.pe/44thegrid",
       "venue": "",
       "district": "Lima",
@@ -1595,9 +1519,9 @@
   ],
   "2026-03-14": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO ANTONIO BANDERAS - JESUS MARIA - LIMA/ TeatroLOS TRES CHANCHITOS Y EL LOBO FEROZ14 de marz...",
+      "time": "11:30 am",
+      "type": "Teatro",
+      "title": "LOS TRES CHANCHITOS Y EL LOBO FEROZ",
       "url": "https://teleticket.com.pe/evento/los-tres-chanchitos-y-el-lobo-feroz-teatro-antonio-banderas-2026",
       "venue": "",
       "district": "Lima",
@@ -1605,9 +1529,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "COMPLEJO MUSGA - COMAS - LIMA/ MúsicaFESTIVAL PALMERAS LOS VAN VAN14 de marzo 2026",
+      "time": "5:00 pm",
+      "type": "Música",
+      "title": "FESTIVAL PALMERAS LOS VAN VAN",
       "url": "https://teleticket.com.pe/festival-palmeras-los-vanvan-2026",
       "venue": "",
       "district": "Lima",
@@ -1615,9 +1539,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "CINE PUNO/ MúsicaWILLAM LUNA RUMBO A LOS 40 AÑOS EN PUNO14 de marzo 2026",
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "WILLAM LUNA RUMBO A LOS 40 AÑOS EN PUNO",
       "url": "https://teleticket.com.pe/evento/willam-luna-rumbo-a-los-40-anios-en-puno-cine-puno",
       "venue": "",
       "district": "Lima",
@@ -1625,9 +1549,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "AUDITORIO DEL COLEGIO SAN JOSE - CHICLAYO/ ConciertosIMPROTRIP CHICLAYO14 de marzo 2026",
+      "time": "8:00 pm",
+      "type": "Conciertos",
+      "title": "IMPROTRIP CHICLAYO",
       "url": "https://teleticket.com.pe/evento/improtrip-chiclayo-auditorio-del-colegio-san-jose-chiclayo",
       "venue": "",
       "district": "Lima",
@@ -1635,9 +1559,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "MULTIESPACIO COSTA 21 - SAN MIGUEL - LIMA/ ConciertosKYGO EN LIMA14 de marzo 2026",
+      "time": "9:00 pm",
+      "type": "Conciertos",
+      "title": "KYGO EN LIMA",
       "url": "https://teleticket.com.pe/kygo-lima-2026",
       "venue": "",
       "district": "Lima",
@@ -1645,9 +1569,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "LOCAL LIMA 39 - LOS OLIVOS - LIMA/ MúsicaTributo a José Feliciano By Sebastián Landa14 de marzo 2026",
+      "time": "10:30 pm",
+      "type": "Música",
+      "title": "Tributo a José Feliciano By Sebastián Landa",
       "url": "https://teleticket.com.pe/evento/tributo-a-jose-feliciano-by-sebastian-landa-local-lima-39",
       "venue": "",
       "district": "Lima",
@@ -1657,19 +1581,20 @@
   ],
   "2026-03-15": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO ANTONIO BANDERAS - JESUS MARIA - LIMA/ TeatroBLANCANIEVES Y LOS 7 ENANOS15 de marzo 2026 -...",
+      "time": "11:30 am",
+      "type": "Teatro",
+      "title": "BLANCANIEVES Y LOS 7 ENANOS",
       "url": "https://teleticket.com.pe/evento/blancanieves-y-los-7-enanos-teatro-antonio-banderas",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 15 Mar al 22 Mar"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO ANTONIO BANDERAS - JESUS MARIA - LIMA/ TeatroNOSOTRAS QUE NOS QUEREMOS TANTO EN JESÚS MARI...",
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO EN JESÚS MARIA",
       "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-en-jesus-maria-teatro-antonio-banderas",
       "venue": "",
       "district": "Lima",
@@ -1680,9 +1605,9 @@
   "2026-03-16": [],
   "2026-03-17": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO NOS PUCP - SAN ISIDRO - LIMA/ TeatroTALLER MONTAJE HIGH SCHOOL MUSICAL17 de marzo 2026",
+      "time": "6:00 pm",
+      "type": "Teatro",
+      "title": "TALLER MONTAJE HIGH SCHOOL MUSICAL",
       "url": "https://teleticket.com.pe/evento/taller-montaje-high-school-musical-teatro-nos-pucp",
       "venue": "",
       "district": "Lima",
@@ -1690,31 +1615,33 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "GRAN TEATRO NACIONAL - SAN BORJA - LIMA/ MúsicaUNA NOCHE DIFERENTE CON DANIELA DARCOURT17 de marz...",
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "UNA NOCHE DIFERENTE CON DANIELA DARCOURT",
       "url": "https://teleticket.com.pe/evento/una-noche-diferente-con-daniela-darcourt-gran-teatro-nacional",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 17 Mar al 18 Mar"
     }
   ],
   "2026-03-18": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO AUDITORIO MIRAFLORES - MIRAFLORES - LIMA/ TeatroPAREJA ABIERTA EN MIRAFLORES18 de marzo 20...",
+      "time": "6:30 pm",
+      "type": "Teatro",
+      "title": "PAREJA ABIERTA EN MIRAFLORES",
       "url": "https://teleticket.com.pe/evento/pareja-abierta-en-miraflores-teatro-miraflores-2026",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 18 Mar al 25 Mar"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "C.C. BARRANCO - BARRANCO - LIMA/ MúsicaKALIMBA ÍNTIMO TOUR 202618 de marzo 2026",
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "KALIMBA ÍNTIMO TOUR 2026",
       "url": "https://teleticket.com.pe/kalimba-intimo-tour-2026",
       "venue": "",
       "district": "Lima",
@@ -1725,9 +1652,9 @@
   "2026-03-19": [],
   "2026-03-20": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "ANFITEATRO DEL PALACIO DE BELLAS ARTES AREQUIPA/ MúsicaKALIMBA EN AREQUIPA20 de marzo 2026",
+      "time": "7:00 pm",
+      "type": "Música",
+      "title": "KALIMBA EN AREQUIPA",
       "url": "https://teleticket.com.pe/kalimba-intimo-tour-arequipa",
       "venue": "",
       "district": "Lima",
@@ -1735,9 +1662,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Lima Comedy Club - MIRAFLORES - LIMA/ TeatroPERSONAS PELIGROSAS20 de marzo 2026",
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "PERSONAS PELIGROSAS",
       "url": "https://teleticket.com.pe/evento/personas-peligrosas-lima-comedy-club",
       "venue": "",
       "district": "Lima",
@@ -1745,9 +1672,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Centro de convenciones Bianca de Barranco - BARRANCO - LIMA/ EntretenciónRISAS SIN IA CON FERNAND...",
+      "time": "8:00 pm",
+      "type": "Entretención",
+      "title": "RISAS SIN IA CON FERNANDO ARMAS VOL. 2",
       "url": "https://teleticket.com.pe/evento/risas-sin-ia-con-fernando-armas-vol-2-centro-de-convenciones-bianca-de-barranco",
       "venue": "",
       "district": "Lima",
@@ -1755,9 +1682,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "COCODRILO VERDE - MIRAFLORES - LIMA/ MúsicaROCK 80S ESPAÑOLA E INGLÉS20 de marzo 2026",
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "ROCK 80S ESPAÑOLA E INGLÉS",
       "url": "https://teleticket.com.pe/evento/rock-80s-espaniola-e-ingles-cocodrilo-verde",
       "venue": "",
       "district": "Lima",
@@ -1765,21 +1692,22 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO AUDITORIO MIRAFLORES - MIRAFLORES - LIMA/ TeatroLOS INOXIDABLES20 de marzo 2026 - 29 de ma...",
+      "time": "8:30 pm",
+      "type": "Teatro",
+      "title": "LOS INOXIDABLES",
       "url": "https://teleticket.com.pe/evento/los-inoxidables-teatro-auditorio-miraflores",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 20 Mar al 29 Mar"
     }
   ],
   "2026-03-21": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "VER MÁS",
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "CANTA LA VIDA FEST 2026",
       "url": "https://teleticket.com.pe/canta-la-vida-fest-2026",
       "venue": "",
       "district": "Lima",
@@ -1787,19 +1715,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "MULTIESPACIO COSTA 21 - SAN MIGUEL - LIMA/ MúsicaCANTA LA VIDA FEST 202621 de marzo 2026",
-      "url": "https://teleticket.com.pe/canta-la-vida-fest-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "KHATALINA DI GALA - EVENTOS PREMIUM - CUSCO/ MúsicaKALIMBA EN CUSCO21 de marzo 2026",
+      "time": "7:00 pm",
+      "type": "Música",
+      "title": "KALIMBA EN CUSCO",
       "url": "https://teleticket.com.pe/kalimba-intimo-tour-cusco",
       "venue": "",
       "district": "Lima",
@@ -1807,29 +1725,31 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "GRAN TEATRO NACIONAL - SAN BORJA - LIMA/ MúsicaANDINO - LUCHO QUEQUEZANA 202621 de marzo 2026 - 2...",
+      "time": "7:00 pm",
+      "type": "Música",
+      "title": "ANDINO - LUCHO QUEQUEZANA 2026",
       "url": "https://teleticket.com.pe/andino-lucho-quequezana",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 21 Mar al 22 Mar"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO MUNICIPAL DE SURCO -  - SANTIAGO DE SURCO - LIMA/ TeatroMADRES, EL MUSICAL21 de marzo 2026...",
+      "time": "9:30 am",
+      "type": "Teatro",
+      "title": "MADRES, EL MUSICAL",
       "url": "https://teleticket.com.pe/madres-el-musical-2026-2",
       "venue": "",
       "district": "Lima",
       "price": "",
-      "source": "Teleticket"
+      "source": "Teleticket",
+      "schedule": "Del 21 Mar al 12 Abr"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Lima Comedy Club - MIRAFLORES - LIMA/ TeatroUFF QUE BELLEZA 3 INICIO DE CLASES21 de marzo 2026",
+      "time": "8:30 pm",
+      "type": "Teatro",
+      "title": "UFF QUE BELLEZA 3 INICIO DE CLASES",
       "url": "https://teleticket.com.pe/evento/uff-que-belleza-3-inicio-de-clases-lima-comedy-club",
       "venue": "",
       "district": "Lima",
@@ -1837,9 +1757,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO DE BELLAS ARTES - AREQUIPA/ MúsicaCHRISTIAN MEIER EN AREQUIPA: ASÍ ES EL TOUR21 de marzo 2026",
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "CHRISTIAN MEIER EN AREQUIPA: ASÍ ES EL TOUR",
       "url": "https://teleticket.com.pe/christian-meier-arequipa-2026",
       "venue": "",
       "district": "Lima",
@@ -1847,9 +1767,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "C.C. BIANCA - BARRANCO - LIMA/ MúsicaCAMPEONES21 de marzo 2026",
+      "time": "10:00 pm",
+      "type": "Música",
+      "title": "CAMPEONES",
       "url": "https://teleticket.com.pe/evento/campeones-cc-bianca",
       "venue": "",
       "district": "Lima",
@@ -1857,9 +1777,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "LA ESTACIÓN DE BARRANCO - BARRANCO - LIMA/ MúsicaTRIBUTO A MON LAFERTE CON BANDA EN VIVO BY ORIAN...",
+      "time": "10:30 pm",
+      "type": "Música",
+      "title": "TRIBUTO A MON LAFERTE CON BANDA EN VIVO BY ORIANA MONTERO",
       "url": "https://teleticket.com.pe/evento/tributo-a-mon-laferte-con-banda-en-vivo-by-oriana-montero-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
@@ -1869,9 +1789,9 @@
   ],
   "2026-03-22": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "CENTRO ESPAÑOL DEL PERÚ - TEATRO ANTONIO BANDERAS - JESUS MARIA - LIMA/ TeatroPAREJA ABIERTA EN J...",
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "PAREJA ABIERTA EN JESÚS MARIA",
       "url": "https://teleticket.com.pe/evento/pareja-abierta-en-jesus-maria-centro-espaniol-del-peru-teatro-antonio-banderas",
       "venue": "",
       "district": "Lima",
@@ -1881,19 +1801,19 @@
   ],
   "2026-03-23": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "VER MÁS",
-      "url": "https://teleticket.com.pe/the-killers-lima-2026",
-      "venue": "",
-      "district": "Lima",
+      "time": "5:00 PM",
+      "type": "Eventbrite",
+      "title": "2026 EducationUSA Community College Fair | Lima",
+      "url": "https://www.eventbrite.com/e/2026-educationusa-community-college-fair-lima-tickets-1977036198490?aff=ebdssbcitybrowse",
+      "venue": "Sonesta Hotel El Olivar",
+      "district": "Miraflores",
       "price": "",
-      "source": "Teleticket"
+      "source": "Eventbrite"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "MULTIESPACIO COSTA 21 - SAN MIGUEL - LIMA/ MúsicaTHE KILLERS EN LIMA23 de marzo 2026",
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "THE KILLERS EN LIMA",
       "url": "https://teleticket.com.pe/the-killers-lima-2026",
       "venue": "",
       "district": "Lima",
@@ -1903,9 +1823,9 @@
   ],
   "2026-03-24": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Anfiteatro Del Parque De La Exposición - LIMA/ MúsicaPABLO ALBORAN- GLOBAL TOUR KM024 de marzo 2026",
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "PABLO ALBORAN- GLOBAL TOUR KM0",
       "url": "https://teleticket.com.pe/pablo-alboran-2025",
       "venue": "",
       "district": "Lima",
@@ -1913,9 +1833,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "MULTIESPACIO COSTA 21 - SAN MIGUEL - LIMA/ MúsicaINTERPOL EN LIMA24 de marzo 2026",
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "INTERPOL EN LIMA",
       "url": "https://teleticket.com.pe/interpol-lima-2026",
       "venue": "",
       "district": "Lima",
@@ -1926,9 +1846,19 @@
   "2026-03-25": [],
   "2026-03-26": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "PEÑA DEL CARAJO - BARRANCO - LIMA/ MusicalEL PRIMER DAMO - UNA COMEDIA MUSICAL26 de marzo 2026",
+      "time": "7:00 PM",
+      "type": "Eventbrite",
+      "title": "Proclama 2026 - Nuestro Dios",
+      "url": "https://www.eventbrite.com/e/proclama-2026-nuestro-dios-tickets-1557056420669?aff=ebdssbcitybrowse",
+      "venue": "Delfines Hotel & Convention Center",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Musical",
+      "title": "EL PRIMER DAMO - UNA COMEDIA MUSICAL",
       "url": "https://teleticket.com.pe/evento/el-primer-damo-una-comedia-musical-penia-del-carajo-2026",
       "venue": "",
       "district": "Lima",
@@ -1938,9 +1868,9 @@
   ],
   "2026-03-27": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "VER MÁS",
+      "time": "9:00 am",
+      "type": "Música",
+      "title": "UNA NOCHE DE SALSA 14",
       "url": "https://teleticket.com.pe/una-noche-de-salsa-14",
       "venue": "",
       "district": "Lima",
@@ -1949,19 +1879,9 @@
       "schedule": "Del 27 Mar al 28 Mar"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Estadio Nacional - LIMA/ MúsicaUNA NOCHE DE SALSA 1427 de marzo 2026 - 28 de marzo 2026",
-      "url": "https://teleticket.com.pe/una-noche-de-salsa-14",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "ROCK AND PEZ - MIRAFLORES - MIRAFLORES - LIMA/ EntretenciónNUEVAOLERAS ´´HORARIO ESPECIAL´´27 de ...",
+      "time": "7:30 pm",
+      "type": "Entretención",
+      "title": "NUEVAOLERAS ´´HORARIO ESPECIAL´´",
       "url": "https://teleticket.com.pe/evento/nuevaoleras-horario-especial-rock-and-pez-miraflores",
       "venue": "",
       "district": "Lima",
@@ -1969,9 +1889,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "MULTIESPACIO COSTA 21 - SAN MIGUEL - LIMA/ MúsicaKAPO - POR SI ALGUIEN NOS ESCUCHA TOUR27 de marz...",
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "KAPO - POR SI ALGUIEN NOS ESCUCHA TOUR",
       "url": "https://teleticket.com.pe/kapo",
       "venue": "",
       "district": "Lima",
@@ -1979,9 +1899,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "LA ESTACIÓN DE BARRANCO - BARRANCO - LIMA/ MúsicaDOS IDOLOS ETERNOS JUAN GABRIEL Y SANDRO27 de ma...",
+      "time": "10:30 pm",
+      "type": "Música",
+      "title": "DOS IDOLOS ETERNOS JUAN GABRIEL Y SANDRO",
       "url": "https://teleticket.com.pe/evento/dos-idolos-eternos-juan-gabriel-y-sandro-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
@@ -1991,9 +1911,9 @@
   ],
   "2026-03-28": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "VER MÁS",
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "SIN BANDERA 25 AÑOS ESCENAS TOUR",
       "url": "https://teleticket.com.pe/sin-bandera-lima-2026",
       "venue": "",
       "district": "Lima",
@@ -2001,19 +1921,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "MULTIESPACIO COSTA 21 - SAN MIGUEL - LIMA/ MúsicaSIN BANDERA 25 AÑOS ESCENAS TOUR28 de marzo 2026",
-      "url": "https://teleticket.com.pe/sin-bandera-lima-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO MANUEL ASCENCIO SEGURA - LIMA/ TeatroSINFONIA THE BEATLES28 de marzo 2026",
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "SINFONIA THE BEATLES",
       "url": "https://teleticket.com.pe/evento/sinfonia-the-beatles-teatro-manuel-ascencio-segura",
       "venue": "",
       "district": "Lima",
@@ -2021,9 +1931,9 @@
       "source": "Teleticket"
     },
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "TEATRO FENIX AREQUIPA/ TeatroMICHAEL JACKSON ES GABRIELA VILLANUEVA EN AREQUIPA28 de marzo 2026",
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "MICHAEL JACKSON ES GABRIELA VILLANUEVA EN AREQUIPA",
       "url": "https://teleticket.com.pe/evento/michael-jackson-es-gabriela-villanueva-en-arequipa-teatro-fenix-arequipa",
       "venue": "",
       "district": "Lima",
@@ -2033,9 +1943,9 @@
   ],
   "2026-03-29": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "C.C. BIANCA - BARRANCO - LIMA/ MúsicaHIJAS DEL SOL EN BARRANCO ANIVERSARIO29 de marzo 2026",
+      "time": "1:00 pm",
+      "type": "Música",
+      "title": "HIJAS DEL SOL EN BARRANCO ANIVERSARIO",
       "url": "https://teleticket.com.pe/evento/hijas-del-sol-en-barranco-aniversario-cc-bianca",
       "venue": "",
       "district": "Lima",
@@ -2083,9 +1993,9 @@
   ],
   "2026-03-31": [
     {
-      "time": "",
-      "type": "Teleticket",
-      "title": "Teatro Municipal de Lima/ MúsicaMARIO, ENTRE LAS PALABRAS Y LA MUSICA31 de marzo 2026",
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "MARIO, ENTRE LAS PALABRAS Y LA MUSICA",
       "url": "https://teleticket.com.pe/mario-entre-palabras-y-la-musica-2026",
       "venue": "",
       "district": "Lima",
