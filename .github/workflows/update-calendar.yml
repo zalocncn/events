@@ -1,0 +1,40 @@
+# Refresh the calendar (events_by_day.json) every hour from EnLima, Eventbrite, Teleticket.
+# New events are merged in; the site (e.g. GitHub Pages) serves the updated JSON.
+
+name: Update calendar
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # Every hour on the hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-calendar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run calendar scrapers
+        env:
+          SKIP_TELETICKET_FETCH: '1'   # Skip per-event time fetch to keep job fast; events still added
+        run: python3 update_calendar.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add events_by_day.json
+          git diff --staged --quiet || (git commit -m "🔄 Calendar: refresh events from sources" && git push)

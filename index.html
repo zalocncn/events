@@ -1,1376 +1,175 @@
-<html lang="en" class="dark"><head>
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lima Events — Eventbrite, EnLima, Teleticket</title>
+    <title>Agenda Cultural — Lima | EnLima</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Inter', -apple-system, sans-serif;
-            background-color: #1A1A1D;
-            color: #FFFFFF;
-        }
-        /* Custom scrollbar for a sleeker look */
+        body { font-family: 'Inter', -apple-system, sans-serif; background-color: #1A1A1D; color: #FFFFFF; }
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #1A1A1D; }
         ::-webkit-scrollbar-thumb { background: #2E2E32; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #424242; }
+        .calendar-day { min-height: 140px; }
+        .calendar-day.has-events { background: rgba(111, 66, 193, 0.06); }
+        .calendar-day.past { opacity: 0.55; background: #1A1A1D; pointer-events: none; }
+        .calendar-day.past .day-num { text-decoration: line-through; color: #666; }
+        .event-item:hover { background: rgba(255,255,255,0.06); }
     </style>
 </head>
 <body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white pb-12">
 
-    <!-- Header -->
-    <header class="w-full h-[56px] px-4 md:px-6 flex items-center justify-between border-b border-[rgba(255,255,255,0.05)] bg-[#1A1A1D] sticky top-0 z-50">
-        <button class="text-[#A0A0A0] hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 rounded-sm">
+    <header class="w-full h-14 px-4 md:px-6 flex items-center justify-between border-b border-white/5 bg-[#1A1A1D] sticky top-0 z-50">
+        <button class="text-[#A0A0A0] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 rounded-sm" aria-label="Menú">
             <i data-lucide="menu" class="w-5 h-5" stroke-width="1.5"></i>
         </button>
         <div class="flex items-center gap-2">
-            <!-- Simplified Logo representation fitting the sleek theme -->
             <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#FFC107] to-[#6F42C1] flex items-center justify-center">
                 <i data-lucide="sun" class="w-3.5 h-3.5 text-white" stroke-width="2"></i>
             </div>
             <span class="text-base font-semibold tracking-tight text-white">Lima</span>
         </div>
-        <div class="w-5 h-5"></div> <!-- Spacer -->
+        <div class="w-5 h-5"></div>
     </header>
 
-    <!-- Main Content -->
     <main class="flex-1 w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 flex flex-col items-center">
-        
-        <!-- Page Header & Filters -->
-        <div class="w-full flex flex-col items-center gap-8 mb-10">
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight uppercase text-white text-center">
-                Find the best events in Lima
-            </h1>
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight uppercase text-white text-center mb-2">
+            Agenda Cultural
+        </h1>
+        <p class="text-[#A0A0A0] text-sm mb-10 text-center max-w-xl">
+            Eventos de <a href="https://enlima.pe/" target="_blank" rel="noopener" class="text-[#8B5CF6] hover:underline">EnLima</a>, <a href="https://www.eventbrite.com.pe/d/peru--miraflores/events/" target="_blank" rel="noopener" class="text-[#8B5CF6] hover:underline">Eventbrite</a> y <a href="https://teleticket.com.pe/todos" target="_blank" rel="noopener" class="text-[#8B5CF6] hover:underline">Teleticket</a> por día
+        </p>
 
-            <div class="w-full max-w-5xl flex flex-wrap items-center justify-center gap-3">
-                <!-- Dropdown: Categories -->
-                <div class="relative flex-1 min-w-[160px] sm:flex-none">
-                    <select class="w-full h-[40px] pl-3 pr-10 bg-[#2E2E32] border border-[rgba(255,255,255,0.05)] rounded-[6px] text-sm text-[#E0E0E0] appearance-none focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 hover:border-[rgba(255,255,255,0.1)] transition-all cursor-pointer shadow-sm">
-                        <option>Categories (all)</option>
-                        <option>Sports</option>
-                        <option>Music</option>
-                        <option>Arts &amp; Culture</option>
-                    </select>
-                    <i data-lucide="chevron-down" class="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#A0A0A0] pointer-events-none" stroke-width="1.5"></i>
+        <div id="calendar-container" class="w-full space-y-16">
+            <!-- February 2026 -->
+            <section class="w-full">
+                <h2 class="text-xl sm:text-2xl font-semibold text-white mb-4 flex items-center gap-2">
+                    <i data-lucide="calendar-days" class="w-6 h-6 text-[#6F42C1]"></i>
+                    Febrero 2026
+                </h2>
+                <div id="cal-feb-2026" class="rounded-[10px] border border-white/5 bg-[#242428] overflow-hidden shadow-[0_6px_20px_rgba(0,0,0,0.28)]"></div>
+            </section>
+
+            <!-- March 2026 -->
+            <section class="w-full">
+                <h2 class="text-xl sm:text-2xl font-semibold text-white mb-4 flex items-center gap-2">
+                    <i data-lucide="calendar-days" class="w-6 h-6 text-[#6F42C1]"></i>
+                    Marzo 2026
+                </h2>
+                <div id="cal-mar-2026" class="rounded-[10px] border border-white/5 bg-[#242428] overflow-hidden shadow-[0_6px_20px_rgba(0,0,0,0.28)]"></div>
+            </section>
+
+            <!-- Show more: later months -->
+            <section class="w-full" id="more-months-section" style="display: none;">
+                <h2 class="text-xl sm:text-2xl font-semibold text-white mb-4 flex items-center gap-2">
+                    <i data-lucide="calendar" class="w-6 h-6 text-[#6F42C1]"></i>
+                    Próximos meses
+                </h2>
+                <div class="rounded-[10px] border border-white/5 bg-[#242428] p-8 text-center text-[#A0A0A0]">
+                    <p>Abril, Mayo y más meses se pueden añadir ejecutando el scraper para más fechas.</p>
+                    <p class="text-sm mt-2">Fuente: <a href="https://enlima.pe/" target="_blank" rel="noopener" class="text-[#8B5CF6] hover:underline">enlima.pe</a></p>
                 </div>
-
-                <!-- Input: Date Start -->
-                <div class="relative flex-1 min-w-[150px] sm:flex-none group">
-                    <input type="text" value="02/20/2026" class="w-full h-[40px] pl-3 pr-10 bg-[#2E2E32] border border-[rgba(255,255,255,0.05)] rounded-[6px] text-sm text-[#E0E0E0] focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 hover:border-[rgba(255,255,255,0.1)] transition-all shadow-sm">
-                    <i data-lucide="calendar" class="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#A0A0A0] group-hover:text-[#E0E0E0] transition-colors pointer-events-none" stroke-width="1.5"></i>
-                </div>
-
-                <!-- Input: Date End -->
-                <div class="relative flex-1 min-w-[150px] sm:flex-none group">
-                    <input type="text" placeholder="mm/dd/yyyy" class="w-full h-[40px] pl-3 pr-10 bg-[#2E2E32] border border-[rgba(255,255,255,0.05)] rounded-[6px] text-sm text-[#E0E0E0] placeholder:text-[#999999] focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 hover:border-[rgba(255,255,255,0.1)] transition-all shadow-sm">
-                    <i data-lucide="calendar" class="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#A0A0A0] group-hover:text-[#E0E0E0] transition-colors pointer-events-none" stroke-width="1.5"></i>
-                </div>
-
-                <!-- Dropdown: Regions -->
-                <div class="relative flex-1 min-w-[160px] sm:flex-none">
-                    <select class="w-full h-[40px] pl-3 pr-10 bg-[#2E2E32] border border-[rgba(255,255,255,0.05)] rounded-[6px] text-sm text-[#E0E0E0] appearance-none focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 hover:border-[rgba(255,255,255,0.1)] transition-all cursor-pointer shadow-sm">
-                        <option>Regions (all)</option>
-                        <option>Downtown</option>
-                        <option>Hollywood</option>
-                        <option>Westside</option>
-                    </select>
-                    <i data-lucide="chevron-down" class="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#A0A0A0] pointer-events-none" stroke-width="1.5"></i>
-                </div>
-
-                <!-- Actions -->
-                <button class="h-[40px] px-5 bg-[#2A2A2E] hover:bg-[#35353A] border border-[rgba(255,255,255,0.05)] rounded-[6px] text-sm font-medium text-white transition-all shadow-sm hover:-translate-y-[1px]">
-                    Submit
-                </button>
-                <button class="h-[40px] px-5 bg-transparent hover:bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.05)] rounded-[6px] text-sm font-medium text-[#C0C0C0] hover:text-white transition-colors">
-                    Clear
-                </button>
-                <button class="h-[40px] px-6 bg-gradient-to-br from-[#5B21B6] to-[#6F42C1] hover:from-[#6F42C1] hover:to-[#8B5CF6] rounded-[6px] text-sm font-medium text-white shadow-[0_4px_12px_rgba(111,66,193,0.28)] transition-all hover:-translate-y-[1px] hover:shadow-[0_6px_16px_rgba(111,66,193,0.35)] active:scale-[0.98]">
-                    Add Event
-                </button>
-            </div>
+            </section>
         </div>
 
-        <h2 class="text-xl sm:text-2xl font-semibold tracking-tight text-white mb-8">
-            Events from Eventbrite, EnLima &amp; Teleticket
-        </h2>
-
-        <!-- Events Grid (replaced by monitor.py when you run: python3 monitor.py) -->
-        <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-            <!-- EVENTS_GRID_START -->
-
-            <!-- EVENT:7cf72726d8e8 | src:eventbrite -->
-            <a href="https://www.eventbrite.com/e/2026-educationusa-community-college-fair-lima-tickets-1977036198490?aff=ebdssbdestsearch" target="_blank" rel="noopener noreferrer"
-               data-event-id="7cf72726d8e8" data-source="eventbrite"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1172395082%252F2491449577641%252F1%252Foriginal.20251205-164252%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D480%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.019%26fp-y%3D0.552%26s%3D9de75468e0c96044d1dd60fe49490ab2&w=940&q=75" alt="2026 EducationUSA Community College Fair | Lima" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute top-3 left-3 bg-[#5CB85C]/90 backdrop-blur-sm border border-[rgba(255,255,255,0.1)] px-2 py-0.5 rounded-[4px] text-[10px] font-semibold text-white uppercase tracking-wider">Gratis</div>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#FFC107"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Eventbrite</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        2026 EducationUSA Community College Fair | Lima
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">¡Bienvenidos a la EducationUSA Community College Fair en Lima! Da el primer paso para estudiar en Estados Unidos.</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Miraflores, Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:7cf72726d8e8 -->
-
-            <!-- EVENT:3dcf0886d6e4 | src:enlima -->
-            <a href="https://enlima.pe/agenda" target="_blank" rel="noopener noreferrer"
-               data-event-id="3dcf0886d6e4" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="AGENDA" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        AGENDA
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">La agenda cultural de Lima: encuentra qué hacer en Lima. Calendario de eventos de cultura: arte, exposiciones, teatro, cine, música, conciertos, literatura, act…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:3dcf0886d6e4 -->
-
-            <!-- EVENT:5bd471793073 | src:enlima -->
-            <a href="https://enlima.pe/agenda/teatro" target="_blank" rel="noopener noreferrer"
-               data-event-id="5bd471793073" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="ARTES ESCÉNICAS" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">ARTS &amp; CULTURE</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        ARTES ESCÉNICAS
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">La agenda cultural de Lima: encuentra qué hacer en Lima. Calendario de eventos de cultura: arte, exposiciones, teatro, cine, música, conciertos, literatura, act…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:5bd471793073 -->
-
-            <!-- EVENT:aea299418dfa | src:enlima -->
-            <a href="https://enlima.pe/blog" target="_blank" rel="noopener noreferrer"
-               data-event-id="aea299418dfa" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="ARTÍCULOS" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">ARTS &amp; CULTURE</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        ARTÍCULOS
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">La agenda cultural de Lima: encuentra qué hacer en Lima. Calendario de eventos de cultura: arte, exposiciones, teatro, cine, música, conciertos, literatura, act…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:aea299418dfa -->
-
-            <!-- EVENT:0757d026a489 | src:enlima -->
-            <a href="https://enlima.pe/local/cafeteria-bares" target="_blank" rel="noopener noreferrer"
-               data-event-id="0757d026a489" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="BARES Y CAFETERÍAS" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        BARES Y CAFETERÍAS
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">La agenda cultural de Lima: encuentra qué hacer en Lima. Calendario de eventos de cultura: arte, exposiciones, teatro, cine, música, conciertos, literatura, act…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:0757d026a489 -->
-
-            <!-- EVENT:d3b8f3e24b21 | src:eventbrite -->
-            <a href="https://www.eventbrite.com/e/be-the-voice-vol-2-tickets-1982716394108?aff=ebdssbdestsearch" target="_blank" rel="noopener noreferrer"
-               data-event-id="d3b8f3e24b21" data-source="eventbrite"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1177104544%252F2986154747783%252F1%252Foriginal.20260209-210935%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D480%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.502%26fp-y%3D0.536%26s%3D6f8c514673d681983890486a5d87dfde&w=940&q=75" alt="BE THE VOICE - VOL. 2" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute top-3 left-3 bg-[#5CB85C]/90 backdrop-blur-sm border border-[rgba(255,255,255,0.1)] px-2 py-0.5 rounded-[4px] text-[10px] font-semibold text-white uppercase tracking-wider">Gratis</div>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#FFC107"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Eventbrite</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        BE THE VOICE - VOL. 2
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">BE THE VOICE Vol. 2 es un concurso de canto para aficionados que viven la experiencia real de escenario, con jurado, público y premios. ✨</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Miraflores, Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:d3b8f3e24b21 -->
-
-            <!-- EVENT:a8283c542d65 | src:enlima -->
-            <a href="https://enlima.pe/agenda/conciertos" target="_blank" rel="noopener noreferrer"
-               data-event-id="a8283c542d65" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="CONCIERTOS" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MUSIC</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        CONCIERTOS
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">La agenda cultural de Lima: encuentra qué hacer en Lima. Calendario de eventos de cultura: arte, exposiciones, teatro, cine, música, conciertos, literatura, act…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:a8283c542d65 -->
-
-            <!-- EVENT:e30e304300cc | src:enlima -->
-            <a href="https://enlima.pe/front" target="_blank" rel="noopener noreferrer"
-               data-event-id="e30e304300cc" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="ESTILO DE VIDA" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        ESTILO DE VIDA
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">La agenda cultural de Lima: encuentra qué hacer en Lima. Calendario de eventos de cultura: arte, exposiciones, teatro, cine, música, conciertos, literatura, act…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:e30e304300cc -->
-
-            <!-- EVENT:fc3d7a0817b4 | src:enlima -->
-            <a href="https://enlima.pe/front" target="_blank" rel="noopener noreferrer"
-               data-event-id="fc3d7a0817b4" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="EVENTOS" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        EVENTOS
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">La agenda cultural de Lima: encuentra qué hacer en Lima. Calendario de eventos de cultura: arte, exposiciones, teatro, cine, música, conciertos, literatura, act…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:fc3d7a0817b4 -->
-
-            <!-- EVENT:69c6347fa3ac | src:eventbrite -->
-            <a href="https://www.eventbrite.com.ar/e/explorando-la-nueva-era-de-la-estetica-tickets-1982442028473?aff=ebdssbdestsearch" target="_blank" rel="noopener noreferrer"
-               data-event-id="69c6347fa3ac" data-source="eventbrite"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1176787661%252F257746284214%252F1%252Foriginal.20260205-161329%3Fw%3D480%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26rect%3D0%252C0%252C2000%252C1000%26s%3D333014457d80bb44d1248c6e6fa667f5&w=940&q=75" alt="EXPLORANDO LA NUEVA ERA DE LA ESTÉTICA" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute top-3 left-3 bg-[#5CB85C]/90 backdrop-blur-sm border border-[rgba(255,255,255,0.1)] px-2 py-0.5 rounded-[4px] text-[10px] font-semibold text-white uppercase tracking-wider">Gratis</div>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#FFC107"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Eventbrite</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        EXPLORANDO LA NUEVA ERA DE LA ESTÉTICA
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">Ven y descubre las tendencias y secretos que están revolucionando el mundo de la estética hoy. No te lo pierdas!</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Miraflores, Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:69c6347fa3ac -->
-
-            <!-- EVENT:12d8b8554179 | src:enlima -->
-            <a href="https://enlima.pe/agenda/exposiciones" target="_blank" rel="noopener noreferrer"
-               data-event-id="12d8b8554179" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="EXPOSICIONES" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        EXPOSICIONES
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">La agenda cultural de Lima: encuentra qué hacer en Lima. Calendario de eventos de cultura: arte, exposiciones, teatro, cine, música, conciertos, literatura, act…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:12d8b8554179 -->
-
-            <!-- EVENT:5cdedc0d2fc5 | src:eventbrite -->
-            <a href="https://www.eventbrite.com.pe/e/fun-x-mujeres-sin-filtro-ed-las-mujeres-no-lloran-las-mujeres-facturan-tickets-1981786992242?aff=ebdssbcitybrowse" target="_blank" rel="noopener noreferrer"
-               data-event-id="5cdedc0d2fc5" data-source="eventbrite"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1176169761%252F2858031654521%252F1%252Foriginal.20260129-155942%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D480%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3De115bd82141f1b37e130a2f6dc3084c6&w=940&q=75" alt="FUN x Mujeres sin Filtro Ed. Las mujeres no lloran las mujeres facturan" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#FFC107"></div>
-                        07:00 PM
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Eventbrite</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        FUN x Mujeres sin Filtro Ed. Las mujeres no lloran las mujeres facturan
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">Un evento en vivo para empoderar a las mujeres a facturar y romper esquemas sin miedo ni lágrimas.</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Miraflores, Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:5cdedc0d2fc5 -->
-
-            <!-- EVENT:032ffd26fffe | src:eventbrite -->
-            <a href="https://www.eventbrite.com.pe/e/festival-cafesazo-peruano-2026-edicion-verano-tickets-1980791187764?aff=ebdssbdestsearch" target="_blank" rel="noopener noreferrer"
-               data-event-id="032ffd26fffe" data-source="eventbrite"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1175230395%252F1628250100053%252F1%252Foriginal.20260119-115030%3Fcrop%3Dfocalpoint%26fit%3Dcrop%26w%3D480%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26fp-x%3D0.5%26fp-y%3D0.5%26s%3D922ffd184d188a641277fa24dba80d92&w=940&q=75" alt="Festival Cafesazo Peruano 2026 - Edicion Verano" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute top-3 left-3 bg-[#5CB85C]/90 backdrop-blur-sm border border-[rgba(255,255,255,0.1)] px-2 py-0.5 rounded-[4px] text-[10px] font-semibold text-white uppercase tracking-wider">Gratis</div>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#FFC107"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MUSIC</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Eventbrite</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        Festival Cafesazo Peruano 2026 - Edicion Verano
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">¡Ven a disfrutar del mejor café peruano en nuestro Festival Cafesazo Peruano 2026 ! ¡No te lo puedes perder!</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Miraflores, Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:032ffd26fffe -->
-
-            <!-- EVENT:da4fd7a22061 | src:enlima -->
-            <a href="https://enlima.pe/agenda/otros" target="_blank" rel="noopener noreferrer"
-               data-event-id="da4fd7a22061" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="MISCELÁNEA" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        MISCELÁNEA
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">La agenda cultural de Lima: encuentra qué hacer en Lima. Calendario de eventos de cultura: arte, exposiciones, teatro, cine, música, conciertos, literatura, act…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:da4fd7a22061 -->
-
-            <!-- EVENT:7350e4b92c3b | src:enlima -->
-            <a href="http://www.enlima.pe/museos-galerias" target="_blank" rel="noopener noreferrer"
-               data-event-id="7350e4b92c3b" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="MUSEOS Y GALERÍAS" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">ARTS &amp; CULTURE</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        MUSEOS Y GALERÍAS
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">La agenda cultural de Lima: encuentra qué hacer en Lima. Calendario de eventos de cultura: arte, exposiciones, teatro, cine, música, conciertos, literatura, act…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:7350e4b92c3b -->
-
-            <!-- EVENT:c661bee89ec7 | src:eventbrite -->
-            <a href="https://www.eventbrite.es/e/masters-latam-spring-2026-admission-week-peru-bolivia-paraguay-tickets-1977368092193?aff=ebdssbdestsearch" target="_blank" rel="noopener noreferrer"
-               data-event-id="c661bee89ec7" data-source="eventbrite"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1174935196%252F215986123110%252F1%252Foriginal.20260115-095440%3Fw%3D480%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26rect%3D0%252C0%252C2160%252C1080%26s%3D34596e43ef84f528b78d4f07955d87b3&w=940&q=75" alt="Masters LATAM Spring 2026 Admission Week - Peru, Bolivia &amp; Paraguay" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute top-3 left-3 bg-[#5CB85C]/90 backdrop-blur-sm border border-[rgba(255,255,255,0.1)] px-2 py-0.5 rounded-[4px] text-[10px] font-semibold text-white uppercase tracking-wider">Gratis</div>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#FFC107"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Eventbrite</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        Masters LATAM Spring 2026 Admission Week - Peru, Bolivia &amp; Paraguay
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">Fast-track your future with IE University</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Miraflores, Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:c661bee89ec7 -->
-
-            <!-- EVENT:f6648e1b967a | src:enlima -->
-            <a href="https://enlima.pe/agenda/ninos" target="_blank" rel="noopener noreferrer"
-               data-event-id="f6648e1b967a" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="NIÑOS" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        NIÑOS
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">Actividades para niños en Lima. Eventos para los pequeños de la casa y para toda la familia: Cuentacuentos, teatro infantil, talleres y arte para niños en Lima.</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:f6648e1b967a -->
-
-            <!-- EVENT:bc3e84602c5f | src:eventbrite -->
-            <a href="https://www.eventbrite.com/e/proclama-2026-nuestro-dios-tickets-1557056420669?aff=ebdssbcitybrowse" target="_blank" rel="noopener noreferrer"
-               data-event-id="bc3e84602c5f" data-source="eventbrite"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1154168623%252F554369161871%252F1%252Foriginal.20251015-175308%3Fw%3D480%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26rect%3D0%252C0%252C2160%252C1080%26s%3Dcafaa65a2e178c8cd0d219e8d35b2d0b&w=940&q=75" alt="Proclama 2026 - Nuestro Dios" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#FFC107"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Eventbrite</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        Proclama 2026 - Nuestro Dios
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">El tema central para la conferencia Proclama 2026 será &quot;Nuestro Dios: Conozcamos los Atributos de Dios¨&quot;</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Miraflores, Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:bc3e84602c5f -->
-
-            <!-- EVENT:98a35fc45dcb | src:enlima -->
-            <a href="https://enlima.pe/quienes-somos" target="_blank" rel="noopener noreferrer"
-               data-event-id="98a35fc45dcb" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="QUIENES SOMOS" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        QUIENES SOMOS
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">EnLima es una revista digital que te da las coordenadas para ubicarte en el mapa cultural y artístico de Lima. Ofrecemos la programación cultural más completa d…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:98a35fc45dcb -->
-
-            <!-- EVENT:781fb170a8e5 | src:enlima -->
-            <a href="https://enlima.pe/local/restaurantes" target="_blank" rel="noopener noreferrer"
-               data-event-id="781fb170a8e5" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="RESTAURANTES" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        RESTAURANTES
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">La agenda cultural de Lima: encuentra qué hacer en Lima. Calendario de eventos de cultura: arte, exposiciones, teatro, cine, música, conciertos, literatura, act…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:781fb170a8e5 -->
-
-            <!-- EVENT:77e10d088445 | src:eventbrite -->
-            <a href="https://www.eventbrite.com/e/su-inversion-segura-en-la-florida-central-usa-tickets-1980648801884?aff=ebdssbcitybrowse" target="_blank" rel="noopener noreferrer"
-               data-event-id="77e10d088445" data-source="eventbrite"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1176227431%252F128403990877%252F1%252Foriginal.20260130-023956%3Fw%3D480%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26s%3Ddf7611960f8c76d39fec75d7c2750aae&w=940&q=75" alt="Su inversion segura en la Florida Central, USA" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#FFC107"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Eventbrite</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        Su inversion segura en la Florida Central, USA
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">Ven y conoce las mejores formas de invertir tu dinero en la capital mundial de los parques de diversion, financiamientos para extranjeros!</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Miraflores, Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:77e10d088445 -->
-
-            <!-- EVENT:06e3fdb0de25 | src:enlima -->
-            <a href="https://enlima.pe/agenda/talleres" target="_blank" rel="noopener noreferrer"
-               data-event-id="06e3fdb0de25" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="TALLERES" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        TALLERES
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">La agenda cultural de Lima: encuentra qué hacer en Lima. Calendario de eventos de cultura: arte, exposiciones, teatro, cine, música, conciertos, literatura, act…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:06e3fdb0de25 -->
-
-            <!-- EVENT:6eab29cae143 | src:enlima -->
-            <a href="https://enlima.pe/local/tiendas-ocio" target="_blank" rel="noopener noreferrer"
-               data-event-id="6eab29cae143" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="TIENDAS Y OCIO" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        TIENDAS Y OCIO
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">La agenda cultural de Lima: encuentra qué hacer en Lima. Calendario de eventos de cultura: arte, exposiciones, teatro, cine, música, conciertos, literatura, act…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:6eab29cae143 -->
-
-            <!-- EVENT:7ce1fca60fef | src:eventbrite -->
-            <a href="https://www.eventbrite.com/e/underhouse-2-tickets-1980578479548?aff=ebdssbdestsearch" target="_blank" rel="noopener noreferrer"
-               data-event-id="7ce1fca60fef" data-source="eventbrite"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="/e/_next/image?url=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F1174885105%252F2988764420507%252F1%252Foriginal.png%3Fw%3D480%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26rect%3D0%252C0%252C940%252C470%26s%3D6146b80072c68505d2f2d3d4088858ae&w=940&q=75" alt="UnderHouse 2" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute top-3 left-3 bg-[#5CB85C]/90 backdrop-blur-sm border border-[rgba(255,255,255,0.1)] px-2 py-0.5 rounded-[4px] text-[10px] font-semibold text-white uppercase tracking-wider">Gratis</div>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#FFC107"></div>
-                        Feb 20
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Eventbrite</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        UnderHouse 2
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">Get ready to dive deep underground for UnderHouse 2, the ultimate in-person party vibe!</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Miraflores, Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:7ce1fca60fef -->
-
-            <!-- EVENT:4c4d3426d217 | src:teleticket -->
-            <a href="https://teleticket.com.pe#collapse-2026" target="_blank" rel="noopener noreferrer"
-               data-event-id="4c4d3426d217" data-source="teleticket"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/categorias/1-generica.png" alt="HABLANDO HUEVADAS GIRA PROVINCIAS" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#3B82F6"></div>
-                        01 de enero 2026 - 31 de diciembre 2026
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Teleticket</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        HABLANDO HUEVADAS GIRA PROVINCIAS
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">Encuentra entradas para los mejores eventos en Perú en Teleticket: conciertos, eventos deportivos, festivales, espectáculos teatrales y mucho más.</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:4c4d3426d217 -->
-
-            <!-- EVENT:2f8aae0fa08b | src:teleticket -->
-            <a href="https://teleticket.com.pe/evento/full-day-playa-la-mina-con-rutas-incas-2026" target="_blank" rel="noopener noreferrer"
-               data-event-id="2f8aae0fa08b" data-source="teleticket"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="https://cdn.teleticket.com.pe/images/eventos/rip086_md.jpg" alt="¡FULL DAY PLAYA LA MINA CON RUTAS INCAS! - Reserva Nacional de Paracas, YakuPark, Chincha y más" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#3B82F6"></div>
-                        01-01-2026 al 31-12-2026
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Teleticket</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        ¡FULL DAY PLAYA LA MINA CON RUTAS INCAS! - Reserva Nacional de Paracas, YakuPark, Chincha y más
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">Compra tu entrada para ¡FULL DAY PLAYA LA MINA CON RUTAS INCAS!, jueves 01 de enero 2026 al jueves 31 de diciembre 2026 en FULL DAY PLAYA LA MINA CON RUTAS INCA…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:2f8aae0fa08b -->
-
-            <!-- EVENT:71c9b3d6cc68 | src:teleticket -->
-            <a href="https://teleticket.com.pe/evento/museo-de-efectos-visuales-arequipa-temporada-2026-museo-de-efectos-visuales-arequipa" target="_blank" rel="noopener noreferrer"
-               data-event-id="71c9b3d6cc68" data-source="teleticket"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="https://cdn.teleticket.com.pe/images/eventos/gza002_md.jpg" alt="MUSEO DE EFECTOS VISUALES AREQUIPA TEMPORADA 2026" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#3B82F6"></div>
-                        20-02-2026 al 01-07-2026
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">ARTS &amp; CULTURE</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Teleticket</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        MUSEO DE EFECTOS VISUALES AREQUIPA TEMPORADA 2026
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">Compra tu entrada para MUSEO DE EFECTOS VISUALES AREQUIPA TEMPORADA 2026, viernes 20 de febrero 2026 al miércoles 01 de julio 2026 en MUSEO DE EFECTOS VISUALES …</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:71c9b3d6cc68 -->
-
-            <!-- EVENT:264c8b8a2714 | src:teleticket -->
-            <a href="https://teleticket.com.pe/splash-jungle-pool-jungle-2026" target="_blank" rel="noopener noreferrer"
-               data-event-id="264c8b8a2714" data-source="teleticket"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="https://cdn.teleticket.com.pe/images/eventos/ams005_rs.jpg" alt="SPLASH JUNGLE POOL PARTY" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#3B82F6"></div>
-                        20 de febrero 2026 - 04 de marzo 2026
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">ARTS &amp; CULTURE</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Teleticket</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        SPLASH JUNGLE POOL PARTY
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">SPLASH JUNGLE POOL PARTY | TELETICKET</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:264c8b8a2714 -->
-
-            <!-- EVENT:41daf183ac51 | src:teleticket -->
-            <a href="https://teleticket.com.pe/evento/paseo-en-dune-buggy-por-la-reserva-nacional-de-paracas-playa-roja--desierto-lunar-oficina-like-xplorer-peru-" target="_blank" rel="noopener noreferrer"
-               data-event-id="41daf183ac51" data-source="teleticket"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="https://cdn.teleticket.com.pe/images/eventos/lxp031_md.jpg" alt="PASEO EN DUNE BUGGY POR LA RESERVA NACIONAL DE PARACAS - +PLAYA ROJA + DESIERTO LUNAR" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#3B82F6"></div>
-                        20-02-2026 al 09-01-2027
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Teleticket</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        PASEO EN DUNE BUGGY POR LA RESERVA NACIONAL DE PARACAS - +PLAYA ROJA + DESIERTO LUNAR
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">Compra tu entrada para PASEO EN DUNE BUGGY POR LA RESERVA NACIONAL DE PARACAS, viernes 20 de febrero 2026 al sábado 09 de enero 2027 en OFICINA LIKE XPLORER PER…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:41daf183ac51 -->
-
-            <!-- EVENT:a6e525e5fc56 | src:teleticket -->
-            <a href="https://teleticket.com.pe/submarino-infinity-2026" target="_blank" rel="noopener noreferrer"
-               data-event-id="a6e525e5fc56" data-source="teleticket"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="https://cdn.teleticket.com.pe/images/eventos/ams004_rs.jpg" alt="SUBMARINO INFINITY" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#3B82F6"></div>
-                        20 de febrero 2026 - 15 de marzo 2026
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Teleticket</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        SUBMARINO INFINITY
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">SUBMARINO INFINITY | TELETICKET</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:a6e525e5fc56 -->
-
-            <!-- EVENT:5cab644adc00 | src:teleticket -->
-            <a href="https://teleticket.com.pe/melgar-fixture-2026" target="_blank" rel="noopener noreferrer"
-               data-event-id="5cab644adc00" data-source="teleticket"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="https://cdn.teleticket.com.pe/images/eventos/tes080_rs.jpg" alt="MELGAR" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#3B82F6"></div>
-                        31 de enero 2026
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">Teleticket</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        MELGAR
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">FIXTURE MELGAR 2026 - COMPRAR ENTRADAS | TELETICKET</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:5cab644adc00 -->
-
-            <!-- EVENT:e219b7a934d5 | src:enlima -->
-            <a href="https://enlima.pe/calendario-cultural/dia/2026-02-19" target="_blank" rel="noopener noreferrer"
-               data-event-id="e219b7a934d5" data-source="enlima"
-               class="flex flex-col bg-[#242428] rounded-[10px] border border-[rgba(255,255,255,0.05)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden group hover:-translate-y-[3px] hover:shadow-[0_12px_40px_rgba(0,0,0,0.35)] transition-all duration-200 ease-out no-underline">
-                <div class="relative h-44 bg-[#2A2A2E] overflow-hidden">
-                    <img src="http://www.enlima.pe/agenda-cultural-en-lima.png" alt="Viernes 20.02.2026" loading="lazy"
-                         class="w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
-                         onerror="this.style.display='none'">
-                    <button class="absolute top-3 right-3 w-7 h-7 bg-[#1A1A1D]/80 backdrop-blur-sm rounded-full flex items-center justify-center text-[#E0E0E0] hover:text-white hover:bg-[#6F42C1] transition-colors border border-[rgba(255,255,255,0.1)]">
-                        <i data-lucide="info" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-                    </button>
-                    <div class="absolute bottom-3 left-3 bg-[#1A1A1D]/90 backdrop-blur-md border border-[rgba(255,255,255,0.1)] px-2.5 py-1 rounded-[6px] text-xs font-medium text-white shadow-sm flex items-center gap-1.5">
-                        <div class="w-1.5 h-1.5 rounded-full" style="background:#5CB85C"></div>
-                        Viernes 20.02.2026
-                    </div>
-                </div>
-                <div class="flex flex-col flex-1 p-5 gap-2.5">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium tracking-wide text-[#999999] uppercase">MISCELLANEOUS</span>
-                        <span class="text-[10px] font-medium tracking-wide text-[#666666] uppercase">EnLima</span>
-                    </div>
-                    <h3 class="text-base font-semibold leading-snug text-white group-hover:text-[#8B5CF6] transition-colors line-clamp-2">
-                        Viernes 20.02.2026
-                    </h3>
-                    <p class="text-sm text-[#A0A0A0] line-clamp-2 leading-snug">La agenda cultural de Lima: encuentra qué hacer en Lima. Calendario de eventos de cultura: arte, exposiciones, teatro, cine, música, conciertos, literatura, act…</p>
-                    <div class="flex items-start gap-2 text-sm text-[#C0C0C0] mt-auto pt-2">
-                        <i data-lucide="map-pin" class="w-4 h-4 shrink-0 mt-0.5 text-[#6F42C1]"></i>
-                        <span class="line-clamp-2 leading-relaxed">Lima</span>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <div class="w-full flex items-center justify-center gap-2 h-9 rounded-[6px] text-sm font-medium text-[#E0E0E0] bg-[#2E2E32] group-hover:bg-[#35353A] border border-[rgba(255,255,255,0.04)] transition-colors group-hover:border-[rgba(111,66,193,0.35)]">
-                        <i data-lucide="external-link" class="w-4 h-4 text-[#A0A0A0] group-hover:text-[#8B5CF6] transition-colors" stroke-width="1.5"></i>
-                        View Event
-                    </div>
-                </div>
-            </a>
-            <!-- /EVENT:e219b7a934d5 -->
-            <!-- EVENTS_GRID_END -->
-
-
-        </div>
-
-        <!-- Load More Button -->
         <div class="mt-12 flex justify-center w-full pb-8">
-            <button class="h-10 px-6 bg-[#242428] border border-[rgba(255,255,255,0.05)] hover:border-[rgba(255,255,255,0.1)] hover:bg-[#2A2A2E] rounded-[6px] text-sm font-medium text-[#E0E0E0] hover:text-white transition-all flex items-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.22)] hover:-translate-y-[1px]">
-                32 items more
+            <button id="show-more-btn" class="h-10 px-6 bg-[#242428] border border-white/5 hover:border-white/10 hover:bg-[#2A2A2E] rounded-[6px] text-sm font-medium text-[#E0E0E0] hover:text-white transition-all flex items-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.22)] hover:-translate-y-px">
+                <span>Mostrar más meses</span>
                 <i data-lucide="chevron-down" class="w-4 h-4 text-[#A0A0A0]" stroke-width="1.5"></i>
             </button>
         </div>
-
     </main>
 
     <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-    </script>
+        const WEEKDAYS = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+        const MONTHS = ['', 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 
-</body></html>
+        function buildMonthCalendar(containerId, year, month, eventsByDay) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            const firstDay = new Date(year, month - 1, 1);
+            const lastDay = new Date(year, month - 1 + 1, 0);
+            const daysInMonth = lastDay.getDate();
+            const startWeekday = firstDay.getDay();
+
+            let html = '<div class="grid grid-cols-7 border-b border-white/5">';
+            WEEKDAYS.forEach(w => {
+                html += `<div class="p-2 sm:p-3 text-center text-xs font-medium text-[#A0A0A0] uppercase border-r border-white/5 last:border-r-0">${w}</div>`;
+            });
+            html += '</div><div class="grid grid-cols-7">';
+
+            let emptyCells = startWeekday;
+            while (emptyCells--) {
+                html += '<div class="min-h-[120px] sm:min-h-[140px] border-b border-r border-white/5 bg-[#1A1A1D]/50 p-2 sm:p-3"></div>';
+            }
+            const today = new Date();
+            const todayKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+            for (let d = 1; d <= daysInMonth; d++) {
+                const dateKey = `${year}-${String(month).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+                const isExpired = dateKey < todayKey;
+                const events = eventsByDay[dateKey] || [];
+                const hasEvents = events.length > 0;
+                const esc = s => (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+                const pastClass = isExpired ? ' past' : '';
+                html += `<div class="calendar-day min-h-[120px] sm:min-h-[140px] border-b border-r border-white/5 p-2 sm:p-3 ${hasEvents ? 'has-events' : ''}${pastClass} bg-[#242428]">`;
+                html += `<div class="day-num text-sm font-semibold text-white mb-1">${d}</div>`;
+                html += '<div class="space-y-1 overflow-y-auto max-h-[100px] sm:max-h-[120px]">';
+                events.slice(0, 6).forEach(ev => {
+                    const timeLabel = (ev.time || '').trim() || '—';
+                    const link = ev.url ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-item block rounded px-1.5 py-0.5 text-[11px] sm:text-xs text-[#E0E0E0] hover:text-[#8B5CF6] truncate" title="${esc(ev.title)}${ev.schedule ? ' — ' + esc(ev.schedule) : ''}">${esc(timeLabel)}</a>` : `<span class="block text-[11px] text-[#A0A0A0]">${esc(timeLabel)}</span>`;
+                    html += link;
+                });
+                if (events.length > 6) html += `<span class="block text-[10px] text-[#6F42C1]">+${events.length - 6} más</span>`;
+                html += '</div></div>';
+            }
+            const totalCells = startWeekday + daysInMonth;
+            const endPad = (7 - (totalCells % 7)) % 7;
+            for (let i = 0; i < endPad; i++) {
+                html += '<div class="min-h-[120px] sm:min-h-[140px] border-b border-r border-white/5 bg-[#1A1A1D]/50 p-2 sm:p-3"></div>';
+            }
+            html += '</div>';
+            container.innerHTML = html;
+        }
+
+        let cachedEventsByDay = null;
+
+        function renderCalendars() {
+            if (!cachedEventsByDay) return;
+            buildMonthCalendar('cal-feb-2026', 2026, 2, cachedEventsByDay);
+            buildMonthCalendar('cal-mar-2026', 2026, 3, cachedEventsByDay);
+        }
+
+        function init() {
+            fetch('events_by_day.json')
+                .then(r => r.json())
+                .then(eventsByDay => {
+                    cachedEventsByDay = eventsByDay;
+                    renderCalendars();
+                    setInterval(renderCalendars, 60000);
+                })
+                .catch(() => {
+                    document.getElementById('cal-feb-2026').innerHTML = '<div class="p-8 text-center text-[#A0A0A0]">Cargando eventos… Ejecuta <code class="text-[#6F42C1]">python3 enlima_calendar.py</code> y recarga.</div>';
+                    document.getElementById('cal-mar-2026').innerHTML = '';
+                });
+
+            document.getElementById('show-more-btn').addEventListener('click', function() {
+                const section = document.getElementById('more-months-section');
+                const icon = this.querySelector('i');
+                if (section.style.display === 'none') {
+                    section.style.display = 'block';
+                    if (typeof lucide !== 'undefined' && icon) icon.setAttribute('data-lucide', 'chevron-up');
+                } else {
+                    section.style.display = 'none';
+                    if (typeof lucide !== 'undefined' && icon) icon.setAttribute('data-lucide', 'chevron-down');
+                }
+                if (typeof lucide !== 'undefined') lucide.createIcons();
+            });
+
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
