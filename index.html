@@ -6,7 +6,7 @@
     <title>Que hacemos — Eventos en Lima</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', -apple-system, sans-serif; background-color: #1A1A1D; color: #FFFFFF; }
         ::-webkit-scrollbar { width: 8px; }
@@ -27,6 +27,8 @@
         .accordion-panel { max-height: 0; overflow: hidden; transition: max-height 0.25s ease-out; }
         .accordion-day.is-open .accordion-panel { max-height: 2000px; transition: max-height 0.35s ease-in; }
         .accordion-day.is-open .accordion-chevron { transform: rotate(180deg); }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white pb-12">
@@ -75,10 +77,33 @@
             </section>
             </div>
 
-            <!-- Mobile: accordion by day (tap to expand event cards) -->
-            <div id="calendar-accordion-view" class="md:hidden space-y-6">
-                <section id="accordion-feb-2026" class="w-full"></section>
-                <section id="accordion-mar-2026" class="w-full"></section>
+            <!-- Mobile: Schedule Dashboard (date scroller + event cards) -->
+            <div id="calendar-mobile-dashboard" class="md:hidden w-full max-w-full min-h-[480px] bg-[#1A1A1D] rounded-[20px] shadow-[0_12px_40px_rgba(0,0,0,0.35)] border border-[rgba(255,255,255,0.05)] overflow-hidden flex flex-col relative">
+                <div class="p-4 sm:p-5 pb-0">
+                    <div class="flex justify-between items-start mb-4 sm:mb-5">
+                        <div>
+                            <p class="text-sm font-light text-[#C0C0C0] mb-1">Hoy</p>
+                            <h1 id="mobile-dash-date" class="text-xl font-semibold tracking-tight text-[#FFFFFF]">—</h1>
+                        </div>
+                        <button type="button" class="bg-[#2E2E32] hover:bg-[#424242] transition-colors duration-200 text-[#E0E0E0] rounded-[6px] px-3 h-9 flex items-center gap-2 border border-[rgba(255,255,255,0.06)] shadow-[0_4px_12px_rgba(0,0,0,0.22)] focus:outline-none focus:ring-2 focus:ring-[rgba(111,66,193,0.45)]">
+                            <span class="text-sm font-normal">Todos los eventos</span>
+                            <i data-lucide="chevron-down" class="w-4 h-4 text-[#A0A0A0]" stroke-width="1.5"></i>
+                        </button>
+                    </div>
+                    <div class="flex items-center justify-center gap-4 mb-4 sm:mb-5">
+                        <button type="button" id="mobile-dash-prev" class="p-2 hover:bg-[#2A2A2E] rounded-full transition-colors duration-200 group active:scale-95" aria-label="Mes anterior">
+                            <i data-lucide="arrow-left" class="w-5 h-5 text-[#A0A0A0] group-hover:text-[#6F42C1]" stroke-width="1.5"></i>
+                        </button>
+                        <h2 id="mobile-dash-month" class="text-lg font-medium tracking-tight text-[#FFFFFF] min-w-[140px] text-center">—</h2>
+                        <button type="button" id="mobile-dash-next" class="p-2 hover:bg-[#2A2A2E] rounded-full transition-colors duration-200 group active:scale-95" aria-label="Mes siguiente">
+                            <i data-lucide="arrow-right" class="w-5 h-5 text-[#A0A0A0] group-hover:text-[#6F42C1]" stroke-width="1.5"></i>
+                        </button>
+                    </div>
+                    <div id="mobile-dash-scroller" class="grid grid-flow-col gap-2 pb-4 hide-scrollbar overflow-x-auto snap-x snap-mandatory w-max min-w-full" style="grid-auto-columns: minmax(48px, 64px);"></div>
+                    <div class="w-10 h-1 bg-[rgba(255,255,255,0.06)] rounded-full mx-auto mb-4 sm:mb-5"></div>
+                </div>
+                <div id="mobile-dash-events" class="px-4 sm:px-5 pb-10 grid grid-cols-1 min-[360px]:grid-cols-2 gap-3 sm:gap-4 flex-grow overflow-y-auto content-start"></div>
+                <div class="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-[#1A1A1D] to-transparent pointer-events-none"></div>
             </div>
 
             <!-- Show more: later months -->
@@ -181,69 +206,137 @@
 
         const PLACEHOLDER_IMG = 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop';
 
-        function buildAccordionMonth(containerId, year, month, eventsByDay) {
-            const container = document.getElementById(containerId);
-            if (!container) return;
-            const monthName = MONTHS[month];
-            const lastDay = new Date(year, month, 0);
+        let mobileDashState = { year: 2026, month: 2, selectedDateKey: null };
+
+        function getTodayKey() {
+            const t = new Date();
+            return `${t.getFullYear()}-${String(t.getMonth() + 1).padStart(2,'0')}-${String(t.getDate()).padStart(2,'0')}`;
+        }
+
+        function buildMobileDashboard(eventsByDay) {
+            const todayKey = getTodayKey();
+            if (!mobileDashState.selectedDateKey || mobileDashState.selectedDateKey < todayKey)
+                mobileDashState.selectedDateKey = todayKey;
+            const [y, m] = [mobileDashState.year, mobileDashState.month];
+            const monthName = MONTHS[m];
+            document.getElementById('mobile-dash-month').textContent = `${monthName} ${y}`;
+            const selectedKey = mobileDashState.selectedDateKey;
+            const selDate = selectedKey ? new Date(selectedKey + 'T12:00:00') : null;
+            document.getElementById('mobile-dash-date').textContent = selDate
+                ? `${selDate.getDate()} ${monthName}, ${WEEKDAYS[selDate.getDay()]}`
+                : '—';
+
+            const lastDay = new Date(y, m, 0);
             const daysInMonth = lastDay.getDate();
-            const today = new Date();
-            const todayKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
-
             const esc = s => (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
-            let html = `<h2 class="text-lg font-semibold text-white mb-3 flex items-center gap-2"><i data-lucide="calendar-days" class="w-5 h-5 text-[#6F42C1]"></i>${monthName} ${year}</h2><div class="rounded-lg border border-white/5 bg-[#242428] overflow-hidden divide-y divide-white/5">`;
-
+            let scrollerHtml = '';
             for (let d = 1; d <= daysInMonth; d++) {
-                const dateKey = `${year}-${String(month).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
-                const isExpired = dateKey < todayKey;
-                if (isExpired) continue;
+                const dateKey = `${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+                if (dateKey < todayKey) continue;
                 const events = eventsByDay[dateKey] || [];
-                const weekday = new Date(year, month - 1, d).getDay();
+                const weekday = new Date(y, m - 1, d).getDay();
                 const wd = WEEKDAYS[weekday];
-                const dayLabel = `${d} ${monthName}`;
-
-                html += `<div class="accordion-day" data-date="${dateKey}">`;
-                html += `<button type="button" class="accordion-trigger w-full flex items-center justify-between gap-2 py-3 px-4 text-left bg-[#242428] hover:bg-[#2A2A2E] active:bg-[#2E2E32] transition-colors border-0 cursor-pointer" aria-expanded="false">`;
-                html += `<span class="font-semibold text-white">${d}</span><span class="text-[#A0A0A0] text-sm">${wd} ${monthName}</span>`;
-                html += `<span class="text-[#6F42C1] text-xs">${events.length} evento${events.length !== 1 ? 's' : ''}</span>`;
-                html += `<i data-lucide="chevron-down" class="accordion-chevron w-5 h-5 text-[#A0A0A0] shrink-0 transition-transform" stroke-width="2"></i>`;
-                html += `</button>`;
-                html += `<div class="accordion-panel bg-[#1A1A1D]/60">`;
-                html += '<div class="p-3 pt-0 space-y-3">';
-                if (events.length === 0) {
-                    html += '<p class="text-[#666] text-sm py-2">Sin eventos este día.</p>';
-                } else {
-                    events.forEach(ev => {
-                        const imgUrl = ev.image_url || PLACEHOLDER_IMG;
-                        const timeLabel = (ev.time || '').trim() || '—';
-                        const venueText = [ev.venue, ev.district].filter(Boolean).join(', ') || '';
-                        const link = ev.url || '#';
-                        html += `<a href="${esc(link)}" target="_blank" rel="noopener" class="event-card block rounded-lg border border-white/5 bg-[#242428] overflow-hidden shadow-sm hover:border-[#6F42C1]/40 transition-colors no-underline">`;
-                        html += `<div class="aspect-[2/1] bg-[#2A2A2E] bg-cover bg-center" style="background-image:url(${imgUrl})"></div>`;
-                        html += '<div class="p-3">';
-                        html += `<p class="text-[10px] font-medium uppercase tracking-wide text-[#6F42C1]">${esc(ev.type || ev.source || '')}</p>`;
-                        html += `<h3 class="text-sm font-semibold text-white line-clamp-2 mt-0.5">${esc(ev.title || 'Evento')}</h3>`;
-                        html += `<p class="text-xs text-[#A0A0A0] mt-1">${esc(timeLabel)}${venueText ? ' · ' + esc(venueText) : ''}</p>`;
-                        if ((ev.price || '').trim()) html += `<p class="text-xs text-[#C0C0C0] mt-0.5">${esc(ev.price)}</p>`;
-                        html += '</div></a>';
-                    });
+                const isActive = dateKey === selectedKey;
+                const pillClass = isActive
+                    ? 'snap-start min-w-0 w-full py-2.5 sm:py-3 rounded-[10px] bg-[#6F42C1] shadow-[0_0_18px_rgba(111,66,193,0.28)] flex flex-col items-center justify-center gap-0.5 border border-[rgba(111,66,193,0.35)]'
+                    : 'snap-start min-w-0 w-full py-2.5 sm:py-3 rounded-[10px] border border-[rgba(255,255,255,0.04)] bg-[#242428] flex flex-col items-center justify-center gap-0.5 hover:-translate-y-0.5 active:scale-95';
+                scrollerHtml += `<button type="button" class="${pillClass} mobile-date-pill" data-date="${dateKey}">`;
+                scrollerHtml += `<span class="text-xs font-light ${isActive ? 'text-[#E0E0E0]' : 'text-[#C0C0C0]'}">${wd}</span>`;
+                scrollerHtml += `<span class="text-base font-medium ${isActive ? 'text-[#FFFFFF] font-semibold' : 'text-[#E0E0E0]'}">${d}</span>`;
+                if (events.length > 0) {
+                    scrollerHtml += '<div class="flex gap-0.5 mt-0.5">';
+                    events.slice(0, 3).forEach(() => { scrollerHtml += '<div class="w-1 h-1 rounded-full ' + (isActive ? 'bg-[#FFFFFF]' : 'bg-[#6F42C1]') + '"></div>'; });
+                    scrollerHtml += '</div>';
                 }
-                html += '</div></div></div>';
+                scrollerHtml += '</button>';
             }
-            html += '</div>';
-            container.innerHTML = html;
+            const scrollerEl = document.getElementById('mobile-dash-scroller');
+            if (scrollerEl) scrollerEl.innerHTML = scrollerHtml;
 
-            container.querySelectorAll('.accordion-trigger').forEach(btn => {
+            scrollerEl.querySelectorAll('.mobile-date-pill').forEach(btn => {
                 btn.addEventListener('click', function() {
-                    const day = this.closest('.accordion-day');
-                    const isOpen = day.classList.contains('is-open');
-                    container.querySelectorAll('.accordion-day.is-open').forEach(d => d.classList.remove('is-open'));
-                    if (!isOpen) day.classList.add('is-open');
-                    btn.setAttribute('aria-expanded', !isOpen);
-                    if (typeof lucide !== 'undefined') lucide.createIcons();
+                    mobileDashState.selectedDateKey = this.getAttribute('data-date');
+                    buildMobileDashboard(cachedEventsByDay);
                 });
             });
+
+            const events = eventsByDay[selectedKey] || [];
+            const eventsEl = document.getElementById('mobile-dash-events');
+            if (!eventsEl) return;
+            if (events.length === 0) {
+                eventsEl.innerHTML = '<p class="text-[#666] text-sm py-4 text-center">Sin eventos este día.</p>';
+            } else {
+                const accentBySource = { Teleticket: '#3B82F6', Eventbrite: '#FFC107', EnLima: '#5CB85C' };
+                eventsEl.innerHTML = events.map((ev, i) => {
+                    const isFocal = i === 0;
+                    const typeLabel = ev.type || ev.source || '';
+                    const accent = accentBySource[ev.source] || '#6F42C1';
+                    const timeLabel = (ev.time || '').trim() || '—';
+                    const venueText = [ev.venue, ev.district].filter(Boolean).join(', ') || 'Lima';
+                    const link = ev.url || '#';
+                    const title = esc(ev.title || 'Evento');
+                    const schedule = ev.schedule ? esc(ev.schedule) : '';
+                    const price = (ev.price || '').trim() ? esc(ev.price) : '';
+                    if (isFocal) {
+                        return `<a href="${link}" target="_blank" rel="noopener" class="block transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(0,0,0,0.4)] bg-[#242428] rounded-[14px] p-5 shadow-[0_6px_20px_rgba(0,0,0,0.28)] border border-[rgba(255,255,255,0.06)] no-underline">
+                            <div class="flex flex-wrap items-center gap-x-2 gap-y-1 mb-3 text-sm">
+                                <span class="font-medium text-[#6F42C1]">${esc(typeLabel)}</span>
+                                <span class="w-px h-3 bg-white/20 shrink-0"></span>
+                                <span class="font-medium text-[#E0E0E0]">${esc(timeLabel)}</span>
+                                <span class="w-px h-3 bg-white/20 shrink-0"></span>
+                                <span class="text-[#A0A0A0]">${esc(venueText)}</span>
+                            </div>
+                            <h3 class="text-lg font-semibold tracking-tight text-[#FFFFFF] mb-4 leading-snug line-clamp-2">${title}</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3 text-sm text-[#C0C0C0]"><div class="w-7 h-7 rounded-md bg-[rgba(111,66,193,0.15)] flex items-center justify-center shrink-0"><i data-lucide="clock" class="w-4 h-4 text-[#6F42C1]" stroke-width="1.5"></i></div><span>${esc(timeLabel)}</span></div>
+                                <div class="flex items-center gap-3 text-sm text-[#C0C0C0]"><div class="w-7 h-7 rounded-md bg-[rgba(111,66,193,0.15)] flex items-center justify-center shrink-0"><i data-lucide="map-pin" class="w-4 h-4 text-[#6F42C1]" stroke-width="1.5"></i></div><span>${esc(venueText)}</span></div>
+                                ${price ? `<p class="text-sm text-[#A0A0A0]">${price}</p>` : ''}
+                            </div>
+                        </a>`;
+                    }
+                    return `<a href="${link}" target="_blank" rel="noopener" class="block transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(0,0,0,0.4)] bg-[#242428] rounded-[14px] p-5 shadow-[0_6px_20px_rgba(0,0,0,0.28)] border border-[rgba(255,255,255,0.06)] no-underline">
+                            <div class="flex flex-wrap items-center gap-x-2 gap-y-1 mb-3 text-sm">
+                                <span class="font-medium" style="color:${accent}">${esc(typeLabel)}</span>
+                                <span class="w-px h-3 bg-white/20 shrink-0"></span>
+                                <span class="font-medium text-[#E0E0E0]">${esc(timeLabel)}</span>
+                                <span class="w-px h-3 bg-white/20 shrink-0"></span>
+                                <span class="text-[#A0A0A0]">${esc(venueText)}</span>
+                            </div>
+                            <h3 class="text-lg font-semibold tracking-tight text-[#FFFFFF] mb-4 leading-snug line-clamp-2">${title}</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3 text-sm text-[#C0C0C0]"><div class="w-7 h-7 rounded-md flex items-center justify-center shrink-0" style="background:rgba(111,66,193,0.15)"><i data-lucide="clock" class="w-4 h-4 text-[#6F42C1]" stroke-width="1.5"></i></div><span>${esc(timeLabel)}</span></div>
+                                <div class="flex items-center gap-3 text-sm text-[#C0C0C0]"><div class="w-7 h-7 rounded-md flex items-center justify-center shrink-0" style="background:rgba(111,66,193,0.15)"><i data-lucide="map-pin" class="w-4 h-4 text-[#6F42C1]" stroke-width="1.5"></i></div><span>${esc(venueText)}</span></div>
+                                ${schedule ? `<div class="flex items-center gap-3 text-sm text-[#C0C0C0]"><div class="w-7 h-7 rounded-md flex items-center justify-center shrink-0" style="background:rgba(111,66,193,0.15)"><i data-lucide="calendar" class="w-4 h-4 text-[#6F42C1]" stroke-width="1.5"></i></div><span>${schedule}</span></div>` : ''}
+                                ${price ? `<p class="text-sm text-[#A0A0A0]">${price}</p>` : ''}
+                            </div>
+                        </a>`;
+                }).join('');
+            }
             if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+
+        function initMobileDashboard(eventsByDay) {
+            const todayKey = getTodayKey();
+            const [y, m] = [todayKey.split('-')[0], todayKey.split('-')[1]];
+            mobileDashState = { year: parseInt(y, 10), month: parseInt(m, 10), selectedDateKey: todayKey };
+            buildMobileDashboard(eventsByDay);
+
+            document.getElementById('mobile-dash-prev').onclick = function() {
+                if (mobileDashState.year === 2026 && mobileDashState.month <= 2) return;
+                mobileDashState.month--;
+                if (mobileDashState.month < 1) { mobileDashState.month = 12; mobileDashState.year--; }
+                const lastDay = new Date(mobileDashState.year, mobileDashState.month, 0).getDate();
+                const d = mobileDashState.selectedDateKey ? Math.min(parseInt(mobileDashState.selectedDateKey.split('-')[2], 10), lastDay) : 1;
+                mobileDashState.selectedDateKey = `${mobileDashState.year}-${String(mobileDashState.month).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+                buildMobileDashboard(cachedEventsByDay);
+            };
+            document.getElementById('mobile-dash-next').onclick = function() {
+                if (mobileDashState.year === 2026 && mobileDashState.month >= 3) return;
+                mobileDashState.month++;
+                if (mobileDashState.month > 12) { mobileDashState.month = 1; mobileDashState.year++; }
+                mobileDashState.selectedDateKey = `${mobileDashState.year}-${String(mobileDashState.month).padStart(2,'0')}-01`;
+                buildMobileDashboard(cachedEventsByDay);
+            };
         }
 
         let previewHideTimer = null;
@@ -263,8 +356,8 @@
 
             typeEl.textContent = ev.type || ev.source || '';
             titleEl.textContent = ev.title || 'Evento';
-            timeEl.textContent = (ev.time || '').trim() ? (ev.time || '').trim() : '';
-            timeEl.style.display = timeEl.textContent ? '' : 'none';
+            timeEl.textContent = (ev.time || '').trim() || '—';
+            timeEl.style.display = '';
             const venueText = [ev.venue, ev.district].filter(Boolean).join(', ') || '—';
             venueEl.textContent = venueText;
             venueEl.style.display = venueText !== '—' ? '' : 'none';
@@ -334,8 +427,7 @@
             if (!cachedEventsByDay) return;
             buildMonthCalendar('cal-feb-2026', 2026, 2, cachedEventsByDay);
             buildMonthCalendar('cal-mar-2026', 2026, 3, cachedEventsByDay);
-            buildAccordionMonth('accordion-feb-2026', 2026, 2, cachedEventsByDay);
-            buildAccordionMonth('accordion-mar-2026', 2026, 3, cachedEventsByDay);
+            buildMobileDashboard(cachedEventsByDay);
         }
 
         function init() {
@@ -344,18 +436,17 @@
                 .then(eventsByDay => {
                     cachedEventsByDay = eventsByDay;
                     renderCalendars();
+                    initMobileDashboard(eventsByDay);
                     setInterval(renderCalendars, 60000);
                 })
                 .catch(() => {
                     const msg = '<div class="p-8 text-center text-[#A0A0A0]">Cargando eventos… Ejecuta <code class="text-[#6F42C1]">python3 enlima_calendar.py</code> y recarga.</div>';
                     const calFeb = document.getElementById('cal-feb-2026');
                     const calMar = document.getElementById('cal-mar-2026');
-                    const accFeb = document.getElementById('accordion-feb-2026');
-                    const accMar = document.getElementById('accordion-mar-2026');
+                    const dash = document.getElementById('calendar-mobile-dashboard');
                     if (calFeb) calFeb.innerHTML = msg;
                     if (calMar) calMar.innerHTML = '';
-                    if (accFeb) accFeb.innerHTML = msg;
-                    if (accMar) accMar.innerHTML = '';
+                    if (dash) dash.innerHTML = '<div class="p-8 text-center text-[#A0A0A0]">' + msg + '</div>';
                 });
 
             document.getElementById('show-more-btn').addEventListener('click', function() {

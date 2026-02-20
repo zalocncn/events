@@ -79,25 +79,38 @@ def parse_date_range(date_str):
 def fetch_event_time(event_url):
     """Fetch event detail page and extract time (e.g. '20:00 Hrs.', '8:00 p.m.'). Returns '' if not found."""
     try:
-        r = requests.get(event_url, headers=HEADERS, timeout=10)
+        r = requests.get(event_url, headers=HEADERS, timeout=12)
         r.raise_for_status()
         text = r.text
-        # "26-02-2026 20:00 Hrs." or "20:00 Hrs."
+        # "26-02-2026 20:00 Hrs." or "20:00 Hrs." (24h or 12h)
         m = re.search(r"(\d{1,2}:\d{2})\s*[Hh]rs?\.?", text)
         if m:
             return _normalize_time(m.group(1))
-        # "Hora de inicio: ... 8:00 p.m." or "a las 8:00 p.m."
-        m = re.search(r"(?:inicio|a las|las)\s+(\d{1,2}:\d{2}\s*[ap]\.?m\.?)", text, re.I)
+        # "Hora de inicio: ... 8:00 p.m." or "comenzar a las 8:00 p.m." or "a las 8:00 p.m."
+        m = re.search(r"(?:inicio|comenzar|comienza|a las|las)\s+(\d{1,2}:\d{2}\s*[ap]\.?m\.?)", text, re.I)
         if m:
             return _normalize_time(m.group(1))
         # "jue. 26 Febrero 20:00" or "26 Febrero 20:00"
         m = re.search(r"(?:lun|mar|mi[eé]|jue|vie|s[aá]b|dom)\.?\s+\d{1,2}\s+\w+\s+(\d{1,2}:\d{2})", text, re.I)
         if m:
             return _normalize_time(m.group(1))
+        # DD-MM-YYYY HH:MM or DD/MM/YYYY HH:MM
         m = re.search(r"\d{1,2}[-/]\d{1,2}[-/]\d{2,4}\s+(\d{1,2}:\d{2})", text)
         if m:
             return _normalize_time(m.group(1))
-        # any HH:MM that looks like a time (avoid years like 2026)
+        # 12h format: 8:00 pm, 9:30 am
+        m = re.search(r"\b(\d{1,2}:\d{2}\s*[ap]\.?m\.?)\b", text, re.I)
+        if m:
+            return _normalize_time(m.group(1))
+        # 24h format: 20:00, 09:00 (near "horas" or after date-like text)
+        m = re.search(r"\b([0-2]?\d:\d{2})\s*(?:[Hh]rs?|[Hh]ora)?", text)
+        if m:
+            raw = m.group(1)
+            if re.match(r"^([0-2]?\d):(\d{2})$", raw):
+                h, mi = int(raw.split(":")[0]), raw.split(":")[1]
+                if 0 <= h <= 23 and 0 <= int(mi) <= 59:
+                    return _normalize_time(raw)
+        # Fallback: any HH:MM (1-12 for 12h, or 0-23 for 24h)
         m = re.search(r"\b(0?[1-9]|1[0-2]):(\d{2})\s*([ap]\.?m\.?)?", text, re.I)
         if m:
             return _normalize_time(m.group(0).strip())

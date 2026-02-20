@@ -14,7 +14,7 @@ permissions:
 jobs:
   update-calendar:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,8 +28,6 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run calendar scrapers
-        env:
-          SKIP_TELETICKET_FETCH: '1'   # Skip per-event time fetch to keep job fast; events still added
         run: python3 update_calendar.py
 
       - name: Commit and push if changed
