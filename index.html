@@ -80,15 +80,9 @@
             <!-- Mobile: Schedule Dashboard (date scroller + event cards) -->
             <div id="calendar-mobile-dashboard" class="md:hidden w-full max-w-full min-h-[480px] bg-[#1A1A1D] rounded-[20px] shadow-[0_12px_40px_rgba(0,0,0,0.35)] border border-[rgba(255,255,255,0.05)] overflow-hidden flex flex-col relative">
                 <div class="p-4 sm:p-5 pb-0">
-                    <div class="flex justify-between items-start mb-4 sm:mb-5">
-                        <div>
-                            <p class="text-sm font-light text-[#C0C0C0] mb-1">Hoy</p>
-                            <h1 id="mobile-dash-date" class="text-xl font-semibold tracking-tight text-[#FFFFFF]">—</h1>
-                        </div>
-                        <button type="button" class="bg-[#2E2E32] hover:bg-[#424242] transition-colors duration-200 text-[#E0E0E0] rounded-[6px] px-3 h-9 flex items-center gap-2 border border-[rgba(255,255,255,0.06)] shadow-[0_4px_12px_rgba(0,0,0,0.22)] focus:outline-none focus:ring-2 focus:ring-[rgba(111,66,193,0.45)]">
-                            <span class="text-sm font-normal">Todos los eventos</span>
-                            <i data-lucide="chevron-down" class="w-4 h-4 text-[#A0A0A0]" stroke-width="1.5"></i>
-                        </button>
+                    <div class="mb-4 sm:mb-5">
+                        <p class="text-sm font-light text-[#C0C0C0] mb-1">Hoy</p>
+                        <h1 id="mobile-dash-date" class="text-xl font-semibold tracking-tight text-[#FFFFFF]">—</h1>
                     </div>
                     <div class="flex items-center justify-center gap-4 mb-4 sm:mb-5">
                         <button type="button" id="mobile-dash-prev" class="p-2 hover:bg-[#2A2A2E] rounded-full transition-colors duration-200 group active:scale-95" aria-label="Mes anterior">
@@ -202,17 +196,17 @@
                 const pastClass = isExpired ? ' past' : '';
                 html += `<div class="calendar-day ${minDay} border-b border-r border-white/5 p-1.5 sm:p-2 md:p-3 ${hasEvents ? 'has-events' : ''}${pastClass} bg-[#242428]">`;
                 html += `<div class="day-num text-xs sm:text-sm font-semibold text-white mb-0.5 sm:mb-1">${d}</div>`;
-                html += '<div class="space-y-0.5 sm:space-y-1 overflow-y-auto max-h-[60px] sm:max-h-[80px] md:max-h-[100px] lg:max-h-[120px]">';
-                events.slice(0, 6).forEach(ev => {
+                html += '<div class="flex flex-wrap gap-1 items-center max-h-[60px] sm:max-h-[80px] md:max-h-[100px] lg:max-h-[120px] overflow-y-auto">';
+                events.forEach(ev => {
                     const timeLabel = toAmPm(ev.time) || '—';
                     const dataEvent = escAttr(JSON.stringify(ev));
+                    const tooltip = esc(limaFix(ev.title)) + (ev.schedule ? ' — ' + esc(limaFix(ev.schedule)) : '') + (timeLabel !== '—' ? ' · ' + timeLabel : '');
                     if (ev.url) {
-                        html += `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-item block rounded px-1 sm:px-1.5 py-0.5 text-[10px] sm:text-[11px] md:text-xs text-[#E0E0E0] hover:text-[#8B5CF6] truncate" title="${esc(limaFix(ev.title))}${ev.schedule ? ' — ' + esc(limaFix(ev.schedule)) : ''}" data-event="${dataEvent}">${esc(timeLabel)}</a>`;
+                        html += `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-item event-dot w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#6F42C1] hover:bg-[#8B5CF6] hover:scale-125 transition-all cursor-pointer shrink-0 inline-block" title="${tooltip}" data-event="${dataEvent}" aria-label="${esc(limaFix(ev.title))}"></a>`;
                     } else {
-                        html += `<span class="block text-[10px] sm:text-[11px] text-[#A0A0A0]">${esc(timeLabel)}</span>`;
+                        html += `<span class="event-item event-dot w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-[#A0A0A0] hover:bg-[#B0B0B0] hover:scale-125 transition-all cursor-pointer shrink-0 inline-block" title="${tooltip}" data-event="${dataEvent}" aria-label="${esc(limaFix(ev.title))}" role="button" tabindex="0"></span>`;
                     }
                 });
-                if (events.length > 6) html += `<span class="block text-[9px] sm:text-[10px] text-[#6F42C1]">+${events.length - 6} más</span>`;
                 html += '</div></div>';
             }
             const totalCells = startWeekday + daysInMonth;
