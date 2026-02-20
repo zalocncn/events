@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda Cultural — Lima | EnLima</title>
+    <title>Que hacemos — Eventos en Lima</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,11 +12,21 @@
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #1A1A1D; }
         ::-webkit-scrollbar-thumb { background: #2E2E32; border-radius: 4px; }
-        .calendar-day { min-height: 140px; }
+        .calendar-day { min-height: 72px; }
+        @media (min-width: 640px) { .calendar-day { min-height: 100px; } }
+        @media (min-width: 768px) { .calendar-day { min-height: 120px; } }
+        @media (min-width: 1024px) { .calendar-day { min-height: 140px; } }
         .calendar-day.has-events { background: rgba(111, 66, 193, 0.06); }
         .calendar-day.past { opacity: 0.55; background: #1A1A1D; pointer-events: none; }
         .calendar-day.past .day-num { text-decoration: line-through; color: #666; }
         .event-item:hover { background: rgba(255,255,255,0.06); }
+        #calendar-container .cal-grid-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        @media (min-width: 640px) { #calendar-container .cal-grid-wrapper { overflow-x: visible; } }
+        #event-preview { z-index: 1000; pointer-events: none; }
+        #event-preview.visible { pointer-events: auto; }
+        .accordion-panel { max-height: 0; overflow: hidden; transition: max-height 0.25s ease-out; }
+        .accordion-day.is-open .accordion-panel { max-height: 2000px; transition: max-height 0.35s ease-in; }
+        .accordion-day.is-open .accordion-chevron { transform: rotate(180deg); }
     </style>
 </head>
 <body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white pb-12">
@@ -35,31 +45,41 @@
     </header>
 
     <main class="flex-1 w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 flex flex-col items-center">
-        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight uppercase text-white text-center mb-2">
-            Agenda Cultural
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-white text-center mb-1">
+            Que hacemos
         </h1>
-        <p class="text-[#A0A0A0] text-sm mb-10 text-center max-w-xl">
-            Eventos de <a href="https://enlima.pe/" target="_blank" rel="noopener" class="text-[#8B5CF6] hover:underline">EnLima</a>, <a href="https://www.eventbrite.com.pe/d/peru--miraflores/events/" target="_blank" rel="noopener" class="text-[#8B5CF6] hover:underline">Eventbrite</a> y <a href="https://teleticket.com.pe/todos" target="_blank" rel="noopener" class="text-[#8B5CF6] hover:underline">Teleticket</a> por día
+        <p class="text-[#A0A0A0] text-sm sm:text-base font-medium text-center mb-2">
+            Eventos en Lima
+        </p>
+        <p class="text-[#888] text-xs sm:text-sm mb-10 text-center max-w-xl">
+            De <a href="https://enlima.pe/" target="_blank" rel="noopener" class="text-[#8B5CF6] hover:underline">EnLima</a>, <a href="https://www.eventbrite.com.pe/d/peru--miraflores/events/" target="_blank" rel="noopener" class="text-[#8B5CF6] hover:underline">Eventbrite</a> y <a href="https://teleticket.com.pe/todos" target="_blank" rel="noopener" class="text-[#8B5CF6] hover:underline">Teleticket</a>
         </p>
 
-        <div id="calendar-container" class="w-full space-y-16">
-            <!-- February 2026 -->
+        <div id="calendar-container" class="w-full space-y-8 sm:space-y-12 lg:space-y-16">
+            <!-- Desktop: grid calendar (md and up) -->
+            <div id="calendar-grid-view" class="hidden md:block space-y-8 sm:space-y-12 lg:space-y-16">
             <section class="w-full">
-                <h2 class="text-xl sm:text-2xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <i data-lucide="calendar-days" class="w-6 h-6 text-[#6F42C1]"></i>
+                <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-white mb-3 sm:mb-4 flex items-center gap-2">
+                    <i data-lucide="calendar-days" class="w-5 h-5 sm:w-6 sm:h-6 text-[#6F42C1]"></i>
                     Febrero 2026
                 </h2>
-                <div id="cal-feb-2026" class="rounded-[10px] border border-white/5 bg-[#242428] overflow-hidden shadow-[0_6px_20px_rgba(0,0,0,0.28)]"></div>
+                <div id="cal-feb-2026" class="rounded-lg sm:rounded-[10px] border border-white/5 bg-[#242428] overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.2)] sm:shadow-[0_6px_20px_rgba(0,0,0,0.28)]"></div>
             </section>
 
-            <!-- March 2026 -->
             <section class="w-full">
-                <h2 class="text-xl sm:text-2xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <i data-lucide="calendar-days" class="w-6 h-6 text-[#6F42C1]"></i>
+                <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-white mb-3 sm:mb-4 flex items-center gap-2">
+                    <i data-lucide="calendar-days" class="w-5 h-5 sm:w-6 sm:h-6 text-[#6F42C1]"></i>
                     Marzo 2026
                 </h2>
-                <div id="cal-mar-2026" class="rounded-[10px] border border-white/5 bg-[#242428] overflow-hidden shadow-[0_6px_20px_rgba(0,0,0,0.28)]"></div>
+                <div id="cal-mar-2026" class="rounded-lg sm:rounded-[10px] border border-white/5 bg-[#242428] overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.2)] sm:shadow-[0_6px_20px_rgba(0,0,0,0.28)]"></div>
             </section>
+            </div>
+
+            <!-- Mobile: accordion by day (tap to expand event cards) -->
+            <div id="calendar-accordion-view" class="md:hidden space-y-6">
+                <section id="accordion-feb-2026" class="w-full"></section>
+                <section id="accordion-mar-2026" class="w-full"></section>
+            </div>
 
             <!-- Show more: later months -->
             <section class="w-full" id="more-months-section" style="display: none;">
@@ -74,13 +94,31 @@
             </section>
         </div>
 
-        <div class="mt-12 flex justify-center w-full pb-8">
+        <div class="mt-8 sm:mt-12 flex justify-center w-full pb-8">
             <button id="show-more-btn" class="h-10 px-6 bg-[#242428] border border-white/5 hover:border-white/10 hover:bg-[#2A2A2E] rounded-[6px] text-sm font-medium text-[#E0E0E0] hover:text-white transition-all flex items-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.22)] hover:-translate-y-px">
                 <span>Mostrar más meses</span>
                 <i data-lucide="chevron-down" class="w-4 h-4 text-[#A0A0A0]" stroke-width="1.5"></i>
             </button>
         </div>
     </main>
+
+    <!-- Event hover preview popover -->
+    <div id="event-preview" class="fixed hidden opacity-0 transition-opacity duration-150 w-[min(320px,calc(100vw-24px))] rounded-xl border border-white/10 bg-[#242428] shadow-[0_12px_40px_rgba(0,0,0,0.5)] overflow-hidden" aria-hidden="true">
+        <div class="aspect-video bg-[#2A2A2E] bg-cover bg-center" id="event-preview-image"></div>
+        <div class="p-3 sm:p-4 space-y-2">
+            <p class="text-[10px] sm:text-xs font-medium uppercase tracking-wide text-[#6F42C1]" id="event-preview-type"></p>
+            <h3 class="text-sm sm:text-base font-semibold text-white line-clamp-2 leading-snug" id="event-preview-title"></h3>
+            <div class="flex flex-wrap gap-x-3 gap-y-1 text-xs text-[#A0A0A0]">
+                <span class="flex items-center gap-1" id="event-preview-time"></span>
+                <span class="flex items-center gap-1" id="event-preview-venue"></span>
+            </div>
+            <p class="text-xs text-[#C0C0C0]" id="event-preview-price"></p>
+            <p class="text-[11px] text-[#888]" id="event-preview-schedule"></p>
+            <a id="event-preview-link" href="#" target="_blank" rel="noopener" class="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#8B5CF6] hover:text-[#A78BFA]">
+                Ver evento <i data-lucide="external-link" class="w-3.5 h-3.5" stroke-width="1.5"></i>
+            </a>
+        </div>
+    </div>
 
     <script>
         const WEEKDAYS = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
@@ -94,15 +132,19 @@
             const daysInMonth = lastDay.getDate();
             const startWeekday = firstDay.getDay();
 
-            let html = '<div class="grid grid-cols-7 border-b border-white/5">';
+            const esc = s => (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+            const escAttr = s => esc(s).replace(/'/g, '&#39;');
+            const minDay = 'min-h-[72px] sm:min-h-[100px] md:min-h-[120px] lg:min-h-[140px]';
+
+            let html = '<div class="cal-grid-wrapper min-w-0"><div class="grid grid-cols-7 border-b border-white/5 min-w-[280px]">';
             WEEKDAYS.forEach(w => {
-                html += `<div class="p-2 sm:p-3 text-center text-xs font-medium text-[#A0A0A0] uppercase border-r border-white/5 last:border-r-0">${w}</div>`;
+                html += `<div class="p-1.5 sm:p-2 md:p-3 text-center text-[10px] sm:text-xs font-medium text-[#A0A0A0] uppercase border-r border-white/5 last:border-r-0">${w}</div>`;
             });
-            html += '</div><div class="grid grid-cols-7">';
+            html += `</div><div class="grid grid-cols-7 min-w-[280px]">`;
 
             let emptyCells = startWeekday;
             while (emptyCells--) {
-                html += '<div class="min-h-[120px] sm:min-h-[140px] border-b border-r border-white/5 bg-[#1A1A1D]/50 p-2 sm:p-3"></div>';
+                html += `<div class="calendar-day ${minDay} border-b border-r border-white/5 bg-[#1A1A1D]/50 p-1.5 sm:p-2 md:p-3"></div>`;
             }
             const today = new Date();
             const todayKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
@@ -111,26 +153,179 @@
                 const isExpired = dateKey < todayKey;
                 const events = eventsByDay[dateKey] || [];
                 const hasEvents = events.length > 0;
-                const esc = s => (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
                 const pastClass = isExpired ? ' past' : '';
-                html += `<div class="calendar-day min-h-[120px] sm:min-h-[140px] border-b border-r border-white/5 p-2 sm:p-3 ${hasEvents ? 'has-events' : ''}${pastClass} bg-[#242428]">`;
-                html += `<div class="day-num text-sm font-semibold text-white mb-1">${d}</div>`;
-                html += '<div class="space-y-1 overflow-y-auto max-h-[100px] sm:max-h-[120px]">';
+                html += `<div class="calendar-day ${minDay} border-b border-r border-white/5 p-1.5 sm:p-2 md:p-3 ${hasEvents ? 'has-events' : ''}${pastClass} bg-[#242428]">`;
+                html += `<div class="day-num text-xs sm:text-sm font-semibold text-white mb-0.5 sm:mb-1">${d}</div>`;
+                html += '<div class="space-y-0.5 sm:space-y-1 overflow-y-auto max-h-[60px] sm:max-h-[80px] md:max-h-[100px] lg:max-h-[120px]">';
                 events.slice(0, 6).forEach(ev => {
                     const timeLabel = (ev.time || '').trim() || '—';
-                    const link = ev.url ? `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-item block rounded px-1.5 py-0.5 text-[11px] sm:text-xs text-[#E0E0E0] hover:text-[#8B5CF6] truncate" title="${esc(ev.title)}${ev.schedule ? ' — ' + esc(ev.schedule) : ''}">${esc(timeLabel)}</a>` : `<span class="block text-[11px] text-[#A0A0A0]">${esc(timeLabel)}</span>`;
-                    html += link;
+                    const dataEvent = escAttr(JSON.stringify(ev));
+                    if (ev.url) {
+                        html += `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-item block rounded px-1 sm:px-1.5 py-0.5 text-[10px] sm:text-[11px] md:text-xs text-[#E0E0E0] hover:text-[#8B5CF6] truncate" title="${esc(ev.title)}${ev.schedule ? ' — ' + esc(ev.schedule) : ''}" data-event="${dataEvent}">${esc(timeLabel)}</a>`;
+                    } else {
+                        html += `<span class="block text-[10px] sm:text-[11px] text-[#A0A0A0]">${esc(timeLabel)}</span>`;
+                    }
                 });
-                if (events.length > 6) html += `<span class="block text-[10px] text-[#6F42C1]">+${events.length - 6} más</span>`;
+                if (events.length > 6) html += `<span class="block text-[9px] sm:text-[10px] text-[#6F42C1]">+${events.length - 6} más</span>`;
                 html += '</div></div>';
             }
             const totalCells = startWeekday + daysInMonth;
             const endPad = (7 - (totalCells % 7)) % 7;
             for (let i = 0; i < endPad; i++) {
-                html += '<div class="min-h-[120px] sm:min-h-[140px] border-b border-r border-white/5 bg-[#1A1A1D]/50 p-2 sm:p-3"></div>';
+                html += `<div class="calendar-day ${minDay} border-b border-r border-white/5 bg-[#1A1A1D]/50 p-1.5 sm:p-2 md:p-3"></div>`;
+            }
+            html += '</div></div>';
+            container.innerHTML = html;
+            attachEventPreviewListeners(container);
+        }
+
+        const PLACEHOLDER_IMG = 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop';
+
+        function buildAccordionMonth(containerId, year, month, eventsByDay) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            const monthName = MONTHS[month];
+            const lastDay = new Date(year, month, 0);
+            const daysInMonth = lastDay.getDate();
+            const today = new Date();
+            const todayKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+
+            const esc = s => (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+            let html = `<h2 class="text-lg font-semibold text-white mb-3 flex items-center gap-2"><i data-lucide="calendar-days" class="w-5 h-5 text-[#6F42C1]"></i>${monthName} ${year}</h2><div class="rounded-lg border border-white/5 bg-[#242428] overflow-hidden divide-y divide-white/5">`;
+
+            for (let d = 1; d <= daysInMonth; d++) {
+                const dateKey = `${year}-${String(month).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+                const isExpired = dateKey < todayKey;
+                if (isExpired) continue;
+                const events = eventsByDay[dateKey] || [];
+                const weekday = new Date(year, month - 1, d).getDay();
+                const wd = WEEKDAYS[weekday];
+                const dayLabel = `${d} ${monthName}`;
+
+                html += `<div class="accordion-day" data-date="${dateKey}">`;
+                html += `<button type="button" class="accordion-trigger w-full flex items-center justify-between gap-2 py-3 px-4 text-left bg-[#242428] hover:bg-[#2A2A2E] active:bg-[#2E2E32] transition-colors border-0 cursor-pointer" aria-expanded="false">`;
+                html += `<span class="font-semibold text-white">${d}</span><span class="text-[#A0A0A0] text-sm">${wd} ${monthName}</span>`;
+                html += `<span class="text-[#6F42C1] text-xs">${events.length} evento${events.length !== 1 ? 's' : ''}</span>`;
+                html += `<i data-lucide="chevron-down" class="accordion-chevron w-5 h-5 text-[#A0A0A0] shrink-0 transition-transform" stroke-width="2"></i>`;
+                html += `</button>`;
+                html += `<div class="accordion-panel bg-[#1A1A1D]/60">`;
+                html += '<div class="p-3 pt-0 space-y-3">';
+                if (events.length === 0) {
+                    html += '<p class="text-[#666] text-sm py-2">Sin eventos este día.</p>';
+                } else {
+                    events.forEach(ev => {
+                        const imgUrl = ev.image_url || PLACEHOLDER_IMG;
+                        const timeLabel = (ev.time || '').trim() || '—';
+                        const venueText = [ev.venue, ev.district].filter(Boolean).join(', ') || '';
+                        const link = ev.url || '#';
+                        html += `<a href="${esc(link)}" target="_blank" rel="noopener" class="event-card block rounded-lg border border-white/5 bg-[#242428] overflow-hidden shadow-sm hover:border-[#6F42C1]/40 transition-colors no-underline">`;
+                        html += `<div class="aspect-[2/1] bg-[#2A2A2E] bg-cover bg-center" style="background-image:url(${imgUrl})"></div>`;
+                        html += '<div class="p-3">';
+                        html += `<p class="text-[10px] font-medium uppercase tracking-wide text-[#6F42C1]">${esc(ev.type || ev.source || '')}</p>`;
+                        html += `<h3 class="text-sm font-semibold text-white line-clamp-2 mt-0.5">${esc(ev.title || 'Evento')}</h3>`;
+                        html += `<p class="text-xs text-[#A0A0A0] mt-1">${esc(timeLabel)}${venueText ? ' · ' + esc(venueText) : ''}</p>`;
+                        if ((ev.price || '').trim()) html += `<p class="text-xs text-[#C0C0C0] mt-0.5">${esc(ev.price)}</p>`;
+                        html += '</div></a>';
+                    });
+                }
+                html += '</div></div></div>';
             }
             html += '</div>';
             container.innerHTML = html;
+
+            container.querySelectorAll('.accordion-trigger').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const day = this.closest('.accordion-day');
+                    const isOpen = day.classList.contains('is-open');
+                    container.querySelectorAll('.accordion-day.is-open').forEach(d => d.classList.remove('is-open'));
+                    if (!isOpen) day.classList.add('is-open');
+                    btn.setAttribute('aria-expanded', !isOpen);
+                    if (typeof lucide !== 'undefined') lucide.createIcons();
+                });
+            });
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+
+        let previewHideTimer = null;
+
+        function showEventPreview(ev, anchor) {
+            const pop = document.getElementById('event-preview');
+            if (!pop) return;
+            const rect = anchor.getBoundingClientRect();
+            const imgEl = document.getElementById('event-preview-image');
+            const typeEl = document.getElementById('event-preview-type');
+            const titleEl = document.getElementById('event-preview-title');
+            const timeEl = document.getElementById('event-preview-time');
+            const venueEl = document.getElementById('event-preview-venue');
+            const priceEl = document.getElementById('event-preview-price');
+            const scheduleEl = document.getElementById('event-preview-schedule');
+            const linkEl = document.getElementById('event-preview-link');
+
+            typeEl.textContent = ev.type || ev.source || '';
+            titleEl.textContent = ev.title || 'Evento';
+            timeEl.textContent = (ev.time || '').trim() ? (ev.time || '').trim() : '';
+            timeEl.style.display = timeEl.textContent ? '' : 'none';
+            const venueText = [ev.venue, ev.district].filter(Boolean).join(', ') || '—';
+            venueEl.textContent = venueText;
+            venueEl.style.display = venueText !== '—' ? '' : 'none';
+            priceEl.textContent = (ev.price || '').trim() ? 'Precio: ' + (ev.price || '').trim() : '';
+            priceEl.style.display = priceEl.textContent ? '' : 'none';
+            scheduleEl.textContent = ev.schedule || '';
+            scheduleEl.style.display = scheduleEl.textContent ? '' : 'none';
+            linkEl.href = ev.url || '#';
+
+            const imgUrl = ev.image_url || 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop';
+            imgEl.style.backgroundImage = `url(${imgUrl})`;
+
+            pop.classList.remove('hidden');
+            pop.style.left = '-9999px';
+            pop.style.top = '0';
+            pop.classList.add('visible');
+            pop.style.opacity = '1';
+
+            requestAnimationFrame(() => {
+                const pad = 12;
+                const w = pop.offsetWidth || 320;
+                const h = pop.offsetHeight || 200;
+                let left = rect.left + (rect.width / 2) - (w / 2);
+                let top = rect.bottom + pad;
+                if (top + h > window.innerHeight - pad) top = rect.top - h - pad;
+                if (left < pad) left = pad;
+                if (left + w > window.innerWidth - pad) left = window.innerWidth - w - pad;
+                pop.style.left = left + 'px';
+                pop.style.top = top + 'px';
+                if (typeof lucide !== 'undefined') lucide.createIcons();
+            });
+        }
+
+        function hideEventPreview() {
+            const pop = document.getElementById('event-preview');
+            if (!pop) return;
+            pop.classList.remove('visible');
+            pop.style.opacity = '0';
+            setTimeout(() => pop.classList.add('hidden'), 150);
+        }
+
+        function attachEventPreviewListeners(container) {
+            if (!container) return;
+            container.querySelectorAll('.event-item[data-event]').forEach(a => {
+                a.addEventListener('mouseenter', function() {
+                    if (previewHideTimer) clearTimeout(previewHideTimer);
+                    previewHideTimer = null;
+                    try {
+                        const ev = JSON.parse(this.getAttribute('data-event') || '{}');
+                        showEventPreview(ev, this);
+                    } catch (_) {}
+                });
+                a.addEventListener('mouseleave', function() {
+                    previewHideTimer = setTimeout(hideEventPreview, 120);
+                });
+            });
+            const pop = document.getElementById('event-preview');
+            if (pop) {
+                pop.addEventListener('mouseenter', () => { if (previewHideTimer) clearTimeout(previewHideTimer); previewHideTimer = null; });
+                pop.addEventListener('mouseleave', () => { previewHideTimer = setTimeout(hideEventPreview, 120); });
+            }
         }
 
         let cachedEventsByDay = null;
@@ -139,6 +334,8 @@
             if (!cachedEventsByDay) return;
             buildMonthCalendar('cal-feb-2026', 2026, 2, cachedEventsByDay);
             buildMonthCalendar('cal-mar-2026', 2026, 3, cachedEventsByDay);
+            buildAccordionMonth('accordion-feb-2026', 2026, 2, cachedEventsByDay);
+            buildAccordionMonth('accordion-mar-2026', 2026, 3, cachedEventsByDay);
         }
 
         function init() {
@@ -150,8 +347,15 @@
                     setInterval(renderCalendars, 60000);
                 })
                 .catch(() => {
-                    document.getElementById('cal-feb-2026').innerHTML = '<div class="p-8 text-center text-[#A0A0A0]">Cargando eventos… Ejecuta <code class="text-[#6F42C1]">python3 enlima_calendar.py</code> y recarga.</div>';
-                    document.getElementById('cal-mar-2026').innerHTML = '';
+                    const msg = '<div class="p-8 text-center text-[#A0A0A0]">Cargando eventos… Ejecuta <code class="text-[#6F42C1]">python3 enlima_calendar.py</code> y recarga.</div>';
+                    const calFeb = document.getElementById('cal-feb-2026');
+                    const calMar = document.getElementById('cal-mar-2026');
+                    const accFeb = document.getElementById('accordion-feb-2026');
+                    const accMar = document.getElementById('accordion-mar-2026');
+                    if (calFeb) calFeb.innerHTML = msg;
+                    if (calMar) calMar.innerHTML = '';
+                    if (accFeb) accFeb.innerHTML = msg;
+                    if (accMar) accMar.innerHTML = '';
                 });
 
             document.getElementById('show-more-btn').addEventListener('click', function() {
