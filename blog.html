@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Que hacemos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', -apple-system, sans-serif; background-color: #1A1A1D; color: #FFFFFF; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1A1A1D; }
+        ::-webkit-scrollbar-thumb { background: #2E2E32; border-radius: 4px; }
+        .selection\:bg-\[\#6F42C1\]::selection { background-color: #6F42C1; color: white; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white pb-12">
+
+    <header class="w-full h-14 px-4 md:px-6 flex items-center justify-between border-b border-white/5 bg-[#1A1A1D] sticky top-0 z-50">
+        <a href="index.html" class="text-[#A0A0A0] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 rounded-sm flex items-center gap-2" aria-label="Volver al inicio">
+            <i data-lucide="arrow-left" class="w-5 h-5" stroke-width="1.5"></i>
+            <span class="text-sm font-medium hidden sm:inline">Eventos</span>
+        </a>
+        <div class="flex items-center gap-2">
+            <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#FFC107] to-[#6F42C1] flex items-center justify-center">
+                <i data-lucide="sun" class="w-3.5 h-3.5 text-white" stroke-width="2"></i>
+            </div>
+            <span class="text-base font-semibold tracking-tight text-white">Lima</span>
+        </div>
+        <div class="w-5 h-5"></div>
+    </header>
+
+    <main class="flex-1 w-full max-w-[720px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-14">
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-white text-center mb-1">
+            Blog
+        </h1>
+        <p class="text-[#A0A0A0] text-sm sm:text-base font-medium text-center mb-10">
+            Que hacemos — Eventos en Lima
+        </p>
+
+        <div class="space-y-8 sm:space-y-10">
+            <article class="rounded-[10px] border border-white/5 bg-[#242428] overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.2)]">
+                <div class="p-5 sm:p-6 md:p-8">
+                    <p class="text-[10px] sm:text-xs font-medium uppercase tracking-wide text-[#6F42C1] mb-2">Lima</p>
+                    <h2 class="text-lg sm:text-xl font-semibold text-white mb-2">
+                        <a href="#" class="hover:text-[#8B5CF6] transition-colors">Bienvenida al blog</a>
+                    </h2>
+                    <p class="text-sm text-[#A0A0A0] mb-4">Aquí compartiremos novedades, recomendaciones y más sobre eventos y cultura en Lima.</p>
+                    <p class="text-xs text-[#888]">Próximamente más entradas.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="w-full border-t border-white/5 mt-12 py-6">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <a href="index.html" class="text-sm text-[#A0A0A0] hover:text-[#8B5CF6] transition-colors flex items-center gap-1.5">
+                <i data-lucide="calendar-days" class="w-4 h-4" stroke-width="1.5"></i>
+                Volver al calendario
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+    </script>
+</body>
+</html>

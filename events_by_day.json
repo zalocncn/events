@@ -377,6 +377,26 @@
   ],
   "2026-02-21": [
     {
+      "time": "14:00",
+      "type": "Eventbrite",
+      "title": "Casi lleno Black Children's Book Museum: Black Children's Bo",
+      "url": "https://www.eventbrite.com/e/black-childrens-book-museum-black-childrens-book-week-exhibit-opening-tickets-1754471614829?aff=ebdssbcitybrowse",
+      "venue": "Miraflores",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "09:00",
+      "type": "Eventbrite",
+      "title": "La venta se termina pronto Festival Cafesazo Peruano 2026 -",
+      "url": "https://www.eventbrite.com.pe/e/festival-cafesazo-peruano-2026-edicion-verano-tickets-1980791187764?aff=ebdssbcitybrowse",
+      "venue": "Miraflores",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "3:50 am",
       "type": "Especiales",
       "title": "¡FULL DAY PARACAS + ICA CON RUTAS INCAS!",
@@ -719,26 +739,6 @@
       "district": "Lima",
       "price": "",
       "source": "Teleticket"
-    },
-    {
-      "time": "14:00",
-      "type": "Eventbrite",
-      "title": "Casi lleno Black Children's Book Museum: Black Children's Bo",
-      "url": "https://www.eventbrite.com/e/black-childrens-book-museum-black-childrens-book-week-exhibit-opening-tickets-1754471614829?aff=ebdssbcitybrowse",
-      "venue": "Miraflores",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
-      "time": "09:00",
-      "type": "Eventbrite",
-      "title": "La venta se termina pronto Festival Cafesazo Peruano 2026 -",
-      "url": "https://www.eventbrite.com.pe/e/festival-cafesazo-peruano-2026-edicion-verano-tickets-1980791187764?aff=ebdssbcitybrowse",
-      "venue": "Miraflores",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
     }
   ],
   "2026-02-22": [
@@ -858,6 +858,25 @@
   ],
   "2026-02-26": [
     {
+      "time": "9:00 pm",
+      "type": "Conciertos",
+      "title": "Alejandro Sanz en Lima",
+      "url": "https://enlima.pe/agenda-cultural/conciertos/alejandro-sanz-en-lima",
+      "venue": "Estadio Nacional",
+      "district": "Lince",
+      "price": "S/ 194 a S/ 282"
+    },
+    {
+      "time": "7:00 PM",
+      "type": "Eventbrite",
+      "title": "BE THE VOICE - VOL. 2",
+      "url": "https://www.eventbrite.com/e/be-the-voice-vol-2-tickets-1982716394108?aff=ebdssbcitybrowse",
+      "venue": "Rock and Pez",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "7:30 pm",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS",
@@ -917,28 +936,29 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 26 Feb al 27 Feb"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Conciertos",
-      "title": "Alejandro Sanz en Lima",
-      "url": "https://enlima.pe/agenda-cultural/conciertos/alejandro-sanz-en-lima",
-      "venue": "Estadio Nacional",
-      "district": "Lince",
-      "price": "S/ 194 a S/ 282"
-    },
-    {
-      "time": "7:00 PM",
-      "type": "Eventbrite",
-      "title": "BE THE VOICE - VOL. 2",
-      "url": "https://www.eventbrite.com/e/be-the-voice-vol-2-tickets-1982716394108?aff=ebdssbcitybrowse",
-      "venue": "Rock and Pez",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
     }
   ],
   "2026-02-27": [
+    {
+      "time": "9:00 AM",
+      "type": "Eventbrite",
+      "title": "Se venden rápido Career Fair: Exclusive Tech Hiring Event-New Tickets Available",
+      "url": "https://www.eventbrite.com/e/career-fair-exclusive-tech-hiring-event-new-tickets-available-tickets-63049080497?aff=ebdssbcitybrowse",
+      "venue": "PST",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "8:00 PM",
+      "type": "Eventbrite",
+      "title": "Se venden rápido The Alamo: 2004 - Film History Livestream",
+      "url": "https://www.eventbrite.com/e/the-alamo-2004-film-history-livestream-tickets-1066589661389?aff=ebdssbcitybrowse",
+      "venue": "EST",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
     {
       "time": "2:45 pm",
       "type": "Deportes",
@@ -989,26 +1009,6 @@
       "district": "Lima",
       "price": "",
       "source": "Teleticket"
-    },
-    {
-      "time": "9:00 AM",
-      "type": "Eventbrite",
-      "title": "Se venden rápido Career Fair: Exclusive Tech Hiring Event-New Tickets Available",
-      "url": "https://www.eventbrite.com/e/career-fair-exclusive-tech-hiring-event-new-tickets-available-tickets-63049080497?aff=ebdssbcitybrowse",
-      "venue": "PST",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
-      "time": "8:00 PM",
-      "type": "Eventbrite",
-      "title": "Se venden rápido The Alamo: 2004 - Film History Livestream",
-      "url": "https://www.eventbrite.com/e/the-alamo-2004-film-history-livestream-tickets-1066589661389?aff=ebdssbcitybrowse",
-      "venue": "EST",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
     }
   ],
   "2026-02-28": [
@@ -1199,6 +1199,26 @@
   ],
   "2026-03-06": [
     {
+      "time": "8:29 PM",
+      "type": "Eventbrite",
+      "title": "NASA's Artemis II Mission Launch",
+      "url": "https://www.eventbrite.com/e/nasas-artemis-ii-mission-launch-registration-1074571685839?aff=ebdssbcitybrowse",
+      "venue": "EST",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "7:00 PM",
+      "type": "Eventbrite",
+      "title": "FUN x Mujeres sin Filtro Ed. Las mujeres no lloran las mujeres facturan",
+      "url": "https://www.eventbrite.com.pe/e/fun-x-mujeres-sin-filtro-ed-las-mujeres-no-lloran-las-mujeres-facturan-tickets-1981786992242?aff=ebdssbcitybrowse",
+      "venue": "Seedspace Lima - Swiss Tower",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "8:00 pm",
       "type": "Festival",
       "title": "FESTIVAL DE REPARTO 5",
@@ -1299,29 +1319,19 @@
       "district": "Lima",
       "price": "",
       "source": "Teleticket"
-    },
-    {
-      "time": "8:29 PM",
-      "type": "Eventbrite",
-      "title": "NASA's Artemis II Mission Launch",
-      "url": "https://www.eventbrite.com/e/nasas-artemis-ii-mission-launch-registration-1074571685839?aff=ebdssbcitybrowse",
-      "venue": "EST",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
-      "time": "7:00 PM",
-      "type": "Eventbrite",
-      "title": "FUN x Mujeres sin Filtro Ed. Las mujeres no lloran las mujeres facturan",
-      "url": "https://www.eventbrite.com.pe/e/fun-x-mujeres-sin-filtro-ed-las-mujeres-no-lloran-las-mujeres-facturan-tickets-1981786992242?aff=ebdssbcitybrowse",
-      "venue": "Seedspace Lima - Swiss Tower",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
     }
   ],
   "2026-03-07": [
+    {
+      "time": "8:00 AM",
+      "type": "Eventbrite",
+      "title": "UnderHouse 2",
+      "url": "https://www.eventbrite.com/e/underhouse-2-tickets-1980578479548?aff=ebdssbcitybrowse",
+      "venue": "Tierra Baldía - Restaurante Cultural",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
     {
       "time": "11:00 am",
       "type": "Festival",
@@ -1423,16 +1433,6 @@
       "district": "Lima",
       "price": "",
       "source": "Teleticket"
-    },
-    {
-      "time": "8:00 AM",
-      "type": "Eventbrite",
-      "title": "UnderHouse 2",
-      "url": "https://www.eventbrite.com/e/underhouse-2-tickets-1980578479548?aff=ebdssbcitybrowse",
-      "venue": "Tierra Baldía - Restaurante Cultural",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
     }
   ],
   "2026-03-08": [
@@ -1620,7 +1620,7 @@
   ],
   "2026-03-15": [
     {
-      "time": "",
+      "time": "11:30 am",
       "type": "Teatro",
       "title": "BLANCANIEVES Y LOS 7 ENANOS",
       "url": "https://teleticket.com.pe/evento/blancanieves-y-los-7-enanos-teatro-antonio-banderas",
@@ -1840,16 +1840,6 @@
   ],
   "2026-03-23": [
     {
-      "time": "9:00 pm",
-      "type": "Música",
-      "title": "THE KILLERS EN LIMA",
-      "url": "https://teleticket.com.pe/the-killers-lima-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
       "time": "5:00 PM",
       "type": "Eventbrite",
       "title": "2026 EducationUSA Community College Fair | Lima",
@@ -1858,6 +1848,16 @@
       "district": "Miraflores",
       "price": "",
       "source": "Eventbrite"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "THE KILLERS EN LIMA",
+      "url": "https://teleticket.com.pe/the-killers-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
     }
   ],
   "2026-03-24": [
@@ -1885,16 +1885,6 @@
   "2026-03-25": [],
   "2026-03-26": [
     {
-      "time": "9:00 pm",
-      "type": "Musical",
-      "title": "EL PRIMER DAMO - UNA COMEDIA MUSICAL",
-      "url": "https://teleticket.com.pe/evento/el-primer-damo-una-comedia-musical-penia-del-carajo-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
       "time": "7:00 PM",
       "type": "Eventbrite",
       "title": "Proclama 2026 - Nuestro Dios",
@@ -1903,6 +1893,16 @@
       "district": "Miraflores",
       "price": "",
       "source": "Eventbrite"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Musical",
+      "title": "EL PRIMER DAMO - UNA COMEDIA MUSICAL",
+      "url": "https://teleticket.com.pe/evento/el-primer-damo-una-comedia-musical-penia-del-carajo-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
     }
   ],
   "2026-03-27": [
@@ -2050,18 +2050,74 @@
   "2026-04-01": [],
   "2026-04-02": [],
   "2026-04-03": [],
-  "2026-04-04": [],
+  "2026-04-04": [
+    {
+      "time": "8:00 pm",
+      "type": "Humor",
+      "title": "MEMORIAS DE UN CRIOLLO",
+      "url": "https://teleticket.com.pe/evento/memorias-de-un-criollo-lima-comedy-club-0404",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "EL SHOW DE LAS IMITACIONES CON MANOLO ROJAS",
+      "url": "https://teleticket.com.pe/evento/el-show-de-las-imitaciones-con-manolo-rojas-la-estacion-de-barranco",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 4 Abr al 11 Abr"
+    }
+  ],
   "2026-04-05": [],
   "2026-04-06": [],
   "2026-04-07": [],
-  "2026-04-08": [],
+  "2026-04-08": [
+    {
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "ASINTOMATICO",
+      "url": "https://teleticket.com.pe/evento/asintomatico-lima-comedy-club",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-04-09": [],
   "2026-04-10": [],
-  "2026-04-11": [],
+  "2026-04-11": [
+    {
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "UN DIA EN LA VIDA EXPERIENCIA BEATLE - YELLOW SUBMARINE",
+      "url": "https://teleticket.com.pe/un-dia-en-la-vida-anfiteatro-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-04-12": [],
   "2026-04-13": [],
   "2026-04-14": [],
-  "2026-04-15": [],
+  "2026-04-15": [
+    {
+      "time": "10:00 am",
+      "type": "Exhibición",
+      "title": "GENIOS DEL ARTE BY IMMERSIVE DREAMS",
+      "url": "https://teleticket.com.pe/genios-del-arte-by-immersive-dreams-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 15 Abr al 14 May"
+    }
+  ],
   "2026-04-16": [
     {
       "time": "9:00 pm",
@@ -2073,12 +2129,77 @@
       "price": "S/ 212 a S/ 233"
     }
   ],
-  "2026-04-17": [],
-  "2026-04-18": [],
+  "2026-04-17": [
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "MILO J EN LIMA",
+      "url": "https://teleticket.com.pe/miloj-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
+  "2026-04-18": [
+    {
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "PARACAS MUSIC FEST",
+      "url": "https://teleticket.com.pe/paracas-music-fest-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "10:00 am",
+      "type": "Teatro",
+      "title": "LAGO DE LOS CISNES - RUSSIAN CLASSICAL BALLET",
+      "url": "https://teleticket.com.pe/lago-de-los-cisnes-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 18 Abr al 19 Abr"
+    },
+    {
+      "time": "7:00 pm",
+      "type": "Música",
+      "title": "WILLIAM LUNA & PELO D´ AMBROSIO - CANTO AL PERU 3.0 EDICION DE LUJO",
+      "url": "https://teleticket.com.pe/william-y-pelo-teatro-canout-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-04-19": [],
-  "2026-04-20": [],
+  "2026-04-20": [
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "DREAM THEATER EN LIMA",
+      "url": "https://teleticket.com.pe/dream-theater-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-04-21": [],
-  "2026-04-22": [],
+  "2026-04-22": [
+    {
+      "time": "10:00 am",
+      "type": "Música",
+      "title": "SEBASTIÁN YATRA - ENTRE TANTA GENTE TOUR",
+      "url": "https://teleticket.com.pe/yatra",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-04-23": [
     {
       "time": "9:00 pm",
@@ -2088,6 +2209,26 @@
       "venue": "Multiespacio Costa 21",
       "district": "San Miguel",
       "price": "S/ 153 a S/ 330"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "MEGADETH EN LIMA",
+      "url": "https://teleticket.com.pe/megadeth-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Teatro",
+      "title": "NACHO REDONDO EN VIVO",
+      "url": "https://teleticket.com.pe/evento/nacho-redondo-en-vivo-teatro-canout",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
     }
   ],
   "2026-04-24": [
@@ -2099,6 +2240,16 @@
       "venue": "Multiespacio Costa 21",
       "district": "San Miguel",
       "price": "S/ 185 a S/ 285"
+    },
+    {
+      "time": "8:30 pm",
+      "type": "Música",
+      "title": "INDIEGENTES PRESENTA: MAC DEMARCO EN LIMA",
+      "url": "https://teleticket.com.pe/mac-demarco-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
     }
   ],
   "2026-04-25": [
@@ -2111,32 +2262,299 @@
       "district": "Miraflores",
       "price": "",
       "source": "Eventbrite"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "WILLIAM LUNA EN HUANCAYO RUMBO A LOS 40 AÑOS",
+      "url": "https://teleticket.com.pe/evento/william-luna-en-huancayo-rumbo-a-los-40-anios-auditorio-nuestra-seniora-del-valle-",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:30 pm",
+      "type": "Música",
+      "title": "FEY - HITS TOUR 30 ANIVERSARIO",
+      "url": "https://teleticket.com.pe/fey",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
     }
   ],
   "2026-04-26": [],
-  "2026-04-27": [],
+  "2026-04-27": [
+    {
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "ISABEL PANTOJA  50 ANIVERSARIO",
+      "url": "https://teleticket.com.pe/isabel-pantoja-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-04-28": [],
   "2026-04-29": [],
-  "2026-04-30": [],
-  "2026-05-01": [],
-  "2026-05-02": [],
+  "2026-04-30": [
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "ESTEFANO EN CONCIERTO: AL DERECHO Y AL DESPECHO",
+      "url": "https://teleticket.com.pe/evento/estefano-en-concierto-al-derecho-y-al-despecho-cc-bianca",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
+  "2026-05-01": [
+    {
+      "time": "12:00 pm",
+      "type": "Música",
+      "title": "GYT 40 AÑOS DE ´ES POR AMOR´ EN HUANCAYO",
+      "url": "https://teleticket.com.pe/evento/gyt-40-anios-de-es-por-amor-en-huancayo-country-club-los-huancas",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "SERENATA A MAMÁ",
+      "url": "https://teleticket.com.pe/evento/serenata-a-mama-gran-teatro-nacional-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 1 May al 2 May"
+    }
+  ],
+  "2026-05-02": [
+    {
+      "time": "6:00 pm",
+      "type": "Música",
+      "title": "RATA BLANCA EN LIMA 2026",
+      "url": "https://teleticket.com.pe/rata-blanca-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "RYAN CASTRO EN LIMA",
+      "url": "https://teleticket.com.pe/ryan-castro-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-05-03": [],
   "2026-05-04": [],
-  "2026-05-05": [],
+  "2026-05-05": [
+    {
+      "time": "10:00 am",
+      "type": "Música",
+      "title": "KORN",
+      "url": "https://teleticket.com.pe/korn",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-05-06": [],
-  "2026-05-07": [],
-  "2026-05-08": [],
-  "2026-05-09": [],
+  "2026-05-07": [
+    {
+      "time": "10:00 am",
+      "type": "Música",
+      "title": "THE LUMINEERS - THE AUTOMATIC WORLD TOUR",
+      "url": "https://teleticket.com.pe/the-lumineers-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
+  "2026-05-08": [
+    {
+      "time": "6:00 pm",
+      "type": "Música",
+      "title": "ANDES FEST 1ERA EDICIÓN: HOMENAJE A MAMÁ EN AREQUIPA",
+      "url": "https://teleticket.com.pe/andes-fest-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "LITA PEZO CON MARIACHI - SHOW POR EL DIA DE LA MADRE",
+      "url": "https://teleticket.com.pe/evento/lita-pezo-con-mariachi-show-por-el-dia-de-la-madre-teatro-plaza-norte-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "ANGELES AZULES EN LIMA",
+      "url": "https://teleticket.com.pe/angeles-azules-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
+  "2026-05-09": [
+    {
+      "time": "6:00 pm",
+      "type": "Música",
+      "title": "ANDES FEST 1ERA EDICIÓN: HOMENAJE A MAMÁ EN CUSCO",
+      "url": "https://teleticket.com.pe/andes-fest-cusco-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "TONY SUCCAR - LOS SUEÑOS SE CUMPLEN",
+      "url": "https://teleticket.com.pe/tony-succar-los-suenos-se-cumplen",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "10:00 am",
+      "type": "Música",
+      "title": "LOS FABULOSOS CADILLACS 40 ANIVERSARIO",
+      "url": "https://teleticket.com.pe/lfc-40-aniversario",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-05-10": [],
   "2026-05-11": [],
-  "2026-05-12": [],
-  "2026-05-13": [],
-  "2026-05-14": [],
-  "2026-05-15": [],
-  "2026-05-16": [],
-  "2026-05-17": [],
+  "2026-05-12": [
+    {
+      "time": "11:00 am",
+      "type": "Música",
+      "title": "LAURA Y BRENDA EN LIMA",
+      "url": "https://teleticket.com.pe/laura-y-brenda-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
+  "2026-05-13": [
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "ELENA ROSE EN LIMA",
+      "url": "https://teleticket.com.pe/elena-rose-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
+  "2026-05-14": [
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "REIK EN LIMA",
+      "url": "https://teleticket.com.pe/reik-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
+  "2026-05-15": [
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "GIAN MARCO TOUR PERÚ 2025 - AREQUIPA",
+      "url": "https://teleticket.com.pe/evento/gian-marco-tour-peru-2025-arequipa-club-de-abogados-de-arequipa",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:45 pm",
+      "type": "Música",
+      "title": "PIMPINELA- ESPECIAL DÍA DE LA MADRE",
+      "url": "https://teleticket.com.pe/pimpinela-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
+  "2026-05-16": [
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "GIAN MARCO TOUR PERÚ 2025 - CUSCO",
+      "url": "https://teleticket.com.pe/evento/gian-marco-tour-peru-2025-cusco",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:30 pm",
+      "type": "Deportes",
+      "title": "THE COLOR RUN NIGHT NOSOTRAS",
+      "url": "https://teleticket.com.pe/the-color-run-night-nosotras-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
+  "2026-05-17": [
+    {
+      "time": "5:00 pm",
+      "type": "Teatro",
+      "title": "AIDA - FESTIVAL GRANDA",
+      "url": "https://teleticket.com.pe/aida-festival-granda",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 17 May al 22 May"
+    }
+  ],
   "2026-05-18": [],
-  "2026-05-19": [],
+  "2026-05-19": [
+    {
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "AIR SUPPLY – 50TH ANNIVERSARY CELEBRATION",
+      "url": "https://teleticket.com.pe/air-supply-2025",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-05-20": [
     {
       "time": "8:30 pm",
@@ -2148,16 +2566,111 @@
       "price": "S/ 184 a S/ 536"
     }
   ],
-  "2026-05-21": [],
-  "2026-05-22": [],
-  "2026-05-23": [],
+  "2026-05-21": [
+    {
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "BERET",
+      "url": "https://teleticket.com.pe/beret-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
+  "2026-05-22": [
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "GIAN MARCO TOUR PERÚ 2025 - HUANCAYO",
+      "url": "https://teleticket.com.pe/evento/gian-marco-tour-peru-2025-huancayo-contry-club-los-huancas",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "LUCK RA",
+      "url": "https://teleticket.com.pe/luckra-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
+  "2026-05-23": [
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "GIAN MARCO TOUR PERÚ 2025 - PIURA",
+      "url": "https://teleticket.com.pe/evento/gian-marco-tour-peru-2025-piura-fundo-stewart",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "MON LAFERTE - FEMME FATALE TOUR",
+      "url": "https://teleticket.com.pe/mon-laferte-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-05-24": [],
   "2026-05-25": [],
   "2026-05-26": [],
   "2026-05-27": [],
   "2026-05-28": [],
-  "2026-05-29": [],
-  "2026-05-30": [],
+  "2026-05-29": [
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "GIAN MARCO TOUR PERÚ 2025 - CHICLAYO",
+      "url": "https://teleticket.com.pe/evento/gian-marco-tour-peru-2025-chiclayo-jockey-club-de-chiclayo",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
+  "2026-05-30": [
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "GIAN MARCO",
+      "url": "https://teleticket.com.pe/gian-marco-2025",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "GIAN MARCO TOUR PERÚ 2025 - TRUJILLO",
+      "url": "https://teleticket.com.pe/evento/gian-marco-tour-peru-2025-trujillo-hacienda-el-palmar-",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "RICARDO MONTANER ``EL ÚLTIMO REGRESO´´",
+      "url": "https://teleticket.com.pe/ricardo-montaner-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-05-31": [],
   "2026-06-01": [],
   "2026-06-02": [],
@@ -2178,13 +2691,35 @@
   "2026-06-17": [],
   "2026-06-18": [],
   "2026-06-19": [],
-  "2026-06-20": [],
+  "2026-06-20": [
+    {
+      "time": "7:30 pm",
+      "type": "Teatro",
+      "title": "FABIÁN FLORES EN VIVO",
+      "url": "https://teleticket.com.pe/evento/fabian-flores-en-vivo-lima-comedy-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-06-21": [],
   "2026-06-22": [],
   "2026-06-23": [],
   "2026-06-24": [],
   "2026-06-25": [],
-  "2026-06-26": [],
+  "2026-06-26": [
+    {
+      "time": "10:00 am",
+      "type": "Música",
+      "title": "ARJONA - LO QUE EL SECO NO DIJO",
+      "url": "https://teleticket.com.pe/arjona-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-06-27": [],
   "2026-06-28": [],
   "2026-06-29": [],
@@ -2192,13 +2727,47 @@
   "2026-07-01": [],
   "2026-07-02": [],
   "2026-07-03": [],
-  "2026-07-04": [],
-  "2026-07-05": [],
+  "2026-07-04": [
+    {
+      "time": "3:00 pm",
+      "type": "Musical",
+      "title": "BELY Y BETO ``EL BOOM DE LA DIVERSIÓN´´ - AREQUIPA",
+      "url": "https://teleticket.com.pe/bely-y-beto-arequipa-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
+  "2026-07-05": [
+    {
+      "time": "4:30 pm",
+      "type": "Musical",
+      "title": "BELY Y BETO EL BOOM DE LA DIVERSIÓN",
+      "url": "https://teleticket.com.pe/bely-y-beto-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-07-06": [],
   "2026-07-07": [],
   "2026-07-08": [],
   "2026-07-09": [],
-  "2026-07-10": [],
+  "2026-07-10": [
+    {
+      "time": "10:00 am",
+      "type": "Circo",
+      "title": "PULSO - FESTIVAL INTERNACIONAL DEL CIRCO DEL PERÚ",
+      "url": "https://teleticket.com.pe/pulso-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 10 Jul al 13 Jul"
+    }
+  ],
   "2026-07-11": [],
   "2026-07-12": [],
   "2026-07-13": [],
@@ -2243,9 +2812,30 @@
       "venue": "Multiespacio Costa 21",
       "district": "San Miguel",
       "price": "S/ 180 a S/ 350"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "RAWAYANA EN LIMA",
+      "url": "https://teleticket.com.pe/rawayana",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
     }
   ],
-  "2026-08-16": [],
+  "2026-08-16": [
+    {
+      "time": "9:00 am",
+      "type": "Especiales",
+      "title": "NEGOCIOS LEGENDARIOS",
+      "url": "https://teleticket.com.pe/evento/negocios-legendarios-coliseo-qapac-nian-cajamarca-",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-08-17": [],
   "2026-08-18": [],
   "2026-08-19": [],
@@ -2258,7 +2848,18 @@
   "2026-08-26": [],
   "2026-08-27": [],
   "2026-08-28": [],
-  "2026-08-29": [],
+  "2026-08-29": [
+    {
+      "time": "10:00 am",
+      "type": "Música",
+      "title": "PAULO LONDRA EN LIMA",
+      "url": "https://teleticket.com.pe/paulo-londra-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-08-30": [],
   "2026-08-31": [],
   "2026-09-01": [],
@@ -2272,7 +2873,18 @@
   "2026-09-09": [],
   "2026-09-10": [],
   "2026-09-11": [],
-  "2026-09-12": [],
+  "2026-09-12": [
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "ROMEO SANTOS PRINCE ROYCE - MEJOR TARDE QUE NUNCA",
+      "url": "https://teleticket.com.pe/romeo-santos-prince-royce-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-09-13": [],
   "2026-09-14": [],
   "2026-09-15": [],
@@ -2287,7 +2899,18 @@
   "2026-09-24": [],
   "2026-09-25": [],
   "2026-09-26": [],
-  "2026-09-27": [],
+  "2026-09-27": [
+    {
+      "time": "10:00 am",
+      "type": "Música",
+      "title": "5 SECONDS OF SUMMER - EVERYONE´S A STAR! WORLD TOUR",
+      "url": "https://teleticket.com.pe/5sos",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-09-28": [],
   "2026-09-29": [],
   "2026-09-30": [],
@@ -2304,10 +2927,44 @@
   "2026-10-11": [],
   "2026-10-12": [],
   "2026-10-13": [],
-  "2026-10-14": [],
-  "2026-10-15": [],
+  "2026-10-14": [
+    {
+      "time": "8:30 pm",
+      "type": "Música",
+      "title": "ZAYN - THE KONNAKOL TOUR",
+      "url": "https://teleticket.com.pe/zayn",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
+  "2026-10-15": [
+    {
+      "time": "7:00 pm",
+      "type": "Música",
+      "title": "AV. LARCO - EL MUSICAL 2026",
+      "url": "https://teleticket.com.pe/av-larco-el-musical-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 15 Oct al 29 Nov"
+    }
+  ],
   "2026-10-16": [],
-  "2026-10-17": [],
+  "2026-10-17": [
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "GRUPO FRONTERA - TRISTE PERO BIEN C*BRÓN",
+      "url": "https://teleticket.com.pe/grupo-frontera",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-10-18": [],
   "2026-10-19": [],
   "2026-10-20": [],
@@ -2319,20 +2976,64 @@
   "2026-10-26": [],
   "2026-10-27": [],
   "2026-10-28": [],
-  "2026-10-29": [],
+  "2026-10-29": [
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "HOMBRES G EN LIMA",
+      "url": "https://teleticket.com.pe/hombres-g-lima-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-10-30": [],
   "2026-10-31": [],
-  "2026-11-01": [],
+  "2026-11-01": [
+    {
+      "time": "10:00 am",
+      "type": "Música",
+      "title": "HUMBE EN LIMA",
+      "url": "https://teleticket.com.pe/humbe-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-11-02": [],
   "2026-11-03": [],
   "2026-11-04": [],
   "2026-11-05": [],
   "2026-11-06": [],
-  "2026-11-07": [],
+  "2026-11-07": [
+    {
+      "time": "9:00 am",
+      "type": "Música",
+      "title": "BUNBURY - NUEVAS MUTACIONES TOUR",
+      "url": "https://teleticket.com.pe/bunbury",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-11-08": [],
   "2026-11-09": [],
   "2026-11-10": [],
-  "2026-11-11": [],
+  "2026-11-11": [
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "TEMPORADA DE ABONO 2026",
+      "url": "https://teleticket.com.pe/temporada-abono-sfl-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-11-12": [],
   "2026-11-13": [],
   "2026-11-14": [],
@@ -2349,7 +3050,18 @@
   "2026-11-25": [],
   "2026-11-26": [],
   "2026-11-27": [],
-  "2026-11-28": [],
+  "2026-11-28": [
+    {
+      "time": "11:00 am",
+      "type": "Música",
+      "title": "LIMA LATIN POP FEST VOL. 3",
+      "url": "https://teleticket.com.pe/limalatinpopfestvol3",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ],
   "2026-11-29": [],
   "2026-11-30": [],
   "2026-12-01": [],
@@ -2382,5 +3094,41 @@
   "2026-12-28": [],
   "2026-12-29": [],
   "2026-12-30": [],
-  "2026-12-31": []
+  "2026-12-31": [],
+  "2026-01-01": [
+    {
+      "time": "10:00 am",
+      "type": "Humor",
+      "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
+      "url": "https://teleticket.com.pe/hablando-huevadas-gira-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 1 Ene al 31 Dic"
+    },
+    {
+      "time": "3:30 am",
+      "type": "Especiales",
+      "title": "¡FULL DAY PLAYA LA MINA CON RUTAS INCAS! - Reserva Nacional de Paracas, YakuPark, Chincha y más",
+      "url": "https://teleticket.com.pe/evento/full-day-playa-la-mina-con-rutas-incas-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 1 Ene al 31 Dic"
+    }
+  ],
+  "2026-01-31": [
+    {
+      "time": "12:00 am",
+      "type": "Deportes",
+      "title": "MELGAR",
+      "url": "https://teleticket.com.pe/melgar-fixture-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    }
+  ]
 }
