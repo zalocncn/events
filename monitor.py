@@ -23,7 +23,7 @@ import json
 import hashlib
 import subprocess
 import argparse
-import time
+import time as time_module
 from datetime import datetime
 from pathlib import Path
 from html import escape
@@ -86,14 +86,15 @@ HEADERS = {
 CATEGORY_KEYWORDS = {
     "Music": ["concert", "concierto", "music", "música", "live", "band", "dj",
               "festival", "rock", "jazz", "salsa", "cumbia", "reggaeton", "opera",
-              "sinfónica", "orquesta", "recital", "show musical"],
+              "sinfónica", "orquesta", "recital", "show musical", "karaoke"],
     "Sports": ["sport", "deporte", "fútbol", "football", "basketball", "baseball",
                "volleyball", "marathon", "maratón", "run", "carrera", "yoga",
                "fitness", "gym", "torneo", "campeonato"],
     "Arts & Culture": ["art", "arte", "museum", "museo", "gallery", "galería",
-                       "exhibition", "exposición", "theater", "teatro", "dance",
-                       "danza", "ballet", "pintura", "escultura", "cultura",
-                       "cine", "film", "película", "literatura", "libro"],
+                       "exhibition", "exposición", "exposure", "theater", "teatro",
+                       "dance", "danza", "ballet", "pintura", "escultura", "cultura",
+                       "cine", "film", "película", "literatura", "libro",
+                       "artes escénicas", "performing"],
 }
 
 SOURCE_DOT_COLORS = {
@@ -161,6 +162,57 @@ def make_event(title, url, source_key, date="", location="", description="",
     }
 
 
+# ─── DATE EXTRACTION HELPERS ────────────────────────────────────────────────
+
+# Regex patterns for extracting date+time from unstructured text
+# Matches: "Tomorrow at 9:00 AM", "mañana a las 09:00", "lun, 23 mar, 17:00"
+# "sáb, 22 feb, 19:00", "23 de marzo, 17:00", etc.
+EVENTBRITE_DATE_PATTERNS = [
+    # "Tomorrow at 9:00 AM" / "mañana a las 09:00"
+    re.compile(
+        r'(tomorrow|mañana|hoy|today)\s*(?:at|a las?)\s*'
+        r'(\d{1,2}[:.]\d{2}\s*(?:AM|PM|am|pm)?)',
+        re.IGNORECASE
+    ),
+    # "lun, 23 mar, 17:00" / "sáb, 22 feb, 19:00"
+    re.compile(
+        r'((?:lun|mar|mié|jue|vie|sáb|dom|mon|tue|wed|thu|fri|sat|sun)'
+        r'[\w]*),?\s*'
+        r'(\d{1,2})\s*(?:de\s+)?'
+        r'(ene|feb|mar|abr|may|jun|jul|ago|sep|oct|nov|dic|'
+        r'jan|apr|aug|dec)[\w]*,?\s*'
+        r'(\d{1,2}[:.]\d{2}\s*(?:AM|PM|am|pm)?)',
+        re.IGNORECASE
+    ),
+    # "23 de marzo, 17:00" / "22 feb 19:00"
+    re.compile(
+        r'(\d{1,2})\s*(?:de\s+)?'
+        r'(ene|feb|mar|abr|may|jun|jul|ago|sep|oct|nov|dic|'
+        r'jan|apr|may|aug|dec)[\w]*'
+        r'[,\s]+(\d{1,2}[:.]\d{2}\s*(?:AM|PM|am|pm)?)',
+        re.IGNORECASE
+    ),
+    # Bare time: "9:00 AM" / "17:00"
+    re.compile(
+        r'(\d{1,2}[:.]\d{2}\s*(?:AM|PM|am|pm))',
+        re.IGNORECASE
+    ),
+]
+
+
+def extract_date_from_text(text):
+    """Extract a human-readable date+time from unstructured text."""
+    if not text:
+        return ""
+    text = text.replace('\n', ' ').strip()
+
+    for pattern in EVENTBRITE_DATE_PATTERNS:
+        m = pattern.search(text)
+        if m:
+            return m.group(0).strip()
+    return ""
+
+
 # ─── SCRAPERS ────────────────────────────────────────────────────────────────
 
 def fetch_page(url, timeout=15):
@@ -173,62 +225,76 @@ def fetch_page(url, timeout=15):
         return None
 
 
-def is_event_detail_url(url, source_key):
-    """True only if URL points to a specific event page, not a listing or homepage."""
-    if not url or url.strip() in ("", "#"):
-        return False
-    url = url.split("?")[0].rstrip("/")
-    if source_key == "eventbrite":
-        return "/e/" in url
-    if source_key == "enlima":
-        # Must have path beyond domain (e.g. /eventos/foo or /post/bar)
-        if "enlima.pe" not in url:
-            return True
-        path = url.replace("https://enlima.pe", "").replace("http://enlima.pe", "")
-        return len(path) > 1 and path != "/"
-    if source_key == "teleticket":
-        if "teleticket.com.pe" not in url:
-            return True
-        path = url.replace("https://teleticket.com.pe", "").replace("http://teleticket.com.pe", "")
-        return len(path) > 1 and path != "/"
-    return True
-
-
 def scrape_eventbrite(source):
+    """
+    FIX: Eventbrite renders dates as text inside card divs, not in dedicated
+    <time> or [data-testid] elements. We extract dates from the card's full
+    text content using regex patterns.
+    """
     soup = fetch_page(source["url"])
     if not soup:
         return []
+
     events = []
     is_free_page = "free" in source["url"]
-    cards = soup.select('[data-testid="event-card"]')
-    if not cards:
-        cards = soup.select('.search-event-card-wrapper')
-    if not cards:
-        cards = soup.select('.eds-event-card-content__content')
-    if not cards:
-        cards = soup.select('a[href*="/e/"]')
-    for card in cards[:25]:
+    seen_urls = set()
+
+    # Find all event links
+    all_links = soup.select('a[href*="/e/"]')
+
+    for link in all_links:
         try:
-            link = card if card.name == 'a' else card.find('a', href=True)
-            if not link or '/e/' not in link.get('href', ''):
+            url = link.get('href', '')
+            if '/e/' not in url:
                 continue
-            url = link['href']
             if not url.startswith('http'):
                 url = 'https://www.eventbrite.com.pe' + url
-            if not is_event_detail_url(url, "eventbrite"):
+
+            # Deduplicate by URL (Eventbrite renders duplicate link elements)
+            base_url = url.split('?')[0]
+            if base_url in seen_urls:
                 continue
-            title_el = card.select_one('h2, h3, [data-testid="event-card-title"], .eds-text-bs')
-            title = title_el.get_text(strip=True) if title_el else link.get_text(strip=True)
+            seen_urls.add(base_url)
+
+            # Walk up to the card container (typically 3-4 levels up)
+            card = link
+            for _ in range(5):
+                if card.parent and card.parent.name != 'body':
+                    card = card.parent
+                # Stop at meaningful container boundaries
+                if card.get('class') and any(
+                    'Container' in c or 'NestedAction' in c or 'Stack' in c
+                    for c in card.get('class', [])
+                ):
+                    break
+
+            card_text = card.get_text(' ', strip=True) if card else ''
+
+            # Extract title — find the first h2/h3 or bold text
+            title_el = card.select_one('h2, h3') if card else None
+            title = title_el.get_text(strip=True) if title_el else ''
+            if not title:
+                # Fall back: the link text itself, cleaned
+                title = link.get_text(strip=True)
             if not title or len(title) < 5:
                 continue
-            date_el = card.select_one('[data-testid="event-card-date"], .eds-event-card-content__sub-title, time')
-            date = date_el.get_text(strip=True) if date_el else ""
-            loc_el = card.select_one('[data-testid="event-card-location"], .card-text--truncated__one')
+
+            # FIX: Extract date+time from the card's full text using regex
+            date = extract_date_from_text(card_text)
+
+            # Extract location — look for text after the date, typically place info
+            loc_el = card.select_one(
+                '[data-testid="event-card-location"], '
+                '.card-text--truncated__one'
+            )
             location = loc_el.get_text(strip=True) if loc_el else "Miraflores, Lima"
+
+            # Extract image
             img_el = card.select_one('img[src*="img.evbuc"], img[data-src], img')
             image = ""
             if img_el:
                 image = img_el.get('src') or img_el.get('data-src', '')
+
             events.append(make_event(
                 title=title, url=url, source_key="eventbrite",
                 date=date, location=location, image_url=image,
@@ -236,96 +302,178 @@ def scrape_eventbrite(source):
             ))
         except Exception:
             continue
+
     return events
 
 
 def scrape_enlima(source):
+    """
+    FIX: EnLima uses a <table class="bloque-calendario"> with structured rows.
+    Each row has: .views-field-field-time, .views-field-title,
+    .views-field-field-lugar, .views-field-term-node-tid, .views-field-field-precio
+    """
     soup = fetch_page(source["url"])
     if not soup:
         return []
+
     events = []
-    cards = soup.select('article, .event-card, .card, .entry, .post-item, .evento')
-    if not cards:
-        cards = soup.select('[class*="event"], [class*="card"], [class*="item"]')
-    for card in cards[:25]:
-        try:
-            link = card.find('a', href=True)
-            if not link:
+
+    # PRIMARY: Parse the structured events table
+    table = soup.select_one('table.bloque-calendario')
+    if table:
+        rows = table.select('tbody tr')
+        for row in rows:
+            try:
+                # Time (e.g., "10:00 am", "7:30 pm")
+                time_td = row.select_one('.views-field-field-time')
+                time_text = time_td.get_text(strip=True) if time_td else ""
+
+                # Title + link
+                title_td = row.select_one('.views-field-title')
+                if not title_td:
+                    continue
+                title = title_td.get_text(strip=True)
+                if not title or len(title) < 5:
+                    continue
+                link = title_td.select_one('a[href]')
+                if not link:
+                    continue
+                url = link.get('href', '')
+                if not url.startswith('http'):
+                    url = 'https://enlima.pe' + url
+
+                # Category
+                cat_td = row.select_one('.views-field-field-categoria-evento')
+                category_text = cat_td.get_text(strip=True) if cat_td else ""
+
+                # Place
+                place_td = row.select_one('.views-field-field-lugar')
+                place = place_td.get_text(strip=True) if place_td else ""
+
+                # District
+                district_td = row.select_one('.views-field-term-node-tid')
+                district = district_td.get_text(strip=True) if district_td else ""
+                location = f"{place}, {district}".strip(", ") if place else district or "Lima"
+
+                # Price
+                price_td = row.select_one('.views-field-field-precio')
+                price_text = price_td.get_text(strip=True) if price_td else ""
+                is_free = price_text.upper() in ("FREE", "GRATIS", "LIBRE", "GRATUITO")
+
+                # Build date string: "Today at 10:00 am" format
+                today_str = datetime.now().strftime("%b %d")
+                if time_text:
+                    date_str = f"{today_str} at {time_text}"
+                else:
+                    date_str = today_str
+
+                events.append(make_event(
+                    title=title, url=url, source_key="enlima",
+                    date=date_str, location=location,
+                    description=category_text,
+                    is_free=is_free, price="" if is_free else price_text,
+                    category=classify_category(title, category_text)
+                ))
+            except Exception:
                 continue
-            url = link['href']
-            if not url.startswith('http'):
-                url = 'https://enlima.pe' + url
-            if url.rstrip('/') == 'https://enlima.pe' or url == '#':
+    else:
+        # FALLBACK: If table structure changes, try generic selectors
+        cards = soup.select('article, .event-card, .card, .entry')
+        for card in cards[:25]:
+            try:
+                link = card.find('a', href=True)
+                if not link:
+                    continue
+                url = link['href']
+                if not url.startswith('http'):
+                    url = 'https://enlima.pe' + url
+                if url.rstrip('/') == 'https://enlima.pe' or url == '#':
+                    continue
+                title_el = card.select_one('h2, h3, h4, .title')
+                title = title_el.get_text(strip=True) if title_el else link.get_text(strip=True)
+                if not title or len(title) < 5:
+                    continue
+                date_el = card.select_one('time, .date, .fecha')
+                date = date_el.get_text(strip=True) if date_el else ""
+                events.append(make_event(
+                    title=title, url=url, source_key="enlima",
+                    date=date, location="Lima"
+                ))
+            except Exception:
                 continue
-            if not is_event_detail_url(url, "enlima"):
-                continue
-            title_el = card.select_one('h2, h3, h4, .title, .entry-title')
-            title = title_el.get_text(strip=True) if title_el else link.get_text(strip=True)
-            if not title or len(title) < 5:
-                continue
-            desc_el = card.select_one('p, .excerpt, .description, .entry-summary')
-            desc = desc_el.get_text(strip=True) if desc_el else ""
-            date_el = card.select_one('time, .date, .fecha, [class*="date"]')
-            date = date_el.get_text(strip=True) if date_el else ""
-            img_el = card.select_one('img')
-            image = ""
-            if img_el:
-                image = img_el.get('src') or img_el.get('data-src', '')
-                if image and not image.startswith('http'):
-                    image = 'https://enlima.pe' + image
-            events.append(make_event(
-                title=title, url=url, source_key="enlima",
-                date=date, description=desc, image_url=image,
-                location="Lima"
-            ))
-        except Exception:
-            continue
+
     return events
 
 
 def scrape_teleticket(source):
+    """
+    FIX: Teleticket's individual event cards are <article id="event_N"> elements.
+    Each contains: h3 (title), p.fecha (date), p.descripcion (category), img.
+    The old selector [class*="event"] matched 672+ elements including parent wrappers.
+    """
     soup = fetch_page(source["url"])
     if not soup:
         return []
+
     events = []
-    cards = soup.select('.event-card, .card, article, .show-card, [class*="event"]')
+
+    # PRIMARY: Target specific <article> cards by their ID pattern
+    cards = soup.select('article[id^="event_"]')
     if not cards:
-        cards = soup.select('a[href*="/evento/"], a[href*="/show/"]')
-    for card in cards[:25]:
+        # Fallback: try any article inside the events listing
+        cards = soup.select('.listado--eventos article')
+    if not cards:
+        cards = soup.select('.card-evento, article.col-4')
+
+    for card in cards[:30]:
         try:
-            link = card if card.name == 'a' else card.find('a', href=True)
+            link = card.select_one('a[href]')
             if not link:
                 continue
-            url = link['href']
+            url = link.get('href', '')
             if not url.startswith('http'):
                 url = 'https://teleticket.com.pe' + url
-            if url.rstrip('/') == 'https://teleticket.com.pe':
+            if url.rstrip('/') in ('https://teleticket.com.pe', ''):
                 continue
-            if not is_event_detail_url(url, "teleticket"):
+
+            # Title from h3
+            title_el = card.select_one('h3')
+            title = title_el.get_text(strip=True) if title_el else ""
+            if not title or len(title) < 3:
+                # Try from the link title attr or strong tag
+                title = card.select_one('strong')
+                title = title.get_text(strip=True) if title else link.get_text(strip=True)
+            if not title or len(title) < 3:
                 continue
-            title_el = card.select_one('h2, h3, h4, .title, .name, .card-title')
-            title = title_el.get_text(strip=True) if title_el else link.get_text(strip=True)
-            if not title or len(title) < 5:
-                continue
-            date_el = card.select_one('.date, .fecha, time, [class*="date"]')
-            date = date_el.get_text(strip=True) if date_el else ""
-            loc_el = card.select_one('.venue, .location, .lugar, [class*="location"]')
-            location = loc_el.get_text(strip=True) if loc_el else "Lima"
-            price_el = card.select_one('.price, .precio, [class*="price"]')
-            price = price_el.get_text(strip=True) if price_el else ""
-            img_el = card.select_one('img')
+
+            # Date from p.fecha (e.g., "01 de enero 2026 - 31 de diciembre 2026")
+            fecha_el = card.select_one('p.fecha')
+            date_text = fecha_el.get_text(strip=True) if fecha_el else ""
+
+            # Category from p.descripcion
+            desc_el = card.select_one('p.descripcion')
+            desc = desc_el.get_text(strip=True) if desc_el else ""
+
+            # Image
+            img_el = card.select_one('img.img--evento, img')
             image = ""
             if img_el:
-                image = img_el.get('src') or img_el.get('data-src', '')
+                image = img_el.get('src') or ''
                 if image and not image.startswith('http'):
                     image = 'https://teleticket.com.pe' + image
+
+            # Location — Teleticket cards don't show venue on listing
+            # Extract from description if present
+            location = "Lima"
+
             events.append(make_event(
                 title=title, url=url, source_key="teleticket",
-                date=date, location=location, image_url=image,
-                price=price
+                date=date_text, location=location, image_url=image,
+                description=desc
             ))
         except Exception:
             continue
+
     return events
 
 
@@ -336,27 +484,29 @@ SCRAPER_MAP = {
 }
 
 
-# ─── ENRICH FROM EVENT PAGE (fetch actual article for date + description) ────
+# ─── ENRICH FROM EVENT PAGE (fetch detail page for better date/desc) ────────
 
 def enrich_event(event, db):
-    """Fetch the event's detail page and extract date + description. Use db cache if already enriched.
-    Returns True if we did an HTTP fetch, False if we used cache."""
+    """Fetch the event's detail page to get better date and description."""
     eid = event["id"]
     if eid in db.get("events", {}):
         stored = db["events"][eid]
-        if stored.get("enriched") or stored.get("description"):
-            event["description"] = stored.get("description", event.get("description", ""))
+        if stored.get("enriched"):
+            if stored.get("description"):
+                event["description"] = stored["description"]
             if stored.get("date"):
                 event["date"] = stored["date"]
             if stored.get("image_url"):
                 event["image_url"] = stored["image_url"]
             event["enriched"] = True
             return False
+
     try:
         soup = fetch_page(event["url"], timeout=10)
         if not soup:
             return False
-        # Description: og:description or meta description
+
+        # Description: og:description → meta description → first <p>
         desc = ""
         og_desc = soup.select_one('meta[property="og:description"]')
         if og_desc and og_desc.get("content"):
@@ -367,28 +517,56 @@ def enrich_event(event, db):
                 desc = meta_desc["content"].strip()
         if desc:
             event["description"] = desc[:300]
-        # Date: time[datetime], itemprop startDate, or event meta
+
+        # Date: try multiple strategies
         date_val = ""
+
+        # Strategy 1: <time datetime="..."> with text content
         time_el = soup.select_one('time[datetime]')
-        if time_el and time_el.get("datetime"):
-            date_val = time_el["datetime"]
-            # Prefer human-readable from same element
-            if time_el.get_text(strip=True):
-                date_val = time_el.get_text(strip=True)
+        if time_el:
+            date_val = time_el.get_text(strip=True) or time_el.get("datetime", "")
+
+        # Strategy 2: Schema.org itemprop
         if not date_val:
             start_el = soup.select_one('[itemprop="startDate"]')
             if start_el:
-                date_val = start_el.get("datetime") or start_el.get_text(strip=True)
+                date_val = start_el.get("content") or start_el.get("datetime") or start_el.get_text(strip=True)
+
+        # Strategy 3: Open Graph event meta
         if not date_val:
-            start_meta = soup.select_one('meta[property="event:start_date"]')
+            start_meta = soup.select_one('meta[property="event:start_time"]')
+            if not start_meta:
+                start_meta = soup.select_one('meta[property="event:start_date"]')
             if start_meta and start_meta.get("content"):
                 date_val = start_meta["content"]
+
+        # Strategy 4: JSON-LD structured data
+        if not date_val:
+            for script in soup.select('script[type="application/ld+json"]'):
+                try:
+                    data = json.loads(script.string or "")
+                    if isinstance(data, list):
+                        data = data[0] if data else {}
+                    if data.get("@type") == "Event" and data.get("startDate"):
+                        date_val = data["startDate"]
+                        break
+                except (json.JSONDecodeError, KeyError, IndexError):
+                    continue
+
+        # Strategy 5: Regex from page text (last resort)
+        if not date_val:
+            body_text = soup.select_one('body')
+            if body_text:
+                date_val = extract_date_from_text(body_text.get_text(' ', strip=True)[:1000])
+
         if date_val:
             event["date"] = date_val.strip()
+
         # Image: og:image
         og_img = soup.select_one('meta[property="og:image"]')
         if og_img and og_img.get("content"):
             event["image_url"] = og_img["content"].strip()
+
         event["enriched"] = True
         return True
     except Exception:
@@ -510,7 +688,7 @@ def replace_events_grid(all_events):
         return False
     html = HTML_FILE.read_text(encoding="utf-8")
     if EVENTS_GRID_START not in html or EVENTS_GRID_END not in html:
-        print(f"  {C.RED}✗ Could not find {EVENTS_GRID_START} / {EVENTS_GRID_END} in HTML{C.END}")
+        print(f"  {C.RED}✗ Could not find {EVENTS_GRID_START} / {EVENTS_GRID_END} markers{C.END}")
         return False
     cards_html = "\n".join(generate_card_html(e) for e in all_events)
     pattern = re.compile(
@@ -605,28 +783,34 @@ def run_monitor(dry_run=False, no_push=False):
             if e["id"] not in seen_ids:
                 seen_ids.add(e["id"])
                 all_events.append(e)
+                # Show date extraction result
+                date_preview = e.get("date", "")[:40] or "(no date)"
+                print(f"      {C.DIM}+ {e['title'][:45]} → {date_preview}{C.END}")
         print()
 
-    all_events.sort(key=lambda e: (e.get("date") or "", e["title"]))
+    all_events.sort(key=lambda e: (e.get("date") or "zzz", e["title"]))
 
     print(f"{'─' * 60}")
-    print(f"  {C.BOLD}Total: {len(all_events)} events from all sources{C.END}")
+    print(f"  {C.BOLD}Total: {len(all_events)} unique events from all sources{C.END}")
 
     if dry_run:
         print(f"\n  {C.YELLOW}Dry run complete — no files modified.{C.END}\n")
         return
 
-    print(f"\n  {C.CYAN}▸ Enriching events from detail pages (date + description)...{C.END}")
+    print(f"\n  {C.CYAN}▸ Enriching events from detail pages...{C.END}")
+    enriched_count = 0
     for i, e in enumerate(all_events):
         did_fetch = enrich_event(e, db)
         db["events"][e["id"]] = e
         if did_fetch:
-            time.sleep(0.4)
+            enriched_count += 1
+            time_module.sleep(0.4)
         if (i + 1) % 10 == 0:
             print(f"    {C.DIM}Processed {i + 1}/{len(all_events)}{C.END}")
+    print(f"  {C.GREEN}✓ Enriched {enriched_count} events from detail pages{C.END}")
     save_db(db)
 
-    print(f"\n  {C.CYAN}▸ Updating homepage with full event list...{C.END}")
+    print(f"\n  {C.CYAN}▸ Updating homepage...{C.END}")
     changed = replace_events_grid(all_events)
 
     if changed and not no_push:

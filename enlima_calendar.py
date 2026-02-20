@@ -58,8 +58,8 @@ def parse_day_page(soup, date_key):
                 time_val = tm.group(1).strip()
         type_val = cells[1].get_text(strip=True) if len(cells) > 1 else ""
         event_cell = cells[2] if len(cells) > 2 else None
-        venue = cells[3].get_text(strip=True) if len(cells) > 3 else ""
-        district = cells[4].get_text(strip=True) if len(cells) > 4 else ""
+        venue = (cells[3].get_text(strip=True) if len(cells) > 3 else "").replace("Lime", "Lima")
+        district = (cells[4].get_text(strip=True) if len(cells) > 4 else "").replace("Lime", "Lima")
         price = cells[5].get_text(strip=True) if len(cells) > 5 else ""
         title = ""
         url = ""

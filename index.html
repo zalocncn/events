@@ -149,6 +149,27 @@
         const WEEKDAYS = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
         const MONTHS = ['', 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 
+        function limaFix(s) {
+            if (typeof s !== 'string') return s;
+            return s.replace(/\bLime\b/g, 'Lima');
+        }
+
+        function toAmPm(timeStr) {
+            if (!timeStr || typeof timeStr !== 'string') return '';
+            const t = timeStr.trim();
+            if (!t) return '';
+            const m = t.match(/^(\d{1,2}):(\d{2})\s*([ap]\.?m\.?)?$/i);
+            if (!m) return t;
+            let h = parseInt(m[1], 10);
+            const min = m[2];
+            const ampm = (m[3] || '').toLowerCase().replace('.', '');
+            if (ampm === 'am' || ampm === 'pm') return t;
+            if (h === 0) return `12:${min} am`;
+            if (h < 12) return `${h}:${min} am`;
+            if (h === 12) return `12:${min} pm`;
+            return `${h - 12}:${min} pm`;
+        }
+
         function buildMonthCalendar(containerId, year, month, eventsByDay) {
             const container = document.getElementById(containerId);
             if (!container) return;
@@ -183,10 +204,10 @@
                 html += `<div class="day-num text-xs sm:text-sm font-semibold text-white mb-0.5 sm:mb-1">${d}</div>`;
                 html += '<div class="space-y-0.5 sm:space-y-1 overflow-y-auto max-h-[60px] sm:max-h-[80px] md:max-h-[100px] lg:max-h-[120px]">';
                 events.slice(0, 6).forEach(ev => {
-                    const timeLabel = (ev.time || '').trim() || '—';
+                    const timeLabel = toAmPm(ev.time) || '—';
                     const dataEvent = escAttr(JSON.stringify(ev));
                     if (ev.url) {
-                        html += `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-item block rounded px-1 sm:px-1.5 py-0.5 text-[10px] sm:text-[11px] md:text-xs text-[#E0E0E0] hover:text-[#8B5CF6] truncate" title="${esc(ev.title)}${ev.schedule ? ' — ' + esc(ev.schedule) : ''}" data-event="${dataEvent}">${esc(timeLabel)}</a>`;
+                        html += `<a href="${esc(ev.url)}" target="_blank" rel="noopener" class="event-item block rounded px-1 sm:px-1.5 py-0.5 text-[10px] sm:text-[11px] md:text-xs text-[#E0E0E0] hover:text-[#8B5CF6] truncate" title="${esc(limaFix(ev.title))}${ev.schedule ? ' — ' + esc(limaFix(ev.schedule)) : ''}" data-event="${dataEvent}">${esc(timeLabel)}</a>`;
                     } else {
                         html += `<span class="block text-[10px] sm:text-[11px] text-[#A0A0A0]">${esc(timeLabel)}</span>`;
                     }
@@ -271,11 +292,11 @@
                     const isFocal = i === 0;
                     const typeLabel = ev.type || ev.source || '';
                     const accent = accentBySource[ev.source] || '#6F42C1';
-                    const timeLabel = (ev.time || '').trim() || '—';
-                    const venueText = [ev.venue, ev.district].filter(Boolean).join(', ') || 'Lima';
+                    const timeLabel = toAmPm(ev.time) || '—';
+                    const venueText = limaFix([ev.venue, ev.district].filter(Boolean).join(', ') || 'Lima');
                     const link = ev.url || '#';
-                    const title = esc(ev.title || 'Evento');
-                    const schedule = ev.schedule ? esc(ev.schedule) : '';
+                    const title = esc(limaFix(ev.title || 'Evento'));
+                    const schedule = ev.schedule ? esc(limaFix(ev.schedule)) : '';
                     const price = (ev.price || '').trim() ? esc(ev.price) : '';
                     if (isFocal) {
                         return `<a href="${link}" target="_blank" rel="noopener" class="block transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(0,0,0,0.4)] bg-[#242428] rounded-[14px] p-5 shadow-[0_6px_20px_rgba(0,0,0,0.28)] border border-[rgba(255,255,255,0.06)] no-underline">
@@ -355,15 +376,15 @@
             const linkEl = document.getElementById('event-preview-link');
 
             typeEl.textContent = ev.type || ev.source || '';
-            titleEl.textContent = ev.title || 'Evento';
-            timeEl.textContent = (ev.time || '').trim() || '—';
+            titleEl.textContent = limaFix(ev.title || 'Evento');
+            timeEl.textContent = toAmPm(ev.time) || '—';
             timeEl.style.display = '';
-            const venueText = [ev.venue, ev.district].filter(Boolean).join(', ') || '—';
+            const venueText = limaFix([ev.venue, ev.district].filter(Boolean).join(', ') || '—');
             venueEl.textContent = venueText;
             venueEl.style.display = venueText !== '—' ? '' : 'none';
             priceEl.textContent = (ev.price || '').trim() ? 'Precio: ' + (ev.price || '').trim() : '';
             priceEl.style.display = priceEl.textContent ? '' : 'none';
-            scheduleEl.textContent = ev.schedule || '';
+            scheduleEl.textContent = limaFix(ev.schedule || '');
             scheduleEl.style.display = scheduleEl.textContent ? '' : 'none';
             linkEl.href = ev.url || '#';
 

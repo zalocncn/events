@@ -122,7 +122,7 @@ def scrape_eventbrite_events(soup):
                     if title.startswith("La venta "):
                         continue
                     loc_match = re.search(r"(?:PM|AM)\s+([A-Za-z0-9].*?)(?:\s+Comprobar|\s+Guarda|$)", card_text)
-                    location = loc_match.group(1).strip() if loc_match else "Miraflores"
+                    location = (loc_match.group(1).strip() if loc_match else "Miraflores").replace("Lime", "Lima")
                     if len(location) > 80:
                         location = "Miraflores"
                     ev = {

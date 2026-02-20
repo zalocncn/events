@@ -120,17 +120,22 @@ def fetch_event_time(event_url):
 
 
 def _normalize_time(t):
-    """Normalize to display form like '8:00 pm' or '20:00'."""
+    """Normalize to 12-hour AM/PM display form, e.g. '8:00 pm', '10:00 am'."""
     t = (t or "").strip()
     m = re.match(r"(\d{1,2}):(\d{2})\s*([ap]\.?m\.?)?", t, re.I)
     if not m:
         return t
-    h, min, ampm = int(m.group(1)), m.group(2), (m.group(3) or "").strip().lower()
+    h, min_val, ampm = int(m.group(1)), m.group(2), (m.group(3) or "").strip().lower()
     if ampm:
-        return f"{h}:{min} {ampm.replace('.', '')}".replace("am", "am").replace("pm", "pm")
-    if h <= 12:
-        return f"{h}:{min} pm" if h < 12 else f"12:{min} pm"
-    return f"{h - 12}:{min} pm"
+        return f"{h}:{min_val} {ampm.replace('.', '')}".replace("am", "am").replace("pm", "pm")
+    # 24-hour to 12-hour AM/PM
+    if h == 0:
+        return f"12:{min_val} am"
+    if h < 12:
+        return f"{h}:{min_val} am"
+    if h == 12:
+        return f"12:{min_val} pm"
+    return f"{h - 12}:{min_val} pm"
 
 
 def scrape_teleticket_events(soup):
