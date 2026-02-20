@@ -71,7 +71,7 @@
       "venue": "Museo del Grabado ICPNA",
       "district": "La Molina",
       "price": "GRATIS",
-      "schedule": "Del 3 Feb al 31 Mar"
+      "schedule": "Del 3 Feb al 25 Abr"
     },
     {
       "time": "2:00 pm",
@@ -201,7 +201,7 @@
       "venue": "Crisis Galeria",
       "district": "Barranco",
       "price": "GRATIS",
-      "schedule": "Del 18 Feb al 31 Mar"
+      "schedule": "Del 18 Feb al 11 Abr"
     }
   ],
   "2026-02-19": [
@@ -719,6 +719,26 @@
       "district": "Lima",
       "price": "",
       "source": "Teleticket"
+    },
+    {
+      "time": "14:00",
+      "type": "Eventbrite",
+      "title": "Casi lleno Black Children's Book Museum: Black Children's Bo",
+      "url": "https://www.eventbrite.com/e/black-childrens-book-museum-black-childrens-book-week-exhibit-opening-tickets-1754471614829?aff=ebdssbcitybrowse",
+      "venue": "Miraflores",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "09:00",
+      "type": "Eventbrite",
+      "title": "La venta se termina pronto Festival Cafesazo Peruano 2026 -",
+      "url": "https://www.eventbrite.com.pe/e/festival-cafesazo-peruano-2026-edicion-verano-tickets-1980791187764?aff=ebdssbcitybrowse",
+      "venue": "Miraflores",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
     }
   ],
   "2026-02-22": [
@@ -838,15 +858,6 @@
   ],
   "2026-02-26": [
     {
-      "time": "9:00 pm",
-      "type": "Conciertos",
-      "title": "Alejandro Sanz en Lima",
-      "url": "https://enlima.pe/agenda-cultural/conciertos/alejandro-sanz-en-lima",
-      "venue": "Estadio Nacional",
-      "district": "Lince",
-      "price": "S/ 194 a S/ 282"
-    },
-    {
       "time": "7:30 pm",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS",
@@ -906,6 +917,25 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 26 Feb al 27 Feb"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Conciertos",
+      "title": "Alejandro Sanz en Lima",
+      "url": "https://enlima.pe/agenda-cultural/conciertos/alejandro-sanz-en-lima",
+      "venue": "Estadio Nacional",
+      "district": "Lince",
+      "price": "S/ 194 a S/ 282"
+    },
+    {
+      "time": "7:00 PM",
+      "type": "Eventbrite",
+      "title": "BE THE VOICE - VOL. 2",
+      "url": "https://www.eventbrite.com/e/be-the-voice-vol-2-tickets-1982716394108?aff=ebdssbcitybrowse",
+      "venue": "Rock and Pez",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
     }
   ],
   "2026-02-27": [
@@ -959,6 +989,26 @@
       "district": "Lima",
       "price": "",
       "source": "Teleticket"
+    },
+    {
+      "time": "9:00 AM",
+      "type": "Eventbrite",
+      "title": "Se venden rápido Career Fair: Exclusive Tech Hiring Event-New Tickets Available",
+      "url": "https://www.eventbrite.com/e/career-fair-exclusive-tech-hiring-event-new-tickets-available-tickets-63049080497?aff=ebdssbcitybrowse",
+      "venue": "PST",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "8:00 PM",
+      "type": "Eventbrite",
+      "title": "Se venden rápido The Alamo: 2004 - Film History Livestream",
+      "url": "https://www.eventbrite.com/e/the-alamo-2004-film-history-livestream-tickets-1066589661389?aff=ebdssbcitybrowse",
+      "venue": "EST",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
     }
   ],
   "2026-02-28": [
@@ -1249,6 +1299,26 @@
       "district": "Lima",
       "price": "",
       "source": "Teleticket"
+    },
+    {
+      "time": "8:29 PM",
+      "type": "Eventbrite",
+      "title": "NASA's Artemis II Mission Launch",
+      "url": "https://www.eventbrite.com/e/nasas-artemis-ii-mission-launch-registration-1074571685839?aff=ebdssbcitybrowse",
+      "venue": "EST",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "7:00 PM",
+      "type": "Eventbrite",
+      "title": "FUN x Mujeres sin Filtro Ed. Las mujeres no lloran las mujeres facturan",
+      "url": "https://www.eventbrite.com.pe/e/fun-x-mujeres-sin-filtro-ed-las-mujeres-no-lloran-las-mujeres-facturan-tickets-1981786992242?aff=ebdssbcitybrowse",
+      "venue": "Seedspace Lima - Swiss Tower",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
     }
   ],
   "2026-03-07": [
@@ -1353,6 +1423,16 @@
       "district": "Lima",
       "price": "",
       "source": "Teleticket"
+    },
+    {
+      "time": "8:00 AM",
+      "type": "Eventbrite",
+      "title": "UnderHouse 2",
+      "url": "https://www.eventbrite.com/e/underhouse-2-tickets-1980578479548?aff=ebdssbcitybrowse",
+      "venue": "Tierra Baldía - Restaurante Cultural",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
     }
   ],
   "2026-03-08": [
@@ -1377,7 +1457,28 @@
       "source": "Teleticket"
     }
   ],
-  "2026-03-09": [],
+  "2026-03-09": [
+    {
+      "time": "3:00 PM",
+      "type": "Eventbrite",
+      "title": "EXPLORANDO LA NUEVA ERA DE LA ESTÉTICA",
+      "url": "https://www.eventbrite.com.ar/e/explorando-la-nueva-era-de-la-estetica-tickets-1982442028473?aff=ebdssbcitybrowse",
+      "venue": "Av. del Ejército 250",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "5:30 PM",
+      "type": "Eventbrite",
+      "title": "Su inversion segura en la Florida Central, USA",
+      "url": "https://www.eventbrite.com/e/su-inversion-segura-en-la-florida-central-usa-tickets-1980648801884?aff=ebdssbcitybrowse",
+      "venue": "Casa Andina Premium Miraflores",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    }
+  ],
   "2026-03-10": [],
   "2026-03-11": [
     {
@@ -1747,6 +1848,16 @@
       "district": "Lima",
       "price": "",
       "source": "Teleticket"
+    },
+    {
+      "time": "5:00 PM",
+      "type": "Eventbrite",
+      "title": "2026 EducationUSA Community College Fair | Lima",
+      "url": "https://www.eventbrite.com/e/2026-educationusa-community-college-fair-lima-tickets-1977036198490?aff=ebdssbcitybrowse",
+      "venue": "Sonesta Hotel El Olivar",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
     }
   ],
   "2026-03-24": [
@@ -1782,6 +1893,16 @@
       "district": "Lima",
       "price": "",
       "source": "Teleticket"
+    },
+    {
+      "time": "7:00 PM",
+      "type": "Eventbrite",
+      "title": "Proclama 2026 - Nuestro Dios",
+      "url": "https://www.eventbrite.com/e/proclama-2026-nuestro-dios-tickets-1557056420669?aff=ebdssbcitybrowse",
+      "venue": "Delfines Hotel & Convention Center",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
     }
   ],
   "2026-03-27": [
@@ -1879,7 +2000,8 @@
       "url": "https://enlima.pe/calendario-cultural/dia/2026-02-04",
       "venue": "5",
       "district": "6",
-      "price": "7"
+      "price": "7",
+      "schedule": "Del 30 Mar al 31 Dic"
     },
     {
       "time": "9",
@@ -1888,7 +2010,8 @@
       "url": "https://enlima.pe/calendario-cultural/dia/2026-02-11",
       "venue": "12",
       "district": "13",
-      "price": "14"
+      "price": "14",
+      "schedule": "Del 30 Mar al 31 Dic"
     },
     {
       "time": "16",
@@ -1897,7 +2020,8 @@
       "url": "https://enlima.pe/calendario-cultural/dia/2026-02-18",
       "venue": "19",
       "district": "20",
-      "price": "21"
+      "price": "21",
+      "schedule": "Del 30 Mar al 31 Dic"
     },
     {
       "time": "23",
@@ -1906,7 +2030,8 @@
       "url": "https://enlima.pe/calendario-cultural/dia/2026-02-25",
       "venue": "26",
       "district": "27",
-      "price": "28"
+      "price": "28",
+      "schedule": "Del 30 Mar al 31 Dic"
     }
   ],
   "2026-03-31": [
@@ -1921,5 +2046,341 @@
       "source": "Teleticket"
     }
   ],
-  "2026-02-29": []
+  "2026-02-29": [],
+  "2026-04-01": [],
+  "2026-04-02": [],
+  "2026-04-03": [],
+  "2026-04-04": [],
+  "2026-04-05": [],
+  "2026-04-06": [],
+  "2026-04-07": [],
+  "2026-04-08": [],
+  "2026-04-09": [],
+  "2026-04-10": [],
+  "2026-04-11": [],
+  "2026-04-12": [],
+  "2026-04-13": [],
+  "2026-04-14": [],
+  "2026-04-15": [],
+  "2026-04-16": [
+    {
+      "time": "9:00 pm",
+      "type": "Conciertos",
+      "title": "Candelabro en Lima",
+      "url": "https://enlima.pe/agenda-cultural/conciertos/candelabro-en-lima",
+      "venue": "Centro de Convenciones Leguía",
+      "district": "Lima",
+      "price": "S/ 212 a S/ 233"
+    }
+  ],
+  "2026-04-17": [],
+  "2026-04-18": [],
+  "2026-04-19": [],
+  "2026-04-20": [],
+  "2026-04-21": [],
+  "2026-04-22": [],
+  "2026-04-23": [
+    {
+      "time": "9:00 pm",
+      "type": "Conciertos",
+      "title": "Megadeth en Lima",
+      "url": "https://enlima.pe/agenda-cultural/conciertos/megadeth-en-lima",
+      "venue": "Multiespacio Costa 21",
+      "district": "San Miguel",
+      "price": "S/ 153 a S/ 330"
+    }
+  ],
+  "2026-04-24": [
+    {
+      "time": "8:00 pm",
+      "type": "Conciertos",
+      "title": "Mac Demarco en Lima",
+      "url": "https://enlima.pe/agenda-cultural/conciertos/mac-demarco-en-lima",
+      "venue": "Multiespacio Costa 21",
+      "district": "San Miguel",
+      "price": "S/ 185 a S/ 285"
+    }
+  ],
+  "2026-04-25": [
+    {
+      "time": "12:00 PM",
+      "type": "Eventbrite",
+      "title": "Se venden rápido Black Girl Book Fair!",
+      "url": "https://www.eventbrite.com/e/black-girl-book-fair-tickets-1979838497241?aff=ebdssbcitybrowse",
+      "venue": "CDT",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    }
+  ],
+  "2026-04-26": [],
+  "2026-04-27": [],
+  "2026-04-28": [],
+  "2026-04-29": [],
+  "2026-04-30": [],
+  "2026-05-01": [],
+  "2026-05-02": [],
+  "2026-05-03": [],
+  "2026-05-04": [],
+  "2026-05-05": [],
+  "2026-05-06": [],
+  "2026-05-07": [],
+  "2026-05-08": [],
+  "2026-05-09": [],
+  "2026-05-10": [],
+  "2026-05-11": [],
+  "2026-05-12": [],
+  "2026-05-13": [],
+  "2026-05-14": [],
+  "2026-05-15": [],
+  "2026-05-16": [],
+  "2026-05-17": [],
+  "2026-05-18": [],
+  "2026-05-19": [],
+  "2026-05-20": [
+    {
+      "time": "8:30 pm",
+      "type": "Conciertos",
+      "title": "Ed Sheeran en Lima",
+      "url": "https://enlima.pe/agenda-cultural/conciertos/ed-sheeran-en-lima",
+      "venue": "Estadio Nacional",
+      "district": "Lince",
+      "price": "S/ 184 a S/ 536"
+    }
+  ],
+  "2026-05-21": [],
+  "2026-05-22": [],
+  "2026-05-23": [],
+  "2026-05-24": [],
+  "2026-05-25": [],
+  "2026-05-26": [],
+  "2026-05-27": [],
+  "2026-05-28": [],
+  "2026-05-29": [],
+  "2026-05-30": [],
+  "2026-05-31": [],
+  "2026-06-01": [],
+  "2026-06-02": [],
+  "2026-06-03": [],
+  "2026-06-04": [],
+  "2026-06-05": [],
+  "2026-06-06": [],
+  "2026-06-07": [],
+  "2026-06-08": [],
+  "2026-06-09": [],
+  "2026-06-10": [],
+  "2026-06-11": [],
+  "2026-06-12": [],
+  "2026-06-13": [],
+  "2026-06-14": [],
+  "2026-06-15": [],
+  "2026-06-16": [],
+  "2026-06-17": [],
+  "2026-06-18": [],
+  "2026-06-19": [],
+  "2026-06-20": [],
+  "2026-06-21": [],
+  "2026-06-22": [],
+  "2026-06-23": [],
+  "2026-06-24": [],
+  "2026-06-25": [],
+  "2026-06-26": [],
+  "2026-06-27": [],
+  "2026-06-28": [],
+  "2026-06-29": [],
+  "2026-06-30": [],
+  "2026-07-01": [],
+  "2026-07-02": [],
+  "2026-07-03": [],
+  "2026-07-04": [],
+  "2026-07-05": [],
+  "2026-07-06": [],
+  "2026-07-07": [],
+  "2026-07-08": [],
+  "2026-07-09": [],
+  "2026-07-10": [],
+  "2026-07-11": [],
+  "2026-07-12": [],
+  "2026-07-13": [],
+  "2026-07-14": [],
+  "2026-07-15": [],
+  "2026-07-16": [],
+  "2026-07-17": [],
+  "2026-07-18": [],
+  "2026-07-19": [],
+  "2026-07-20": [],
+  "2026-07-21": [],
+  "2026-07-22": [],
+  "2026-07-23": [],
+  "2026-07-24": [],
+  "2026-07-25": [],
+  "2026-07-26": [],
+  "2026-07-27": [],
+  "2026-07-28": [],
+  "2026-07-29": [],
+  "2026-07-30": [],
+  "2026-07-31": [],
+  "2026-08-01": [],
+  "2026-08-02": [],
+  "2026-08-03": [],
+  "2026-08-04": [],
+  "2026-08-05": [],
+  "2026-08-06": [],
+  "2026-08-07": [],
+  "2026-08-08": [],
+  "2026-08-09": [],
+  "2026-08-10": [],
+  "2026-08-11": [],
+  "2026-08-12": [],
+  "2026-08-13": [],
+  "2026-08-14": [],
+  "2026-08-15": [
+    {
+      "time": "8:00 pm",
+      "type": "Conciertos",
+      "title": "Rawayana en Lima",
+      "url": "https://enlima.pe/agenda-cultural/conciertos/rawayana-en-lima",
+      "venue": "Multiespacio Costa 21",
+      "district": "San Miguel",
+      "price": "S/ 180 a S/ 350"
+    }
+  ],
+  "2026-08-16": [],
+  "2026-08-17": [],
+  "2026-08-18": [],
+  "2026-08-19": [],
+  "2026-08-20": [],
+  "2026-08-21": [],
+  "2026-08-22": [],
+  "2026-08-23": [],
+  "2026-08-24": [],
+  "2026-08-25": [],
+  "2026-08-26": [],
+  "2026-08-27": [],
+  "2026-08-28": [],
+  "2026-08-29": [],
+  "2026-08-30": [],
+  "2026-08-31": [],
+  "2026-09-01": [],
+  "2026-09-02": [],
+  "2026-09-03": [],
+  "2026-09-04": [],
+  "2026-09-05": [],
+  "2026-09-06": [],
+  "2026-09-07": [],
+  "2026-09-08": [],
+  "2026-09-09": [],
+  "2026-09-10": [],
+  "2026-09-11": [],
+  "2026-09-12": [],
+  "2026-09-13": [],
+  "2026-09-14": [],
+  "2026-09-15": [],
+  "2026-09-16": [],
+  "2026-09-17": [],
+  "2026-09-18": [],
+  "2026-09-19": [],
+  "2026-09-20": [],
+  "2026-09-21": [],
+  "2026-09-22": [],
+  "2026-09-23": [],
+  "2026-09-24": [],
+  "2026-09-25": [],
+  "2026-09-26": [],
+  "2026-09-27": [],
+  "2026-09-28": [],
+  "2026-09-29": [],
+  "2026-09-30": [],
+  "2026-10-01": [],
+  "2026-10-02": [],
+  "2026-10-03": [],
+  "2026-10-04": [],
+  "2026-10-05": [],
+  "2026-10-06": [],
+  "2026-10-07": [],
+  "2026-10-08": [],
+  "2026-10-09": [],
+  "2026-10-10": [],
+  "2026-10-11": [],
+  "2026-10-12": [],
+  "2026-10-13": [],
+  "2026-10-14": [],
+  "2026-10-15": [],
+  "2026-10-16": [],
+  "2026-10-17": [],
+  "2026-10-18": [],
+  "2026-10-19": [],
+  "2026-10-20": [],
+  "2026-10-21": [],
+  "2026-10-22": [],
+  "2026-10-23": [],
+  "2026-10-24": [],
+  "2026-10-25": [],
+  "2026-10-26": [],
+  "2026-10-27": [],
+  "2026-10-28": [],
+  "2026-10-29": [],
+  "2026-10-30": [],
+  "2026-10-31": [],
+  "2026-11-01": [],
+  "2026-11-02": [],
+  "2026-11-03": [],
+  "2026-11-04": [],
+  "2026-11-05": [],
+  "2026-11-06": [],
+  "2026-11-07": [],
+  "2026-11-08": [],
+  "2026-11-09": [],
+  "2026-11-10": [],
+  "2026-11-11": [],
+  "2026-11-12": [],
+  "2026-11-13": [],
+  "2026-11-14": [],
+  "2026-11-15": [],
+  "2026-11-16": [],
+  "2026-11-17": [],
+  "2026-11-18": [],
+  "2026-11-19": [],
+  "2026-11-20": [],
+  "2026-11-21": [],
+  "2026-11-22": [],
+  "2026-11-23": [],
+  "2026-11-24": [],
+  "2026-11-25": [],
+  "2026-11-26": [],
+  "2026-11-27": [],
+  "2026-11-28": [],
+  "2026-11-29": [],
+  "2026-11-30": [],
+  "2026-12-01": [],
+  "2026-12-02": [],
+  "2026-12-03": [],
+  "2026-12-04": [],
+  "2026-12-05": [],
+  "2026-12-06": [],
+  "2026-12-07": [],
+  "2026-12-08": [],
+  "2026-12-09": [],
+  "2026-12-10": [],
+  "2026-12-11": [],
+  "2026-12-12": [],
+  "2026-12-13": [],
+  "2026-12-14": [],
+  "2026-12-15": [],
+  "2026-12-16": [],
+  "2026-12-17": [],
+  "2026-12-18": [],
+  "2026-12-19": [],
+  "2026-12-20": [],
+  "2026-12-21": [],
+  "2026-12-22": [],
+  "2026-12-23": [],
+  "2026-12-24": [],
+  "2026-12-25": [],
+  "2026-12-26": [],
+  "2026-12-27": [],
+  "2026-12-28": [],
+  "2026-12-29": [],
+  "2026-12-30": [],
+  "2026-12-31": []
 }
