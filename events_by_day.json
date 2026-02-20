@@ -377,16 +377,6 @@
   ],
   "2026-02-21": [
     {
-      "time": "09:00",
-      "type": "Eventbrite",
-      "title": "La venta se termina pronto Festival Cafesazo Peruano 2026 -",
-      "url": "https://www.eventbrite.com.pe/e/festival-cafesazo-peruano-2026-edicion-verano-tickets-1980791187764?aff=ebdssbcitybrowse",
-      "venue": "Miraflores",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "3:50 am",
       "type": "Especiales",
       "title": "¡FULL DAY PARACAS + ICA CON RUTAS INCAS!",
@@ -857,16 +847,6 @@
       "price": "S/ 194 a S/ 282"
     },
     {
-      "time": "7:00 PM",
-      "type": "Eventbrite",
-      "title": "BE THE VOICE - VOL. 2",
-      "url": "https://www.eventbrite.com/e/be-the-voice-vol-2-tickets-1982716394108?aff=ebdssbcitybrowse",
-      "venue": "Rock and Pez",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "7:30 pm",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS",
@@ -930,14 +910,14 @@
   ],
   "2026-02-27": [
     {
-      "time": "9:00 AM",
-      "type": "Eventbrite",
-      "title": "Se venden rápido Career Fair: Exclusive Tech Hiring Event-New Tickets Available",
-      "url": "https://www.eventbrite.com/e/career-fair-exclusive-tech-hiring-event-new-tickets-available-tickets-63049080497?aff=ebdssbcitybrowse",
-      "venue": "PST",
-      "district": "Miraflores",
+      "time": "2:45 pm",
+      "type": "Deportes",
+      "title": "FBC MELGAR VS CHANKAS CYC",
+      "url": "https://teleticket.com.pe/fbc-melgar-vs-chankascyc-liga1-apertura-2026",
+      "venue": "",
+      "district": "Lima",
       "price": "",
-      "source": "Eventbrite"
+      "source": "Teleticket"
     },
     {
       "time": "7:00 pm",
@@ -1002,6 +982,16 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 6 Dic"
+    },
+    {
+      "time": "6:00 pm",
+      "type": "Humor",
+      "title": "CHAPA TU MONEY KIDS",
+      "url": "https://teleticket.com.pe/chapa-tu-money-kids-28feb-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
     },
     {
       "time": "6:00 pm",
@@ -1098,18 +1088,7 @@
       "source": "Teleticket"
     }
   ],
-  "2026-03-02": [
-    {
-      "time": "10:00 AM",
-      "type": "Eventbrite",
-      "title": "Casi lleno Pink La Blonde X Dia Light : Le Duo Parfait pour un Balayage Magnifié",
-      "url": "https://www.eventbrite.ca/e/billets-pink-la-blonde-x-dia-light-le-duo-parfait-pour-un-balayage-magnifie-1965600934307?aff=ebdssbcitybrowse",
-      "venue": "GMT-5",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    }
-  ],
+  "2026-03-02": [],
   "2026-03-03": [],
   "2026-03-04": [
     {
@@ -1169,16 +1148,6 @@
     }
   ],
   "2026-03-06": [
-    {
-      "time": "7:00 PM",
-      "type": "Eventbrite",
-      "title": "FUN x Mujeres sin Filtro Ed. Las mujeres no lloran las mujeres facturan",
-      "url": "https://www.eventbrite.com.pe/e/fun-x-mujeres-sin-filtro-ed-las-mujeres-no-lloran-las-mujeres-facturan-tickets-1981786992242?aff=ebdssbcitybrowse",
-      "venue": "Seedspace Lima - Swiss Tower",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
     {
       "time": "8:00 pm",
       "type": "Festival",
@@ -1283,16 +1252,6 @@
     }
   ],
   "2026-03-07": [
-    {
-      "time": "8:00 AM",
-      "type": "Eventbrite",
-      "title": "UnderHouse 2",
-      "url": "https://www.eventbrite.com/e/underhouse-2-tickets-1980578479548?aff=ebdssbcitybrowse",
-      "venue": "Tierra Baldía - Restaurante Cultural",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
     {
       "time": "11:00 am",
       "type": "Festival",
@@ -1418,28 +1377,7 @@
       "source": "Teleticket"
     }
   ],
-  "2026-03-09": [
-    {
-      "time": "3:00 PM",
-      "type": "Eventbrite",
-      "title": "EXPLORANDO LA NUEVA ERA DE LA ESTÉTICA",
-      "url": "https://www.eventbrite.com.ar/e/explorando-la-nueva-era-de-la-estetica-tickets-1982442028473?aff=ebdssbcitybrowse",
-      "venue": "Av. del Ejército 250",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
-      "time": "5:30 PM",
-      "type": "Eventbrite",
-      "title": "Su inversion segura en la Florida Central, USA",
-      "url": "https://www.eventbrite.com/e/su-inversion-segura-en-la-florida-central-usa-tickets-1980648801884?aff=ebdssbcitybrowse",
-      "venue": "Casa Andina Premium Miraflores",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    }
-  ],
+  "2026-03-09": [],
   "2026-03-10": [],
   "2026-03-11": [
     {
@@ -1581,7 +1519,7 @@
   ],
   "2026-03-15": [
     {
-      "time": "11:30 am",
+      "time": "",
       "type": "Teatro",
       "title": "BLANCANIEVES Y LOS 7 ENANOS",
       "url": "https://teleticket.com.pe/evento/blancanieves-y-los-7-enanos-teatro-antonio-banderas",
@@ -1801,16 +1739,6 @@
   ],
   "2026-03-23": [
     {
-      "time": "5:00 PM",
-      "type": "Eventbrite",
-      "title": "2026 EducationUSA Community College Fair | Lima",
-      "url": "https://www.eventbrite.com/e/2026-educationusa-community-college-fair-lima-tickets-1977036198490?aff=ebdssbcitybrowse",
-      "venue": "Sonesta Hotel El Olivar",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "9:00 pm",
       "type": "Música",
       "title": "THE KILLERS EN LIMA",
@@ -1845,16 +1773,6 @@
   ],
   "2026-03-25": [],
   "2026-03-26": [
-    {
-      "time": "7:00 PM",
-      "type": "Eventbrite",
-      "title": "Proclama 2026 - Nuestro Dios",
-      "url": "https://www.eventbrite.com/e/proclama-2026-nuestro-dios-tickets-1557056420669?aff=ebdssbcitybrowse",
-      "venue": "Delfines Hotel & Convention Center",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
     {
       "time": "9:00 pm",
       "type": "Musical",
