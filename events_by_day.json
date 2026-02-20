@@ -270,16 +270,6 @@
     {
       "time": "",
       "type": "Teleticket",
-      "title": "OFICINA LIKE XPLORER PERU  - PARACAS - PISCO/ EspecialesPASEO EN DUNE BUGGY POR LA RESERVA NACION...",
-      "url": "https://teleticket.com.pe/evento/paseo-en-dune-buggy-por-la-reserva-nacional-de-paracas-playa-roja--desierto-lunar-oficina-like-xplorer-peru-",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "",
-      "type": "Teleticket",
       "title": "PUNTO DE  REUNIÓN - LIMA/ EntretenciónTOUR DEL MIEDO 2026 - CEMENTERIO PRESBITERO MATIAS MAESTRO2...",
       "url": "https://teleticket.com.pe/evento/tour-del-miedo-2026-cementerio-presbitero-matias-maestro-2026_cercado-de-lima",
       "venue": "",
@@ -493,6 +483,16 @@
     {
       "time": "",
       "type": "Teleticket",
+      "title": "OFICINA LIKE XPLORER PERU  - PARACAS - PISCO/ EspecialesPASEO EN DUNE BUGGY POR LA RESERVA NACION...",
+      "url": "https://teleticket.com.pe/evento/paseo-en-dune-buggy-por-la-reserva-nacional-de-paracas-playa-roja--desierto-lunar-oficina-like-xplorer-peru-",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "",
+      "type": "Teleticket",
       "title": "OFICINA LIKE XPLORER PERU  - PARACAS - PISCO/ Humor¡TOUR RESERVA NACIONAL DE PARACAS - + PLAYA LA...",
       "url": "https://teleticket.com.pe/evento/tour-reserva-nacional-de-paracas--playa-la-mina-oficina-like-xplorer-peru-",
       "venue": "",
@@ -633,8 +633,8 @@
     {
       "time": "",
       "type": "Teleticket",
-      "title": "ROCK AND PEZ - MIRAFLORES - MIRAFLORES - LIMA/ MúsicaVERANO 2000 - RETRO21 de febrero 2026",
-      "url": "https://teleticket.com.pe/evento/verano-2000-retro-rock-and-pez-miraflores",
+      "title": "PEÑA LOS ANDES - INDEPENDENCIA - LIMA/ MúsicaATRAPADOS EN EL TIEMPO Festi VERANO Retro 80s Y 90s2...",
+      "url": "https://teleticket.com.pe/evento/atrapados-en-el-tiempo-la-fiesta-de-los-80-y-90-2026-1",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -643,8 +643,8 @@
     {
       "time": "",
       "type": "Teleticket",
-      "title": "PEÑA LOS ANDES - INDEPENDENCIA - LIMA/ MúsicaATRAPADOS EN EL TIEMPO Festi VERANO Retro 80s Y 90s2...",
-      "url": "https://teleticket.com.pe/evento/atrapados-en-el-tiempo-la-fiesta-de-los-80-y-90-2026-1",
+      "title": "ROCK AND PEZ - MIRAFLORES - MIRAFLORES - LIMA/ MúsicaVERANO 2000 - RETRO21 de febrero 2026",
+      "url": "https://teleticket.com.pe/evento/verano-2000-retro-rock-and-pez-miraflores",
       "venue": "",
       "district": "Lima",
       "price": "",
