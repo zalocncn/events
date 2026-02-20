@@ -184,8 +184,8 @@ def scrape_teleticket_events(soup):
             first_key, last_key = parse_date_range(date_text)
             if not first_key:
                 continue
-            # Only include Feb-Mar 2026
-            if not (first_key.startswith("2026-02") or first_key.startswith("2026-03")):
+            # Only include 2026
+            if not first_key.startswith("2026-"):
                 continue
 
             # Category from <p class="descripcion">
@@ -244,7 +244,7 @@ def main():
         seen.add(k)
         deduped.append((date_key, ev))
     events_with_dates = deduped
-    print(f"  Found {len(events_with_dates)} Teleticket events (Feb–Mar 2026)")
+    print(f"  Found {len(events_with_dates)} Teleticket events (2026)")
 
     # Fetch time from each event detail page unless SKIP_TELETICKET_FETCH is set
     if not os.environ.get("SKIP_TELETICKET_FETCH"):

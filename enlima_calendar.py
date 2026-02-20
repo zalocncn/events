@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Scrape EnLima agenda by day and output events_by_day.json for the calendar.
-Fetches https://enlima.pe/calendario-cultural/dia/YYYY-MM-DD for Feb + Mar 2026.
+Fetches https://enlima.pe/calendario-cultural/dia/YYYY-MM-DD for full year 2026.
 """
 import json
 import re
@@ -153,29 +153,19 @@ def main():
     else:
         events_by_day = {}
 
-    # February 2026
-    for day in range(1, 30):
-        date_key = f"2026-02-{day:02d}"
-        if date_key not in events_by_day:
-            events_by_day[date_key] = []
-        # Replace only EnLima events for this day with fresh scrape
-        events_by_day[date_key] = [e for e in events_by_day[date_key] if not is_enlima_event(e)]
-        soup = fetch_day(2026, 2, day)
-        new_events = parse_day_page(soup, date_key)
-        events_by_day[date_key].extend(new_events)
-        if new_events:
-            print(f"  {date_key}: {len(new_events)} EnLima events")
-    # March 2026
-    for day in range(1, 32):
-        date_key = f"2026-03-{day:02d}"
-        if date_key not in events_by_day:
-            events_by_day[date_key] = []
-        events_by_day[date_key] = [e for e in events_by_day[date_key] if not is_enlima_event(e)]
-        soup = fetch_day(2026, 3, day)
-        new_events = parse_day_page(soup, date_key)
-        events_by_day[date_key].extend(new_events)
-        if new_events:
-            print(f"  {date_key}: {len(new_events)} EnLima events")
+    # 2026: Feb (29 days) through Dec (31 days)
+    MONTH_DAYS = [(2, 29), (3, 31), (4, 30), (5, 31), (6, 30), (7, 31), (8, 31), (9, 30), (10, 31), (11, 30), (12, 31)]
+    for month, last_day in MONTH_DAYS:
+        for day in range(1, last_day + 1):
+            date_key = f"2026-{month:02d}-{day:02d}"
+            if date_key not in events_by_day:
+                events_by_day[date_key] = []
+            events_by_day[date_key] = [e for e in events_by_day[date_key] if not is_enlima_event(e)]
+            soup = fetch_day(2026, month, day)
+            new_events = parse_day_page(soup, date_key)
+            events_by_day[date_key].extend(new_events)
+            if new_events:
+                print(f"  {date_key}: {len(new_events)} EnLima events")
 
     print("  Deduplicating repeating events...")
     events_by_day = dedupe_repeating_events(events_by_day)

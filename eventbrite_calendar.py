@@ -179,11 +179,11 @@ def main():
 
     # Remove existing Eventbrite events so we don't duplicate when re-running
     for date_key in list(events_by_day.keys()):
-        if date_key.startswith("2026-02") or date_key.startswith("2026-03"):
+        if date_key.startswith("2026-"):
             events_by_day[date_key] = [e for e in events_by_day[date_key] if "eventbrite" not in (e.get("url") or "")]
     added = 0
     for date_key, ev in events_with_dates:
-        if not (date_key.startswith("2026-02") or date_key.startswith("2026-03")):
+        if not date_key.startswith("2026-"):
             continue
         if date_key not in events_by_day:
             events_by_day[date_key] = []

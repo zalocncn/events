@@ -100,16 +100,9 @@
                 <div class="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-[#1A1A1D] to-transparent pointer-events-none"></div>
             </div>
 
-            <!-- Show more: later months -->
+            <!-- Show more: later months (Apr–Dec 2026 loaded on click) -->
             <section class="w-full" id="more-months-section" style="display: none;">
-                <h2 class="text-xl sm:text-2xl font-semibold text-white mb-4 flex items-center gap-2">
-                    <i data-lucide="calendar" class="w-6 h-6 text-[#6F42C1]"></i>
-                    Próximos meses
-                </h2>
-                <div class="rounded-[10px] border border-white/5 bg-[#242428] p-8 text-center text-[#A0A0A0]">
-                    <p>Abril, Mayo y más meses se pueden añadir ejecutando el scraper para más fechas.</p>
-                    <p class="text-sm mt-2">Fuente: <a href="https://enlima.pe/" target="_blank" rel="noopener" class="text-[#8B5CF6] hover:underline">enlima.pe</a></p>
-                </div>
+                <div id="more-months-container" class="space-y-8 sm:space-y-12 lg:space-y-16"></div>
             </section>
         </div>
 
@@ -466,10 +459,23 @@
 
             document.getElementById('show-more-btn').addEventListener('click', function() {
                 const section = document.getElementById('more-months-section');
+                const container = document.getElementById('more-months-container');
                 const icon = this.querySelector('i');
                 if (section.style.display === 'none') {
                     section.style.display = 'block';
                     if (typeof lucide !== 'undefined' && icon) icon.setAttribute('data-lucide', 'chevron-up');
+                    // Load Apr–Dec 2026 on first expand
+                    if (container && container.children.length === 0 && cachedEventsByDay) {
+                        for (let month = 4; month <= 12; month++) {
+                            const monthName = MONTHS[month];
+                            const sectionEl = document.createElement('section');
+                            sectionEl.className = 'w-full';
+                            sectionEl.innerHTML = '<h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-white mb-3 sm:mb-4 flex items-center gap-2"><i data-lucide="calendar-days" class="w-5 h-5 sm:w-6 sm:h-6 text-[#6F42C1]"></i>' + monthName + ' 2026</h2><div id="cal-' + month + '-2026" class="rounded-lg sm:rounded-[10px] border border-white/5 bg-[#242428] overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.2)] sm:shadow-[0_6px_20px_rgba(0,0,0,0.28)]"></div>';
+                            container.appendChild(sectionEl);
+                            buildMonthCalendar('cal-' + month + '-2026', 2026, month, cachedEventsByDay);
+                        }
+                        if (typeof lucide !== 'undefined') lucide.createIcons();
+                    }
                 } else {
                     section.style.display = 'none';
                     if (typeof lucide !== 'undefined' && icon) icon.setAttribute('data-lucide', 'chevron-down');
