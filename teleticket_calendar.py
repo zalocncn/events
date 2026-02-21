@@ -35,14 +35,47 @@ MES_A_NUM = {
 MES_LABEL = ["", "Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
 
 
-def fetch_teleticket():
+def fetch_teleticket_page(url=None):
+    url = url or TELETICKET_URL
     try:
-        r = requests.get(TELETICKET_URL, headers=HEADERS, timeout=15)
+        r = requests.get(url, headers=HEADERS, timeout=15)
         r.raise_for_status()
         return BeautifulSoup(r.text, "lxml")
     except Exception as e:
-        print(f"  Error fetching Teleticket: {e}", file=__import__("sys").stderr)
+        print(f"  Error fetching {url}: {e}", file=__import__("sys").stderr)
         return None
+
+
+def fetch_teleticket():
+    """Fetch first page (for backward compatibility)."""
+    return fetch_teleticket_page(TELETICKET_URL)
+
+
+def fetch_all_teleticket_pages(max_pages=20):
+    """Fetch /todos and /todos?page=2, ... until a page has no event links."""
+    soups = []
+    for p in range(1, max_pages + 1):
+        url = TELETICKET_URL if p == 1 else f"{TELETICKET_URL}?page={p}"
+        soup = fetch_teleticket_page(url)
+        if not soup:
+            break
+        soups.append(soup)
+        # Stop if this page has no event links (pagination end)
+        links = soup.select('a[href*="teleticket.com.pe"]')
+        event_links = [a for a in links if is_event_link(a.get("href") or "")]
+        if p > 1 and not event_links:
+            break
+        if p > 1:
+            time.sleep(0.3)
+    return soups
+
+
+def is_event_link(href):
+    if not href or href == "#":
+        return False
+    if any(s in href for s in ("/Cliente/", "/Account/", "/puntosventa", "/Register", "/SignIn", "/SignOut")):
+        return False
+    return "teleticket.com.pe" in href
 
 
 def parse_date_range(date_str):
@@ -69,6 +102,23 @@ def parse_date_range(date_str):
     if not keys:
         return None, None
     return keys[0], keys[-1]
+
+
+def date_range_to_keys(first_key, last_key):
+    """Return list of YYYY-MM-DD keys from first_key to last_key inclusive."""
+    from datetime import datetime, timedelta
+    out = []
+    try:
+        d0 = datetime.strptime(first_key, "%Y-%m-%d")
+        d1 = datetime.strptime(last_key, "%Y-%m-%d")
+        if d1 < d0:
+            d0, d1 = d1, d0
+        while d0 <= d1:
+            out.append(d0.strftime("%Y-%m-%d"))
+            d0 += timedelta(days=1)
+    except Exception:
+        out = [first_key] if first_key else []
+    return out
 
 
 def fetch_event_time(event_url):
@@ -134,17 +184,56 @@ def _normalize_time(t):
     return f"{h - 12}:{min_val} pm"
 
 
+def _make_ev(title, href, first_key, last_key, cat=""):
+    """Build event dict and schedule label. Returns (first_key, last_key, ev)."""
+    schedule = None
+    if first_key != last_key:
+        try:
+            d1 = first_key.split("-")
+            d2 = last_key.split("-")
+            schedule = (
+                f"Del {int(d1[2])} {MES_LABEL[int(d1[1])]} "
+                f"al {int(d2[2])} {MES_LABEL[int(d2[1])]}"
+            )
+        except Exception:
+            schedule = f"Del {first_key} al {last_key}"
+    ev = {
+        "time": "",
+        "type": cat or "Teleticket",
+        "title": (title or "Evento")[:120],
+        "url": href,
+        "venue": "",
+        "district": "Lima",
+        "price": "",
+        "source": "Teleticket",
+    }
+    if schedule:
+        ev["schedule"] = schedule
+    return (first_key, last_key, ev)
+
+
 def scrape_teleticket_events(soup):
     """
-    FIX: Use <article id="event_N"> selectors to target individual event cards.
-    Each card has: <h3> (title), <p class="fecha"> (date), <p class="descripcion"> (category),
-    <img class="img--evento"> (image), and a wrapper <a href="..."> (link).
+    Parse all Teleticket events from the page:
+    1) Article cards (carousel / featured): h3, p.fecha, p.descripcion, a[href].
+    2) "Eventos Por Mes" list: h3 (title) + a[href*="teleticket.com.pe"] with date in link text.
+    Returns list of (first_key, last_key, ev) so multi-day events can be expanded to every day.
     """
-    events_with_dates = []
+    seen_urls = set()
+    out = []  # (first_key, last_key, ev)
     if not soup:
-        return events_with_dates
+        return out
 
-    # Target the specific event article cards
+    # Skip nav/account links
+    def is_event_url(href):
+        if not href or href == "#":
+            return False
+        if any(s in href for s in ("/Cliente/", "/Account/", "/puntosventa",
+                                   "/Register", "/SignIn", "/SignOut")):
+            return False
+        return "teleticket.com.pe" in href
+
+    # ---- 1) Article cards (carousel / listado) ----
     cards = soup.select('article[id^="event_"]')
     if not cards:
         cards = soup.select('.listado--eventos article')
@@ -156,111 +245,118 @@ def scrape_teleticket_events(soup):
             link = card.select_one('a[href]')
             if not link:
                 continue
-
             href = (link.get("href") or "").strip()
-            if not href or href == "#":
-                continue
             if href.startswith("/"):
                 href = "https://teleticket.com.pe" + href
-
-            # Skip non-event URLs
-            if any(s in href for s in ("/Cliente/", "/Account/", "/puntosventa",
-                                       "/Register", "/SignIn", "/SignOut")):
+            if not is_event_url(href) or href in seen_urls:
                 continue
+            seen_urls.add(href)
 
-            # Title from <h3>
             title_el = card.select_one('h3')
             title = title_el.get_text(strip=True) if title_el else ""
-            if not title or len(title) < 3:
-                continue
-            # Skip navigation items
-            if title.upper() in ("VER MÁS", "VER TODOS", "VER TODO"):
+            if not title or len(title) < 3 or title.upper() in ("VER MÁS", "VER TODOS", "VER TODO"):
                 continue
 
-            # Date from <p class="fecha">
             fecha_el = card.select_one('p.fecha')
             date_text = fecha_el.get_text(strip=True) if fecha_el else ""
-
             first_key, last_key = parse_date_range(date_text)
-            if not first_key:
-                continue
-            # Only include 2026
-            if not first_key.startswith("2026-"):
+            if not first_key or not first_key.startswith("2026-"):
                 continue
 
-            # Category from <p class="descripcion">
             desc_el = card.select_one('p.descripcion')
             desc = desc_el.get_text(strip=True) if desc_el else ""
-            # Extract category after the slash: "WWW.TELETICKET.COM.PE - WEB / Humor"
             cat = ""
             if "/" in desc:
                 cat = desc.split("/")[-1].strip()
 
-            # Schedule label for multi-day events
-            schedule = None
-            if first_key != last_key:
-                try:
-                    d1 = first_key.split("-")
-                    d2 = last_key.split("-")
-                    schedule = (
-                        f"Del {int(d1[2])} {MES_LABEL[int(d1[1])]} "
-                        f"al {int(d2[2])} {MES_LABEL[int(d2[1])]}"
-                    )
-                except Exception:
-                    schedule = f"Del {first_key} al {last_key}"
-
-            ev = {
-                "time": "",  # Will be filled by fetch_event_time()
-                "type": cat or "Teleticket",
-                "title": title[:120],
-                "url": href,
-                "venue": "",
-                "district": "Lima",
-                "price": "",
-                "source": "Teleticket",
-            }
-            if schedule:
-                ev["schedule"] = schedule
-
-            events_with_dates.append((first_key, ev))
+            out.append(_make_ev(title, href, first_key, last_key, cat))
         except Exception:
             continue
 
-    return events_with_dates
+    # ---- 2) "Eventos Por Mes" section: links with "DD de MES YYYY" in text, title from previous h3 ----
+    for a in soup.select('a[href*="teleticket.com.pe"]'):
+        try:
+            href = (a.get("href") or "").strip()
+            if href.startswith("/"):
+                href = "https://teleticket.com.pe" + href
+            if not is_event_url(href):
+                continue
+            link_text = a.get_text(separator=" ", strip=True)
+            first_key, last_key = parse_date_range(link_text)
+            if not first_key or not first_key.startswith("2026-"):
+                continue
+
+            title_el = a.find_previous("h3")
+            title = title_el.get_text(strip=True) if title_el else ""
+            # Skip month headings used as h3 (e.g. "Enero 2026", "Febrero 2026")
+            if title and re.match(r"^(Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Setiembre|Septiembre|Octubre|Noviembre|Diciembre)\s+2026$", title, re.I):
+                title = ""
+            if not title or len(title) < 3:
+                title = re.sub(r"\d{1,2}\s+de\s+\w+\s+\d{4}.*", "", link_text).strip()
+                if "/" in title:
+                    title = title.split("/")[-1].strip()
+                title = title[:80] if title else "Evento Teleticket"
+            if title.upper() in ("VER MÁS", "VER TODOS", "VER TODO"):
+                continue
+
+            # Category from link text: "VENUE / Category DD de mes YYYY"
+            cat = ""
+            if "/" in link_text:
+                after_slash = link_text.split("/", 1)[-1].strip()
+                cat = re.sub(r"\s*\d{1,2}\s+de\s+.*", "", after_slash).strip()
+
+            if href not in seen_urls:
+                seen_urls.add(href)
+                out.append(_make_ev(title, href, first_key, last_key, cat))
+            # If same URL already in out, we could extend date range; for simplicity keep first.
+        except Exception:
+            continue
+
+    return out
 
 
 def main():
-    print("  Fetching Teleticket...")
-    soup = fetch_teleticket()
-    events_with_dates = scrape_teleticket_events(soup)
+    print("  Fetching Teleticket (all pages)...")
+    soups = fetch_all_teleticket_pages()
+    raw_events = []
+    for soup in soups:
+        raw_events.extend(scrape_teleticket_events(soup))
 
-    # Deduplicate by title+url
-    seen = set()
-    deduped = []
-    for date_key, ev in events_with_dates:
-        k = (ev["title"][:60], ev["url"])
-        if k in seen:
+    # Deduplicate by URL (keep first occurrence)
+    seen_url = set()
+    unique_raw = []
+    for first_key, last_key, ev in raw_events:
+        if ev.get("url") in seen_url:
             continue
-        seen.add(k)
-        deduped.append((date_key, ev))
-    events_with_dates = deduped
-    print(f"  Found {len(events_with_dates)} Teleticket events (2026)")
+        seen_url.add(ev["url"])
+        unique_raw.append((first_key, last_key, ev))
 
-    # Fetch time from each event detail page unless SKIP_TELETICKET_FETCH is set
+    # Expand multi-day events to one (date_key, ev) per day in range
+    events_with_dates = []  # (date_key, ev)
+    for first_key, last_key, ev in unique_raw:
+        for d in date_range_to_keys(first_key, last_key):
+            events_with_dates.append((d, ev))
+
+    print(f"  Found {len(unique_raw)} Teleticket events → {len(events_with_dates)} day placements (2026)")
+
+    # Fetch time once per unique event (by URL)
     if not os.environ.get("SKIP_TELETICKET_FETCH"):
+        urls_done = set()
         fetched = 0
-        for i, (date_key, ev) in enumerate(events_with_dates):
-            if not ev.get("url"):
+        for i, (_, ev) in enumerate(events_with_dates):
+            url = ev.get("url")
+            if not url or url in urls_done:
                 continue
-            if i > 0:
+            urls_done.add(url)
+            if fetched > 0:
                 time.sleep(0.35)
-            t = fetch_event_time(ev["url"])
+            t = fetch_event_time(url)
             if t:
                 ev["time"] = t
                 fetched += 1
-            if (i + 1) % 10 == 0:
-                print(f"    Fetched {i + 1}/{len(events_with_dates)} detail pages...")
-        print(f"  Got time for {fetched}/{len(events_with_dates)} Teleticket events")
+            if (fetched) % 15 == 0 and fetched > 0:
+                print(f"    Fetched time for {fetched} events...")
+        print(f"  Got time for {fetched}/{len(urls_done)} Teleticket events")
     else:
         print("  Skipping per-event time fetch (SKIP_TELETICKET_FETCH=1)")
 
@@ -271,7 +367,6 @@ def main():
     with open(EVENTS_FILE, "r", encoding="utf-8") as f:
         events_by_day = json.load(f)
 
-    # Remove existing Teleticket events to avoid duplicates
     def is_teleticket_event(e):
         u = e.get("url") or ""
         return "teleticket.com.pe" in u
@@ -288,7 +383,7 @@ def main():
 
     with open(EVENTS_FILE, "w", encoding="utf-8") as f:
         json.dump(events_by_day, f, ensure_ascii=False, indent=2)
-    print(f"  Merged {added} Teleticket events into calendar. Wrote {EVENTS_FILE}")
+    print(f"  Merged {added} Teleticket dots into calendar. Wrote {EVENTS_FILE}")
 
 
 if __name__ == "__main__":
