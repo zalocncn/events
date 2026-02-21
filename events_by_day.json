@@ -732,17 +732,6 @@
       "schedule": "Del 21 Feb al 15 Mar"
     },
     {
-      "time": "9:30 am",
-      "type": "Música",
-      "title": "AMARANTA DÉCIMO ANIVERSARIO",
-      "url": "https://teleticket.com.pe/amaranta10aniversario",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 22 Feb"
-    },
-    {
       "time": "3:00 pm",
       "type": "Música",
       "title": "CARNAVAL LIMEÑO",
@@ -762,39 +751,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Feb al 22 Feb"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "CUENTA CUENTOS",
-      "url": "https://teleticket.com.pe/evento/cuenta-cuentos-la-estacion-de-barranco",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
     },
     {
       "time": "5:00 pm",
@@ -1057,17 +1013,6 @@
     },
     {
       "time": "9:30 am",
-      "type": "Música",
-      "title": "AMARANTA DÉCIMO ANIVERSARIO",
-      "url": "https://teleticket.com.pe/amaranta10aniversario",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 22 Feb"
-    },
-    {
-      "time": "9:30 am",
       "type": "Teatro",
       "title": "LAS CAZADORAS KPOP LLEGAN AL TEATRO PERUANO JAPONES",
       "url": "https://teleticket.com.pe/las-cazadoras-kpop-2026",
@@ -1076,39 +1021,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Feb al 22 Feb"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "CUENTA CUENTOS",
-      "url": "https://teleticket.com.pe/evento/cuenta-cuentos-la-estacion-de-barranco",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
     },
     {
       "time": "5:00 pm",
@@ -1364,6 +1276,38 @@
       "schedule": "Del 22 Feb al 9 Ene"
     },
     {
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "AMARANTA DÉCIMO ANIVERSARIO",
+      "url": "https://teleticket.com.pe/amaranta10aniversario",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 1 Mar"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
+    },
+    {
       "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
@@ -1441,39 +1385,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Feb al 15 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "CUENTA CUENTOS",
-      "url": "https://teleticket.com.pe/evento/cuenta-cuentos-la-estacion-de-barranco",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
     },
     {
       "time": "5:00 pm",
@@ -1694,6 +1605,28 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 1 Mar"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -1786,39 +1719,6 @@
       "schedule": "Del 21 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "CUENTA CUENTOS",
-      "url": "https://teleticket.com.pe/evento/cuenta-cuentos-la-estacion-de-barranco",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:00 pm",
       "type": "Teatro",
       "title": "UN CUENTO MAGICO",
@@ -2037,6 +1937,28 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 1 Mar"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -2161,39 +2083,6 @@
       "schedule": "Del 21 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "CUENTA CUENTOS",
-      "url": "https://teleticket.com.pe/evento/cuenta-cuentos-la-estacion-de-barranco",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:00 pm",
       "type": "Teatro",
       "title": "UN CUENTO MAGICO",
@@ -2412,6 +2301,28 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 1 Mar"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -2588,39 +2499,6 @@
       "schedule": "Del 21 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "CUENTA CUENTOS",
-      "url": "https://teleticket.com.pe/evento/cuenta-cuentos-la-estacion-de-barranco",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:00 pm",
       "type": "Teatro",
       "title": "UN CUENTO MAGICO",
@@ -2839,6 +2717,28 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 1 Mar"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -3047,39 +2947,6 @@
       "schedule": "Del 21 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "CUENTA CUENTOS",
-      "url": "https://teleticket.com.pe/evento/cuenta-cuentos-la-estacion-de-barranco",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:00 pm",
       "type": "Teatro",
       "title": "UN CUENTO MAGICO",
@@ -3298,6 +3165,28 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 1 Mar"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -3485,39 +3374,6 @@
       "schedule": "Del 21 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "CUENTA CUENTOS",
-      "url": "https://teleticket.com.pe/evento/cuenta-cuentos-la-estacion-de-barranco",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:00 pm",
       "type": "Teatro",
       "title": "UN CUENTO MAGICO",
@@ -3736,6 +3592,28 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 1 Mar"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -3985,39 +3863,6 @@
       "schedule": "Del 21 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "CUENTA CUENTOS",
-      "url": "https://teleticket.com.pe/evento/cuenta-cuentos-la-estacion-de-barranco",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:00 pm",
       "type": "Teatro",
       "title": "UN CUENTO MAGICO",
@@ -4192,6 +4037,28 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 1 Mar"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -4304,6 +4171,16 @@
       "schedule": "Del 28 Feb al 6 Mar"
     },
     {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "CUENTA CUENTOS",
+      "url": "https://teleticket.com.pe/evento/cuenta-cuentos-la-estacion-de-barranco",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
       "time": "6:00 pm",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS",
@@ -4369,17 +4246,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Feb al 15 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
     },
     {
       "time": "5:00 pm",
@@ -4556,6 +4422,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -4692,17 +4569,6 @@
       "schedule": "Del 21 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:00 pm",
       "type": "Teatro",
       "title": "UN CUENTO MAGICO",
@@ -4877,6 +4743,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -4958,16 +4835,6 @@
   ],
   "2026-03-04": [
     {
-      "time": "8:00 PM",
-      "type": "Eventbrite",
-      "title": "Nuevas estrategias en el Tratamiento Periodontal No Quirúrgico",
-      "url": "https://www.eventbrite.com/e/entradas-nuevas-estrategias-en-el-tratamiento-periodontal-no-quirurgico-1981588704157?aff=ebdssbcitybrowse",
-      "venue": "GMT+1",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -5021,17 +4888,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Feb al 15 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
     },
     {
       "time": "5:00 pm",
@@ -5208,6 +5064,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -5321,16 +5188,6 @@
   ],
   "2026-03-05": [
     {
-      "time": "6:30 PM",
-      "type": "Eventbrite",
-      "title": "Se venden rápido Webinar: Prevención de Lavado de Activos",
-      "url": "https://www.eventbrite.com/e/webinar-prevencion-de-lavado-de-activos-tickets-1983282427128?aff=ebdssbcitybrowse",
-      "venue": "GMT-5",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -5373,17 +5230,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Feb al 15 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
     },
     {
       "time": "5:00 pm",
@@ -5560,6 +5406,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -5673,16 +5530,6 @@
   ],
   "2026-03-06": [
     {
-      "time": "8:29 PM",
-      "type": "Eventbrite",
-      "title": "NASA's Artemis II Mission Launch",
-      "url": "https://www.eventbrite.com/e/nasas-artemis-ii-mission-launch-registration-1074571685839?aff=ebdssbcitybrowse",
-      "venue": "EST",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -5725,17 +5572,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Feb al 15 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
     },
     {
       "time": "5:00 pm",
@@ -5912,6 +5748,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -6117,16 +5964,6 @@
   ],
   "2026-03-07": [
     {
-      "time": "8:00 AM",
-      "type": "Eventbrite",
-      "title": "UnderHouse 2",
-      "url": "https://www.eventbrite.com/e/underhouse-2-tickets-1980578479548?aff=ebdssbcitybrowse",
-      "venue": "Tierra Baldía - Restaurante Cultural",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -6169,17 +6006,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Feb al 15 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
     },
     {
       "time": "5:00 pm",
@@ -6356,6 +6182,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -6616,17 +6453,6 @@
       "schedule": "Del 21 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:00 pm",
       "type": "Teatro",
       "title": "UN CUENTO MAGICO",
@@ -6793,6 +6619,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -6946,26 +6783,6 @@
   ],
   "2026-03-09": [
     {
-      "time": "3:00 PM",
-      "type": "Eventbrite",
-      "title": "EXPLORANDO LA NUEVA ERA DE LA ESTÉTICA",
-      "url": "https://www.eventbrite.com.ar/e/explorando-la-nueva-era-de-la-estetica-tickets-1982442028473?aff=ebdssbcitybrowse",
-      "venue": "Av. del Ejército 250",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
-      "time": "5:30 PM",
-      "type": "Eventbrite",
-      "title": "Su inversion segura en la Florida Central, USA",
-      "url": "https://www.eventbrite.com/e/su-inversion-segura-en-la-florida-central-usa-tickets-1980648801884?aff=ebdssbcitybrowse",
-      "venue": "Casa Andina Premium Miraflores",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -7008,17 +6825,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Feb al 15 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
     },
     {
       "time": "5:30 pm",
@@ -7173,6 +6979,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -7342,17 +7159,6 @@
       "schedule": "Del 21 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -7505,6 +7311,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -7674,17 +7491,6 @@
       "schedule": "Del 21 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -7837,6 +7643,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -8026,17 +7843,6 @@
       "schedule": "Del 21 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -8189,6 +7995,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -8378,17 +8195,6 @@
       "schedule": "Del 21 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -8541,6 +8347,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -8696,16 +8513,6 @@
   ],
   "2026-03-14": [
     {
-      "time": "4:30 PM",
-      "type": "Eventbrite",
-      "title": "Casi lleno Cómo planificar, estudiar menos y rendir más",
-      "url": "https://www.eventbrite.com/e/entradas-como-planificar-estudiar-menos-y-rendir-mas-1982872938336?aff=ebdssbcitybrowse",
-      "venue": "GMT+1",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -8748,17 +8555,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Feb al 15 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
     },
     {
       "time": "5:30 pm",
@@ -8913,6 +8709,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -9142,17 +8949,6 @@
       "schedule": "Del 21 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -9305,6 +9101,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -9462,17 +9269,6 @@
       "schedule": "Del 21 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -9625,6 +9421,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -9739,16 +9546,6 @@
   ],
   "2026-03-17": [
     {
-      "time": "7:00 PM",
-      "type": "Eventbrite",
-      "title": "formative Session: Why Have Scaleups Been So Successful in Latin America? - Lima",
-      "url": "https://www.eventbrite.es/e/informative-session-why-have-scaleups-been-so-successful-in-latin-america-lima-tickets-1982697241823?aff=ebdssbcitybrowse",
-      "venue": "WeWork Larco - Oficina IE Perú",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -9780,17 +9577,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Feb al 1 Jul"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
     },
     {
       "time": "5:30 pm",
@@ -9945,6 +9731,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -10113,17 +9910,6 @@
       "schedule": "Del 21 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -10276,6 +10062,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -10455,17 +10252,6 @@
       "schedule": "Del 21 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -10618,6 +10404,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -10776,17 +10573,6 @@
       "schedule": "Del 21 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -10939,6 +10725,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -11137,17 +10934,6 @@
       "schedule": "Del 21 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -11300,6 +11086,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -11540,17 +11337,6 @@
       "schedule": "Del 21 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -11703,6 +11489,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -11860,16 +11657,6 @@
   ],
   "2026-03-23": [
     {
-      "time": "5:00 PM",
-      "type": "Eventbrite",
-      "title": "2026 EducationUSA Community College Fair | Lima",
-      "url": "https://www.eventbrite.com/e/2026-educationusa-community-college-fair-lima-tickets-1977036198490?aff=ebdssbcitybrowse",
-      "venue": "Sonesta Hotel El Olivar",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -11901,17 +11688,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Feb al 1 Jul"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
     },
     {
       "time": "5:30 pm",
@@ -12066,6 +11842,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -12234,17 +12021,6 @@
       "schedule": "Del 21 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -12397,6 +12173,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -12575,17 +12362,6 @@
       "schedule": "Del 21 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -12738,6 +12514,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -12863,16 +12650,6 @@
   ],
   "2026-03-26": [
     {
-      "time": "7:00 PM",
-      "type": "Eventbrite",
-      "title": "Proclama 2026 - Nuestro Dios",
-      "url": "https://www.eventbrite.com/e/proclama-2026-nuestro-dios-tickets-1557056420669?aff=ebdssbcitybrowse",
-      "venue": "Delfines Hotel & Convention Center",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -12904,17 +12681,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Feb al 1 Jul"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
     },
     {
       "time": "5:30 pm",
@@ -13069,6 +12835,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -13193,17 +12970,6 @@
       "schedule": "Del 21 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -13356,6 +13122,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -13511,17 +13288,6 @@
       "schedule": "Del 21 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -13674,6 +13440,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
@@ -13829,17 +13606,6 @@
       "schedule": "Del 21 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 21 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -13992,6 +13758,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "4:00 pm",
