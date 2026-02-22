@@ -757,16 +757,6 @@
     },
     {
       "time": "9:30 am",
-      "type": "Música",
-      "title": "AMARANTA DÉCIMO ANIVERSARIO",
-      "url": "https://teleticket.com.pe/amaranta10aniversario",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "9:30 am",
       "type": "Teatro",
       "title": "LAS CAZADORAS KPOP LLEGAN AL TEATRO PERUANO JAPONES",
       "url": "https://teleticket.com.pe/las-cazadoras-kpop-2026",
@@ -774,70 +764,6 @@
       "district": "Lima",
       "price": "",
       "source": "Teleticket"
-    },
-    {
-      "time": "9:30 am",
-      "type": "Teatro",
-      "title": "ANIMATISSIMO MOONLIGHT SYMPHONY",
-      "url": "https://teleticket.com.pe/moonlightsymphony",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Entretención",
-      "title": "TRIBUTO BTS - CONCIERTO JUVENIL EN VIVO",
-      "url": "https://teleticket.com.pe/evento/tributo-bts-concierto-juvenil-en-vivo-parque-zonal-sinchi-roca",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "JUGANDO CON EL LOBO FEROZ",
-      "url": "https://teleticket.com.pe/evento/jugando-con-el-lobo-feroz-teatro-juanita-tarnawiecki-ex-mocha-grania-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "UN CUENTO MAGICO",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 8 Mar"
     },
     {
       "time": "5:30 pm",
@@ -871,6 +797,16 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 7 Mar"
+    },
+    {
+      "time": "9:30 am",
+      "type": "Teatro",
+      "title": "ANIMATISSIMO MOONLIGHT SYMPHONY",
+      "url": "https://teleticket.com.pe/moonlightsymphony",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
     },
     {
       "time": "8:30 pm",
@@ -938,50 +874,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "JUGANDO CON EL LOBO FEROZ",
-      "url": "https://teleticket.com.pe/evento/jugando-con-el-lobo-feroz-teatro-juanita-tarnawiecki-ex-mocha-grania-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "UN CUENTO MAGICO",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 8 Mar"
     },
     {
       "time": "5:30 pm",
@@ -1092,6 +984,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -1162,50 +1065,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "JUGANDO CON EL LOBO FEROZ",
-      "url": "https://teleticket.com.pe/evento/jugando-con-el-lobo-feroz-teatro-juanita-tarnawiecki-ex-mocha-grania-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "UN CUENTO MAGICO",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 8 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -1314,6 +1173,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -1416,50 +1286,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "JUGANDO CON EL LOBO FEROZ",
-      "url": "https://teleticket.com.pe/evento/jugando-con-el-lobo-feroz-teatro-juanita-tarnawiecki-ex-mocha-grania-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "UN CUENTO MAGICO",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 8 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -1568,6 +1394,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -1722,50 +1559,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "JUGANDO CON EL LOBO FEROZ",
-      "url": "https://teleticket.com.pe/evento/jugando-con-el-lobo-feroz-teatro-juanita-tarnawiecki-ex-mocha-grania-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "UN CUENTO MAGICO",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 8 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -1876,6 +1669,17 @@
       "schedule": "Del 23 Feb al 9 Ene"
     },
     {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
+    },
+    {
       "time": "8:30 pm",
       "type": "Teatro",
       "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
@@ -1953,16 +1757,6 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Entretención",
-      "title": "LA HISTORIA QUE NO SE SUBE - SHOW DE COMEDIA DIEGO GUPIOC",
-      "url": "https://teleticket.com.pe/evento/la-historia-que-no-se-sube-show-de-comedia-diego-gupioc-la-posada-del-mirador",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "8:00 pm",
       "type": "Teatro",
       "title": "LAS NUEVE SINFONÍAS DE BEETHOVEN: SINFONÍAS Nº1 Y Nº2",
       "url": "https://teleticket.com.pe/las-nueve-sinfonias-de-beethoven-gtn-2026",
@@ -1976,6 +1770,16 @@
       "type": "Teatro",
       "title": "CAOS EN FAMILIA",
       "url": "https://teleticket.com.pe/evento/caos-en-familia-centro-cultural-ricardo-palma",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Entretención",
+      "title": "LA HISTORIA QUE NO SE SUBE - SHOW DE COMEDIA DIEGO GUPIOC",
+      "url": "https://teleticket.com.pe/evento/la-historia-que-no-se-sube-show-de-comedia-diego-gupioc-la-posada-del-mirador",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -2060,50 +1864,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "JUGANDO CON EL LOBO FEROZ",
-      "url": "https://teleticket.com.pe/evento/jugando-con-el-lobo-feroz-teatro-juanita-tarnawiecki-ex-mocha-grania-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "UN CUENTO MAGICO",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 8 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -2212,6 +1972,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -2421,50 +2192,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "JUGANDO CON EL LOBO FEROZ",
-      "url": "https://teleticket.com.pe/evento/jugando-con-el-lobo-feroz-teatro-juanita-tarnawiecki-ex-mocha-grania-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "UN CUENTO MAGICO",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 8 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -2573,6 +2300,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -2704,6 +2442,17 @@
       "district": "Lima",
       "price": "",
       "source": "Teleticket"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 1 Mar"
     },
     {
       "time": "4:00 pm",
@@ -2908,50 +2657,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Música",
-      "title": "LAS HEROINAS DEL KPOP",
-      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "JUGANDO CON EL LOBO FEROZ",
-      "url": "https://teleticket.com.pe/evento/jugando-con-el-lobo-feroz-teatro-juanita-tarnawiecki-ex-mocha-grania-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 1 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "UN CUENTO MAGICO",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 8 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -3060,6 +2765,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -3162,6 +2878,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 1 Mar"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -3226,6 +2953,16 @@
       "source": "Teleticket"
     },
     {
+      "time": "5:00 pm",
+      "type": "Teatro",
+      "title": "JUGANDO CON EL LOBO FEROZ",
+      "url": "https://teleticket.com.pe/evento/jugando-con-el-lobo-feroz-teatro-juanita-tarnawiecki-ex-mocha-grania-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
       "time": "6:00 pm",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS",
@@ -3237,16 +2974,6 @@
     }
   ],
   "2026-03-02": [
-    {
-      "time": "10:00 AM",
-      "type": "Eventbrite",
-      "title": "Casi lleno Pink La Blonde X Dia Light : Le Duo Parfait pour un Balayage Magnifié",
-      "url": "https://www.eventbrite.ca/e/billets-pink-la-blonde-x-dia-light-le-duo-parfait-pour-un-balayage-magnifie-1965600934307?aff=ebdssbcitybrowse",
-      "venue": "GMT-5",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
     {
       "time": "10:00 am",
       "type": "Humor",
@@ -3301,28 +3028,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "UN CUENTO MAGICO",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 8 Mar"
     },
     {
       "time": "5:30 pm",
@@ -3433,6 +3138,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -3569,16 +3285,6 @@
   ],
   "2026-03-03": [
     {
-      "time": "2:00 PM",
-      "type": "Eventbrite",
-      "title": "en rápido Les outils pour faciliter votre veille et recherche de partenaires HEU",
-      "url": "https://www.eventbrite.fr/e/billets-les-outils-pour-faciliter-votre-veille-et-recherche-de-partenaires-heu-1980715706999?aff=ebdssbcitybrowse",
-      "venue": "GMT+1",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -3632,28 +3338,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "UN CUENTO MAGICO",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 8 Mar"
     },
     {
       "time": "5:30 pm",
@@ -3764,6 +3448,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -3955,28 +3650,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "UN CUENTO MAGICO",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 8 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -4085,6 +3758,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -4230,9 +3914,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -4241,9 +3925,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -4297,28 +3981,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "UN CUENTO MAGICO",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 8 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -4427,6 +4089,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -4562,9 +4235,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -4573,9 +4246,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -4594,16 +4267,6 @@
     }
   ],
   "2026-03-06": [
-    {
-      "time": "7:00 PM",
-      "type": "Eventbrite",
-      "title": "FUN x Mujeres sin Filtro Ed. Las mujeres no lloran las mujeres facturan",
-      "url": "https://www.eventbrite.com.pe/e/fun-x-mujeres-sin-filtro-ed-las-mujeres-no-lloran-las-mujeres-facturan-tickets-1981786992242?aff=ebdssbcitybrowse",
-      "venue": "Seedspace Lima - Swiss Tower",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
     {
       "time": "10:00 am",
       "type": "Humor",
@@ -4649,28 +4312,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "UN CUENTO MAGICO",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 8 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -4779,6 +4420,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -4914,17 +4566,6 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 4 Mar al 25 Mar"
-    },
-    {
-      "time": "8:00 pm",
       "type": "Música",
       "title": "SE ACABARON LAS EX-CUSAS",
       "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
@@ -4937,8 +4578,19 @@
     {
       "time": "8:00 pm",
       "type": "Humor",
-      "title": "MACHO",
-      "url": "https://teleticket.com.pe/evento/macho-teatro-auditorio-miraflores",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 4 Mar al 25 Mar"
+    },
+    {
+      "time": "8:00 pm",
+      "type": "Música",
+      "title": "VIVO ARJONA - POR SEBASTIAN MOLINA TRIBUTO OFICIAL",
+      "url": "https://teleticket.com.pe/vivo-arjona-tributo-2026",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -4946,9 +4598,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "VIVO ARJONA - POR SEBASTIAN MOLINA TRIBUTO OFICIAL",
-      "url": "https://teleticket.com.pe/vivo-arjona-tributo-2026",
+      "type": "Humor",
+      "title": "MACHO",
+      "url": "https://teleticket.com.pe/evento/macho-teatro-auditorio-miraflores",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -5039,16 +4691,6 @@
   ],
   "2026-03-07": [
     {
-      "time": "8:00 AM",
-      "type": "Eventbrite",
-      "title": "UnderHouse 2",
-      "url": "https://www.eventbrite.com/e/underhouse-2-tickets-1980578479548?aff=ebdssbcitybrowse",
-      "venue": "Tierra Baldía - Restaurante Cultural",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -5091,28 +4733,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "UN CUENTO MAGICO",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 8 Mar"
     },
     {
       "time": "5:30 pm",
@@ -5225,6 +4845,17 @@
       "schedule": "Del 23 Feb al 9 Ene"
     },
     {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
+    },
+    {
       "time": "8:30 pm",
       "type": "Teatro",
       "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
@@ -5347,9 +4978,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -5358,9 +4989,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -5411,6 +5042,17 @@
       "source": "Teleticket"
     },
     {
+      "time": "5:00 pm",
+      "type": "Teatro",
+      "title": "UN CUENTO MAGICO",
+      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 7 Mar al 8 Mar"
+    },
+    {
       "time": "7:30 pm",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS",
@@ -5422,9 +5064,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Teatro",
-      "title": "WILLIAM LUNA EN CUSCO HOMENAJE A LA MUJER",
-      "url": "https://teleticket.com.pe/evento/william-luna-en-cusco-homenaje-a-la-mujer-teatro-municipal-de-cusco",
+      "type": "Música",
+      "title": "SUSAN OCHOA - HOMENAJE PARA TI MUJER",
+      "url": "https://teleticket.com.pe/evento/susan-ochoa-homenaje-para-ti-mujer-teatro-plaza-norte",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -5432,9 +5074,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SUSAN OCHOA - HOMENAJE PARA TI MUJER",
-      "url": "https://teleticket.com.pe/evento/susan-ochoa-homenaje-para-ti-mujer-teatro-plaza-norte",
+      "type": "Teatro",
+      "title": "WILLIAM LUNA EN CUSCO HOMENAJE A LA MUJER",
+      "url": "https://teleticket.com.pe/evento/william-luna-en-cusco-homenaje-a-la-mujer-teatro-municipal-de-cusco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -5464,6 +5106,16 @@
     {
       "time": "10:30 pm",
       "type": "Música",
+      "title": "SERENATA POR EL DIA DE LA MUJER",
+      "url": "https://teleticket.com.pe/evento/serenata-por-el-dia-de-la-mujer-restaurante-turistico-el-rosedal-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
+    },
+    {
+      "time": "10:30 pm",
+      "type": "Música",
       "title": "SEBASTIAN MOLINA - ARJONA A LA CARTA",
       "url": "https://teleticket.com.pe/evento/sebastian-molina-arjona-a-la-carta-la-estacion-de-barranco-2026",
       "venue": "",
@@ -5476,16 +5128,6 @@
       "type": "Música",
       "title": "ROMANTICOS DEL AMOR",
       "url": "https://teleticket.com.pe/evento/romanticos-del-amor-cc-bianca-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
-    },
-    {
-      "time": "10:30 pm",
-      "type": "Música",
-      "title": "SERENATA POR EL DIA DE LA MUJER",
-      "url": "https://teleticket.com.pe/evento/serenata-por-el-dia-de-la-mujer-restaurante-turistico-el-rosedal-2026",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -5538,28 +5180,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
-      "time": "5:00 pm",
-      "type": "Teatro",
-      "title": "UN CUENTO MAGICO",
-      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 8 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -5657,6 +5277,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -5781,9 +5412,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -5792,9 +5423,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -5835,6 +5466,17 @@
       "schedule": "Del 7 Mar al 8 Mar"
     },
     {
+      "time": "5:00 pm",
+      "type": "Teatro",
+      "title": "UN CUENTO MAGICO",
+      "url": "https://teleticket.com.pe/evento/un-cuento-magico-kasa-kambalache",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 7 Mar al 8 Mar"
+    },
+    {
       "time": "8:00 pm",
       "type": "Humor",
       "title": "APRENDE A SER UN PAPÁ FELIZ",
@@ -5867,26 +5509,6 @@
     }
   ],
   "2026-03-09": [
-    {
-      "time": "3:00 PM",
-      "type": "Eventbrite",
-      "title": "EXPLORANDO LA NUEVA ERA DE LA ESTÉTICA",
-      "url": "https://www.eventbrite.com.ar/e/explorando-la-nueva-era-de-la-estetica-tickets-1982442028473?aff=ebdssbcitybrowse",
-      "venue": "Av. del Ejército 250",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
-      "time": "5:30 PM",
-      "type": "Eventbrite",
-      "title": "Su inversion segura en la Florida Central, USA",
-      "url": "https://www.eventbrite.com/e/su-inversion-segura-en-la-florida-central-usa-tickets-1980648801884?aff=ebdssbcitybrowse",
-      "venue": "Casa Andina Premium Miraflores",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
     {
       "time": "10:00 am",
       "type": "Humor",
@@ -5932,17 +5554,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -6040,6 +5651,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -6164,9 +5786,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -6175,9 +5797,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -6264,17 +5886,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -6372,6 +5983,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -6496,9 +6118,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -6507,9 +6129,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -6596,17 +6218,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -6704,6 +6315,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -6828,9 +6450,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -6839,9 +6461,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -6948,17 +6570,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -7056,6 +6667,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -7180,9 +6802,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -7191,9 +6813,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -7300,17 +6922,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -7408,6 +7019,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -7532,9 +7154,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -7543,9 +7165,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -7662,17 +7284,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -7770,6 +7381,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -7894,9 +7516,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -7905,9 +7527,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -8054,17 +7676,6 @@
       "schedule": "Del 22 Feb al 15 Mar"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -8162,6 +7773,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -8275,9 +7897,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -8286,9 +7908,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -8374,17 +7996,6 @@
       "schedule": "Del 22 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -8482,6 +8093,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -8595,9 +8217,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -8606,9 +8228,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -8651,16 +8273,6 @@
   ],
   "2026-03-17": [
     {
-      "time": "7:00 PM",
-      "type": "Eventbrite",
-      "title": "formative Session: Why Have Scaleups Been So Successful in Latin America? - Lima",
-      "url": "https://www.eventbrite.es/e/informative-session-why-have-scaleups-been-so-successful-in-latin-america-lima-tickets-1982697241823?aff=ebdssbcitybrowse",
-      "venue": "WeWork Larco - Oficina IE Perú",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -8692,17 +8304,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 1 Jul"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "5:30 pm",
@@ -8802,6 +8403,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -8915,9 +8527,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -8926,9 +8538,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -9025,17 +8637,6 @@
       "schedule": "Del 22 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -9133,6 +8734,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -9246,9 +8858,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -9257,9 +8869,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -9367,17 +8979,6 @@
       "schedule": "Del 22 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -9475,6 +9076,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -9588,9 +9200,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -9599,9 +9211,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -9688,17 +9300,6 @@
       "schedule": "Del 22 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -9796,6 +9397,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -9909,9 +9521,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -9920,9 +9532,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -10049,17 +9661,6 @@
       "schedule": "Del 22 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -10157,6 +9758,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -10270,9 +9882,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -10281,9 +9893,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -10452,17 +10064,6 @@
       "schedule": "Del 22 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -10560,6 +10161,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -10673,9 +10285,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -10684,9 +10296,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -10772,26 +10384,6 @@
   ],
   "2026-03-23": [
     {
-      "time": "5:00 PM",
-      "type": "Eventbrite",
-      "title": "2026 EducationUSA Community College Fair | Lima",
-      "url": "https://www.eventbrite.com/e/2026-educationusa-community-college-fair-lima-tickets-1977036198490?aff=ebdssbcitybrowse",
-      "venue": "Sonesta Hotel El Olivar",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
-      "time": "12:00 PM",
-      "type": "Eventbrite",
-      "title": "Se venden rápido Maîtrisez l'IA & l'Automatisation",
-      "url": "https://www.eventbrite.fr/e/billets-maitrisez-lia-lautomatisation-1980704414222?aff=ebdssbcitybrowse",
-      "venue": "GMT+1",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -10823,17 +10415,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 1 Jul"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "5:30 pm",
@@ -10933,6 +10514,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -11046,9 +10638,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -11057,9 +10649,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -11156,17 +10748,6 @@
       "schedule": "Del 22 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -11264,6 +10845,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -11377,9 +10969,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -11388,9 +10980,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -11497,17 +11089,6 @@
       "schedule": "Del 22 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -11605,6 +11186,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -11718,9 +11310,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Humor",
-      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
-      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
+      "type": "Música",
+      "title": "SE ACABARON LAS EX-CUSAS",
+      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -11729,9 +11321,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "SE ACABARON LAS EX-CUSAS",
-      "url": "https://teleticket.com.pe/evento/se-acabaron-las-ex-cusas-jazz-zone",
+      "type": "Humor",
+      "title": "EDUARDO HERRERA - CEREBRO CORRUPTO VERSIÓN ELECCIONES",
+      "url": "https://teleticket.com.pe/evento/eduardo-herrera-cerebro-corrupto-version-elecciones-la-estacion-de-barranco",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -11785,16 +11377,6 @@
   ],
   "2026-03-26": [
     {
-      "time": "7:00 PM",
-      "type": "Eventbrite",
-      "title": "Proclama 2026 - Nuestro Dios",
-      "url": "https://www.eventbrite.com/e/proclama-2026-nuestro-dios-tickets-1557056420669?aff=ebdssbcitybrowse",
-      "venue": "Delfines Hotel & Convention Center",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -11826,17 +11408,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 22 Feb al 1 Jul"
-    },
-    {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
     },
     {
       "time": "5:30 pm",
@@ -11936,6 +11507,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -12115,17 +11697,6 @@
       "schedule": "Del 22 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -12223,6 +11794,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -12433,17 +12015,6 @@
       "schedule": "Del 22 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -12541,6 +12112,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:30 pm",
@@ -12751,17 +12333,6 @@
       "schedule": "Del 22 Feb al 1 Jul"
     },
     {
-      "time": "4:00 pm",
-      "type": "Teatro",
-      "title": "HANSEL Y GRETEL",
-      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 29 Mar"
-    },
-    {
       "time": "5:30 pm",
       "type": "Teatro",
       "title": "EL REY LEÓN: ARLEQUIN TEATRO",
@@ -12859,6 +12430,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Teatro",
+      "title": "HANSEL Y GRETEL",
+      "url": "https://teleticket.com.pe/evento/hansel-y-gretel-teatro-juanita-tarnawiecki-ex-mocha-grania",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 29 Mar"
     },
     {
       "time": "8:00 pm",
