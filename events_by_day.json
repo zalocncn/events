@@ -721,27 +721,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOCHE DE ENREDOS",
-      "url": "https://teleticket.com.pe/evento/noche-de-enredos-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket"
     }
   ],
   "2026-02-23": [
@@ -768,17 +747,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -843,6 +811,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 4 Mar"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -869,6 +848,26 @@
   ],
   "2026-02-24": [
     {
+      "time": "12:00",
+      "type": "Eventbrite",
+      "title": "Casi lleno FREE Event February 23!  New Pathways in Psychede",
+      "url": "https://www.eventbrite.com/e/free-event-february-23-new-pathways-in-psychedelic-care-at-end-of-life-tickets-1977025926767?aff=ebdssbcitybrowse",
+      "venue": "Miraflores",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "11:00",
+      "type": "Eventbrite",
+      "title": "Casi lleno The Neuroscience of Unstoppable: Rewire Your Brai",
+      "url": "https://www.eventbrite.com.au/e/the-neuroscience-of-unstoppable-rewire-your-brain-for-lasting-confidence-registration-1982146641964?aff=ebdssbcitybrowse",
+      "venue": "Miraflores",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -889,17 +888,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
     },
     {
       "time": "4:00 am",
@@ -966,6 +954,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 4 Mar"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -1079,17 +1078,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -1154,6 +1142,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 4 Mar"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -1330,17 +1329,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -1405,6 +1393,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 4 Mar"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -1624,17 +1623,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -1699,6 +1687,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 4 Mar"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -1941,17 +1940,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -2016,6 +2004,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 4 Mar"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -2406,17 +2405,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -2481,6 +2469,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 4 Mar"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -2779,17 +2778,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -2854,6 +2842,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 4 Mar"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -3089,17 +3088,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -3164,6 +3152,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 4 Mar"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -3399,17 +3398,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -3474,6 +3462,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 4 Mar"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -3741,17 +3740,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -3805,6 +3793,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -4050,6 +4049,26 @@
   ],
   "2026-03-06": [
     {
+      "time": "7:00 PM",
+      "type": "Eventbrite",
+      "title": "FUN x Mujeres sin Filtro Ed. Las mujeres no lloran las mujeres facturan",
+      "url": "https://www.eventbrite.com.pe/e/fun-x-mujeres-sin-filtro-ed-las-mujeres-no-lloran-las-mujeres-facturan-tickets-1981786992242?aff=ebdssbcitybrowse",
+      "venue": "Seedspace Lima - Swiss Tower",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "8:29 PM",
+      "type": "Eventbrite",
+      "title": "NASA's Artemis II Mission Launch",
+      "url": "https://www.eventbrite.com/e/nasas-artemis-ii-mission-launch-registration-1074571685839?aff=ebdssbcitybrowse",
+      "venue": "EST",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -4070,17 +4089,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
     },
     {
       "time": "4:00 am",
@@ -4136,6 +4144,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -4473,6 +4492,16 @@
   ],
   "2026-03-07": [
     {
+      "time": "8:00 AM",
+      "type": "Eventbrite",
+      "title": "UnderHouse 2",
+      "url": "https://www.eventbrite.com/e/underhouse-2-tickets-1980578479548?aff=ebdssbcitybrowse",
+      "venue": "Tierra Baldía - Restaurante Cultural",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -4493,17 +4522,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
     },
     {
       "time": "4:00 am",
@@ -4559,6 +4577,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -4940,17 +4969,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -5004,6 +5022,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -5292,6 +5321,26 @@
   ],
   "2026-03-09": [
     {
+      "time": "3:00 PM",
+      "type": "Eventbrite",
+      "title": "EXPLORANDO LA NUEVA ERA DE LA ESTÉTICA",
+      "url": "https://www.eventbrite.com.ar/e/explorando-la-nueva-era-de-la-estetica-tickets-1982442028473?aff=ebdssbcitybrowse",
+      "venue": "Av. del Ejército 250",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "5:30 PM",
+      "type": "Eventbrite",
+      "title": "Su inversion segura en la Florida Central, USA",
+      "url": "https://www.eventbrite.com/e/su-inversion-segura-en-la-florida-central-usa-tickets-1980648801884?aff=ebdssbcitybrowse",
+      "venue": "Casa Andina Premium Miraflores",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -5312,17 +5361,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
     },
     {
       "time": "4:00 am",
@@ -5378,6 +5416,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -5624,6 +5673,16 @@
   ],
   "2026-03-10": [
     {
+      "time": "12:00 PM",
+      "type": "Eventbrite",
+      "title": "Casi lleno FRDG Lecture: Key Concepts for Designing Housing that Lasts",
+      "url": "https://www.eventbrite.ca/e/frdg-lecture-key-concepts-for-designing-housing-that-lasts-tickets-1977721251502?aff=ebdssbcitybrowse",
+      "venue": "EDT",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -5644,17 +5703,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
     },
     {
       "time": "4:00 am",
@@ -5710,6 +5758,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -5978,17 +6037,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -6042,6 +6090,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -6330,17 +6389,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -6394,6 +6442,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -6682,17 +6741,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -6746,6 +6794,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -6991,9 +7050,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Entretención",
-      "title": "ERES BASURA EDICION PICANTE - EL TOBI",
-      "url": "https://teleticket.com.pe/evento/eres-basura-edicion-picante--el-tobi-lima-comedy-club",
+      "type": "Música",
+      "title": "NOCHE DE CUMBIA - ARMONIA 10 - INVITADO BRAYAM KAMUS",
+      "url": "https://teleticket.com.pe/noche-de-cumbia-con-armonia10",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -7001,9 +7060,9 @@
     },
     {
       "time": "8:00 pm",
-      "type": "Música",
-      "title": "NOCHE DE CUMBIA - ARMONIA 10 - INVITADO BRAYAM KAMUS",
-      "url": "https://teleticket.com.pe/noche-de-cumbia-con-armonia10",
+      "type": "Entretención",
+      "title": "ERES BASURA EDICION PICANTE - EL TOBI",
+      "url": "https://teleticket.com.pe/evento/eres-basura-edicion-picante--el-tobi-lima-comedy-club",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -7042,17 +7101,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
     },
     {
       "time": "4:00 am",
@@ -7108,6 +7156,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -7436,17 +7495,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 22 Feb al 15 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -7500,6 +7548,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 23 Feb al 9 Ene"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 23 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -8054,6 +8113,16 @@
     }
   ],
   "2026-03-17": [
+    {
+      "time": "7:00 PM",
+      "type": "Eventbrite",
+      "title": "formative Session: Why Have Scaleups Been So Successful in Latin America? - Lima",
+      "url": "https://www.eventbrite.es/e/informative-session-why-have-scaleups-been-so-successful-in-latin-america-lima-tickets-1982697241823?aff=ebdssbcitybrowse",
+      "venue": "WeWork Larco - Oficina IE Perú",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
     {
       "time": "10:00 am",
       "type": "Humor",
@@ -10166,6 +10235,16 @@
   ],
   "2026-03-23": [
     {
+      "time": "5:00 PM",
+      "type": "Eventbrite",
+      "title": "2026 EducationUSA Community College Fair | Lima",
+      "url": "https://www.eventbrite.com/e/2026-educationusa-community-college-fair-lima-tickets-1977036198490?aff=ebdssbcitybrowse",
+      "venue": "Sonesta Hotel El Olivar",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -11159,6 +11238,16 @@
   ],
   "2026-03-26": [
     {
+      "time": "7:00 PM",
+      "type": "Eventbrite",
+      "title": "Proclama 2026 - Nuestro Dios",
+      "url": "https://www.eventbrite.com/e/proclama-2026-nuestro-dios-tickets-1557056420669?aff=ebdssbcitybrowse",
+      "venue": "Delfines Hotel & Convention Center",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -12050,20 +12139,20 @@
       "schedule": "Del 27 Mar al 28 Mar"
     },
     {
-      "time": "8:00 pm",
-      "type": "Teatro",
-      "title": "SINFONIA THE BEATLES",
-      "url": "https://teleticket.com.pe/evento/sinfonia-the-beatles-teatro-manuel-ascencio-segura",
+      "time": "9:30 am",
+      "type": "Música",
+      "title": "SIN BANDERA 25 AÑOS ESCENAS TOUR",
+      "url": "https://teleticket.com.pe/sin-bandera-lima-2026",
       "venue": "",
       "district": "Lima",
       "price": "",
       "source": "Teleticket"
     },
     {
-      "time": "9:30 am",
-      "type": "Música",
-      "title": "SIN BANDERA 25 AÑOS ESCENAS TOUR",
-      "url": "https://teleticket.com.pe/sin-bandera-lima-2026",
+      "time": "8:00 pm",
+      "type": "Teatro",
+      "title": "SINFONIA THE BEATLES",
+      "url": "https://teleticket.com.pe/evento/sinfonia-the-beatles-teatro-manuel-ascencio-segura",
       "venue": "",
       "district": "Lima",
       "price": "",
@@ -18845,6 +18934,16 @@
     }
   ],
   "2026-04-25": [
+    {
+      "time": "12:00 PM",
+      "type": "Eventbrite",
+      "title": "Casi lleno Black Girl Book Fair!",
+      "url": "https://www.eventbrite.com/e/black-girl-book-fair-tickets-1979838497241?aff=ebdssbcitybrowse",
+      "venue": "CDT",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
     {
       "time": "10:00 am",
       "type": "Humor",
