@@ -773,10 +773,20 @@
   ],
   "2026-02-24": [
     {
-      "time": "19:00",
+      "time": "12:00",
       "type": "Eventbrite",
-      "title": "Casi lleno Menopause 101: A Q&A with the experts mañana a la",
-      "url": "https://www.eventbrite.ca/e/menopause-101-a-qa-with-the-experts-tickets-1977622033739?aff=ebdssbcitybrowse",
+      "title": "Casi lleno Mainstreaming pour le dépistage des cancers héréd",
+      "url": "https://www.eventbrite.ca/e/billets-mainstreaming-pour-le-depistage-des-cancers-hereditaires-1976193696544?aff=ebdssbcitybrowse",
+      "venue": "Miraflores",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "18:00",
+      "type": "Eventbrite",
+      "title": "Casi lleno Équilibre et croissance : Gérer votre entreprise",
+      "url": "https://www.eventbrite.ca/e/billets-equilibre-et-croissance-gerer-votre-entreprise-comme-une-pro-1980753855101?aff=ebdssbcitybrowse",
       "venue": "Miraflores",
       "district": "Miraflores",
       "price": "",
@@ -2146,7 +2156,7 @@
       "district": "Lima",
       "price": "",
       "source": "Teleticket",
-      "schedule": "Del 28 Feb al 1 Mar"
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -2579,7 +2589,7 @@
       "district": "Lima",
       "price": "",
       "source": "Teleticket",
-      "schedule": "Del 28 Feb al 1 Mar"
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -2680,11 +2690,21 @@
   ],
   "2026-03-02": [
     {
-      "time": "7:30 PM",
+      "time": "10:00 AM",
       "type": "Eventbrite",
-      "title": "Casi lleno INDIA: NUS Master of Technology (MTech) Virtual Preview",
-      "url": "https://www.eventbrite.sg/e/india-nus-master-of-technology-mtech-virtual-preview-tickets-1982157541565?aff=ebdssbcitybrowse",
-      "venue": "GMT+5:30",
+      "title": "Casi lleno Pink La Blonde X Dia Light : Le Duo Parfait pour un Balayage Magnifié",
+      "url": "https://www.eventbrite.ca/e/billets-pink-la-blonde-x-dia-light-le-duo-parfait-pour-un-balayage-magnifie-1965600934307?aff=ebdssbcitybrowse",
+      "venue": "GMT-5",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "12:00 PM",
+      "type": "Eventbrite",
+      "title": "Casi lleno Mino-bimaadiziwin : une approche de la santé mentale axée sur la vie",
+      "url": "https://www.eventbrite.ca/e/billets-mino-bimaadiziwin-une-approche-de-la-sante-mentale-axee-sur-la-vie-1982988706602?aff=ebdssbcitybrowse",
+      "venue": "EST",
       "district": "Miraflores",
       "price": "",
       "source": "Eventbrite"
@@ -2941,6 +2961,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -3264,6 +3295,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -3563,6 +3605,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -3661,6 +3714,16 @@
     }
   ],
   "2026-03-05": [
+    {
+      "time": "12:00 PM",
+      "type": "Eventbrite",
+      "title": "Se venden rápido Complètement TADA",
+      "url": "https://www.eventbrite.ca/e/billets-completement-tada-et-si-lia-devenait-une-nouvelle-alliee-de-la-creation-1983087177130?aff=ebdssbcitybrowse",
+      "venue": "EST",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
     {
       "time": "10:00 am",
       "type": "Humor",
@@ -3891,6 +3954,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -4222,6 +4296,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -4655,6 +4740,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -5103,6 +5199,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -5508,6 +5615,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -5851,6 +5969,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -6191,6 +6320,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -6557,6 +6697,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -6917,6 +7068,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -7290,6 +7452,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -7695,6 +7868,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -8026,6 +8210,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -8354,6 +8549,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -8699,6 +8905,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -8841,6 +9058,16 @@
     }
   ],
   "2026-03-19": [
+    {
+      "time": "7:00 PM",
+      "type": "Eventbrite",
+      "title": "Se venden rápido Soirée de Médiumnité & Voyance Collective (ZOOM)",
+      "url": "https://www.eventbrite.ca/e/billets-soiree-de-mediumnite-voyance-collective-zoom-1976603444110?aff=ebdssbcitybrowse",
+      "venue": "GMT-4",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
     {
       "time": "10:00 am",
       "type": "Humor",
@@ -9049,6 +9276,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -9381,6 +9619,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -9753,6 +10002,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -10170,6 +10430,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -10326,7 +10597,7 @@
     {
       "time": "5:00 PM",
       "type": "Eventbrite",
-      "title": "2026 EducationUSA Community College Fair | Lima",
+      "title": "Se venden rápido 2026 EducationUSA Community College Fair | Lima",
       "url": "https://www.eventbrite.com/e/2026-educationusa-community-college-fair-lima-tickets-1977036198490?aff=ebdssbcitybrowse",
       "venue": "Sonesta Hotel El Olivar",
       "district": "Miraflores",
@@ -10541,6 +10812,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -10883,6 +11165,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -11238,6 +11531,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -11580,6 +11884,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -11875,6 +12190,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -12207,6 +12533,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -12522,6 +12859,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -12841,6 +13189,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -13093,6 +13452,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -13362,6 +13732,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -13614,6 +13995,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -13872,6 +14264,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -14124,6 +14527,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -14403,6 +14817,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -14655,6 +15080,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -14913,6 +15349,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -15165,6 +15612,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -15433,6 +15891,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -15688,6 +16157,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -15940,6 +16420,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -16208,6 +16699,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -16452,6 +16954,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -16674,6 +17187,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -16893,6 +17417,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -17138,6 +17673,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -17368,6 +17914,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -17611,6 +18168,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -17878,6 +18446,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -18119,6 +18698,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -18365,6 +18955,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -18595,6 +19196,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -18847,6 +19459,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -19112,6 +19735,17 @@
     },
     {
       "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
+    },
+    {
+      "time": "4:00 pm",
       "type": "Exhibición",
       "title": "¡FULL DAY CHURIN CON RUTAS INCAS! - Baños Termales, Sayán, Piscigranja y más",
       "url": "https://teleticket.com.pe/evento/tour-churin-con-rutas-incas-2026",
@@ -19177,16 +19811,6 @@
     }
   ],
   "2026-04-25": [
-    {
-      "time": "12:00 PM",
-      "type": "Eventbrite",
-      "title": "Casi lleno Black Girl Book Fair!",
-      "url": "https://www.eventbrite.com/e/black-girl-book-fair-tickets-1979838497241?aff=ebdssbcitybrowse",
-      "venue": "CDT",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
     {
       "time": "10:00 am",
       "type": "Humor",
@@ -19362,6 +19986,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -19615,6 +20250,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 31 Dic"
+    },
+    {
+      "time": "4:00 pm",
+      "type": "Música",
+      "title": "LAS HEROINAS DEL KPOP",
+      "url": "https://teleticket.com.pe/evento/las-heroinas-del-kpop-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 28 Feb al 26 Abr"
     },
     {
       "time": "4:00 pm",
@@ -26658,6 +27304,16 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 28 Feb al 19 Dic"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Música",
+      "title": "SILVESTRE DANGOND - EL BAILE DE TODOS",
+      "url": "https://teleticket.com.pe/silvestre-dangond",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket"
     }
   ],
   "2026-05-29": [
