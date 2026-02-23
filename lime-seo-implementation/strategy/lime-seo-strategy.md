@@ -230,7 +230,7 @@ events-rho-red.vercel.app/
 │   ├── /categories/cultural
 │   ├── /categories/food-drink
 │   └── /categories/family
-├── /about (About Lime)
+├── /about (About Lima)
 ├── /advertise (For sponsors — monetization page)
 ├── /sitemap.xml
 └── /robots.txt
@@ -270,7 +270,7 @@ events-rho-red.vercel.app/
 
 **1. Add Meta Tags to Homepage:**
 ```html
-<meta name="description" content="Discover events in Lima today. Concerts, parties, exhibitions, and more — all in one calendar. Find what's happening in Lima this weekend. | Lime">
+<meta name="description" content="Discover events in Lima today. Concerts, parties, exhibitions, and more — all in one calendar. Find what's happening in Lima this weekend. | Lima">
 <meta name="keywords" content="eventos en Lima, events in Lima, que hacer en Lima, things to do in Lima, conciertos Lima, Lima events">
 <link rel="canonical" href="https://events-rho-red.vercel.app/">
 ```
@@ -279,7 +279,7 @@ events-rho-red.vercel.app/
 ```html
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://events-rho-red.vercel.app/">
-<meta property="og:title" content="Lime — Events in Lima | Eventos en Lima">
+<meta property="og:title" content="Lima — Events in Lima | Eventos en Lima">
 <meta property="og:description" content="Your complete calendar of events in Lima. Concerts, parties, exhibitions, food festivals and more.">
 <meta property="og:image" content="https://events-rho-red.vercel.app/og-image.jpg">
 <meta property="og:locale" content="es_PE">
@@ -301,7 +301,7 @@ events-rho-red.vercel.app/
 <!-- RECOMMENDED -->
 <h1>Eventos en Lima — Events Calendar</h1>
 <!-- or -->
-<h1>Lime: Todos los Eventos en Lima en Un Solo Lugar</h1>
+<h1>Lima: Todos los Eventos en Lima en Un Solo Lugar</h1>
 ```
 
 **5. Add Event Schema Markup (for each event):**
@@ -333,8 +333,8 @@ events-rho-red.vercel.app/
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Lime",
-  "alternateName": "Lime Events Lima",
+  "name": "Lima",
+  "alternateName": "Lima Events Lima",
   "url": "https://events-rho-red.vercel.app/",
   "description": "Lima's complete events calendar — concerts, parties, exhibitions, food festivals and more.",
   "inLanguage": ["es", "en"],
@@ -373,7 +373,7 @@ events-rho-red.vercel.app/
 ## LOCAL SEO STRATEGY
 
 ### Google Business Profile
-- **Not applicable** — Lime is an aggregator, not a physical venue
+- **Not applicable** — Lima is an aggregator, not a physical venue
 - However, consider creating a GBP as a "Media/News Company" for brand visibility
 
 ### Local Content Strategy
@@ -615,6 +615,6 @@ Build listings in:
 
 ---
 
-**Document Owner:** Lime Team
+**Document Owner:** Lima Team
 **Last Updated:** February 20, 2026
 **Next Review:** March 20, 2026

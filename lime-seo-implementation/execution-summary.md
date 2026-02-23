@@ -100,11 +100,11 @@
 ## FILE STRUCTURE
 
 ```
-lime-seo-implementation/
+Lima-seo-implementation/
 ├── strategy/
-│   ├── lime-seo-strategy.md          (Full SEO strategy)
-│   ├── lime-90-day-action-plan.md    (Week-by-week tasks)
-│   └── lime-content-calendar.md      (30 post briefs + schedule)
+│   ├── Lima-seo-strategy.md          (Full SEO strategy)
+│   ├── Lima-90-day-action-plan.md    (Week-by-week tasks)
+│   └── Lima-content-calendar.md      (30 post briefs + schedule)
 ├── blog/
 │   ├── post-01-guia-eventos-lima-2026.html      (ES - Premium)
 │   ├── post-02-things-to-do-lima-guide.html     (EN - Premium)
@@ -154,6 +154,6 @@ lime-seo-implementation/
 
 ---
 
-**This SEO strategy is designed to transform Lime from a single-page calendar into Lima's go-to bilingual events platform, generating sustainable ad and sponsorship revenue through organic traffic growth.**
+**This SEO strategy is designed to transform Lima from a single-page calendar into Lima's go-to bilingual events platform, generating sustainable ad and sponsorship revenue through organic traffic growth.**
 
-🍊 **Let's make Lime the #1 events site in Lima.**
+🍊 **Let's make Lima the #1 events site in Lima.**

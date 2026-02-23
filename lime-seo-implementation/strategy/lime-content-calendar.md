@@ -15,8 +15,8 @@
 - **Secondary:** que hacer en Lima, agenda cultural Lima
 - **Word Count:** 2,500+
 - **Type:** Comprehensive guide
-- **Outline:** Overview of Lima's event scene → Types of events → Where to find events → Monthly highlights → How to use Lime → District breakdown → FAQ
-- **CTAs:** Bookmark Lime calendar, newsletter signup
+- **Outline:** Overview of Lima's event scene → Types of events → Where to find events → Monthly highlights → How to use Lima → District breakdown → FAQ
+- **CTAs:** Bookmark Lima calendar, newsletter signup
 
 **Post 02 — PREMIUM (English)**
 - **Title:** Things to Do in Lima Peru — The Complete 2026 Guide
@@ -26,7 +26,7 @@
 - **Word Count:** 2,500+
 - **Type:** Comprehensive tourist guide
 - **Outline:** Why Lima → Cultural events → Food scene → Nightlife → Outdoor activities → Family activities → Free things → District guide → Monthly events → FAQ
-- **CTAs:** Check Lime calendar, newsletter signup
+- **CTAs:** Check Lima calendar, newsletter signup
 
 **Post 03 — PREMIUM (Spanish)**
 - **Title:** Mejores Conciertos en Lima 2026 — Calendario Completo
@@ -36,7 +36,7 @@
 - **Word Count:** 2,000+
 - **Type:** Event roundup
 - **Outline:** Upcoming concerts → By genre (rock, pop, reggaeton, electronic, Latin) → Best venues → How to get tickets → Tips for concert-goers → FAQ
-- **CTAs:** View concerts on Lime, follow on social
+- **CTAs:** View concerts on Lima, follow on social
 
 **Post 04 — PREMIUM (English)**
 - **Title:** Lima Nightlife Guide 2026 — Best Bars, Clubs & Late-Night Events
@@ -46,7 +46,7 @@
 - **Word Count:** 2,000+
 - **Type:** Comprehensive guide
 - **Outline:** Nightlife districts (Barranco, Miraflores, San Isidro) → Best bars → Best clubs → Live music venues → Safety tips → Getting around at night → FAQ
-- **CTAs:** Check tonight's events on Lime
+- **CTAs:** Check tonight's events on Lima
 
 **Post 05 — PREMIUM (Spanish)**
 - **Title:** Qué Hacer en Lima Este Fin de Semana — Eventos Imperdibles
@@ -56,7 +56,7 @@
 - **Word Count:** 2,000+
 - **Type:** Weekly roundup template (evergreen + updateable)
 - **Outline:** This weekend's highlights → Concerts → Cultural events → Food events → Free activities → Family events → Nightlife picks → FAQ
-- **CTAs:** See full calendar on Lime
+- **CTAs:** See full calendar on Lima
 
 ### Week 3-4 (Mar 8 – Mar 21)
 
@@ -300,7 +300,7 @@
 ## INTERNAL LINKING MAP
 
 Each post should link to:
-1. **Lime homepage** (calendar) — every post
+1. **Lima homepage** (calendar) — every post
 2. **2-3 related blog posts** — same topic cluster
 3. **Relevant district page** — if location-specific
 4. **Relevant category page** — if event-type specific
