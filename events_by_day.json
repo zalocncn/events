@@ -850,18 +850,18 @@
     {
       "time": "12:00",
       "type": "Eventbrite",
-      "title": "Casi lleno FREE Event February 23!  New Pathways in Psychede",
-      "url": "https://www.eventbrite.com/e/free-event-february-23-new-pathways-in-psychedelic-care-at-end-of-life-tickets-1977025926767?aff=ebdssbcitybrowse",
+      "title": "Casi lleno Mainstreaming pour le dépistage des cancers héréd",
+      "url": "https://www.eventbrite.ca/e/billets-mainstreaming-pour-le-depistage-des-cancers-hereditaires-1976193696544?aff=ebdssbcitybrowse",
       "venue": "Miraflores",
       "district": "Miraflores",
       "price": "",
       "source": "Eventbrite"
     },
     {
-      "time": "11:00",
+      "time": "18:00",
       "type": "Eventbrite",
-      "title": "Casi lleno The Neuroscience of Unstoppable: Rewire Your Brai",
-      "url": "https://www.eventbrite.com.au/e/the-neuroscience-of-unstoppable-rewire-your-brain-for-lasting-confidence-registration-1982146641964?aff=ebdssbcitybrowse",
+      "title": "Casi lleno Équilibre et croissance : Gérer votre entreprise",
+      "url": "https://www.eventbrite.ca/e/billets-equilibre-et-croissance-gerer-votre-entreprise-comme-une-pro-1980753855101?aff=ebdssbcitybrowse",
       "venue": "Miraflores",
       "district": "Miraflores",
       "price": "",
@@ -2756,6 +2756,16 @@
   ],
   "2026-03-02": [
     {
+      "time": "10:00 AM",
+      "type": "Eventbrite",
+      "title": "Casi lleno Pink La Blonde X Dia Light : Le Duo Parfait pour un Balayage Magnifié",
+      "url": "https://www.eventbrite.ca/e/billets-pink-la-blonde-x-dia-light-le-duo-parfait-pour-un-balayage-magnifie-1965600934307?aff=ebdssbcitybrowse",
+      "venue": "GMT-5",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -3065,6 +3075,16 @@
     }
   ],
   "2026-03-03": [
+    {
+      "time": "2:00 PM",
+      "type": "Eventbrite",
+      "title": "en rápido Les outils pour faciliter votre veille et recherche de partenaires HEU",
+      "url": "https://www.eventbrite.fr/e/billets-les-outils-pour-faciliter-votre-veille-et-recherche-de-partenaires-heu-1980715706999?aff=ebdssbcitybrowse",
+      "venue": "GMT+1",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
     {
       "time": "10:00 am",
       "type": "Humor",
@@ -4054,16 +4074,6 @@
       "title": "FUN x Mujeres sin Filtro Ed. Las mujeres no lloran las mujeres facturan",
       "url": "https://www.eventbrite.com.pe/e/fun-x-mujeres-sin-filtro-ed-las-mujeres-no-lloran-las-mujeres-facturan-tickets-1981786992242?aff=ebdssbcitybrowse",
       "venue": "Seedspace Lima - Swiss Tower",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
-      "time": "8:29 PM",
-      "type": "Eventbrite",
-      "title": "NASA's Artemis II Mission Launch",
-      "url": "https://www.eventbrite.com/e/nasas-artemis-ii-mission-launch-registration-1074571685839?aff=ebdssbcitybrowse",
-      "venue": "EST",
       "district": "Miraflores",
       "price": "",
       "source": "Eventbrite"
@@ -5672,16 +5682,6 @@
     }
   ],
   "2026-03-10": [
-    {
-      "time": "12:00 PM",
-      "type": "Eventbrite",
-      "title": "Casi lleno FRDG Lecture: Key Concepts for Designing Housing that Lasts",
-      "url": "https://www.eventbrite.ca/e/frdg-lecture-key-concepts-for-designing-housing-that-lasts-tickets-1977721251502?aff=ebdssbcitybrowse",
-      "venue": "EDT",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
     {
       "time": "10:00 am",
       "type": "Humor",
@@ -10240,6 +10240,16 @@
       "title": "2026 EducationUSA Community College Fair | Lima",
       "url": "https://www.eventbrite.com/e/2026-educationusa-community-college-fair-lima-tickets-1977036198490?aff=ebdssbcitybrowse",
       "venue": "Sonesta Hotel El Olivar",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "12:00 PM",
+      "type": "Eventbrite",
+      "title": "Se venden rápido Maîtrisez l'IA & l'Automatisation",
+      "url": "https://www.eventbrite.fr/e/billets-maitrisez-lia-lautomatisation-1980704414222?aff=ebdssbcitybrowse",
+      "venue": "GMT+1",
       "district": "Miraflores",
       "price": "",
       "source": "Eventbrite"
@@ -18934,16 +18944,6 @@
     }
   ],
   "2026-04-25": [
-    {
-      "time": "12:00 PM",
-      "type": "Eventbrite",
-      "title": "Casi lleno Black Girl Book Fair!",
-      "url": "https://www.eventbrite.com/e/black-girl-book-fair-tickets-1979838497241?aff=ebdssbcitybrowse",
-      "venue": "CDT",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
     {
       "time": "10:00 am",
       "type": "Humor",
