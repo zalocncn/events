@@ -280,7 +280,7 @@
       "venue": "Basement Art Lab",
       "district": "Cercado de Lima",
       "price": "GRATIS",
-      "schedule": "Del 7 Feb al 28 Feb"
+      "schedule": "Del 7 Feb al 29 Feb"
     },
     {
       "time": "10:00 am",
@@ -894,26 +894,6 @@
     }
   ],
   "2026-02-25": [
-    {
-      "time": "19:00",
-      "type": "Eventbrite",
-      "title": "Casi lleno Menopause 101: A Q&A with the experts mañana a la",
-      "url": "https://www.eventbrite.ca/e/menopause-101-a-qa-with-the-experts-tickets-1977622033739?aff=ebdssbcitybrowse",
-      "venue": "Miraflores",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
-      "time": "17:30",
-      "type": "Eventbrite",
-      "title": "Casi lleno Cyber Scotland Week 2026: Keeping children safe o",
-      "url": "https://www.eventbrite.com/e/cyber-scotland-week-2026-keeping-children-safe-online-webinar-tickets-1978241976003?aff=ebdssbcitybrowse",
-      "venue": "Miraflores",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
     {
       "time": "10:00 am",
       "type": "Humor",
@@ -2580,6 +2560,16 @@
   ],
   "2026-03-02": [
     {
+      "time": "7:30 PM",
+      "type": "Eventbrite",
+      "title": "Casi lleno INDIA: NUS Master of Technology (MTech) Virtual Preview",
+      "url": "https://www.eventbrite.sg/e/india-nus-master-of-technology-mtech-virtual-preview-tickets-1982157541565?aff=ebdssbcitybrowse",
+      "venue": "GMT+5:30",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -3927,16 +3917,6 @@
   ],
   "2026-03-06": [
     {
-      "time": "12:05 PM",
-      "type": "Eventbrite",
-      "title": "Casi lleno HHS Industry Power Hour Focused on NIH",
-      "url": "https://www.eventbrite.com/e/hhs-industry-power-hour-focused-on-nih-tickets-1978922851520?aff=ebdssbcitybrowse",
-      "venue": "EST",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -4795,7 +4775,7 @@
       "schedule": "Del 7 Mar al 14 Mar"
     },
     {
-      "time": "9:00 pm",
+      "time": "",
       "type": "Música",
       "title": "A TI MUJER",
       "url": "https://teleticket.com.pe/evento/a-ti-mujer-patio-jarana-2026",
@@ -5607,16 +5587,6 @@
   ],
   "2026-03-10": [
     {
-      "time": "12:00 PM",
-      "type": "Eventbrite",
-      "title": "Casi lleno FRDG Lecture: Key Concepts for Designing Housing that Lasts",
-      "url": "https://www.eventbrite.ca/e/frdg-lecture-key-concepts-for-designing-housing-that-lasts-tickets-1977721251502?aff=ebdssbcitybrowse",
-      "venue": "EDT",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
-    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -5970,6 +5940,16 @@
     }
   ],
   "2026-03-11": [
+    {
+      "time": "12:00 PM",
+      "type": "Eventbrite",
+      "title": "How to Become a TEDx Speaker!",
+      "url": "https://www.eventbrite.ca/e/how-to-become-a-tedx-speaker-tickets-1000502458787?aff=ebdssbcitybrowse",
+      "venue": "PDT",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
     {
       "time": "10:00 am",
       "type": "Humor",
@@ -6344,16 +6324,6 @@
     }
   ],
   "2026-03-12": [
-    {
-      "time": "12:00 PM",
-      "type": "Eventbrite",
-      "title": "Casi lleno Plan Partners: Webinar | A complete guide to Short Term Respite (STR)",
-      "url": "https://www.eventbrite.com.au/e/plan-partners-webinar-a-complete-guide-to-short-term-respite-str-tickets-1983056693954?aff=ebdssbcitybrowse",
-      "venue": "GMT+11",
-      "district": "Miraflores",
-      "price": "",
-      "source": "Eventbrite"
-    },
     {
       "time": "10:00 am",
       "type": "Humor",
@@ -15604,7 +15574,7 @@
       "schedule": "Del 4 Abr al 11 Abr"
     },
     {
-      "time": "8:00 pm",
+      "time": "",
       "type": "Teatro",
       "title": "ASINTOMATICO",
       "url": "https://teleticket.com.pe/evento/asintomatico-lima-comedy-club",
