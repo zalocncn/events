@@ -736,28 +736,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     }
   ],
   "2026-02-24": [
@@ -782,28 +760,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     },
     {
       "time": "4:00 am",
@@ -881,6 +837,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -928,6 +895,26 @@
   ],
   "2026-02-25": [
     {
+      "time": "19:00",
+      "type": "Eventbrite",
+      "title": "Casi lleno Menopause 101: A Q&A with the experts mañana a la",
+      "url": "https://www.eventbrite.ca/e/menopause-101-a-qa-with-the-experts-tickets-1977622033739?aff=ebdssbcitybrowse",
+      "venue": "Miraflores",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "17:30",
+      "type": "Eventbrite",
+      "title": "Casi lleno Cyber Scotland Week 2026: Keeping children safe o",
+      "url": "https://www.eventbrite.com/e/cyber-scotland-week-2026-keeping-children-safe-online-webinar-tickets-1978241976003?aff=ebdssbcitybrowse",
+      "venue": "Miraflores",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -948,28 +935,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     },
     {
       "time": "4:00 am",
@@ -1047,6 +1012,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -1190,28 +1166,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -1287,6 +1241,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -1482,28 +1447,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -1579,6 +1522,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -1810,28 +1764,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -1907,6 +1839,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -2286,28 +2229,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -2383,6 +2304,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -2670,28 +2602,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -2767,6 +2677,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -2980,6 +2901,16 @@
   ],
   "2026-03-03": [
     {
+      "time": "8:00 PM",
+      "type": "Eventbrite",
+      "title": "Se venden rápido LOLA Liberty Happy Hour - Lima",
+      "url": "https://www.eventbrite.com/e/lola-liberty-happy-hour-lima-tickets-1983616849394?aff=ebdssbcitybrowse",
+      "venue": "Atmósfera Rooftop",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -3000,28 +2931,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     },
     {
       "time": "4:00 am",
@@ -3099,6 +3008,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -3334,28 +3254,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -3431,6 +3329,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -3698,28 +3607,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -3784,6 +3671,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -4029,6 +3927,16 @@
   ],
   "2026-03-06": [
     {
+      "time": "12:05 PM",
+      "type": "Eventbrite",
+      "title": "Casi lleno HHS Industry Power Hour Focused on NIH",
+      "url": "https://www.eventbrite.com/e/hhs-industry-power-hour-focused-on-nih-tickets-1978922851520?aff=ebdssbcitybrowse",
+      "venue": "EST",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -4049,28 +3957,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     },
     {
       "time": "4:00 am",
@@ -4137,6 +4023,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -4474,6 +4371,16 @@
   ],
   "2026-03-07": [
     {
+      "time": "8:00 AM",
+      "type": "Eventbrite",
+      "title": "UnderHouse 2",
+      "url": "https://www.eventbrite.com/e/underhouse-2-tickets-1980578479548?aff=ebdssbcitybrowse",
+      "venue": "Tierra Baldía - Restaurante Cultural",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -4494,28 +4401,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     },
     {
       "time": "4:00 am",
@@ -4582,6 +4467,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -4963,28 +4859,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -5049,6 +4923,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -5348,6 +5233,26 @@
   ],
   "2026-03-09": [
     {
+      "time": "3:00 PM",
+      "type": "Eventbrite",
+      "title": "EXPLORANDO LA NUEVA ERA DE LA ESTÉTICA",
+      "url": "https://www.eventbrite.com.ar/e/explorando-la-nueva-era-de-la-estetica-tickets-1982442028473?aff=ebdssbcitybrowse",
+      "venue": "Av. del Ejército 250",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
+      "time": "5:30 PM",
+      "type": "Eventbrite",
+      "title": "Su inversion segura en la Florida Central, USA",
+      "url": "https://www.eventbrite.com/e/su-inversion-segura-en-la-florida-central-usa-tickets-1980648801884?aff=ebdssbcitybrowse",
+      "venue": "Casa Andina Premium Miraflores",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -5368,28 +5273,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     },
     {
       "time": "4:00 am",
@@ -5456,6 +5339,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -5713,6 +5607,16 @@
   ],
   "2026-03-10": [
     {
+      "time": "12:00 PM",
+      "type": "Eventbrite",
+      "title": "Casi lleno FRDG Lecture: Key Concepts for Designing Housing that Lasts",
+      "url": "https://www.eventbrite.ca/e/frdg-lecture-key-concepts-for-designing-housing-that-lasts-tickets-1977721251502?aff=ebdssbcitybrowse",
+      "venue": "EDT",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -5733,28 +5637,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     },
     {
       "time": "4:00 am",
@@ -5821,6 +5703,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -6100,28 +5993,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -6186,6 +6057,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -6463,6 +6345,16 @@
   ],
   "2026-03-12": [
     {
+      "time": "12:00 PM",
+      "type": "Eventbrite",
+      "title": "Casi lleno Plan Partners: Webinar | A complete guide to Short Term Respite (STR)",
+      "url": "https://www.eventbrite.com.au/e/plan-partners-webinar-a-complete-guide-to-short-term-respite-str-tickets-1983056693954?aff=ebdssbcitybrowse",
+      "venue": "GMT+11",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -6483,28 +6375,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     },
     {
       "time": "4:00 am",
@@ -6571,6 +6441,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -6870,28 +6751,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -6956,6 +6815,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -7265,28 +7135,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -7351,6 +7199,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -7700,28 +7559,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "9:00 pm",
-      "type": "Exhibición",
-      "title": "SUBMARINO INFINITY",
-      "url": "https://teleticket.com.pe/submarino-infinity-2026",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 15 Mar"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -7786,6 +7623,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 24 Feb al 1 Jul"
+    },
+    {
+      "time": "9:00 pm",
+      "type": "Exhibición",
+      "title": "SUBMARINO INFINITY",
+      "url": "https://teleticket.com.pe/submarino-infinity-2026",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 24 Feb al 15 Mar"
     },
     {
       "time": "4:00 pm",
@@ -8062,17 +7910,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     },
     {
       "time": "4:00 am",
@@ -8385,6 +8222,16 @@
   ],
   "2026-03-17": [
     {
+      "time": "7:00 PM",
+      "type": "Eventbrite",
+      "title": "formative Session: Why Have Scaleups Been So Successful in Latin America? - Lima",
+      "url": "https://www.eventbrite.es/e/informative-session-why-have-scaleups-been-so-successful-in-latin-america-lima-tickets-1982697241823?aff=ebdssbcitybrowse",
+      "venue": "WeWork Larco - Oficina IE Perú",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
+    {
       "time": "10:00 am",
       "type": "Humor",
       "title": "HABLANDO HUEVADAS GIRA PROVINCIAS",
@@ -8405,17 +8252,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     },
     {
       "time": "4:00 am",
@@ -8769,17 +8605,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     },
     {
       "time": "4:00 am",
@@ -9146,17 +8971,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -9498,17 +9312,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     },
     {
       "time": "4:00 am",
@@ -9894,17 +9697,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -10276,6 +10068,17 @@
       "source": "Teleticket"
     },
     {
+      "time": "8:30 pm",
+      "type": "Teatro",
+      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
+      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Mar al 28 Mar"
+    },
+    {
       "time": "9:00 pm",
       "type": "Música",
       "title": "CHRISTIAN MEIER EN AREQUIPA: ASÍ ES EL TOUR",
@@ -10328,17 +10131,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     },
     {
       "time": "4:00 am",
@@ -10682,6 +10474,17 @@
       "schedule": "Del 21 Mar al 12 Abr"
     },
     {
+      "time": "8:30 pm",
+      "type": "Teatro",
+      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
+      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Mar al 28 Mar"
+    },
+    {
       "time": "8:00 pm",
       "type": "Teatro",
       "title": "PAREJA ABIERTA EN JESÚS MARIA",
@@ -10693,6 +10496,16 @@
     }
   ],
   "2026-03-23": [
+    {
+      "time": "5:00 PM",
+      "type": "Eventbrite",
+      "title": "Se venden rápido 2026 EducationUSA Community College Fair | Lima",
+      "url": "https://www.eventbrite.com/e/2026-educationusa-community-college-fair-lima-tickets-1977036198490?aff=ebdssbcitybrowse",
+      "venue": "Sonesta Hotel El Olivar",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
     {
       "time": "10:00 am",
       "type": "Humor",
@@ -10714,17 +10527,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     },
     {
       "time": "4:00 am",
@@ -11033,6 +10835,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Mar al 12 Abr"
+    },
+    {
+      "time": "8:30 pm",
+      "type": "Teatro",
+      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
+      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Mar al 28 Mar"
     },
     {
       "time": "9:00 pm",
@@ -11069,17 +10882,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -11386,6 +11188,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Mar al 12 Abr"
+    },
+    {
+      "time": "8:30 pm",
+      "type": "Teatro",
+      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
+      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Mar al 28 Mar"
     },
     {
       "time": "8:00 pm",
@@ -11432,17 +11245,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -11749,9 +11551,30 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Mar al 12 Abr"
+    },
+    {
+      "time": "8:30 pm",
+      "type": "Teatro",
+      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
+      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Mar al 28 Mar"
     }
   ],
   "2026-03-26": [
+    {
+      "time": "7:00 PM",
+      "type": "Eventbrite",
+      "title": "Proclama 2026 - Nuestro Dios",
+      "url": "https://www.eventbrite.com/e/proclama-2026-nuestro-dios-tickets-1557056420669?aff=ebdssbcitybrowse",
+      "venue": "Delfines Hotel & Convention Center",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
     {
       "time": "10:00 am",
       "type": "Humor",
@@ -11773,17 +11596,6 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 1 Ene al 31 Dic"
-    },
-    {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
     },
     {
       "time": "4:00 am",
@@ -12048,6 +11860,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Mar al 12 Abr"
+    },
+    {
+      "time": "8:30 pm",
+      "type": "Teatro",
+      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
+      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Mar al 28 Mar"
     },
     {
       "time": "9:00 pm",
@@ -12084,17 +11907,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -12357,6 +12169,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Mar al 12 Abr"
+    },
+    {
+      "time": "8:30 pm",
+      "type": "Teatro",
+      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
+      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Mar al 28 Mar"
     },
     {
       "time": "9:00 am",
@@ -12424,17 +12247,6 @@
       "schedule": "Del 1 Ene al 31 Dic"
     },
     {
-      "time": "8:30 pm",
-      "type": "Teatro",
-      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
-      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
-      "venue": "",
-      "district": "Lima",
-      "price": "",
-      "source": "Teleticket",
-      "schedule": "Del 23 Feb al 28 Mar"
-    },
-    {
       "time": "4:00 am",
       "type": "Especiales",
       "title": "FULL DAY PARACAS - ICA",
@@ -12697,6 +12509,17 @@
       "price": "",
       "source": "Teleticket",
       "schedule": "Del 21 Mar al 12 Abr"
+    },
+    {
+      "time": "8:30 pm",
+      "type": "Teatro",
+      "title": "NOSOTRAS QUE NOS QUEREMOS TANTO",
+      "url": "https://teleticket.com.pe/evento/nosotras-que-nos-queremos-tanto-teatro-auditorio-miraflores",
+      "venue": "",
+      "district": "Lima",
+      "price": "",
+      "source": "Teleticket",
+      "schedule": "Del 21 Mar al 28 Mar"
     },
     {
       "time": "9:00 am",
@@ -19890,6 +19713,16 @@
     }
   ],
   "2026-04-25": [
+    {
+      "time": "12:00 PM",
+      "type": "Eventbrite",
+      "title": "Casi lleno Black Girl Book Fair!",
+      "url": "https://www.eventbrite.com/e/black-girl-book-fair-tickets-1979838497241?aff=ebdssbcitybrowse",
+      "venue": "CDT",
+      "district": "Miraflores",
+      "price": "",
+      "source": "Eventbrite"
+    },
     {
       "time": "10:00 am",
       "type": "Humor",
