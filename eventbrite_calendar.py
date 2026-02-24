@@ -7,6 +7,7 @@ Run after enlima_calendar.py:  python3 enlima_calendar.py && python3 eventbrite_
 import json
 import re
 import sys
+import time as time_module
 from datetime import datetime
 from pathlib import Path
 
@@ -39,6 +40,23 @@ def fetch_eventbrite():
     except Exception as e:
         print(f"  Error fetching Eventbrite: {e}", file=sys.stderr)
         return None
+
+
+def fetch_og_image(url):
+    """Fetch event page and return og:image URL, or ''."""
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=12)
+        r.raise_for_status()
+        text = r.text
+        m = re.search(r'property=["\']og:image["\'][^>]*content=["\']([^"\']+)["\']', text)
+        if m:
+            return m.group(1).strip()
+        m = re.search(r'content=["\']([^"\']+)["\'][^>]*property=["\']og:image["\']', text)
+        if m:
+            return m.group(1).strip()
+    except Exception:
+        pass
+    return ""
 
 
 def parse_date_and_time(date_text, default_year=2026):
@@ -169,6 +187,21 @@ def main():
     soup = fetch_eventbrite()
     events_with_dates = scrape_eventbrite_events(soup)
     print(f"  Found {len(events_with_dates)} Eventbrite events with dates")
+
+    # Fetch og:image from each unique event page
+    unique_urls = list({ev.get("url") for _, ev in events_with_dates if ev.get("url")})
+    url_to_image = {}
+    for i, url in enumerate(unique_urls):
+        if i > 0:
+            time_module.sleep(0.35)
+        img = fetch_og_image(url)
+        if img:
+            url_to_image[url] = img
+        if (i + 1) % 10 == 0 and (i + 1) > 0:
+            print(f"    Fetched images for {i + 1}/{len(unique_urls)} Eventbrite events...")
+    for _, ev in events_with_dates:
+        if ev.get("url") and ev["url"] in url_to_image:
+            ev["image_url"] = url_to_image[ev["url"]]
 
     if not Path(EVENTS_FILE).exists():
         print(f"  {EVENTS_FILE} not found. Run enlima_calendar.py first.")

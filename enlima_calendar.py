@@ -6,6 +6,7 @@ Fetches https://enlima.pe/calendario-cultural/dia/YYYY-MM-DD for full year 2026.
 import json
 import re
 import sys
+import time as time_module
 from pathlib import Path
 
 try:
@@ -34,6 +35,23 @@ def fetch_day(year, month, day):
     except Exception as e:
         print(f"  Error {url}: {e}", file=sys.stderr)
         return None
+
+
+def fetch_og_image(url):
+    """Fetch event page and return og:image URL, or ''."""
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=12)
+        r.raise_for_status()
+        text = r.text
+        m = re.search(r'property=["\']og:image["\'][^>]*content=["\']([^"\']+)["\']', text)
+        if m:
+            return m.group(1).strip()
+        m = re.search(r'content=["\']([^"\']+)["\'][^>]*property=["\']og:image["\']', text)
+        if m:
+            return m.group(1).strip()
+    except Exception:
+        pass
+    return ""
 
 
 def parse_day_page(soup, date_key):
@@ -166,6 +184,29 @@ def main():
             events_by_day[date_key].extend(new_events)
             if new_events:
                 print(f"  {date_key}: {len(new_events)} EnLima events")
+
+    # Fetch og:image from each unique EnLima event page
+    unique_urls = []
+    seen = set()
+    for date_key in events_by_day:
+        for ev in events_by_day[date_key]:
+            u = ev.get("url") or ""
+            if u and "enlima.pe" in u and u not in seen:
+                seen.add(u)
+                unique_urls.append(u)
+    url_to_image = {}
+    for i, url in enumerate(unique_urls):
+        if i > 0:
+            time_module.sleep(0.35)
+        img = fetch_og_image(url)
+        if img:
+            url_to_image[url] = img
+        if (i + 1) % 20 == 0 and (i + 1) > 0:
+            print(f"  Fetched images for {i + 1}/{len(unique_urls)} EnLima events...")
+    for date_key in events_by_day:
+        for ev in events_by_day[date_key]:
+            if ev.get("url") and ev["url"] in url_to_image:
+                ev["image_url"] = url_to_image[ev["url"]]
 
     print("  Deduplicating repeating events...")
     events_by_day = dedupe_repeating_events(events_by_day)

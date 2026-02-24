@@ -1,11 +1,9 @@
-# Refresh the calendar (events_by_day.json) every hour from EnLima, Eventbrite, Teleticket.
-# New events are merged in; the site (e.g. GitHub Pages) serves the updated JSON.
+# Refresh the calendar (events_by_day.json) from EnLima, Eventbrite, Teleticket.
+# Run manually via Actions tab (workflow_dispatch). Hourly schedule disabled.
 
 name: Update calendar
 
 on:
-  schedule:
-    - cron: '0 * * * *'   # Every hour on the hour
   workflow_dispatch:
 
 permissions:

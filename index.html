@@ -353,6 +353,21 @@
         }
 
         let previewHideTimer = null;
+        const PREVIEW_PLACEHOLDER = 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop';
+        /** In-memory cache: event URL -> og:image URL (used when fetching from article on hover via proxy) */
+        const eventImageCache = {};
+        /** Optional: backend that returns { imageUrl: "..." } for GET /api/og-image?url=EVENT_URL. Set to '' to disable. */
+        const OG_IMAGE_PROXY = '';
+
+        function setPreviewImage(imgEl, url, fallbackUrl) {
+            fallbackUrl = fallbackUrl || PREVIEW_PLACEHOLDER;
+            imgEl.style.backgroundImage = `url(${fallbackUrl})`;
+            if (!url || url === fallbackUrl) return;
+            const img = new Image();
+            img.onload = function() { imgEl.style.backgroundImage = `url(${url})`; };
+            img.onerror = function() { imgEl.style.backgroundImage = `url(${fallbackUrl})`; };
+            img.src = url;
+        }
 
         function showEventPreview(ev, anchor) {
             const pop = document.getElementById('event-preview');
@@ -380,8 +395,25 @@
             scheduleEl.style.display = scheduleEl.textContent ? '' : 'none';
             linkEl.href = ev.url || '#';
 
-            const imgUrl = ev.image_url || 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop';
-            imgEl.style.backgroundImage = `url(${imgUrl})`;
+            const eventUrl = (ev.url || '').trim();
+            let imgUrl = ev.image_url || eventImageCache[eventUrl] || '';
+            if (imgUrl) {
+                setPreviewImage(imgEl, imgUrl, PREVIEW_PLACEHOLDER);
+            } else if (OG_IMAGE_PROXY && eventUrl) {
+                setPreviewImage(imgEl, PREVIEW_PLACEHOLDER);
+                fetch(OG_IMAGE_PROXY + '?url=' + encodeURIComponent(eventUrl))
+                    .then(function(r) { return r.json(); })
+                    .then(function(data) {
+                        var resolved = (data && data.imageUrl) ? data.imageUrl : '';
+                        if (resolved) {
+                            eventImageCache[eventUrl] = resolved;
+                            if (imgEl && imgEl.style) imgEl.style.backgroundImage = 'url(' + resolved + ')';
+                        }
+                    })
+                    .catch(function() {});
+            } else {
+                setPreviewImage(imgEl, PREVIEW_PLACEHOLDER);
+            }
 
             pop.classList.remove('hidden');
             pop.style.left = '-9999px';

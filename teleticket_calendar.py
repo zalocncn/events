@@ -121,33 +121,48 @@ def date_range_to_keys(first_key, last_key):
     return out
 
 
+def _og_image_from_html(text):
+    """Extract og:image URL from HTML. Returns '' if not found."""
+    if not text:
+        return ""
+    # property then content, or content then property
+    m = re.search(r'property=["\']og:image["\'][^>]*content=["\']([^"\']+)["\']', text)
+    if m:
+        return m.group(1).strip()
+    m = re.search(r'content=["\']([^"\']+)["\'][^>]*property=["\']og:image["\']', text)
+    if m:
+        return m.group(1).strip()
+    return ""
+
+
 def fetch_event_time(event_url):
-    """Fetch event detail page and extract time. Returns '' if not found."""
+    """Fetch event detail page; extract time and og:image. Returns (time_str, image_url)."""
     try:
         r = requests.get(event_url, headers=HEADERS, timeout=12)
         r.raise_for_status()
         text = r.text
+        image_url = _og_image_from_html(text)
 
         # "26-02-2026 20:00 Hrs." or "20:00 Hrs."
         m = re.search(r"(\d{1,2}:\d{2})\s*[Hh]rs?\.?", text)
         if m:
-            return _normalize_time(m.group(1))
+            return _normalize_time(m.group(1)), image_url
         # "Hora de inicio: ... 8:00 p.m." or "a las 8:00 p.m."
         m = re.search(r"(?:inicio|comenzar|comienza|a las|las)\s+(\d{1,2}:\d{2}\s*[ap]\.?m\.?)", text, re.I)
         if m:
-            return _normalize_time(m.group(1))
+            return _normalize_time(m.group(1)), image_url
         # "jue. 26 Febrero 20:00"
         m = re.search(r"(?:lun|mar|mi[eé]|jue|vie|s[aá]b|dom)\.?\s+\d{1,2}\s+\w+\s+(\d{1,2}:\d{2})", text, re.I)
         if m:
-            return _normalize_time(m.group(1))
+            return _normalize_time(m.group(1)), image_url
         # DD-MM-YYYY HH:MM or DD/MM/YYYY HH:MM
         m = re.search(r"\d{1,2}[-/]\d{1,2}[-/]\d{2,4}\s+(\d{1,2}:\d{2})", text)
         if m:
-            return _normalize_time(m.group(1))
+            return _normalize_time(m.group(1)), image_url
         # 12h format: 8:00 pm, 9:30 am
         m = re.search(r"\b(\d{1,2}:\d{2}\s*[ap]\.?m\.?)\b", text, re.I)
         if m:
-            return _normalize_time(m.group(1))
+            return _normalize_time(m.group(1)), image_url
         # 24h format near "horas" or time context
         m = re.search(r"\b([0-2]?\d:\d{2})\s*(?:[Hh]rs?|[Hh]ora)?", text)
         if m:
@@ -155,14 +170,15 @@ def fetch_event_time(event_url):
             if re.match(r"^([0-2]?\d):(\d{2})$", raw):
                 h, mi = int(raw.split(":")[0]), raw.split(":")[1]
                 if 0 <= h <= 23 and 0 <= int(mi) <= 59:
-                    return _normalize_time(raw)
+                    return _normalize_time(raw), image_url
         # Fallback: any HH:MM (12h)
         m = re.search(r"\b(0?[1-9]|1[0-2]):(\d{2})\s*([ap]\.?m\.?)?", text, re.I)
         if m:
-            return _normalize_time(m.group(0).strip())
+            return _normalize_time(m.group(0).strip()), image_url
+        return "", image_url
     except Exception:
         pass
-    return ""
+    return "", ""
 
 
 def _normalize_time(t):
@@ -350,11 +366,13 @@ def main():
             urls_done.add(url)
             if fetched > 0:
                 time.sleep(0.35)
-            t = fetch_event_time(url)
+            t, img = fetch_event_time(url)
             if t:
                 ev["time"] = t
-                fetched += 1
-            if (fetched) % 15 == 0 and fetched > 0:
+            if img:
+                ev["image_url"] = img
+            fetched += 1
+            if fetched % 15 == 0 and fetched > 0:
                 print(f"    Fetched time for {fetched} events...")
         print(f"  Got time for {fetched}/{len(urls_done)} Teleticket events")
     else:
