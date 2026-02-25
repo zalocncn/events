@@ -280,8 +280,7 @@
                 eventsEl.innerHTML = '<p class="text-[#666] text-sm py-4 text-center">Sin eventos este día.</p>';
             } else {
                 const accentBySource = { Teleticket: '#3B82F6', Eventbrite: '#FFC107', EnLima: '#5CB85C' };
-                eventsEl.innerHTML = events.map((ev, i) => {
-                    const isFocal = i === 0;
+                eventsEl.innerHTML = events.map((ev) => {
                     const typeLabel = ev.type || ev.source || '';
                     const accent = accentBySource[ev.source] || '#6F42C1';
                     const timeLabel = toAmPm(ev.time) || '—';
@@ -289,39 +288,28 @@
                     const link = ev.url || '#';
                     const title = esc(limaFix(ev.title || 'Evento'));
                     const schedule = ev.schedule ? esc(limaFix(ev.schedule)) : '';
-                    const price = (ev.price || '').trim() ? esc(ev.price) : '';
-                    if (isFocal) {
-                        return `<a href="${link}" target="_blank" rel="noopener" class="block transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(0,0,0,0.4)] bg-[#242428] rounded-[14px] p-5 shadow-[0_6px_20px_rgba(0,0,0,0.28)] border border-[rgba(255,255,255,0.06)] no-underline">
-                            <div class="flex flex-wrap items-center gap-x-2 gap-y-1 mb-3 text-sm">
-                                <span class="font-medium text-[#6F42C1]">${esc(typeLabel)}</span>
-                                <span class="w-px h-3 bg-white/20 shrink-0"></span>
-                                <span class="font-medium text-[#E0E0E0]">${esc(timeLabel)}</span>
-                                <span class="w-px h-3 bg-white/20 shrink-0"></span>
-                                <span class="text-[#A0A0A0]">${esc(venueText)}</span>
+                    const subtitle = schedule || esc(venueText);
+                    return `<a href="${link}" target="_blank" rel="noopener" class="group relative block w-full overflow-hidden rounded-2xl bg-[#121214] border border-white/[0.08] p-5 sm:p-6 transition-all duration-300 hover:bg-[#18181B] hover:border-white/[0.12] hover:shadow-[0_8px_30px_rgba(111,66,193,0.1)] no-underline cursor-pointer">
+                            <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#6F42C1]/40 to-transparent opacity-40 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <div class="flex items-start justify-between mb-4 sm:mb-5">
+                                <span class="inline-flex items-center justify-center rounded-full border border-[#6F42C1]/20 bg-[#6F42C1]/10 px-3 py-1 text-xs font-medium text-[#B794F4]">${esc(typeLabel) || 'Evento'}</span>
+                                <i data-lucide="arrow-up-right" class="w-5 h-5 text-white/30 group-hover:text-[#B794F4] transition-colors duration-300 shrink-0" stroke-width="1.5"></i>
                             </div>
-                            <h3 class="text-lg font-semibold tracking-tight text-[#FFFFFF] mb-4 leading-snug line-clamp-2">${title}</h3>
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-3 text-sm text-[#C0C0C0]"><div class="w-7 h-7 rounded-md bg-[rgba(111,66,193,0.15)] flex items-center justify-center shrink-0"><i data-lucide="clock" class="w-4 h-4 text-[#6F42C1]" stroke-width="1.5"></i></div><span>${esc(timeLabel)}</span></div>
-                                <div class="flex items-center gap-3 text-sm text-[#C0C0C0]"><div class="w-7 h-7 rounded-md bg-[rgba(111,66,193,0.15)] flex items-center justify-center shrink-0"><i data-lucide="map-pin" class="w-4 h-4 text-[#6F42C1]" stroke-width="1.5"></i></div><span>${esc(venueText)}</span></div>
-                                ${price ? `<p class="text-sm text-[#A0A0A0]">${price}</p>` : ''}
+                            <div class="mb-4 sm:mb-5">
+                                <h3 class="text-xl sm:text-2xl font-medium tracking-tight text-white/95 leading-snug mb-0.5 line-clamp-2">${title}</h3>
+                                <p class="text-white/50 text-sm sm:text-base font-normal line-clamp-1">${subtitle}</p>
                             </div>
-                        </a>`;
-                    }
-                    return `<a href="${link}" target="_blank" rel="noopener" class="block transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(0,0,0,0.4)] bg-[#242428] rounded-[14px] p-5 shadow-[0_6px_20px_rgba(0,0,0,0.28)] border border-[rgba(255,255,255,0.06)] no-underline">
-                            <div class="flex flex-wrap items-center gap-x-2 gap-y-1 mb-3 text-sm">
-                                <span class="font-medium" style="color:${accent}">${esc(typeLabel)}</span>
-                                <span class="w-px h-3 bg-white/20 shrink-0"></span>
-                                <span class="font-medium text-[#E0E0E0]">${esc(timeLabel)}</span>
-                                <span class="w-px h-3 bg-white/20 shrink-0"></span>
-                                <span class="text-[#A0A0A0]">${esc(venueText)}</span>
+                            <div class="flex items-center gap-4 sm:gap-6 pt-4 border-t border-white/[0.06]">
+                                <div class="flex items-center gap-2 text-white/70 transition-colors duration-300 group-hover:text-white/90">
+                                    <i data-lucide="clock" class="w-4 h-4 text-white/40 group-hover:text-[#B794F4] transition-colors duration-300 shrink-0" stroke-width="1.5"></i>
+                                    <span class="text-sm font-medium">${esc(timeLabel)}</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-white/70 transition-colors duration-300 group-hover:text-white/90">
+                                    <i data-lucide="map-pin" class="w-4 h-4 text-white/40 group-hover:text-[#B794F4] transition-colors duration-300 shrink-0" stroke-width="1.5"></i>
+                                    <span class="text-sm font-medium line-clamp-1">${esc(venueText)}</span>
+                                </div>
                             </div>
-                            <h3 class="text-lg font-semibold tracking-tight text-[#FFFFFF] mb-4 leading-snug line-clamp-2">${title}</h3>
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-3 text-sm text-[#C0C0C0]"><div class="w-7 h-7 rounded-md flex items-center justify-center shrink-0" style="background:rgba(111,66,193,0.15)"><i data-lucide="clock" class="w-4 h-4 text-[#6F42C1]" stroke-width="1.5"></i></div><span>${esc(timeLabel)}</span></div>
-                                <div class="flex items-center gap-3 text-sm text-[#C0C0C0]"><div class="w-7 h-7 rounded-md flex items-center justify-center shrink-0" style="background:rgba(111,66,193,0.15)"><i data-lucide="map-pin" class="w-4 h-4 text-[#6F42C1]" stroke-width="1.5"></i></div><span>${esc(venueText)}</span></div>
-                                ${schedule ? `<div class="flex items-center gap-3 text-sm text-[#C0C0C0]"><div class="w-7 h-7 rounded-md flex items-center justify-center shrink-0" style="background:rgba(111,66,193,0.15)"><i data-lucide="calendar" class="w-4 h-4 text-[#6F42C1]" stroke-width="1.5"></i></div><span>${schedule}</span></div>` : ''}
-                                ${price ? `<p class="text-sm text-[#A0A0A0]">${price}</p>` : ''}
-                            </div>
+                            ${(ev.price || '').trim() ? `<p class="text-xs text-white/50 mt-3">${esc((ev.price || '').trim())}</p>` : ''}
                         </a>`;
                 }).join('');
             }
