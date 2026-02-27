@@ -94,7 +94,7 @@
                     <div id="mobile-dash-scroller" class="grid grid-flow-col gap-2 pb-4 hide-scrollbar overflow-x-auto snap-x snap-mandatory w-max min-w-full" style="grid-auto-columns: minmax(48px, 64px);"></div>
                     <div class="w-10 h-1 bg-[rgba(255,255,255,0.06)] rounded-full mx-auto mb-4 sm:mb-5"></div>
                 </div>
-                <div id="mobile-dash-events" class="px-4 sm:px-5 pb-10 grid grid-cols-1 min-[360px]:grid-cols-2 gap-3 sm:gap-4 flex-grow overflow-y-auto content-start"></div>
+                <div id="mobile-dash-events" class="px-4 sm:px-5 pb-10 grid grid-cols-1 gap-3 sm:gap-4 flex-grow overflow-y-auto content-start"></div>
                 <div class="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-[#1A1A1D] to-transparent pointer-events-none"></div>
             </div>
 
@@ -162,6 +162,26 @@
             return `${h - 12}:${min} pm`;
         }
 
+        /** Parse time string to minutes since midnight for sorting. Returns 9999 if unparseable (sorts last). */
+        function timeToMinutes(timeStr) {
+            if (!timeStr || typeof timeStr !== 'string') return 9999;
+            const t = timeStr.trim().toLowerCase();
+            if (!t || t === '—') return 9999;
+            const m = t.match(/(\d{1,2}):(\d{2})\s*([ap]\.?m\.?)?/);
+            if (!m) return 9999;
+            let h = parseInt(m[1], 10);
+            const min = parseInt(m[2], 10) || 0;
+            const ampm = (m[3] || '').replace(/\./g, '');
+            if (ampm === 'pm') h = h === 12 ? 12 : h + 12;
+            else if (ampm === 'am') h = h === 12 ? 0 : h;
+            if (h < 0 || h > 23 || min < 0 || min > 59) return 9999;
+            return h * 60 + min;
+        }
+
+        function sortEventsByTime(events) {
+            return events.slice().sort((a, b) => timeToMinutes(a.time) - timeToMinutes(b.time));
+        }
+
         function buildMonthCalendar(containerId, year, month, eventsByDay) {
             const container = document.getElementById(containerId);
             if (!container) return;
@@ -189,7 +209,7 @@
             for (let d = 1; d <= daysInMonth; d++) {
                 const dateKey = `${year}-${String(month).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
                 const isExpired = dateKey < todayKey;
-                const events = eventsByDay[dateKey] || [];
+                const events = sortEventsByTime(eventsByDay[dateKey] || []);
                 const hasEvents = events.length > 0;
                 const pastClass = isExpired ? ' past' : '';
                 html += `<div class="calendar-day ${minDay} border-b border-r border-white/5 p-1.5 sm:p-2 md:p-3 ${hasEvents ? 'has-events' : ''}${pastClass} bg-[#242428]">`;
@@ -273,7 +293,7 @@
                 });
             });
 
-            const events = eventsByDay[selectedKey] || [];
+            const events = sortEventsByTime(eventsByDay[selectedKey] || []);
             const eventsEl = document.getElementById('mobile-dash-events');
             if (!eventsEl) return;
             if (events.length === 0) {
