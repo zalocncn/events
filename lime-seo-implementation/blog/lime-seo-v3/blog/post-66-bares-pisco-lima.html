@@ -19,20 +19,22 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        html{scroll-behavior:smooth;}
         body { font-family: 'Inter', -apple-system, sans-serif; background-color: #1A1A1D; color: #FFFFFF; }
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #1A1A1D; }
         ::-webkit-scrollbar-thumb { background: #2E2E32; border-radius: 4px; }
+        .selection\:bg-\[\#6F42C1\]::selection { background-color: #6F42C1; color: white; }
     </style>
 </head>
-<body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white">
+<body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white pb-12">
 
     <header class="w-full h-14 px-4 md:px-6 flex items-center justify-between border-b border-white/5 bg-[#1A1A1D] sticky top-0 z-50">
-        <a href="../../blog.html" class="text-[#A0A0A0] hover:text-white transition-colors flex items-center gap-2">
+        <a href="../../../blog.html" class="text-[#A0A0A0] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 rounded-sm flex items-center gap-2" aria-label="Volver al blog">
             <i data-lucide="arrow-left" class="w-5 h-5" stroke-width="1.5"></i>
-            <span class="text-sm font-medium hidden sm:inline">← Blog</span>
+            <span class="text-sm font-medium hidden sm:inline">Blog</span>
         </a>
-        <a href="../../index.html" class="flex items-center gap-2">
+        <a href="../../../index.html" class="flex items-center gap-2">
             <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#FFC107] to-[#6F42C1] flex items-center justify-center">
                 <i data-lucide="sun" class="w-3.5 h-3.5 text-white" stroke-width="2"></i>
             </div>
@@ -41,25 +43,31 @@
         <div class="w-5 h-5"></div>
     </header>
 
-    <main class="flex-1 w-full max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-14 pb-16">
-
-        <article>
-            <header class="mb-10">
+    <!-- Header -->
+    <header class="pt-10 pb-10 sm:pt-14 sm:pb-12">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#6F42C1]/10 border border-[#6F42C1]/20 mb-6">
                 <span class="text-[#B794F4] text-xs font-medium uppercase tracking-wider">Pisco y Cócteles</span>
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white mt-3 mb-6 leading-tight">
+            </div>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white mt-3 mb-6 leading-tight">
                     Bares de Pisco en Lima — Los Mejores para Pisco Sour y Cócteles
                 </h1>
                 <p class="text-lg text-[#A0A0A0] mb-6 leading-relaxed">
                     El pisco es el alma líquida del Perú, y Lima es la capital mundial para disfrutarlo. Desde el clásico pisco sour hasta creaciones innovadoras con ingredientes peruanos, la ciudad ofrece bares de pisco para todos los gustos y presupuestos. Descubre los mejores lugares para beber pisco en Lima en 2026.
                 </p>
-                <div class="flex items-center gap-4 text-sm text-[#666]">
+                <div class="flex items-center gap-4 text-sm text-[#888]">
                     <span>2026-03-05</span>
                     <span>•</span>
                     <span>9 min de lectura</span>
                 </div>
-            </header>
+        </div>
+    </header>
 
-            <div class="prose-custom">
+    <!-- Article -->
+    <article class="py-12">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-[#242428] rounded-2xl p-8 md:p-12 border border-white/10">
+                
                 
                 <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-6 text-white">Mejores Bares de Pisco en Miraflores</h2>
                 <p class="mb-6 text-[#C0C0C0] leading-relaxed">Miraflores concentra los bares de pisco más accesibles para visitantes. Desde las cocteleras clásicas del Hotel Country Club hasta los bares modernos con menús de autor, hay opciones para todos. El Gran Hotel Bolívar en el Centro Histórico es considerado la "catedral del pisco sour" por su versión original que data de los años 1920.</p><p class="mb-6 text-[#C0C0C0] leading-relaxed">Para algo más contemporáneo, TabernaQuero ofrece catas guiadas con maridajes de chocolate y quesos, mientras que Carnaval Bar combina la coctelería pisquera con la creatividad del equipo de Gastón Acurio. Los precios van desde S/15 por un chilcano sencillo hasta S/45 por cócteles de autor.</p>
@@ -67,7 +75,7 @@
                 <div class="my-8 p-6 bg-[#6F42C1]/10 rounded-xl border border-[#6F42C1]/20">
                     <h3 class="text-xl font-semibold mb-3 text-white">¿Buscas eventos en Lima?</h3>
                     <p class="text-sm text-[#C0C0C0] mb-4">Todos los eventos de Lima en un solo lugar. Conciertos, fiestas, ferias y más — actualizado diariamente.</p>
-                    <a href="../../index.html" class="text-[#B794F4] font-medium hover:text-[#D4BBFF]">
+                    <a href="../../../index.html" class="text-[#B794F4] font-medium hover:text-[#D4BBFF]">
                         Consulta nuestro calendario de eventos →
                     </a>
                 </div>
@@ -87,7 +95,7 @@
                 <div class="my-10 p-8 bg-[#242428] rounded-2xl border border-white/10">
                     <h3 class="text-2xl font-semibold mb-3 text-white">Tu calendario de eventos en Lima</h3>
                     <p class="text-[#A0A0A0] mb-6">Todos los eventos de Lima en un solo lugar. Conciertos, fiestas, ferias y más — actualizado diariamente.</p>
-                    <a href="../../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-[#6F42C1] hover:bg-[#7C4DDB] rounded-full font-medium text-white transition-all">
+                    <a href="../../../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-[#6F42C1] hover:bg-[#7C4DDB] rounded-full font-medium text-white transition-all">
                         Ver Eventos →
                     </a>
                 </div>
@@ -126,13 +134,13 @@
                     Marcas recomendadas para llevar: BarSol (excelente relación calidad-precio), Cuatro Gallos (premium), Portón (artesanal), y Caravedo (el más premiado internacionalmente). Un buen pisco quebranta cuesta entre S/40-80, mientras que los premium pueden llegar a S/150-300.
                 </p>
                 <p class="text-[#C0C0C0] leading-relaxed">
-                    Descubre todos los eventos disponibles en nuestro <a href="../../index.html" class="text-[#B794F4] hover:text-[#D4BBFF]">calendario de eventos</a>.
+                    Descubre todos los eventos disponibles en nuestro <a href="../../../index.html" class="text-[#B794F4] hover:text-[#D4BBFF]">calendario de eventos</a>.
                 </p>
 
                 <div class="my-10 p-8 bg-[#6F42C1]/10 rounded-2xl border border-[#6F42C1]/20 text-center">
                     <h3 class="text-2xl font-semibold mb-3 text-white">Tu calendario de eventos en Lima</h3>
                     <p class="text-[#C0C0C0] mb-6">Todos los eventos de Lima en un solo lugar. Conciertos, fiestas, ferias y más — actualizado diariamente.</p>
-                    <a href="../../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-[#6F42C1] hover:bg-[#7C4DDB] rounded-full font-medium text-white transition-all">
+                    <a href="../../../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-[#6F42C1] hover:bg-[#7C4DDB] rounded-full font-medium text-white transition-all">
                         Ver Eventos →
                     </a>
                 </div>
@@ -159,22 +167,18 @@
                     </div>
                 </section>
             </div>
-        </article>
-    </main>
-
-    <footer class="w-full border-t border-white/5 py-8 text-center">
-        <a href="../../index.html" class="flex items-center justify-center gap-2 mb-4">
-            <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#FFC107] to-[#6F42C1] flex items-center justify-center">
-                <i data-lucide="sun" class="w-3.5 h-3.5 text-white" stroke-width="2"></i>
-            </div>
-            <span class="text-base font-semibold text-white">Lima Eventos</span>
-        </a>
-        <div class="flex justify-center gap-6 mb-4 text-sm text-[#666]">
-            <a href="../../index.html" class="hover:text-[#B794F4]">Eventos</a>
-            <a href="../../blog.html" class="hover:text-[#B794F4]">Blog</a>
         </div>
-        <p class="text-xs text-[#444]">© 2026 Lima Eventos. Todos los derechos reservados.</p>
+    </article>
+
+    <footer class="w-full border-t border-white/5 mt-12 py-6">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <a href="../../../index.html" class="text-sm text-[#A0A0A0] hover:text-[#8B5CF6] transition-colors flex items-center gap-1.5">
+                <i data-lucide="calendar-days" class="w-4 h-4" stroke-width="1.5"></i>
+                Volver al calendario
+            </a>
+        </div>
     </footer>
+    <script>if (typeof lucide !== 'undefined') lucide.createIcons();</script>
 
     <script type="application/ld+json">
     {

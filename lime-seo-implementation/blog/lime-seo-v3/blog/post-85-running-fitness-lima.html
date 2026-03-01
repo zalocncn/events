@@ -19,20 +19,22 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        html{scroll-behavior:smooth;}
         body { font-family: 'Inter', -apple-system, sans-serif; background-color: #1A1A1D; color: #FFFFFF; }
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #1A1A1D; }
         ::-webkit-scrollbar-thumb { background: #2E2E32; border-radius: 4px; }
+        .selection\:bg-\[\#6F42C1\]::selection { background-color: #6F42C1; color: white; }
     </style>
 </head>
-<body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white">
+<body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white pb-12">
 
     <header class="w-full h-14 px-4 md:px-6 flex items-center justify-between border-b border-white/5 bg-[#1A1A1D] sticky top-0 z-50">
-        <a href="../../blog.html" class="text-[#A0A0A0] hover:text-white transition-colors flex items-center gap-2">
+        <a href="../../../blog.html" class="text-[#A0A0A0] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 rounded-sm flex items-center gap-2" aria-label="Volver al blog">
             <i data-lucide="arrow-left" class="w-5 h-5" stroke-width="1.5"></i>
-            <span class="text-sm font-medium hidden sm:inline">← Blog</span>
+            <span class="text-sm font-medium hidden sm:inline">Blog</span>
         </a>
-        <a href="../../index.html" class="flex items-center gap-2">
+        <a href="../../../index.html" class="flex items-center gap-2">
             <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#FFC107] to-[#6F42C1] flex items-center justify-center">
                 <i data-lucide="sun" class="w-3.5 h-3.5 text-white" stroke-width="2"></i>
             </div>
@@ -41,25 +43,31 @@
         <div class="w-5 h-5"></div>
     </header>
 
-    <main class="flex-1 w-full max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-14 pb-16">
-
-        <article>
-            <header class="mb-10">
+    <!-- Header -->
+    <header class="pt-10 pb-10 sm:pt-14 sm:pb-12">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#6F42C1]/10 border border-[#6F42C1]/20 mb-6">
                 <span class="text-[#B794F4] text-xs font-medium uppercase tracking-wider">Fitness</span>
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white mt-3 mb-6 leading-tight">
+            </div>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white mt-3 mb-6 leading-tight">
                     Running & Fitness Events in Lima 2026 — Marathons, 5Ks & More
                 </h1>
                 <p class="text-lg text-[#A0A0A0] mb-6 leading-relaxed">
                     Lima's running and fitness community has grown exponentially, with dozens of organized races, running clubs, and fitness events throughout the year. From the flagship Lima Marathon to weekly park runs and CrossFit competitions, here's your complete guide to staying active in Lima in 2026.
                 </p>
-                <div class="flex items-center gap-4 text-sm text-[#666]">
+                <div class="flex items-center gap-4 text-sm text-[#888]">
                     <span>2026-05-12</span>
                     <span>•</span>
                     <span>7 min read</span>
                 </div>
-            </header>
+        </div>
+    </header>
 
-            <div class="prose-custom">
+    <!-- Article -->
+    <article class="py-12">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-[#242428] rounded-2xl p-8 md:p-12 border border-white/10">
+                
                 
                 <h2 class="text-2xl sm:text-3xl font-semibold mt-12 mb-6 text-white">Complete Guide</h2>
                 <p class="mb-6 text-[#C0C0C0] leading-relaxed">Lima's running and fitness community has grown exponentially, with dozens of organized races, running clubs, and fitness events throughout the year. From the flagship Lima Marathon to weekly park runs and CrossFit competitions, here's your complete guide to staying active in Lima in 2026.</p><p class="mb-6 text-[#C0C0C0] leading-relaxed">Lima offers options for every taste and budget. Below we present the best alternatives selected for their quality, location, and value.</p>
@@ -67,7 +75,7 @@
                 <div class="my-8 p-6 bg-[#6F42C1]/10 rounded-xl border border-[#6F42C1]/20">
                     <h3 class="text-xl font-semibold mb-3 text-white">Looking for events in Lima?</h3>
                     <p class="text-sm text-[#C0C0C0] mb-4">All Lima events in one place. Concerts, parties, fairs and more — updated daily.</p>
-                    <a href="../../index.html" class="text-[#B794F4] font-medium hover:text-[#D4BBFF]">
+                    <a href="../../../index.html" class="text-[#B794F4] font-medium hover:text-[#D4BBFF]">
                         Check our events calendar →
                     </a>
                 </div>
@@ -84,7 +92,7 @@
                 <div class="my-10 p-8 bg-[#242428] rounded-2xl border border-white/10">
                     <h3 class="text-2xl font-semibold mb-3 text-white">Your Lima Events Calendar</h3>
                     <p class="text-[#A0A0A0] mb-6">All Lima events in one place. Concerts, parties, fairs and more — updated daily.</p>
-                    <a href="../../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-[#6F42C1] hover:bg-[#7C4DDB] rounded-full font-medium text-white transition-all">
+                    <a href="../../../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-[#6F42C1] hover:bg-[#7C4DDB] rounded-full font-medium text-white transition-all">
                         View Events →
                     </a>
                 </div>
@@ -118,13 +126,13 @@
                     To make the most of your experience, plan ahead and arrive early on weekends. Carry cash in soles and sunscreen. Check our events calendar for scheduled activities during your visit.
                 </p>
                 <p class="text-[#C0C0C0] leading-relaxed">
-                    Discover all available events on our <a href="../../index.html" class="text-[#B794F4] hover:text-[#D4BBFF]">events calendar</a>.
+                    Discover all available events on our <a href="../../../index.html" class="text-[#B794F4] hover:text-[#D4BBFF]">events calendar</a>.
                 </p>
 
                 <div class="my-10 p-8 bg-[#6F42C1]/10 rounded-2xl border border-[#6F42C1]/20 text-center">
                     <h3 class="text-2xl font-semibold mb-3 text-white">Your Lima Events Calendar</h3>
                     <p class="text-[#C0C0C0] mb-6">All Lima events in one place. Concerts, parties, fairs and more — updated daily.</p>
-                    <a href="../../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-[#6F42C1] hover:bg-[#7C4DDB] rounded-full font-medium text-white transition-all">
+                    <a href="../../../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-[#6F42C1] hover:bg-[#7C4DDB] rounded-full font-medium text-white transition-all">
                         View Events →
                     </a>
                 </div>
@@ -138,7 +146,7 @@
                             <p class="text-sm text-[#A0A0A0]">All our articles</p>
                         </a>
 
-                        <a href="../../index.html" class="p-6 bg-[#242428] rounded-xl border border-white/5 hover:border-[#6F42C1]/30 transition-colors">
+                        <a href="../../../index.html" class="p-6 bg-[#242428] rounded-xl border border-white/5 hover:border-[#6F42C1]/30 transition-colors">
                             <h4 class="font-medium mb-2 text-white">Events Calendar</h4>
                             <p class="text-sm text-[#A0A0A0]">View Lima events</p>
                         </a>
@@ -151,22 +159,18 @@
                     </div>
                 </section>
             </div>
-        </article>
-    </main>
-
-    <footer class="w-full border-t border-white/5 py-8 text-center">
-        <a href="../../index.html" class="flex items-center justify-center gap-2 mb-4">
-            <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#FFC107] to-[#6F42C1] flex items-center justify-center">
-                <i data-lucide="sun" class="w-3.5 h-3.5 text-white" stroke-width="2"></i>
-            </div>
-            <span class="text-base font-semibold text-white">Lima Eventos</span>
-        </a>
-        <div class="flex justify-center gap-6 mb-4 text-sm text-[#666]">
-            <a href="../../index.html" class="hover:text-[#B794F4]">Eventos</a>
-            <a href="../../blog.html" class="hover:text-[#B794F4]">Blog</a>
         </div>
-        <p class="text-xs text-[#444]">© 2026 Lima Eventos. Todos los derechos reservados.</p>
+    </article>
+
+    <footer class="w-full border-t border-white/5 mt-12 py-6">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <a href="../../../index.html" class="text-sm text-[#A0A0A0] hover:text-[#8B5CF6] transition-colors flex items-center gap-1.5">
+                <i data-lucide="calendar-days" class="w-4 h-4" stroke-width="1.5"></i>
+                Volver al calendario
+            </a>
+        </div>
     </footer>
+    <script>if (typeof lucide !== 'undefined') lucide.createIcons();</script>
 
     <script type="application/ld+json">
     {

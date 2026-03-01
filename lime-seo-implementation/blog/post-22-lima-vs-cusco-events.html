@@ -14,100 +14,113 @@
     <meta property="og:description" content="Lima vs Cusco comparison for events, nightlife, food, and culture. Which Peruvian city is better for entertainment and things to do?">
     <meta property="og:locale" content="en_US">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>html{scroll-behavior:smooth;}body{font-family:'Inter',sans-serif;}</style>
+    <style>
+        html{scroll-behavior:smooth;}
+        body { font-family: 'Inter', -apple-system, sans-serif; background-color: #1A1A1D; color: #FFFFFF; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1A1A1D; }
+        ::-webkit-scrollbar-thumb { background: #2E2E32; border-radius: 4px; }
+        .selection\:bg-\[\#6F42C1\]::selection { background-color: #6F42C1; color: white; }
+    </style>
 </head>
-<body class="bg-gray-950 text-gray-100">
-    <nav class="fixed w-full z-50 top-0 bg-gray-950/90 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="../index.html" class="text-xl font-semibold text-orange-400">🍊 Lima</a>
-            <div class="hidden md:flex items-center gap-8">
-                <a href="../index.html" class="text-sm text-gray-400 hover:text-white">Calendar</a>
-                <a href="index.html" class="text-sm text-gray-400 hover:text-white">Blog</a>
-                <a href="../districts/miraflores.html" class="text-sm text-gray-400 hover:text-white">Districts</a>
-                <a href="../about.html" class="text-sm text-gray-400 hover:text-white">About</a>
+<body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white pb-12">
+    <header class="w-full h-14 px-4 md:px-6 flex items-center justify-between border-b border-white/5 bg-[#1A1A1D] sticky top-0 z-50">
+        <a href="../../blog.html" class="text-[#A0A0A0] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 rounded-sm flex items-center gap-2" aria-label="Volver al blog">
+            <i data-lucide="arrow-left" class="w-5 h-5" stroke-width="1.5"></i>
+            <span class="text-sm font-medium hidden sm:inline">Blog</span>
+        </a>
+        <a href="../../index.html" class="flex items-center gap-2">
+            <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#FFC107] to-[#6F42C1] flex items-center justify-center">
+                <i data-lucide="sun" class="w-3.5 h-3.5 text-white" stroke-width="2"></i>
             </div>
-        </div>
-    </nav>
-    <header class="pt-28 pb-12 bg-gradient-to-b from-gray-900 to-gray-950">
+            <span class="text-base font-semibold tracking-tight text-white">Lima</span>
+        </a>
+        <div class="w-5 h-5"></div>
+    </header>
+    <!-- Header -->
+    <header class="pt-10 pb-10 sm:pt-14 sm:pb-12">
         <div class="max-w-4xl mx-auto px-6">
             <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Lima vs Cusco — Which City Has Better Events & Nightlife?</h1>
-            <p class="text-xl text-gray-400 mb-6">It's the eternal Peru question: Lima or Cusco? While Cusco has the mystique of Machu Picchu, Lima dominates when it comes to events, nightlife, food, and cultural happenings.</p>
-            <div class="flex items-center gap-4 text-sm text-gray-500">
+            <p class="text-xl text-[#A0A0A0] mb-6">It's the eternal Peru question: Lima or Cusco? While Cusco has the mystique of Machu Picchu, Lima dominates when it comes to events, nightlife, food, and cultural happenings.</p>
+            <div class="flex items-center gap-4 text-sm text-[#888]">
                 <span>2026</span><span>•</span><span>8 min read</span>
             </div>
         </div>
     </header>
     <article class="py-12">
         <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-gray-900 rounded-2xl p-8 md:p-12 border border-gray-800">
+            <div class="bg-[#242428] rounded-2xl p-8 md:p-12 border border-white/10">
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Lima vs Cusco</h2>
-                <p class="mb-6 text-gray-300">It's the eternal Peru question: Lima or Cusco? While Cusco has the mystique of Machu Picchu, Lima dominates when it comes to events, nightlife, food, and cultural happenings.</p>
+                <p class="mb-6 text-[#C0C0C0]">It's the eternal Peru question: Lima or Cusco? While Cusco has the mystique of Machu Picchu, Lima dominates when it comes to events, nightlife, food, and cultural happenings.</p>
 
-                <div class="my-8 p-6 bg-orange-500/10 rounded-xl border border-orange-500/20">
-                    <h3 class="text-xl font-semibold text-orange-400 mb-3">📅 Find these events on Lima</h3>
-                    <p class="text-sm text-gray-300 mb-4">Every event in Lima on one calendar.</p>
-                    <a href="../index.html" class="text-orange-400 font-medium hover:text-orange-300">Open Lima Calendar →</a>
+                <div class="my-8 p-6 bg-[#6F42C1]/10 rounded-xl border border-[#6F42C1]/20">
+                    <h3 class="text-xl font-semibold text-[#B794F4] mb-3">📅 Find these events on Lima</h3>
+                    <p class="text-sm text-[#C0C0C0] mb-4">Every event in Lima on one calendar.</p>
+                    <a href="../../index.html" class="text-[#B794F4] font-medium hover:text-[#B794F4]">Open Lima Calendar →</a>
                 </div>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Why This Matters</h2>
-                <p class="mb-6 text-gray-300">This topic is central to experiencing Lima fully. Whether you are a tourist or a local, staying informed about these events and activities enriches your time in the city.</p>
+                <p class="mb-6 text-[#C0C0C0]">This topic is central to experiencing Lima fully. Whether you are a tourist or a local, staying informed about these events and activities enriches your time in the city.</p>
 
-                <div class="my-10 p-8 bg-gradient-to-r from-orange-600 to-orange-500 rounded-2xl text-white">
+                <div class="my-10 p-8 bg-gradient-to-r from-[#6F42C1] to-[#8B5CF6] rounded-2xl text-white">
                     <h3 class="text-2xl font-bold mb-3">Looking for events in Lima?</h3>
-                    <p class="text-orange-100 mb-6">Lima updates daily with events from three major platforms.</p>
-                    <a href="../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-gray-900 hover:bg-gray-800 rounded-full font-medium transition-all">Check Events Now</a>
+                    <p class="text-white/90 mb-6">Lima updates daily with events from three major platforms.</p>
+                    <a href="../../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-[#242428] hover:bg-white/[0.08] rounded-full font-medium transition-all">Check Events Now</a>
                 </div>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">How to Stay Updated</h2>
-                <p class="mb-6 text-gray-300">The easiest way is to check Lima regularly. We aggregate events from EnLima, Eventbrite, and Teleticket into one calendar, so you never miss anything happening in Lima.</p>
+                <p class="mb-6 text-[#C0C0C0]">The easiest way is to check Lima regularly. We aggregate events from EnLima, Eventbrite, and Teleticket into one calendar, so you never miss anything happening in Lima.</p>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Frequently Asked Questions</h2>
                 <div class="space-y-4 mb-10">
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">Where can I find more information?</h4>
-                        <p class="text-sm text-gray-400">Check Lima calendar for the latest events in Lima. We update daily with events from the three major platforms.</p>
+                        <p class="text-sm text-[#A0A0A0]">Check Lima calendar for the latest events in Lima. We update daily with events from the three major platforms.</p>
                     </div>
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">Is this available year-round?</h4>
-                        <p class="text-sm text-gray-400">Yes, Lima has events and activities year-round. The specific offerings change by season, but there is always something happening.</p>
+                        <p class="text-sm text-[#A0A0A0]">Yes, Lima has events and activities year-round. The specific offerings change by season, but there is always something happening.</p>
                     </div>
                 </div>
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Conclusion</h2>
-                <p class="text-gray-300 mb-6">We hope this guide helps you discover everything Lima has to offer. Remember to check the <a href='../index.html' class='text-orange-400 hover:text-orange-300 underline'>Lima calendar</a> to stay up to date with all events.</p>
-                <div class="my-10 p-8 bg-gradient-to-r from-orange-600 to-orange-500 rounded-2xl text-white text-center">
+                <p class="text-[#C0C0C0] mb-6">We hope this guide helps you discover everything Lima has to offer. Remember to check the <a href='../index.html' class='text-[#B794F4] hover:text-[#B794F4] underline'>Lima calendar</a> to stay up to date with all events.</p>
+                <div class="my-10 p-8 bg-gradient-to-r from-[#6F42C1] to-[#8B5CF6] rounded-2xl text-white text-center">
                     <h3 class="text-2xl font-bold mb-3">🍊 Discover every event in Lima</h3>
-                    <p class="text-orange-100 mb-6">One calendar. Three sources. Hundreds of events.</p>
-                    <a href="../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-gray-900 hover:bg-gray-800 rounded-full font-medium transition-all">Open Lima Calendar →</a>
+                    <p class="text-white/90 mb-6">One calendar. Three sources. Hundreds of events.</p>
+                    <a href="../../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-[#242428] hover:bg-white/[0.08] rounded-full font-medium transition-all">Open Lima Calendar →</a>
                 </div>
-                <section class="mt-16 pt-8 border-t border-gray-800">
+                <section class="mt-16 pt-8 border-t border-white/10">
                     <h3 class="text-xl font-semibold mb-6 text-white">Related Articles</h3>
                     <div class="grid md:grid-cols-3 gap-6">
-                        <a href="things-to-do-lima-guide.html" class="p-6 bg-gray-800/50 rounded-xl hover:bg-gray-800 transition-colors border border-gray-700">
+                        <a href="things-to-do-lima-guide.html" class="p-6 bg-white/[0.06] rounded-xl hover:bg-white/[0.08] transition-colors border border-white/10">
                             <h4 class="font-medium mb-2 text-white">Things to Do in Lima</h4>
-                            <p class="text-sm text-gray-400">Complete guide</p>
+                            <p class="text-sm text-[#A0A0A0]">Complete guide</p>
                         </a>
-                        <a href="lima-weekend-guide.html" class="p-6 bg-gray-800/50 rounded-xl hover:bg-gray-800 transition-colors border border-gray-700">
+                        <a href="lima-weekend-guide.html" class="p-6 bg-white/[0.06] rounded-xl hover:bg-white/[0.08] transition-colors border border-white/10">
                             <h4 class="font-medium mb-2 text-white">Lima Weekend Guide</h4>
-                            <p class="text-sm text-gray-400">Best plans</p>
+                            <p class="text-sm text-[#A0A0A0]">Best plans</p>
                         </a>
-                        <a href="free-things-to-do-lima.html" class="p-6 bg-gray-800/50 rounded-xl hover:bg-gray-800 transition-colors border border-gray-700">
+                        <a href="free-things-to-do-lima.html" class="p-6 bg-white/[0.06] rounded-xl hover:bg-white/[0.08] transition-colors border border-white/10">
                             <h4 class="font-medium mb-2 text-white">Free Activities</h4>
-                            <p class="text-sm text-gray-400">Budget-friendly</p>
+                            <p class="text-sm text-[#A0A0A0]">Budget-friendly</p>
                         </a>
                     </div>
                 </section>
             </div>
         </div>
     </article>
-    <footer class="bg-gray-900 pt-16 pb-10 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <a href="../index.html" class="text-2xl font-semibold text-orange-400 block mb-4">🍊 Lima</a>
-            <p class="text-sm text-gray-400 mb-6">Every event in Lima, on one calendar.</p>
-            <p class="text-xs text-gray-600">© 2026 Lima.</p>
+    <footer class="w-full border-t border-white/5 mt-12 py-6">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <a href="../../index.html" class="text-sm text-[#A0A0A0] hover:text-[#8B5CF6] transition-colors flex items-center gap-1.5">
+                <i data-lucide="calendar-days" class="w-4 h-4" stroke-width="1.5"></i>
+                Volver al calendario
+            </a>
         </div>
     </footer>
+    <script>if (typeof lucide !== 'undefined') lucide.createIcons();</script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where can I find more information?","acceptedAnswer":{"@type":"Answer","text":"Check Lima calendar for the latest events in Lima. We update daily with events from the three major platforms."}},{"@type":"Question","name":"Is this available year-round?","acceptedAnswer":{"@type":"Answer","text":"Yes, Lima has events and activities year-round. The specific offerings change by season, but there is always something happening."}}]}
     </script>

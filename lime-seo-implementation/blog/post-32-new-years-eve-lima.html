@@ -21,33 +21,41 @@
     
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; }
+        html{scroll-behavior:smooth;}
+        body { font-family: 'Inter', -apple-system, sans-serif; background-color: #1A1A1D; color: #FFFFFF; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1A1A1D; }
+        ::-webkit-scrollbar-thumb { background: #2E2E32; border-radius: 4px; }
+        .selection\:bg-\[\#6F42C1\]::selection { background-color: #6F42C1; color: white; }
     </style>
 </head>
-<body class="bg-gray-950 text-gray-100">
+<body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white pb-12">
     
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 top-0 bg-gray-950/80 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="https://limaeventos.app" class="text-xl font-bold text-lime-400">🍊 Lime</a>
-            <div class="flex items-center gap-6">
-                <a href="https://limaeventos.app/blog.html" class="text-sm text-gray-400 hover:text-white">Blog</a>
-                <a href="https://limaeventos.app" class="px-5 py-2 bg-lime-500 hover:bg-lime-400 text-gray-900 rounded-full text-sm font-medium transition-colors">Explore Events</a>
+    <header class="w-full h-14 px-4 md:px-6 flex items-center justify-between border-b border-white/5 bg-[#1A1A1D] sticky top-0 z-50">
+        <a href="../../blog.html" class="text-[#A0A0A0] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 rounded-sm flex items-center gap-2" aria-label="Volver al blog">
+            <i data-lucide="arrow-left" class="w-5 h-5" stroke-width="1.5"></i>
+            <span class="text-sm font-medium hidden sm:inline">Blog</span>
+        </a>
+        <a href="../../index.html" class="flex items-center gap-2">
+            <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#FFC107] to-[#6F42C1] flex items-center justify-center">
+                <i data-lucide="sun" class="w-3.5 h-3.5 text-white" stroke-width="2"></i>
             </div>
-        </div>
-    </nav>
+            <span class="text-base font-semibold tracking-tight text-white">Lima</span>
+        </a>
+        <div class="w-5 h-5"></div>
+    </header>
 
     <!-- Header -->
-    <header class="pt-28 pb-12 bg-gradient-to-b from-gray-900 to-gray-950">
+    <header class="pt-10 pb-10 sm:pt-14 sm:pb-12">
         <div class="max-w-4xl mx-auto px-6">
             <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
                 New Year's Eve in Lima Peru 2026 — Best Parties, Events & Fireworks
             </h1>
-            <p class="text-xl text-gray-400 mb-6">New Year's Eve in Lima is pure magic. From rooftop parties overlooking the Pacific to massive beach celebrations and spectacular fireworks along the Costa Verde, Lima knows how to ring in the new year. This guide covers everything you need for an unforgettable NYE in Lima.</p>
-            <div class="flex items-center gap-4 text-sm text-gray-500">
+            <p class="text-xl text-[#A0A0A0] mb-6">New Year's Eve in Lima is pure magic. From rooftop parties overlooking the Pacific to massive beach celebrations and spectacular fireworks along the Costa Verde, Lima knows how to ring in the new year. This guide covers everything you need for an unforgettable NYE in Lima.</p>
+            <div class="flex items-center gap-4 text-sm text-[#888]">
                 <span>2026-03-01</span>
                 <span>•</span>
                 <span>9 min read</span>
@@ -58,95 +66,95 @@
     <!-- Article -->
     <article class="py-12">
         <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-gray-900 rounded-2xl p-8 md:p-12 border border-gray-800">
+            <div class="bg-[#242428] rounded-2xl p-8 md:p-12 border border-white/10">
                 
                 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Best New Year's Eve Parties in Lima</h2>
-                <p class="text-gray-300 mb-6">Lima's NYE party scene has something for everyone. The biggest events happen in Miraflores and Barranco — upscale hotels host gala dinners, trendy bars throw rooftop parties, and clubs go all-out with international DJs. Popular venues include the JW Marriott rooftop, Huaringas Bar, and major clubs in Barranco. Tickets for the biggest parties sell out weeks in advance, so plan ahead. Prices range from $30 for bar events to $200+ for premium hotel galas.</p>
+                <p class="text-[#C0C0C0] mb-6">Lima's NYE party scene has something for everyone. The biggest events happen in Miraflores and Barranco — upscale hotels host gala dinners, trendy bars throw rooftop parties, and clubs go all-out with international DJs. Popular venues include the JW Marriott rooftop, Huaringas Bar, and major clubs in Barranco. Tickets for the biggest parties sell out weeks in advance, so plan ahead. Prices range from $30 for bar events to $200+ for premium hotel galas.</p>
                 
-                <div class="my-8 p-6 bg-lime-500/10 rounded-xl border border-lime-500/30">
-                    <h3 class="text-xl font-semibold mb-3 text-lime-400">Looking for events in Lima?</h3>
-                    <p class="text-sm text-gray-400 mb-4">Lime brings together events from EnLima, Eventbrite, and Teleticket in one calendar. Never miss out.</p>
-                    <a href="https://limaeventos.app" class="text-lime-400 font-medium hover:text-lime-300">Browse Events on Lime →</a>
+                <div class="my-8 p-6 bg-[#6F42C1]/10 rounded-xl border border-[#6F42C1]/20">
+                    <h3 class="text-xl font-semibold mb-3 text-[#B794F4]">Looking for events in Lima?</h3>
+                    <p class="text-sm text-[#A0A0A0] mb-4">Lime brings together events from EnLima, Eventbrite, and Teleticket in one calendar. Never miss out.</p>
+                    <a href="../../index.html">Browse Events on Lime →</a>
                 </div>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Fireworks — Where to Watch</h2>
-                <p class="text-gray-300 mb-6">The best fireworks in Lima happen along the Costa Verde and Miraflores Malecón. The cliff-top parks of Miraflores offer stunning views of fireworks over the ocean. Parque del Amor and Parque María Reiche are top spots. Many apartment buildings along the Malecón host private parties with incredible views. In recent years, municipalities have organized synchronized fireworks shows. Arrive at least 2 hours early for the best spots — they fill up fast.</p>
+                <p class="text-[#C0C0C0] mb-6">The best fireworks in Lima happen along the Costa Verde and Miraflores Malecón. The cliff-top parks of Miraflores offer stunning views of fireworks over the ocean. Parque del Amor and Parque María Reiche are top spots. Many apartment buildings along the Malecón host private parties with incredible views. In recent years, municipalities have organized synchronized fireworks shows. Arrive at least 2 hours early for the best spots — they fill up fast.</p>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Beach Celebrations</h2>
-                <p class="text-gray-300 mb-6">Lima's beaches come alive on NYE. Agua Dulce and La Herradura in Chorrillos are traditional gathering spots. People bring food, drinks, and portable speakers for impromptu beach parties. The tradition of jumping seven waves at midnight for good luck is alive and well. More upscale beach clubs like Cala and La Rosa Náutica offer dinner packages. If you prefer a calmer scene, the beaches south of Lima (Asia, Punta Hermosa) have their own celebrations.</p>
+                <p class="text-[#C0C0C0] mb-6">Lima's beaches come alive on NYE. Agua Dulce and La Herradura in Chorrillos are traditional gathering spots. People bring food, drinks, and portable speakers for impromptu beach parties. The tradition of jumping seven waves at midnight for good luck is alive and well. More upscale beach clubs like Cala and La Rosa Náutica offer dinner packages. If you prefer a calmer scene, the beaches south of Lima (Asia, Punta Hermosa) have their own celebrations.</p>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Peruvian NYE Traditions You Should Know</h2>
-                <p class="text-gray-300 mb-6">Peru has unique New Year traditions. Wearing yellow underwear brings good luck and money. Eating 12 grapes at midnight (one for each month) is a must. Many people carry a suitcase around the block at midnight for travel luck. Burning effigies (muñecos) of old year figures is tradition in many neighborhoods. Lentils represent prosperity — you'll see them everywhere. Understanding these traditions makes the experience much richer.</p>
+                <p class="text-[#C0C0C0] mb-6">Peru has unique New Year traditions. Wearing yellow underwear brings good luck and money. Eating 12 grapes at midnight (one for each month) is a must. Many people carry a suitcase around the block at midnight for travel luck. Burning effigies (muñecos) of old year figures is tradition in many neighborhoods. Lentils represent prosperity — you'll see them everywhere. Understanding these traditions makes the experience much richer.</p>
                 
-                <div class="my-10 p-8 bg-gradient-to-r from-lime-600 to-emerald-600 rounded-2xl">
+                <div class="my-10 p-8 bg-gradient-to-r from-[#6F42C1] to-[#8B5CF6] rounded-2xl">
                     <h3 class="text-2xl font-bold mb-3 text-white">Find Your Next Event</h3>
-                    <p class="text-lime-100 mb-6">Thousands of events updated daily. Concerts, parties, theater, art, and more.</p>
-                    <a href="https://limaeventos.app" class="inline-flex items-center gap-2 px-8 py-3 bg-white text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all">
+                    <p class="text-white/90 mb-6">Thousands of events updated daily. Concerts, parties, theater, art, and more.</p>
+                    <a href="../../index.html">
                         Explore Events
                     </a>
                 </div>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Restaurant Dinners & Hotel Galas</h2>
-                <p class="text-gray-300 mb-6">Many of Lima's top restaurants offer special NYE menus. Central, Maido, and other world-famous restaurants have exclusive dinners — book months in advance. Hotels like the Westin, JW Marriott, Hilton, and Country Club Lima offer all-inclusive galas with dinner, open bar, live music, and fireworks views. Mid-range restaurants in Miraflores and Barranco also have great options at more accessible prices. Most require reservations and prepayment.</p>
+                <p class="text-[#C0C0C0] mb-6">Many of Lima's top restaurants offer special NYE menus. Central, Maido, and other world-famous restaurants have exclusive dinners — book months in advance. Hotels like the Westin, JW Marriott, Hilton, and Country Club Lima offer all-inclusive galas with dinner, open bar, live music, and fireworks views. Mid-range restaurants in Miraflores and Barranco also have great options at more accessible prices. Most require reservations and prepayment.</p>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Practical Tips for NYE in Lima</h2>
-                <p class="text-gray-300 mb-6">Book accommodation and restaurant reservations weeks in advance. Transportation gets chaotic after midnight — use ride-sharing apps or arrange transport in advance. Keep valuables secure in crowded areas. ATMs run out of cash on NYE — withdraw money beforehand. Many businesses close early on Dec 31 and stay closed Jan 1. Stay hydrated — Lima's summer heat plus celebrations can be intense. The next day (Jan 1) is very quiet — most of the city sleeps in.</p>
+                <p class="text-[#C0C0C0] mb-6">Book accommodation and restaurant reservations weeks in advance. Transportation gets chaotic after midnight — use ride-sharing apps or arrange transport in advance. Keep valuables secure in crowded areas. ATMs run out of cash on NYE — withdraw money beforehand. Many businesses close early on Dec 31 and stay closed Jan 1. Stay hydrated — Lima's summer heat plus celebrations can be intense. The next day (Jan 1) is very quiet — most of the city sleeps in.</p>
 
 
                 <!-- FAQ Section -->
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Frequently Asked Questions</h2>
                 <div class="space-y-4 mb-10">
                     
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">When do fireworks start on NYE in Lima?</h4>
-                        <p class="text-sm text-gray-400">Most fireworks start at midnight and last 10-20 minutes. Some districts do their own shows slightly before or after midnight. The Miraflores Malecón area typically has the best displays.</p>
+                        <p class="text-sm text-[#A0A0A0]">Most fireworks start at midnight and last 10-20 minutes. Some districts do their own shows slightly before or after midnight. The Miraflores Malecón area typically has the best displays.</p>
                     </div>
 
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">Is it safe to celebrate NYE in Lima?</h4>
-                        <p class="text-sm text-gray-400">Generally yes, especially in tourist areas like Miraflores and Barranco. Take normal precautions — don't flash expensive items, stay in well-lit areas, and use reliable transportation.</p>
+                        <p class="text-sm text-[#A0A0A0]">Generally yes, especially in tourist areas like Miraflores and Barranco. Take normal precautions — don't flash expensive items, stay in well-lit areas, and use reliable transportation.</p>
                     </div>
 
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">What should I wear to NYE in Lima?</h4>
-                        <p class="text-sm text-gray-400">Yellow is traditional for good luck. Events range from casual beach parties to formal hotel galas. Check the dress code for your specific event. Lima in December is warm (summer), so light clothing works.</p>
+                        <p class="text-sm text-[#A0A0A0]">Yellow is traditional for good luck. Events range from casual beach parties to formal hotel galas. Check the dress code for your specific event. Lima in December is warm (summer), so light clothing works.</p>
                     </div>
 
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">How do I find NYE events in Lima?</h4>
-                        <p class="text-sm text-gray-400">Check the Lime calendar for updated NYE events. Hotels and venues also promote events on social media starting in November.</p>
+                        <p class="text-sm text-[#A0A0A0]">Check the Lime calendar for updated NYE events. Hotels and venues also promote events on social media starting in November.</p>
                     </div>
 
                 </div>
 
                 <!-- Conclusion -->
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Conclusion</h2>
-                <p class="text-gray-300 mb-6">
+                <p class="text-[#C0C0C0] mb-6">
                     We hope this guide helps you discover everything Lima has to offer. Remember to check the Lime calendar regularly to stay up to date with the latest events.
                 </p>
-                <p class="text-gray-300">
-                    <a href="https://limaeventos.app" class="text-lime-400 hover:text-lime-300 font-medium">Browse Events on Lime →</a>
+                <p class="text-[#C0C0C0]">
+                    <a href="../../index.html">Browse Events on Lime →</a>
                 </p>
 
                 <!-- Related Articles -->
-                <section class="mt-16 pt-8 border-t border-gray-800">
+                <section class="mt-16 pt-8 border-t border-white/10">
                     <h3 class="text-xl font-semibold mb-6 text-white">Related Articles</h3>
                     <div class="grid md:grid-cols-3 gap-4">
                         
-                        <a href="post-36-rooftop-bars-lima.html" class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-lime-500/50 transition-colors">
+                        <a href="post-36-rooftop-bars-lima.html" class="p-6 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#6F42C1]/50 transition-colors">
                             <h4 class="font-medium text-white mb-2">Rooftop Bars Lima</h4>
-                            <p class="text-sm text-gray-500">Best views and cocktails</p>
+                            <p class="text-sm text-[#888]">Best views and cocktails</p>
                         </a>
 
-                        <a href="post-39-lima-en-verano.html" class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-lime-500/50 transition-colors">
+                        <a href="post-39-lima-en-verano.html" class="p-6 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#6F42C1]/50 transition-colors">
                             <h4 class="font-medium text-white mb-2">Lima en Verano</h4>
-                            <p class="text-sm text-gray-500">Summer plans</p>
+                            <p class="text-sm text-[#888]">Summer plans</p>
                         </a>
 
-                        <a href="post-58-expat-guide-lima.html" class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-lime-500/50 transition-colors">
+                        <a href="post-58-expat-guide-lima.html" class="p-6 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#6F42C1]/50 transition-colors">
                             <h4 class="font-medium text-white mb-2">Expat Guide Lima</h4>
-                            <p class="text-sm text-gray-500">Social scene</p>
+                            <p class="text-sm text-[#888]">Social scene</p>
                         </a>
 
                     </div>
@@ -155,17 +163,15 @@
         </div>
     </article>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 border-t border-gray-800 pt-12 pb-8">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <a href="https://limaeventos.app" class="text-xl font-bold text-lime-400 block mb-4">🍊 Lime</a>
-            <div class="flex justify-center gap-8 mb-6 text-sm text-gray-500">
-                <a href="https://limaeventos.app" class="hover:text-white">Home</a>
-                <a href="https://limaeventos.app/blog.html" class="hover:text-white">Blog</a>
-            </div>
-            <p class="text-xs text-gray-600">© 2026 Lime. All rights reserved.</p>
+    <footer class="w-full border-t border-white/5 mt-12 py-6">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <a href="../../index.html" class="text-sm text-[#A0A0A0] hover:text-[#8B5CF6] transition-colors flex items-center gap-1.5">
+                <i data-lucide="calendar-days" class="w-4 h-4" stroke-width="1.5"></i>
+                Volver al calendario
+            </a>
         </div>
     </footer>
+    <script>if (typeof lucide !== 'undefined') lucide.createIcons();</script>
 
     <!-- FAQ Schema -->
     <script type="application/ld+json">

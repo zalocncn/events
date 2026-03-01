@@ -21,33 +21,41 @@
     
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; }
+        html{scroll-behavior:smooth;}
+        body { font-family: 'Inter', -apple-system, sans-serif; background-color: #1A1A1D; color: #FFFFFF; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1A1A1D; }
+        ::-webkit-scrollbar-thumb { background: #2E2E32; border-radius: 4px; }
+        .selection\:bg-\[\#6F42C1\]::selection { background-color: #6F42C1; color: white; }
     </style>
 </head>
-<body class="bg-gray-950 text-gray-100">
+<body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white pb-12">
     
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 top-0 bg-gray-950/80 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="https://limaeventos.app" class="text-xl font-bold text-lime-400">🍊 Lime</a>
-            <div class="flex items-center gap-6">
-                <a href="https://limaeventos.app/blog.html" class="text-sm text-gray-400 hover:text-white">Blog</a>
-                <a href="https://limaeventos.app" class="px-5 py-2 bg-lime-500 hover:bg-lime-400 text-gray-900 rounded-full text-sm font-medium transition-colors">Explore Events</a>
+    <header class="w-full h-14 px-4 md:px-6 flex items-center justify-between border-b border-white/5 bg-[#1A1A1D] sticky top-0 z-50">
+        <a href="../../blog.html" class="text-[#A0A0A0] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 rounded-sm flex items-center gap-2" aria-label="Volver al blog">
+            <i data-lucide="arrow-left" class="w-5 h-5" stroke-width="1.5"></i>
+            <span class="text-sm font-medium hidden sm:inline">Blog</span>
+        </a>
+        <a href="../../index.html" class="flex items-center gap-2">
+            <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#FFC107] to-[#6F42C1] flex items-center justify-center">
+                <i data-lucide="sun" class="w-3.5 h-3.5 text-white" stroke-width="2"></i>
             </div>
-        </div>
-    </nav>
+            <span class="text-base font-semibold tracking-tight text-white">Lima</span>
+        </a>
+        <div class="w-5 h-5"></div>
+    </header>
 
     <!-- Header -->
-    <header class="pt-28 pb-12 bg-gradient-to-b from-gray-900 to-gray-950">
+    <header class="pt-10 pb-10 sm:pt-14 sm:pb-12">
         <div class="max-w-4xl mx-auto px-6">
             <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
                 Halloween in Lima Peru — Best Parties, Events & Spooky Fun
             </h1>
-            <p class="text-xl text-gray-400 mb-6">Halloween in Lima has grown from a niche celebration to a major party event. Clubs, bars, restaurants, and cultural centers all get in on the spooky action. Here's what to expect.</p>
-            <div class="flex items-center gap-4 text-sm text-gray-500">
+            <p class="text-xl text-[#A0A0A0] mb-6">Halloween in Lima has grown from a niche celebration to a major party event. Clubs, bars, restaurants, and cultural centers all get in on the spooky action. Here's what to expect.</p>
+            <div class="flex items-center gap-4 text-sm text-[#888]">
                 <span>2026-05-10</span>
                 <span>•</span>
                 <span>6 min read</span>
@@ -58,76 +66,76 @@
     <!-- Article -->
     <article class="py-12">
         <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-gray-900 rounded-2xl p-8 md:p-12 border border-gray-800">
+            <div class="bg-[#242428] rounded-2xl p-8 md:p-12 border border-white/10">
                 
                 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Best Halloween Parties</h2>
-                <p class="text-gray-300 mb-6">Lima's clubs and bars go all out for Halloween. Barranco and Miraflores have the biggest costume party scene. Major clubs host themed events with DJs, decorations, and costume contests. Prices range from S/30-80 for club events. Rooftop bars often have more intimate Halloween gatherings. Book early — the best events sell out.</p>
+                <p class="text-[#C0C0C0] mb-6">Lima's clubs and bars go all out for Halloween. Barranco and Miraflores have the biggest costume party scene. Major clubs host themed events with DJs, decorations, and costume contests. Prices range from S/30-80 for club events. Rooftop bars often have more intimate Halloween gatherings. Book early — the best events sell out.</p>
                 
-                <div class="my-8 p-6 bg-lime-500/10 rounded-xl border border-lime-500/30">
-                    <h3 class="text-xl font-semibold mb-3 text-lime-400">Looking for events in Lima?</h3>
-                    <p class="text-sm text-gray-400 mb-4">Lime brings together events from EnLima, Eventbrite, and Teleticket in one calendar. Never miss out.</p>
-                    <a href="https://limaeventos.app" class="text-lime-400 font-medium hover:text-lime-300">Browse Events on Lime →</a>
+                <div class="my-8 p-6 bg-[#6F42C1]/10 rounded-xl border border-[#6F42C1]/20">
+                    <h3 class="text-xl font-semibold mb-3 text-[#B794F4]">Looking for events in Lima?</h3>
+                    <p class="text-sm text-[#A0A0A0] mb-4">Lime brings together events from EnLima, Eventbrite, and Teleticket in one calendar. Never miss out.</p>
+                    <a href="../../index.html">Browse Events on Lime →</a>
                 </div>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Kid-Friendly Halloween</h2>
-                <p class="text-gray-300 mb-6">Trick-or-treating has grown in residential areas, especially in Miraflores, San Isidro, and La Molina. Shopping centers organize safe trick-or-treat circuits. Several venues host haunted houses and Halloween activities for families. The Circuito Mágico del Agua sometimes has Halloween-themed nights. Many schools and cultural centers host Halloween events.</p>
+                <p class="text-[#C0C0C0] mb-6">Trick-or-treating has grown in residential areas, especially in Miraflores, San Isidro, and La Molina. Shopping centers organize safe trick-or-treat circuits. Several venues host haunted houses and Halloween activities for families. The Circuito Mágico del Agua sometimes has Halloween-themed nights. Many schools and cultural centers host Halloween events.</p>
                 
-                <div class="my-10 p-8 bg-gradient-to-r from-lime-600 to-emerald-600 rounded-2xl">
+                <div class="my-10 p-8 bg-gradient-to-r from-[#6F42C1] to-[#8B5CF6] rounded-2xl">
                     <h3 class="text-2xl font-bold mb-3 text-white">Find Your Next Event</h3>
-                    <p class="text-lime-100 mb-6">Thousands of events updated daily. Concerts, parties, theater, art, and more.</p>
-                    <a href="https://limaeventos.app" class="inline-flex items-center gap-2 px-8 py-3 bg-white text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all">
+                    <p class="text-white/90 mb-6">Thousands of events updated daily. Concerts, parties, theater, art, and more.</p>
+                    <a href="../../index.html">
                         Explore Events
                     </a>
                 </div>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">DIY & Unique Experiences</h2>
-                <p class="text-gray-300 mb-6">Horror movie marathons in cinemas, Halloween-themed escape rooms, ghost tours of Lima's colonial center, and cosplay meetups are all part of the fun. Several bars host horror trivia nights. Creative costume culture in Lima is impressive — expect elaborate and inventive outfits.</p>
+                <p class="text-[#C0C0C0] mb-6">Horror movie marathons in cinemas, Halloween-themed escape rooms, ghost tours of Lima's colonial center, and cosplay meetups are all part of the fun. Several bars host horror trivia nights. Creative costume culture in Lima is impressive — expect elaborate and inventive outfits.</p>
 
 
                 <!-- FAQ Section -->
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Frequently Asked Questions</h2>
                 <div class="space-y-4 mb-10">
                     
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">Is Halloween a big deal in Lima?</h4>
-                        <p class="text-sm text-gray-400">It's grown significantly, especially among younger generations. While not a traditional Peruvian holiday, the party and costume culture has taken off. It coincides with Día de la Canción Criolla (Oct 31).</p>
+                        <p class="text-sm text-[#A0A0A0]">It's grown significantly, especially among younger generations. While not a traditional Peruvian holiday, the party and costume culture has taken off. It coincides with Día de la Canción Criolla (Oct 31).</p>
                     </div>
 
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">What are the best costume ideas for Lima?</h4>
-                        <p class="text-sm text-gray-400">Creative costumes are appreciated. Pop culture, horror classics, and uniquely Peruvian costumes all work. The weather is mild in October, so most costumes are comfortable.</p>
+                        <p class="text-sm text-[#A0A0A0]">Creative costumes are appreciated. Pop culture, horror classics, and uniquely Peruvian costumes all work. The weather is mild in October, so most costumes are comfortable.</p>
                     </div>
 
                 </div>
 
                 <!-- Conclusion -->
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Conclusion</h2>
-                <p class="text-gray-300 mb-6">
+                <p class="text-[#C0C0C0] mb-6">
                     We hope this guide helps you discover everything Lima has to offer. Remember to check the Lime calendar regularly to stay up to date with the latest events.
                 </p>
-                <p class="text-gray-300">
-                    <a href="https://limaeventos.app" class="text-lime-400 hover:text-lime-300 font-medium">Browse Events on Lime →</a>
+                <p class="text-[#C0C0C0]">
+                    <a href="../../index.html">Browse Events on Lime →</a>
                 </p>
 
                 <!-- Related Articles -->
-                <section class="mt-16 pt-8 border-t border-gray-800">
+                <section class="mt-16 pt-8 border-t border-white/10">
                     <h3 class="text-xl font-semibold mb-6 text-white">Related Articles</h3>
                     <div class="grid md:grid-cols-3 gap-4">
                         
-                        <a href="post-59-cancion-criolla-lima.html" class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-lime-500/50 transition-colors">
+                        <a href="post-59-cancion-criolla-lima.html" class="p-6 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#6F42C1]/50 transition-colors">
                             <h4 class="font-medium text-white mb-2">Canción Criolla</h4>
-                            <p class="text-sm text-gray-500">Same date celebration</p>
+                            <p class="text-sm text-[#888]">Same date celebration</p>
                         </a>
 
-                        <a href="post-34-karaoke-bars-lima.html" class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-lime-500/50 transition-colors">
+                        <a href="post-34-karaoke-bars-lima.html" class="p-6 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#6F42C1]/50 transition-colors">
                             <h4 class="font-medium text-white mb-2">Karaoke Bars</h4>
-                            <p class="text-sm text-gray-500">Night entertainment</p>
+                            <p class="text-sm text-[#888]">Night entertainment</p>
                         </a>
 
-                        <a href="post-36-rooftop-bars-lima.html" class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-lime-500/50 transition-colors">
+                        <a href="post-36-rooftop-bars-lima.html" class="p-6 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#6F42C1]/50 transition-colors">
                             <h4 class="font-medium text-white mb-2">Rooftop Bars</h4>
-                            <p class="text-sm text-gray-500">Party venues</p>
+                            <p class="text-sm text-[#888]">Party venues</p>
                         </a>
 
                     </div>
@@ -136,17 +144,15 @@
         </div>
     </article>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 border-t border-gray-800 pt-12 pb-8">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <a href="https://limaeventos.app" class="text-xl font-bold text-lime-400 block mb-4">🍊 Lime</a>
-            <div class="flex justify-center gap-8 mb-6 text-sm text-gray-500">
-                <a href="https://limaeventos.app" class="hover:text-white">Home</a>
-                <a href="https://limaeventos.app/blog.html" class="hover:text-white">Blog</a>
-            </div>
-            <p class="text-xs text-gray-600">© 2026 Lime. All rights reserved.</p>
+    <footer class="w-full border-t border-white/5 mt-12 py-6">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <a href="../../index.html" class="text-sm text-[#A0A0A0] hover:text-[#8B5CF6] transition-colors flex items-center gap-1.5">
+                <i data-lucide="calendar-days" class="w-4 h-4" stroke-width="1.5"></i>
+                Volver al calendario
+            </a>
         </div>
     </footer>
+    <script>if (typeof lucide !== 'undefined') lucide.createIcons();</script>
 
     <!-- FAQ Schema -->
     <script type="application/ld+json">

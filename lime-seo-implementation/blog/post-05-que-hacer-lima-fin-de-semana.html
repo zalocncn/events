@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,110 +14,123 @@
     <meta property="og:description" content="Descubre qué hacer en Lima este fin de semana. Los mejores conciertos, fiestas, exposiciones, ferias y eventos gratuitos para este sábado y domingo.">
     <meta property="og:locale" content="es_PE">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>html{scroll-behavior:smooth;}body{font-family:'Inter',sans-serif;}</style>
+    <style>
+        html{scroll-behavior:smooth;}
+        body { font-family: 'Inter', -apple-system, sans-serif; background-color: #1A1A1D; color: #FFFFFF; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1A1A1D; }
+        ::-webkit-scrollbar-thumb { background: #2E2E32; border-radius: 4px; }
+        .selection\:bg-\[\#6F42C1\]::selection { background-color: #6F42C1; color: white; }
+    </style>
 </head>
-<body class="bg-gray-950 text-gray-100">
-    <nav class="fixed w-full z-50 top-0 bg-gray-950/90 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="../index.html" class="text-xl font-semibold text-orange-400">🍊 Lima</a>
-            <div class="hidden md:flex items-center gap-8">
-                <a href="../index.html" class="text-sm text-gray-400 hover:text-white">Calendario</a>
-                <a href="index.html" class="text-sm text-gray-400 hover:text-white">Blog</a>
-                <a href="../districts/miraflores.html" class="text-sm text-gray-400 hover:text-white">Distritos</a>
-                <a href="../about.html" class="text-sm text-gray-400 hover:text-white">Acerca de</a>
+<body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white pb-12">
+    <header class="w-full h-14 px-4 md:px-6 flex items-center justify-between border-b border-white/5 bg-[#1A1A1D] sticky top-0 z-50">
+        <a href="../../blog.html" class="text-[#A0A0A0] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 rounded-sm flex items-center gap-2" aria-label="Volver al blog">
+            <i data-lucide="arrow-left" class="w-5 h-5" stroke-width="1.5"></i>
+            <span class="text-sm font-medium hidden sm:inline">Blog</span>
+        </a>
+        <a href="../../index.html" class="flex items-center gap-2">
+            <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#FFC107] to-[#6F42C1] flex items-center justify-center">
+                <i data-lucide="sun" class="w-3.5 h-3.5 text-white" stroke-width="2"></i>
             </div>
-        </div>
-    </nav>
-    <header class="pt-28 pb-12 bg-gradient-to-b from-gray-900 to-gray-950">
+            <span class="text-base font-semibold tracking-tight text-white">Lima</span>
+        </a>
+        <div class="w-5 h-5"></div>
+    </header>
+    <!-- Header -->
+    <header class="pt-10 pb-10 sm:pt-14 sm:pb-12">
         <div class="max-w-4xl mx-auto px-6">
             <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Qué Hacer en Lima Este Fin de Semana — Eventos Imperdibles</h1>
-            <p class="text-xl text-gray-400 mb-6">¿No sabes qué hacer en Lima este fin de semana? No te preocupes — Lima siempre tiene algo increíble para ofrecer. Cada fin de semana, la capital se llena de conciertos, ferias gastronómicas, exposiciones, fiestas y eventos culturales para todos los gustos y presupuestos. Aquí te contamos cómo encontrar los mejores planes.</p>
-            <div class="flex items-center gap-4 text-sm text-gray-500">
+            <p class="text-xl text-[#A0A0A0] mb-6">¿No sabes qué hacer en Lima este fin de semana? No te preocupes — Lima siempre tiene algo increíble para ofrecer. Cada fin de semana, la capital se llena de conciertos, ferias gastronómicas, exposiciones, fiestas y eventos culturales para todos los gustos y presupuestos. Aquí te contamos cómo encontrar los mejores planes.</p>
+            <div class="flex items-center gap-4 text-sm text-[#888]">
                 <span>2026</span><span>•</span><span>8 min de lectura</span>
             </div>
         </div>
     </header>
     <article class="py-12">
         <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-gray-900 rounded-2xl p-8 md:p-12 border border-gray-800">
+            <div class="bg-[#242428] rounded-2xl p-8 md:p-12 border border-white/10">
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Cómo Encontrar los Mejores Eventos del Fin de Semana</h2>
-                <p class="mb-6 text-gray-300">El truco para nunca quedarte sin planes un fin de semana en Lima es usar las herramientas correctas. Lima reúne todos los eventos de EnLima, Eventbrite y Teleticket en un solo calendario. En vez de buscar en tres páginas diferentes, simplemente abre Lima y mira lo que hay para el sábado y domingo. Así de fácil. También puedes seguir cuentas de eventos en Instagram y unirte a grupos de WhatsApp/Telegram de eventos.</p>
+                <p class="mb-6 text-[#C0C0C0]">El truco para nunca quedarte sin planes un fin de semana en Lima es usar las herramientas correctas. Lima reúne todos los eventos de EnLima, Eventbrite y Teleticket en un solo calendario. En vez de buscar en tres páginas diferentes, simplemente abre Lima y mira lo que hay para el sábado y domingo. Así de fácil. También puedes seguir cuentas de eventos en Instagram y unirte a grupos de WhatsApp/Telegram de eventos.</p>
 
-                <div class="my-8 p-6 bg-orange-500/10 rounded-xl border border-orange-500/20">
-                    <h3 class="text-xl font-semibold text-orange-400 mb-3">📅 Encuentra estos eventos en Lima</h3>
-                    <p class="text-sm text-gray-300 mb-4">Todos los eventos de Lima en un solo calendario.</p>
-                    <a href="../index.html" class="text-orange-400 font-medium hover:text-orange-300">Ver calendario de Lima →</a>
+                <div class="my-8 p-6 bg-[#6F42C1]/10 rounded-xl border border-[#6F42C1]/20">
+                    <h3 class="text-xl font-semibold text-[#B794F4] mb-3">📅 Encuentra estos eventos en Lima</h3>
+                    <p class="text-sm text-[#C0C0C0] mb-4">Todos los eventos de Lima en un solo calendario.</p>
+                    <a href="../../index.html" class="text-[#B794F4] font-medium hover:text-[#B794F4]">Ver calendario de Lima →</a>
                 </div>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Planes para el Viernes por la Noche</h2>
-                <p class="mb-6 text-gray-300">El fin de semana en Lima empieza el viernes. Las opciones van desde after office en bares de San Isidro y Miraflores hasta conciertos y fiestas en Barranco. Muchos restaurantes tienen noches temáticas con música en vivo. Si prefieres algo más tranquilo, los cines tienen estrenos los jueves/viernes, y los teatros suelen tener funciones viernes y sábado.</p>
+                <p class="mb-6 text-[#C0C0C0]">El fin de semana en Lima empieza el viernes. Las opciones van desde after office en bares de San Isidro y Miraflores hasta conciertos y fiestas en Barranco. Muchos restaurantes tienen noches temáticas con música en vivo. Si prefieres algo más tranquilo, los cines tienen estrenos los jueves/viernes, y los teatros suelen tener funciones viernes y sábado.</p>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Planes para el Sábado</h2>
-                <p class="mb-6 text-gray-300">Los sábados en Lima son perfectos para combinar cultura y diversión. Por la mañana puedes visitar ferias, mercados artesanales o tomar un brunch en Miraflores o Barranco. Por la tarde, hay exposiciones, talleres y actividades al aire libre en los principales parques. Y por la noche, la ciudad explota con conciertos, fiestas y eventos en todos los distritos.</p>
+                <p class="mb-6 text-[#C0C0C0]">Los sábados en Lima son perfectos para combinar cultura y diversión. Por la mañana puedes visitar ferias, mercados artesanales o tomar un brunch en Miraflores o Barranco. Por la tarde, hay exposiciones, talleres y actividades al aire libre en los principales parques. Y por la noche, la ciudad explota con conciertos, fiestas y eventos en todos los distritos.</p>
 
-                <div class="my-10 p-8 bg-gradient-to-r from-orange-600 to-orange-500 rounded-2xl text-white">
+                <div class="my-10 p-8 bg-gradient-to-r from-[#6F42C1] to-[#8B5CF6] rounded-2xl text-white">
                     <h3 class="text-2xl font-bold mb-3">¿Buscas eventos en Lima?</h3>
-                    <p class="text-orange-100 mb-6">Lima actualiza diariamente con eventos de tres plataformas principales.</p>
-                    <a href="../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-gray-900 hover:bg-gray-800 rounded-full font-medium transition-all">Abrir Calendario</a>
+                    <p class="text-white/90 mb-6">Lima actualiza diariamente con eventos de tres plataformas principales.</p>
+                    <a href="../../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-[#242428] hover:bg-white/[0.08] rounded-full font-medium transition-all">Abrir Calendario</a>
                 </div>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Planes para el Domingo</h2>
-                <p class="mb-6 text-gray-300">Los domingos en Lima tienen un ritmo más relajado pero igualmente divertido. Mercados de pulgas y ferias gastronómicas son populares por la mañana. El Malecón de Miraflores se llena de familias y deportistas. Muchos museos tienen horarios especiales o entrada gratuita. Y para los que no quieren que termine el fin de semana, hay brunches con DJ y sesiones de tarde en algunos bares.</p>
+                <p class="mb-6 text-[#C0C0C0]">Los domingos en Lima tienen un ritmo más relajado pero igualmente divertido. Mercados de pulgas y ferias gastronómicas son populares por la mañana. El Malecón de Miraflores se llena de familias y deportistas. Muchos museos tienen horarios especiales o entrada gratuita. Y para los que no quieren que termine el fin de semana, hay brunches con DJ y sesiones de tarde en algunos bares.</p>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Eventos Gratuitos para el Fin de Semana</h2>
-                <p class="mb-6 text-gray-300">No necesitas gastar mucho para pasarla bien en Lima. Muchos eventos de fin de semana son gratuitos: ferias al aire libre, conciertos en parques, actividades culturales municipales, exposiciones con entrada libre, y actividades deportivas organizadas. Revisa la sección de eventos gratuitos en Lima para ver todas las opciones sin costo.</p>
+                <p class="mb-6 text-[#C0C0C0]">No necesitas gastar mucho para pasarla bien en Lima. Muchos eventos de fin de semana son gratuitos: ferias al aire libre, conciertos en parques, actividades culturales municipales, exposiciones con entrada libre, y actividades deportivas organizadas. Revisa la sección de eventos gratuitos en Lima para ver todas las opciones sin costo.</p>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Preguntas Frecuentes</h2>
                 <div class="space-y-4 mb-10">
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">¿Qué hacer en Lima un sábado por la noche?</h4>
-                        <p class="text-sm text-gray-400">Lima ofrece infinitas opciones para un sábado noche: conciertos, fiestas en Barranco y Miraflores, cenas en restaurantes con música en vivo, teatro, y eventos especiales. Revisa el calendario de Lima para ver todo lo disponible.</p>
+                        <p class="text-sm text-[#A0A0A0]">Lima ofrece infinitas opciones para un sábado noche: conciertos, fiestas en Barranco y Miraflores, cenas en restaurantes con música en vivo, teatro, y eventos especiales. Revisa el calendario de Lima para ver todo lo disponible.</p>
                     </div>
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">¿Dónde encontrar eventos gratuitos el fin de semana en Lima?</h4>
-                        <p class="text-sm text-gray-400">Lima tiene muchos eventos gratuitos cada fin de semana. Ferias, conciertos al aire libre, exposiciones y actividades culturales. Lima muestra todos los eventos incluyendo los gratuitos.</p>
+                        <p class="text-sm text-[#A0A0A0]">Lima tiene muchos eventos gratuitos cada fin de semana. Ferias, conciertos al aire libre, exposiciones y actividades culturales. Lima muestra todos los eventos incluyendo los gratuitos.</p>
                     </div>
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">¿Cuál es el mejor plan familiar para el fin de semana en Lima?</h4>
-                        <p class="text-sm text-gray-400">Los parques como El Olivar y el Malecón, los museos interactivos, las ferias de fin de semana y los teatros infantiles son excelentes opciones familiares. Muchas actividades son gratuitas o de bajo costo.</p>
+                        <p class="text-sm text-[#A0A0A0]">Los parques como El Olivar y el Malecón, los museos interactivos, las ferias de fin de semana y los teatros infantiles son excelentes opciones familiares. Muchas actividades son gratuitas o de bajo costo.</p>
                     </div>
                 </div>
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Conclusión</h2>
-                <p class="text-gray-300 mb-6">Esperamos que esta guía te sea útil para descubrir todo lo que Lima tiene para ofrecer. Recuerda revisar el <a href='../index.html' class='text-orange-400 hover:text-orange-300 underline'>calendario de Lima</a> para mantenerte al día con todos los eventos.</p>
-                <div class="my-10 p-8 bg-gradient-to-r from-orange-600 to-orange-500 rounded-2xl text-white text-center">
+                <p class="text-[#C0C0C0] mb-6">Esperamos que esta guía te sea útil para descubrir todo lo que Lima tiene para ofrecer. Recuerda revisar el <a href='../index.html' class='text-[#B794F4] hover:text-[#B794F4] underline'>calendario de Lima</a> para mantenerte al día con todos los eventos.</p>
+                <div class="my-10 p-8 bg-gradient-to-r from-[#6F42C1] to-[#8B5CF6] rounded-2xl text-white text-center">
                     <h3 class="text-2xl font-bold mb-3">🍊 Descubre todos los eventos en Lima</h3>
-                    <p class="text-orange-100 mb-6">Un calendario, tres fuentes, cientos de eventos.</p>
-                    <a href="../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-gray-900 hover:bg-gray-800 rounded-full font-medium transition-all">Abrir Calendario de Lima →</a>
+                    <p class="text-white/90 mb-6">Un calendario, tres fuentes, cientos de eventos.</p>
+                    <a href="../../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-[#242428] hover:bg-white/[0.08] rounded-full font-medium transition-all">Abrir Calendario de Lima →</a>
                 </div>
-                <section class="mt-16 pt-8 border-t border-gray-800">
+                <section class="mt-16 pt-8 border-t border-white/10">
                     <h3 class="text-xl font-semibold mb-6 text-white">Artículos Relacionados</h3>
                     <div class="grid md:grid-cols-3 gap-6">
-                        <a href="guia-eventos-lima-2026.html" class="p-6 bg-gray-800/50 rounded-xl hover:bg-gray-800 transition-colors border border-gray-700">
+                        <a href="guia-eventos-lima-2026.html" class="p-6 bg-white/[0.06] rounded-xl hover:bg-white/[0.08] transition-colors border border-white/10">
                             <h4 class="font-medium mb-2 text-white">Guía de Eventos en Lima</h4>
-                            <p class="text-sm text-gray-400">Tu guía completa</p>
+                            <p class="text-sm text-[#A0A0A0]">Tu guía completa</p>
                         </a>
-                        <a href="eventos-gratuitos-lima.html" class="p-6 bg-gray-800/50 rounded-xl hover:bg-gray-800 transition-colors border border-gray-700">
+                        <a href="eventos-gratuitos-lima.html" class="p-6 bg-white/[0.06] rounded-xl hover:bg-white/[0.08] transition-colors border border-white/10">
                             <h4 class="font-medium mb-2 text-white">Eventos Gratuitos Lima</h4>
-                            <p class="text-sm text-gray-400">Actividades sin costo</p>
+                            <p class="text-sm text-[#A0A0A0]">Actividades sin costo</p>
                         </a>
-                        <a href="donde-salir-lima-por-distrito.html" class="p-6 bg-gray-800/50 rounded-xl hover:bg-gray-800 transition-colors border border-gray-700">
+                        <a href="donde-salir-lima-por-distrito.html" class="p-6 bg-white/[0.06] rounded-xl hover:bg-white/[0.08] transition-colors border border-white/10">
                             <h4 class="font-medium mb-2 text-white">Dónde Salir en Lima</h4>
-                            <p class="text-sm text-gray-400">Guía por distrito</p>
+                            <p class="text-sm text-[#A0A0A0]">Guía por distrito</p>
                         </a>
                     </div>
                 </section>
             </div>
         </div>
     </article>
-    <footer class="bg-gray-900 pt-16 pb-10 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <a href="../index.html" class="text-2xl font-semibold text-orange-400 block mb-4">🍊 Lima</a>
-            <p class="text-sm text-gray-400 mb-6">Todos los eventos en Lima, en un solo calendario.</p>
-            <p class="text-xs text-gray-600">© 2026 Lima.</p>
+    <footer class="w-full border-t border-white/5 mt-12 py-6">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <a href="../../index.html" class="text-sm text-[#A0A0A0] hover:text-[#8B5CF6] transition-colors flex items-center gap-1.5">
+                <i data-lucide="calendar-days" class="w-4 h-4" stroke-width="1.5"></i>
+                Volver al calendario
+            </a>
         </div>
     </footer>
+    <script>if (typeof lucide !== 'undefined') lucide.createIcons();</script>
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué hacer en Lima un sábado por la noche?","acceptedAnswer":{"@type":"Answer","text":"Lima ofrece infinitas opciones para un sábado noche: conciertos, fiestas en Barranco y Miraflores, cenas en restaurantes con música en vivo, teatro, y eventos especiales. Revisa el calendario de Lima para ver todo lo disponible."}},{"@type":"Question","name":"¿Dónde encontrar eventos gratuitos el fin de semana en Lima?","acceptedAnswer":{"@type":"Answer","text":"Lima tiene muchos eventos gratuitos cada fin de semana. Ferias, conciertos al aire libre, exposiciones y actividades culturales. Lima muestra todos los eventos incluyendo los gratuitos."}},{"@type":"Question","name":"¿Cuál es el mejor plan familiar para el fin de semana en Lima?","acceptedAnswer":{"@type":"Answer","text":"Los parques como El Olivar y el Malecón, los museos interactivos, las ferias de fin de semana y los teatros infantiles son excelentes opciones familiares. Muchas actividades son gratuitas o de bajo costo."}}]}
     </script>

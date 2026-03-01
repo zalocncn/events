@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,33 +21,41 @@
     
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; }
+        html{scroll-behavior:smooth;}
+        body { font-family: 'Inter', -apple-system, sans-serif; background-color: #1A1A1D; color: #FFFFFF; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1A1A1D; }
+        ::-webkit-scrollbar-thumb { background: #2E2E32; border-radius: 4px; }
+        .selection\:bg-\[\#6F42C1\]::selection { background-color: #6F42C1; color: white; }
     </style>
 </head>
-<body class="bg-gray-950 text-gray-100">
+<body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white pb-12">
     
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 top-0 bg-gray-950/80 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="https://limaeventos.app" class="text-xl font-bold text-lime-400">🍊 Lime</a>
-            <div class="flex items-center gap-6">
-                <a href="https://limaeventos.app/blog.html" class="text-sm text-gray-400 hover:text-white">Blog</a>
-                <a href="https://limaeventos.app" class="px-5 py-2 bg-lime-500 hover:bg-lime-400 text-gray-900 rounded-full text-sm font-medium transition-colors">Explorar Eventos</a>
+    <header class="w-full h-14 px-4 md:px-6 flex items-center justify-between border-b border-white/5 bg-[#1A1A1D] sticky top-0 z-50">
+        <a href="../../blog.html" class="text-[#A0A0A0] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 rounded-sm flex items-center gap-2" aria-label="Volver al blog">
+            <i data-lucide="arrow-left" class="w-5 h-5" stroke-width="1.5"></i>
+            <span class="text-sm font-medium hidden sm:inline">Blog</span>
+        </a>
+        <a href="../../index.html" class="flex items-center gap-2">
+            <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#FFC107] to-[#6F42C1] flex items-center justify-center">
+                <i data-lucide="sun" class="w-3.5 h-3.5 text-white" stroke-width="2"></i>
             </div>
-        </div>
-    </nav>
+            <span class="text-base font-semibold tracking-tight text-white">Lima</span>
+        </a>
+        <div class="w-5 h-5"></div>
+    </header>
 
     <!-- Header -->
-    <header class="pt-28 pb-12 bg-gradient-to-b from-gray-900 to-gray-950">
+    <header class="pt-10 pb-10 sm:pt-14 sm:pb-12">
         <div class="max-w-4xl mx-auto px-6">
             <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
                 Fiestas Patrias en Lima 2026 — Guía Completa de Eventos y Celebraciones
             </h1>
-            <p class="text-xl text-gray-400 mb-6">Las Fiestas Patrias son la celebración más grande del Perú. Cada 28 y 29 de julio, Lima se transforma con desfiles, conciertos masivos, ferias gastronómicas y fuegos artificiales espectaculares. Esta guía te cuenta todo lo que necesitas saber para disfrutar al máximo las fiestas patrias en Lima.</p>
-            <div class="flex items-center gap-4 text-sm text-gray-500">
+            <p class="text-xl text-[#A0A0A0] mb-6">Las Fiestas Patrias son la celebración más grande del Perú. Cada 28 y 29 de julio, Lima se transforma con desfiles, conciertos masivos, ferias gastronómicas y fuegos artificiales espectaculares. Esta guía te cuenta todo lo que necesitas saber para disfrutar al máximo las fiestas patrias en Lima.</p>
+            <div class="flex items-center gap-4 text-sm text-[#888]">
                 <span>2026-03-01</span>
                 <span>•</span>
                 <span>10 min de lectura</span>
@@ -58,95 +66,95 @@
     <!-- Article -->
     <article class="py-12">
         <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-gray-900 rounded-2xl p-8 md:p-12 border border-gray-800">
+            <div class="bg-[#242428] rounded-2xl p-8 md:p-12 border border-white/10">
                 
                 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">¿Qué Son las Fiestas Patrias y Por Qué Son Tan Importantes?</h2>
-                <p class="text-gray-300 mb-6">Las Fiestas Patrias celebran la independencia del Perú, declarada el 28 de julio de 1821 por José de San Martín. Es el feriado más largo del año — la mayoría de limeños tiene del 28 al 30 de julio libre. La ciudad entera se viste de rojo y blanco, las banderas peruanas aparecen en cada balcón, y el orgullo nacional se siente en cada esquina. Para los turistas, es una oportunidad única de experimentar la cultura peruana en su máxima expresión.</p>
+                <p class="text-[#C0C0C0] mb-6">Las Fiestas Patrias celebran la independencia del Perú, declarada el 28 de julio de 1821 por José de San Martín. Es el feriado más largo del año — la mayoría de limeños tiene del 28 al 30 de julio libre. La ciudad entera se viste de rojo y blanco, las banderas peruanas aparecen en cada balcón, y el orgullo nacional se siente en cada esquina. Para los turistas, es una oportunidad única de experimentar la cultura peruana en su máxima expresión.</p>
                 
-                <div class="my-8 p-6 bg-lime-500/10 rounded-xl border border-lime-500/30">
-                    <h3 class="text-xl font-semibold mb-3 text-lime-400">¿Buscas eventos en Lima?</h3>
-                    <p class="text-sm text-gray-400 mb-4">Lime reúne eventos de EnLima, Eventbrite y Teleticket en un solo calendario. Nunca te pierdas nada.</p>
-                    <a href="https://limaeventos.app" class="text-lime-400 font-medium hover:text-lime-300">Ver Eventos en Lime →</a>
+                <div class="my-8 p-6 bg-[#6F42C1]/10 rounded-xl border border-[#6F42C1]/20">
+                    <h3 class="text-xl font-semibold mb-3 text-[#B794F4]">¿Buscas eventos en Lima?</h3>
+                    <p class="text-sm text-[#A0A0A0] mb-4">Lime reúne eventos de EnLima, Eventbrite y Teleticket en un solo calendario. Nunca te pierdas nada.</p>
+                    <a href="../../index.html" class="text-[#B794F4] font-medium hover:text-[#B794F4]">Ver Eventos en Lime →</a>
                 </div>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">El Gran Desfile Militar del 29 de Julio</h2>
-                <p class="text-gray-300 mb-6">El desfile cívico-militar es el evento central de las fiestas. Se realiza en la Avenida Brasil y dura varias horas. Las Fuerzas Armadas, la Policía Nacional, colegios y organizaciones civiles desfilan ante el presidente. Miles de personas se congregan a lo largo de la avenida desde temprano por la mañana. Consejo: llega antes de las 7am para conseguir buen lugar. Lleva protección solar, agua y snacks. El desfile se transmite en vivo por televisión nacional.</p>
+                <p class="text-[#C0C0C0] mb-6">El desfile cívico-militar es el evento central de las fiestas. Se realiza en la Avenida Brasil y dura varias horas. Las Fuerzas Armadas, la Policía Nacional, colegios y organizaciones civiles desfilan ante el presidente. Miles de personas se congregan a lo largo de la avenida desde temprano por la mañana. Consejo: llega antes de las 7am para conseguir buen lugar. Lleva protección solar, agua y snacks. El desfile se transmite en vivo por televisión nacional.</p>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Conciertos y Eventos Musicales</h2>
-                <p class="text-gray-300 mb-6">Las fiestas patrias traen algunos de los mejores conciertos del año. Artistas nacionales e internacionales se presentan en estadios, anfiteatros y plazas. Los conciertos gratuitos en plazas municipales son tradición — la Plaza de Armas suele tener programación especial. Los festivales de música criolla y cumbia son particularmente populares. Revisa el calendario de Lime para ver la programación actualizada de conciertos de fiestas patrias.</p>
+                <p class="text-[#C0C0C0] mb-6">Las fiestas patrias traen algunos de los mejores conciertos del año. Artistas nacionales e internacionales se presentan en estadios, anfiteatros y plazas. Los conciertos gratuitos en plazas municipales son tradición — la Plaza de Armas suele tener programación especial. Los festivales de música criolla y cumbia son particularmente populares. Revisa el calendario de Lime para ver la programación actualizada de conciertos de fiestas patrias.</p>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Ferias Gastronómicas y Comida Típica</h2>
-                <p class="text-gray-300 mb-6">No hay fiestas patrias sin buena comida. Las ferias gastronómicas se multiplican por toda la ciudad. El anticucho, la pachamanca, el ceviche y los picarones son los protagonistas. Muchos restaurantes ofrecen menús especiales patrióticos. Los mercados y huariques también tienen ofertas especiales. Los distritos organizan sus propias ferias — Miraflores, Barranco y San Isidro suelen tener las más grandes.</p>
+                <p class="text-[#C0C0C0] mb-6">No hay fiestas patrias sin buena comida. Las ferias gastronómicas se multiplican por toda la ciudad. El anticucho, la pachamanca, el ceviche y los picarones son los protagonistas. Muchos restaurantes ofrecen menús especiales patrióticos. Los mercados y huariques también tienen ofertas especiales. Los distritos organizan sus propias ferias — Miraflores, Barranco y San Isidro suelen tener las más grandes.</p>
                 
-                <div class="my-10 p-8 bg-gradient-to-r from-lime-600 to-emerald-600 rounded-2xl">
+                <div class="my-10 p-8 bg-gradient-to-r from-[#6F42C1] to-[#8B5CF6] rounded-2xl">
                     <h3 class="text-2xl font-bold mb-3 text-white">Encuentra Tu Próximo Evento</h3>
-                    <p class="text-lime-100 mb-6">Miles de eventos actualizados diariamente. Conciertos, fiestas, teatro, arte y más.</p>
-                    <a href="https://limaeventos.app" class="inline-flex items-center gap-2 px-8 py-3 bg-white text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all">
+                    <p class="text-white/90 mb-6">Miles de eventos actualizados diariamente. Conciertos, fiestas, teatro, arte y más.</p>
+                    <a href="../../index.html" class="inline-flex items-center gap-2 px-8 py-3 bg-white text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all">
                         Explorar Eventos
                     </a>
                 </div>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Fuegos Artificiales y Celebraciones Nocturnas</h2>
-                <p class="text-gray-300 mb-6">La noche del 27 de julio (víspera) es cuando Lima explota con fuegos artificiales. Los mejores puntos para verlos son el Malecón de Miraflores, la Costa Verde, y zonas altas de San Isidro y Surco. Muchos restaurantes y bares organizan fiestas de víspera con música en vivo. Las discotecas y bares tienen eventos especiales toda la semana. Es una de las noches más festivas del año.</p>
+                <p class="text-[#C0C0C0] mb-6">La noche del 27 de julio (víspera) es cuando Lima explota con fuegos artificiales. Los mejores puntos para verlos son el Malecón de Miraflores, la Costa Verde, y zonas altas de San Isidro y Surco. Muchos restaurantes y bares organizan fiestas de víspera con música en vivo. Las discotecas y bares tienen eventos especiales toda la semana. Es una de las noches más festivas del año.</p>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Qué Está Abierto y Qué Está Cerrado</h2>
-                <p class="text-gray-300 mb-6">El 28 y 29 de julio son feriados nacionales. La mayoría de oficinas, bancos y tiendas cierran. Sin embargo, centros comerciales suelen abrir con horario reducido. Restaurantes turísticos abren normalmente. El transporte público funciona con frecuencia reducida. Muchos limeños viajan fuera de la ciudad, así que el tráfico mejora notablemente. Planifica con anticipación — los supermercados se llenan los días previos.</p>
+                <p class="text-[#C0C0C0] mb-6">El 28 y 29 de julio son feriados nacionales. La mayoría de oficinas, bancos y tiendas cierran. Sin embargo, centros comerciales suelen abrir con horario reducido. Restaurantes turísticos abren normalmente. El transporte público funciona con frecuencia reducida. Muchos limeños viajan fuera de la ciudad, así que el tráfico mejora notablemente. Planifica con anticipación — los supermercados se llenan los días previos.</p>
 
 
                 <!-- FAQ Section -->
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Preguntas Frecuentes</h2>
                 <div class="space-y-4 mb-10">
                     
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">¿Cuántos días duran las Fiestas Patrias?</h4>
-                        <p class="text-sm text-gray-400">Oficialmente son 2 días (28 y 29 de julio), pero muchas empresas dan libre del 28 al 30 o incluso toda la semana. Los eventos y celebraciones suelen empezar desde el 26 de julio.</p>
+                        <p class="text-sm text-[#A0A0A0]">Oficialmente son 2 días (28 y 29 de julio), pero muchas empresas dan libre del 28 al 30 o incluso toda la semana. Los eventos y celebraciones suelen empezar desde el 26 de julio.</p>
                     </div>
 
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">¿Dónde ver los fuegos artificiales en Lima?</h4>
-                        <p class="text-sm text-gray-400">Los mejores puntos son el Malecón de Miraflores, la Costa Verde, y zonas altas de distritos como San Isidro, Surco y Jesús María. Llega temprano para asegurar buen lugar.</p>
+                        <p class="text-sm text-[#A0A0A0]">Los mejores puntos son el Malecón de Miraflores, la Costa Verde, y zonas altas de distritos como San Isidro, Surco y Jesús María. Llega temprano para asegurar buen lugar.</p>
                     </div>
 
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">¿Es buen momento para visitar Lima como turista?</h4>
-                        <p class="text-sm text-gray-400">Sí, es una experiencia cultural única. Pero reserva alojamiento con anticipación — los precios suben y la disponibilidad baja. También ten en cuenta que muchos servicios cierran el 28 y 29.</p>
+                        <p class="text-sm text-[#A0A0A0]">Sí, es una experiencia cultural única. Pero reserva alojamiento con anticipación — los precios suben y la disponibilidad baja. También ten en cuenta que muchos servicios cierran el 28 y 29.</p>
                     </div>
 
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">¿Dónde encontrar eventos de Fiestas Patrias?</h4>
-                        <p class="text-sm text-gray-400">Revisa el calendario de Lime para ver todos los eventos actualizados. También las municipalidades publican sus programas en redes sociales.</p>
+                        <p class="text-sm text-[#A0A0A0]">Revisa el calendario de Lime para ver todos los eventos actualizados. También las municipalidades publican sus programas en redes sociales.</p>
                     </div>
 
                 </div>
 
                 <!-- Conclusion -->
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Conclusión</h2>
-                <p class="text-gray-300 mb-6">
+                <p class="text-[#C0C0C0] mb-6">
                     Esperamos que esta guía te sea útil para descubrir todo lo que Lima tiene para ofrecer. Recuerda revisar el calendario de Lime regularmente para estar al día con los últimos eventos.
                 </p>
-                <p class="text-gray-300">
-                    <a href="https://limaeventos.app" class="text-lime-400 hover:text-lime-300 font-medium">Ver Eventos en Lime →</a>
+                <p class="text-[#C0C0C0]">
+                    <a href="../../index.html" class="text-[#B794F4] font-medium hover:text-[#B794F4]">Ver Eventos en Lime →</a>
                 </p>
 
                 <!-- Related Articles -->
-                <section class="mt-16 pt-8 border-t border-gray-800">
+                <section class="mt-16 pt-8 border-t border-white/10">
                     <h3 class="text-xl font-semibold mb-6 text-white">Artículos Relacionados</h3>
                     <div class="grid md:grid-cols-3 gap-4">
                         
-                        <a href="post-35-ferias-gastronomicas-lima.html" class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-lime-500/50 transition-colors">
+                        <a href="post-35-ferias-gastronomicas-lima.html" class="p-6 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#6F42C1]/50 transition-colors">
                             <h4 class="font-medium text-white mb-2">Ferias Gastronómicas Lima</h4>
-                            <p class="text-sm text-gray-500">Calendario completo</p>
+                            <p class="text-sm text-[#888]">Calendario completo</p>
                         </a>
 
-                        <a href="post-37-penas-criollas-lima.html" class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-lime-500/50 transition-colors">
+                        <a href="post-37-penas-criollas-lima.html" class="p-6 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#6F42C1]/50 transition-colors">
                             <h4 class="font-medium text-white mb-2">Peñas Criollas en Lima</h4>
-                            <p class="text-sm text-gray-500">Música criolla en vivo</p>
+                            <p class="text-sm text-[#888]">Música criolla en vivo</p>
                         </a>
 
-                        <a href="post-59-cancion-criolla-lima.html" class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-lime-500/50 transition-colors">
+                        <a href="post-59-cancion-criolla-lima.html" class="p-6 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#6F42C1]/50 transition-colors">
                             <h4 class="font-medium text-white mb-2">Día de la Canción Criolla</h4>
-                            <p class="text-sm text-gray-500">Tradición musical</p>
+                            <p class="text-sm text-[#888]">Tradición musical</p>
                         </a>
 
                     </div>
@@ -155,17 +163,15 @@
         </div>
     </article>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 border-t border-gray-800 pt-12 pb-8">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <a href="https://limaeventos.app" class="text-xl font-bold text-lime-400 block mb-4">🍊 Lime</a>
-            <div class="flex justify-center gap-8 mb-6 text-sm text-gray-500">
-                <a href="https://limaeventos.app" class="hover:text-white">Inicio</a>
-                <a href="https://limaeventos.app/blog.html" class="hover:text-white">Blog</a>
-            </div>
-            <p class="text-xs text-gray-600">© 2026 Lime. Todos los derechos reservados.</p>
+    <footer class="w-full border-t border-white/5 mt-12 py-6">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <a href="../../index.html" class="text-sm text-[#A0A0A0] hover:text-[#8B5CF6] transition-colors flex items-center gap-1.5">
+                <i data-lucide="calendar-days" class="w-4 h-4" stroke-width="1.5"></i>
+                Volver al calendario
+            </a>
         </div>
     </footer>
+    <script>if (typeof lucide !== 'undefined') lucide.createIcons();</script>
 
     <!-- FAQ Schema -->
     <script type="application/ld+json">

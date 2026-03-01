@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,33 +21,41 @@
     
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; }
+        html{scroll-behavior:smooth;}
+        body { font-family: 'Inter', -apple-system, sans-serif; background-color: #1A1A1D; color: #FFFFFF; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1A1A1D; }
+        ::-webkit-scrollbar-thumb { background: #2E2E32; border-radius: 4px; }
+        .selection\:bg-\[\#6F42C1\]::selection { background-color: #6F42C1; color: white; }
     </style>
 </head>
-<body class="bg-gray-950 text-gray-100">
+<body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white pb-12">
     
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 top-0 bg-gray-950/80 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="https://limaeventos.app" class="text-xl font-bold text-lime-400">🍊 Lime</a>
-            <div class="flex items-center gap-6">
-                <a href="https://limaeventos.app/blog.html" class="text-sm text-gray-400 hover:text-white">Blog</a>
-                <a href="https://limaeventos.app" class="px-5 py-2 bg-lime-500 hover:bg-lime-400 text-gray-900 rounded-full text-sm font-medium transition-colors">Explorar Eventos</a>
+    <header class="w-full h-14 px-4 md:px-6 flex items-center justify-between border-b border-white/5 bg-[#1A1A1D] sticky top-0 z-50">
+        <a href="../../blog.html" class="text-[#A0A0A0] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 rounded-sm flex items-center gap-2" aria-label="Volver al blog">
+            <i data-lucide="arrow-left" class="w-5 h-5" stroke-width="1.5"></i>
+            <span class="text-sm font-medium hidden sm:inline">Blog</span>
+        </a>
+        <a href="../../index.html" class="flex items-center gap-2">
+            <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#FFC107] to-[#6F42C1] flex items-center justify-center">
+                <i data-lucide="sun" class="w-3.5 h-3.5 text-white" stroke-width="2"></i>
             </div>
-        </div>
-    </nav>
+            <span class="text-base font-semibold tracking-tight text-white">Lima</span>
+        </a>
+        <div class="w-5 h-5"></div>
+    </header>
 
     <!-- Header -->
-    <header class="pt-28 pb-12 bg-gradient-to-b from-gray-900 to-gray-950">
+    <header class="pt-10 pb-10 sm:pt-14 sm:pb-12">
         <div class="max-w-4xl mx-auto px-6">
             <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
                 Teatro en Lima 2026 — Cartelera, Mejores Obras y Salas
             </h1>
-            <p class="text-xl text-gray-400 mb-6">Lima tiene una escena teatral vibrante que muchos desconocen. Desde el majestuoso Teatro Municipal hasta salas independientes en Barranco, la oferta incluye drama, comedia, musicales, teatro experimental y obras para niños. Esta guía te cuenta todo sobre el teatro en Lima.</p>
-            <div class="flex items-center gap-4 text-sm text-gray-500">
+            <p class="text-xl text-[#A0A0A0] mb-6">Lima tiene una escena teatral vibrante que muchos desconocen. Desde el majestuoso Teatro Municipal hasta salas independientes en Barranco, la oferta incluye drama, comedia, musicales, teatro experimental y obras para niños. Esta guía te cuenta todo sobre el teatro en Lima.</p>
+            <div class="flex items-center gap-4 text-sm text-[#888]">
                 <span>2026-03-01</span>
                 <span>•</span>
                 <span>9 min de lectura</span>
@@ -58,87 +66,87 @@
     <!-- Article -->
     <article class="py-12">
         <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-gray-900 rounded-2xl p-8 md:p-12 border border-gray-800">
+            <div class="bg-[#242428] rounded-2xl p-8 md:p-12 border border-white/10">
                 
                 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Las Mejores Salas de Teatro en Lima</h2>
-                <p class="text-gray-300 mb-6">El Teatro Municipal de Lima es el más emblemático — con más de 100 años de historia, alberga ópera, ballet y obras clásicas. El Teatro Marsano en Miraflores es referente del teatro comercial con montajes de alta producción. El Teatro La Plaza en Larcomar ofrece obras contemporáneas de calidad. El Teatro Británico tiene una larga tradición de excelencia. En Barranco, espacios como el Teatro Mocha Graña y La Tarumba ofrecen propuestas más independientes y circenses.</p>
+                <p class="text-[#C0C0C0] mb-6">El Teatro Municipal de Lima es el más emblemático — con más de 100 años de historia, alberga ópera, ballet y obras clásicas. El Teatro Marsano en Miraflores es referente del teatro comercial con montajes de alta producción. El Teatro La Plaza en Larcomar ofrece obras contemporáneas de calidad. El Teatro Británico tiene una larga tradición de excelencia. En Barranco, espacios como el Teatro Mocha Graña y La Tarumba ofrecen propuestas más independientes y circenses.</p>
                 
-                <div class="my-8 p-6 bg-lime-500/10 rounded-xl border border-lime-500/30">
-                    <h3 class="text-xl font-semibold mb-3 text-lime-400">¿Buscas eventos en Lima?</h3>
-                    <p class="text-sm text-gray-400 mb-4">Lime reúne eventos de EnLima, Eventbrite y Teleticket en un solo calendario. Nunca te pierdas nada.</p>
-                    <a href="https://limaeventos.app" class="text-lime-400 font-medium hover:text-lime-300">Ver Eventos en Lime →</a>
+                <div class="my-8 p-6 bg-[#6F42C1]/10 rounded-xl border border-[#6F42C1]/20">
+                    <h3 class="text-xl font-semibold mb-3 text-[#B794F4]">¿Buscas eventos en Lima?</h3>
+                    <p class="text-sm text-[#A0A0A0] mb-4">Lime reúne eventos de EnLima, Eventbrite y Teleticket en un solo calendario. Nunca te pierdas nada.</p>
+                    <a href="../../index.html">Ver Eventos en Lime →</a>
                 </div>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Tipos de Teatro que Puedes Ver</h2>
-                <p class="text-gray-300 mb-6">La escena limeña es diversa. El teatro comercial ofrece comedias y dramas de autores conocidos. El teatro musical ha crecido enormemente — producciones locales de musicales internacionales son cada vez más comunes. El teatro independiente en Barranco y el Centro Histórico presenta propuestas experimentales y de autor. El teatro para niños tiene su propio circuito, especialmente los fines de semana. Y el teatro callejero aparece en festivales y eventos culturales gratuitos.</p>
+                <p class="text-[#C0C0C0] mb-6">La escena limeña es diversa. El teatro comercial ofrece comedias y dramas de autores conocidos. El teatro musical ha crecido enormemente — producciones locales de musicales internacionales son cada vez más comunes. El teatro independiente en Barranco y el Centro Histórico presenta propuestas experimentales y de autor. El teatro para niños tiene su propio circuito, especialmente los fines de semana. Y el teatro callejero aparece en festivales y eventos culturales gratuitos.</p>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Cómo Conseguir Entradas y Precios</h2>
-                <p class="text-gray-300 mb-6">Los precios varían enormemente. Salas independientes: S/20-50. Teatro comercial: S/40-120. Producciones grandes: S/80-200. Las entradas se compran en Teleticket, Joinnus, o directamente en las boleterías. Muchas salas ofrecen descuentos para estudiantes y adultos mayores. Los miércoles y jueves suelen tener precios más bajos. Las funciones de estreno suelen ser más caras. Revisa el calendario de Lime para ver la cartelera actualizada y comparar precios.</p>
+                <p class="text-[#C0C0C0] mb-6">Los precios varían enormemente. Salas independientes: S/20-50. Teatro comercial: S/40-120. Producciones grandes: S/80-200. Las entradas se compran en Teleticket, Joinnus, o directamente en las boleterías. Muchas salas ofrecen descuentos para estudiantes y adultos mayores. Los miércoles y jueves suelen tener precios más bajos. Las funciones de estreno suelen ser más caras. Revisa el calendario de Lime para ver la cartelera actualizada y comparar precios.</p>
                 
-                <div class="my-10 p-8 bg-gradient-to-r from-lime-600 to-emerald-600 rounded-2xl">
+                <div class="my-10 p-8 bg-gradient-to-r from-[#6F42C1] to-[#8B5CF6] rounded-2xl">
                     <h3 class="text-2xl font-bold mb-3 text-white">Encuentra Tu Próximo Evento</h3>
-                    <p class="text-lime-100 mb-6">Miles de eventos actualizados diariamente. Conciertos, fiestas, teatro, arte y más.</p>
-                    <a href="https://limaeventos.app" class="inline-flex items-center gap-2 px-8 py-3 bg-white text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all">
+                    <p class="text-white/90 mb-6">Miles de eventos actualizados diariamente. Conciertos, fiestas, teatro, arte y más.</p>
+                    <a href="../../index.html">
                         Explorar Eventos
                     </a>
                 </div>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Teatro para Niños en Lima</h2>
-                <p class="text-gray-300 mb-6">Lima tiene excelentes opciones de teatro infantil. La Tarumba combina circo y teatro con espectáculos memorables. El Teatro Nacional tiene programación familiar regular. Muchos centros culturales ofrecen talleres de teatro para niños. Los fines de semana, especialmente sábados y domingos por la mañana, hay funciones especiales para familias. Los precios son generalmente más accesibles — entre S/15-40 por entrada. Algunos espectáculos son gratuitos en parques y plazas.</p>
+                <p class="text-[#C0C0C0] mb-6">Lima tiene excelentes opciones de teatro infantil. La Tarumba combina circo y teatro con espectáculos memorables. El Teatro Nacional tiene programación familiar regular. Muchos centros culturales ofrecen talleres de teatro para niños. Los fines de semana, especialmente sábados y domingos por la mañana, hay funciones especiales para familias. Los precios son generalmente más accesibles — entre S/15-40 por entrada. Algunos espectáculos son gratuitos en parques y plazas.</p>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Festivales de Teatro en Lima</h2>
-                <p class="text-gray-300 mb-6">Lima alberga varios festivales teatrales importantes. El Festival de Artes Escénicas de Lima (FAEL) reúne compañías nacionales e internacionales. El Festival de Teatro de Calle anima las plazas con espectáculos gratuitos. El FAE Lima (Festival de Artes Escénicas) es otro evento importante. Estos festivales suelen ocurrir entre agosto y noviembre. Son excelentes oportunidades para ver teatro de calidad a precios accesibles o gratuitos.</p>
+                <p class="text-[#C0C0C0] mb-6">Lima alberga varios festivales teatrales importantes. El Festival de Artes Escénicas de Lima (FAEL) reúne compañías nacionales e internacionales. El Festival de Teatro de Calle anima las plazas con espectáculos gratuitos. El FAE Lima (Festival de Artes Escénicas) es otro evento importante. Estos festivales suelen ocurrir entre agosto y noviembre. Son excelentes oportunidades para ver teatro de calidad a precios accesibles o gratuitos.</p>
 
 
                 <!-- FAQ Section -->
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Preguntas Frecuentes</h2>
                 <div class="space-y-4 mb-10">
                     
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">¿Cuánto cuesta ir al teatro en Lima?</h4>
-                        <p class="text-sm text-gray-400">Los precios van desde S/20 en salas independientes hasta S/200 para grandes producciones. El promedio es S/50-80 para buen teatro comercial. Hay opciones gratuitas en festivales y eventos culturales.</p>
+                        <p class="text-sm text-[#A0A0A0]">Los precios van desde S/20 en salas independientes hasta S/200 para grandes producciones. El promedio es S/50-80 para buen teatro comercial. Hay opciones gratuitas en festivales y eventos culturales.</p>
                     </div>
 
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">¿Dónde comprar entradas de teatro en Lima?</h4>
-                        <p class="text-sm text-gray-400">Las principales plataformas son Teleticket, Joinnus y las boleterías de cada sala. Algunas obras también venden por redes sociales. Lime muestra la cartelera actualizada con links de compra.</p>
+                        <p class="text-sm text-[#A0A0A0]">Las principales plataformas son Teleticket, Joinnus y las boleterías de cada sala. Algunas obras también venden por redes sociales. Lime muestra la cartelera actualizada con links de compra.</p>
                     </div>
 
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">¿Qué obra recomiendas para alguien que nunca ha ido al teatro?</h4>
-                        <p class="text-sm text-gray-400">Las comedias comerciales en el Teatro Marsano o La Plaza son un buen inicio — son entretenidas y accesibles. También los espectáculos de La Tarumba son excelentes para primera vez.</p>
+                        <p class="text-sm text-[#A0A0A0]">Las comedias comerciales en el Teatro Marsano o La Plaza son un buen inicio — son entretenidas y accesibles. También los espectáculos de La Tarumba son excelentes para primera vez.</p>
                     </div>
 
                 </div>
 
                 <!-- Conclusion -->
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Conclusión</h2>
-                <p class="text-gray-300 mb-6">
+                <p class="text-[#C0C0C0] mb-6">
                     Esperamos que esta guía te sea útil para descubrir todo lo que Lima tiene para ofrecer. Recuerda revisar el calendario de Lime regularmente para estar al día con los últimos eventos.
                 </p>
-                <p class="text-gray-300">
-                    <a href="https://limaeventos.app" class="text-lime-400 hover:text-lime-300 font-medium">Ver Eventos en Lime →</a>
+                <p class="text-[#C0C0C0]">
+                    <a href="../../index.html">Ver Eventos en Lime →</a>
                 </p>
 
                 <!-- Related Articles -->
-                <section class="mt-16 pt-8 border-t border-gray-800">
+                <section class="mt-16 pt-8 border-t border-white/10">
                     <h3 class="text-xl font-semibold mb-6 text-white">Artículos Relacionados</h3>
                     <div class="grid md:grid-cols-3 gap-4">
                         
-                        <a href="post-49-stand-up-comedy-lima.html" class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-lime-500/50 transition-colors">
+                        <a href="post-49-stand-up-comedy-lima.html" class="p-6 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#6F42C1]/50 transition-colors">
                             <h4 class="font-medium text-white mb-2">Stand-Up Comedy Lima</h4>
-                            <p class="text-sm text-gray-500">Shows de comedia</p>
+                            <p class="text-sm text-[#888]">Shows de comedia</p>
                         </a>
 
-                        <a href="post-47-lima-con-ninos.html" class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-lime-500/50 transition-colors">
+                        <a href="post-47-lima-con-ninos.html" class="p-6 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#6F42C1]/50 transition-colors">
                             <h4 class="font-medium text-white mb-2">Lima con Niños</h4>
-                            <p class="text-sm text-gray-500">Planes familiares</p>
+                            <p class="text-sm text-[#888]">Planes familiares</p>
                         </a>
 
-                        <a href="post-41-museos-lima-guia.html" class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-lime-500/50 transition-colors">
+                        <a href="post-41-museos-lima-guia.html" class="p-6 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#6F42C1]/50 transition-colors">
                             <h4 class="font-medium text-white mb-2">Museos en Lima</h4>
-                            <p class="text-sm text-gray-500">Cultura y arte</p>
+                            <p class="text-sm text-[#888]">Cultura y arte</p>
                         </a>
 
                     </div>
@@ -147,17 +155,15 @@
         </div>
     </article>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 border-t border-gray-800 pt-12 pb-8">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <a href="https://limaeventos.app" class="text-xl font-bold text-lime-400 block mb-4">🍊 Lime</a>
-            <div class="flex justify-center gap-8 mb-6 text-sm text-gray-500">
-                <a href="https://limaeventos.app" class="hover:text-white">Inicio</a>
-                <a href="https://limaeventos.app/blog.html" class="hover:text-white">Blog</a>
-            </div>
-            <p class="text-xs text-gray-600">© 2026 Lime. Todos los derechos reservados.</p>
+    <footer class="w-full border-t border-white/5 mt-12 py-6">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <a href="../../index.html" class="text-sm text-[#A0A0A0] hover:text-[#8B5CF6] transition-colors flex items-center gap-1.5">
+                <i data-lucide="calendar-days" class="w-4 h-4" stroke-width="1.5"></i>
+                Volver al calendario
+            </a>
         </div>
     </footer>
+    <script>if (typeof lucide !== 'undefined') lucide.createIcons();</script>
 
     <!-- FAQ Schema -->
     <script type="application/ld+json">

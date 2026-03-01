@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,33 +21,41 @@
     
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; }
+        html{scroll-behavior:smooth;}
+        body { font-family: 'Inter', -apple-system, sans-serif; background-color: #1A1A1D; color: #FFFFFF; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1A1A1D; }
+        ::-webkit-scrollbar-thumb { background: #2E2E32; border-radius: 4px; }
+        .selection\:bg-\[\#6F42C1\]::selection { background-color: #6F42C1; color: white; }
     </style>
 </head>
-<body class="bg-gray-950 text-gray-100">
+<body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white pb-12">
     
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 top-0 bg-gray-950/80 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="https://limaeventos.app" class="text-xl font-bold text-lime-400">🍊 Lime</a>
-            <div class="flex items-center gap-6">
-                <a href="https://limaeventos.app/blog.html" class="text-sm text-gray-400 hover:text-white">Blog</a>
-                <a href="https://limaeventos.app" class="px-5 py-2 bg-lime-500 hover:bg-lime-400 text-gray-900 rounded-full text-sm font-medium transition-colors">Explorar Eventos</a>
+    <header class="w-full h-14 px-4 md:px-6 flex items-center justify-between border-b border-white/5 bg-[#1A1A1D] sticky top-0 z-50">
+        <a href="../../blog.html" class="text-[#A0A0A0] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/45 rounded-sm flex items-center gap-2" aria-label="Volver al blog">
+            <i data-lucide="arrow-left" class="w-5 h-5" stroke-width="1.5"></i>
+            <span class="text-sm font-medium hidden sm:inline">Blog</span>
+        </a>
+        <a href="../../index.html" class="flex items-center gap-2">
+            <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#FFC107] to-[#6F42C1] flex items-center justify-center">
+                <i data-lucide="sun" class="w-3.5 h-3.5 text-white" stroke-width="2"></i>
             </div>
-        </div>
-    </nav>
+            <span class="text-base font-semibold tracking-tight text-white">Lima</span>
+        </a>
+        <div class="w-5 h-5"></div>
+    </header>
 
     <!-- Header -->
-    <header class="pt-28 pb-12 bg-gradient-to-b from-gray-900 to-gray-950">
+    <header class="pt-10 pb-10 sm:pt-14 sm:pb-12">
         <div class="max-w-4xl mx-auto px-6">
             <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
                 Los 20 Mejores Brunch en Lima — Guía Definitiva de Desayunos Tardíos
             </h1>
-            <p class="text-xl text-gray-400 mb-6">La cultura del brunch ha explotado en Lima. Cada fin de semana, cafés y restaurantes ofrecen experiencias gastronómicas que combinan lo mejor del desayuno y el almuerzo. Aquí están los 20 mejores spots.</p>
-            <div class="flex items-center gap-4 text-sm text-gray-500">
+            <p class="text-xl text-[#A0A0A0] mb-6">La cultura del brunch ha explotado en Lima. Cada fin de semana, cafés y restaurantes ofrecen experiencias gastronómicas que combinan lo mejor del desayuno y el almuerzo. Aquí están los 20 mejores spots.</p>
+            <div class="flex items-center gap-4 text-sm text-[#888]">
                 <span>2026-04-05</span>
                 <span>•</span>
                 <span>8 min de lectura</span>
@@ -58,84 +66,84 @@
     <!-- Article -->
     <article class="py-12">
         <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-gray-900 rounded-2xl p-8 md:p-12 border border-gray-800">
+            <div class="bg-[#242428] rounded-2xl p-8 md:p-12 border border-white/10">
                 
                 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Brunch en Miraflores</h2>
-                <p class="text-gray-300 mb-6">Miraflores concentra la mayor oferta de brunch en Lima. Cafés sobre el Malecón con vista al mar, restaurantes en el Parque Kennedy, y opciones gourmet en calles laterales. Los precios van de S/25-60 por persona. Las opciones van desde panqueques artesanales hasta menús fusión con toques peruanos. Los domingos son los más concurridos — reserva con anticipación.</p>
+                <p class="text-[#C0C0C0] mb-6">Miraflores concentra la mayor oferta de brunch en Lima. Cafés sobre el Malecón con vista al mar, restaurantes en el Parque Kennedy, y opciones gourmet en calles laterales. Los precios van de S/25-60 por persona. Las opciones van desde panqueques artesanales hasta menús fusión con toques peruanos. Los domingos son los más concurridos — reserva con anticipación.</p>
                 
-                <div class="my-8 p-6 bg-lime-500/10 rounded-xl border border-lime-500/30">
-                    <h3 class="text-xl font-semibold mb-3 text-lime-400">¿Buscas eventos en Lima?</h3>
-                    <p class="text-sm text-gray-400 mb-4">Lime reúne eventos de EnLima, Eventbrite y Teleticket en un solo calendario. Nunca te pierdas nada.</p>
-                    <a href="https://limaeventos.app" class="text-lime-400 font-medium hover:text-lime-300">Ver Eventos en Lime →</a>
+                <div class="my-8 p-6 bg-[#6F42C1]/10 rounded-xl border border-[#6F42C1]/20">
+                    <h3 class="text-xl font-semibold mb-3 text-[#B794F4]">¿Buscas eventos en Lima?</h3>
+                    <p class="text-sm text-[#A0A0A0] mb-4">Lime reúne eventos de EnLima, Eventbrite y Teleticket en un solo calendario. Nunca te pierdas nada.</p>
+                    <a href="../../index.html">Ver Eventos en Lime →</a>
                 </div>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Brunch en Barranco</h2>
-                <p class="text-gray-300 mb-6">Barranco tiene el brunch más bohemio de Lima. Cafés artesanales en casonas antiguas, terrazas con vista a la bajada, y opciones veganas/orgánicas. El ambiente es más relajado que Miraflores. Muchos spots tienen música en vivo los domingos. Los precios son similares o ligeramente más accesibles. El brunch barrranquino suele venir con café de especialidad y jugo recién exprimido.</p>
+                <p class="text-[#C0C0C0] mb-6">Barranco tiene el brunch más bohemio de Lima. Cafés artesanales en casonas antiguas, terrazas con vista a la bajada, y opciones veganas/orgánicas. El ambiente es más relajado que Miraflores. Muchos spots tienen música en vivo los domingos. Los precios son similares o ligeramente más accesibles. El brunch barrranquino suele venir con café de especialidad y jugo recién exprimido.</p>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Brunch en San Isidro</h2>
-                <p class="text-gray-300 mb-6">San Isidro ofrece brunch más ejecutivo y sofisticado. Hoteles cinco estrellas con buffets de brunch los domingos son tradición aquí. El Bosque El Olivar tiene cafés con ambiente tranquilo. Los precios en hoteles van de S/80-150 por buffet. Los restaurantes independientes son más accesibles (S/30-50). Es la opción ideal para celebraciones o brunch de negocios.</p>
+                <p class="text-[#C0C0C0] mb-6">San Isidro ofrece brunch más ejecutivo y sofisticado. Hoteles cinco estrellas con buffets de brunch los domingos son tradición aquí. El Bosque El Olivar tiene cafés con ambiente tranquilo. Los precios en hoteles van de S/80-150 por buffet. Los restaurantes independientes son más accesibles (S/30-50). Es la opción ideal para celebraciones o brunch de negocios.</p>
                 
-                <div class="my-10 p-8 bg-gradient-to-r from-lime-600 to-emerald-600 rounded-2xl">
+                <div class="my-10 p-8 bg-gradient-to-r from-[#6F42C1] to-[#8B5CF6] rounded-2xl">
                     <h3 class="text-2xl font-bold mb-3 text-white">Encuentra Tu Próximo Evento</h3>
-                    <p class="text-lime-100 mb-6">Miles de eventos actualizados diariamente. Conciertos, fiestas, teatro, arte y más.</p>
-                    <a href="https://limaeventos.app" class="inline-flex items-center gap-2 px-8 py-3 bg-white text-gray-900 hover:bg-gray-100 rounded-full font-medium transition-all">
+                    <p class="text-white/90 mb-6">Miles de eventos actualizados diariamente. Conciertos, fiestas, teatro, arte y más.</p>
+                    <a href="../../index.html">
                         Explorar Eventos
                     </a>
                 </div>
 
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Tips para el Mejor Brunch</h2>
-                <p class="text-gray-300 mb-6">Reserva siempre para domingos — los mejores spots se llenan. Llega entre 10-11am para evitar la hora pico (12-2pm). Pregunta por promociones de apps de delivery — muchos restaurantes ofrecen descuentos. Los sábados son más tranquilos y a veces más baratos. Revisa Instagram de los restaurantes para ver los platos antes de ir. Lime muestra eventos de brunch especiales con música o temáticas.</p>
+                <p class="text-[#C0C0C0] mb-6">Reserva siempre para domingos — los mejores spots se llenan. Llega entre 10-11am para evitar la hora pico (12-2pm). Pregunta por promociones de apps de delivery — muchos restaurantes ofrecen descuentos. Los sábados son más tranquilos y a veces más baratos. Revisa Instagram de los restaurantes para ver los platos antes de ir. Lime muestra eventos de brunch especiales con música o temáticas.</p>
 
 
                 <!-- FAQ Section -->
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Preguntas Frecuentes</h2>
                 <div class="space-y-4 mb-10">
                     
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">¿Cuánto cuesta un brunch en Lima?</h4>
-                        <p class="text-sm text-gray-400">Cafés: S/25-40 por persona. Restaurantes: S/40-60. Hoteles buffet: S/80-150. Puedes tener un excelente brunch por S/35-50 incluyendo bebida.</p>
+                        <p class="text-sm text-[#A0A0A0]">Cafés: S/25-40 por persona. Restaurantes: S/40-60. Hoteles buffet: S/80-150. Puedes tener un excelente brunch por S/35-50 incluyendo bebida.</p>
                     </div>
 
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">¿Qué día es mejor para brunch?</h4>
-                        <p class="text-sm text-gray-400">Domingos son los más populares pero también los más llenos. Sábados ofrecen la misma experiencia con menos gente. Algunos spots tienen brunch entre semana a precios reducidos.</p>
+                        <p class="text-sm text-[#A0A0A0]">Domingos son los más populares pero también los más llenos. Sábados ofrecen la misma experiencia con menos gente. Algunos spots tienen brunch entre semana a precios reducidos.</p>
                     </div>
 
-                    <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <div class="p-6 bg-white/[0.06] rounded-xl border border-white/10">
                         <h4 class="font-semibold text-white mb-2">¿Hay opciones veganas de brunch?</h4>
-                        <p class="text-sm text-gray-400">Sí, cada vez más. Barranco lidera la oferta vegana/vegetariana. Miraflores también tiene varias opciones. Muchos restaurantes ahora incluyen opciones plant-based en sus menús de brunch.</p>
+                        <p class="text-sm text-[#A0A0A0]">Sí, cada vez más. Barranco lidera la oferta vegana/vegetariana. Miraflores también tiene varias opciones. Muchos restaurantes ahora incluyen opciones plant-based en sus menús de brunch.</p>
                     </div>
 
                 </div>
 
                 <!-- Conclusion -->
                 <h2 class="text-3xl font-bold mt-12 mb-6 text-white">Conclusión</h2>
-                <p class="text-gray-300 mb-6">
+                <p class="text-[#C0C0C0] mb-6">
                     Esperamos que esta guía te sea útil para descubrir todo lo que Lima tiene para ofrecer. Recuerda revisar el calendario de Lime regularmente para estar al día con los últimos eventos.
                 </p>
-                <p class="text-gray-300">
-                    <a href="https://limaeventos.app" class="text-lime-400 hover:text-lime-300 font-medium">Ver Eventos en Lime →</a>
+                <p class="text-[#C0C0C0]">
+                    <a href="../../index.html">Ver Eventos en Lime →</a>
                 </p>
 
                 <!-- Related Articles -->
-                <section class="mt-16 pt-8 border-t border-gray-800">
+                <section class="mt-16 pt-8 border-t border-white/10">
                     <h3 class="text-xl font-semibold mb-6 text-white">Artículos Relacionados</h3>
                     <div class="grid md:grid-cols-3 gap-4">
                         
-                        <a href="post-35-ferias-gastronomicas-lima.html" class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-lime-500/50 transition-colors">
+                        <a href="post-35-ferias-gastronomicas-lima.html" class="p-6 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#6F42C1]/50 transition-colors">
                             <h4 class="font-medium text-white mb-2">Ferias Gastronómicas</h4>
-                            <p class="text-sm text-gray-500">Eventos food</p>
+                            <p class="text-sm text-[#888]">Eventos food</p>
                         </a>
 
-                        <a href="post-36-rooftop-bars-lima.html" class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-lime-500/50 transition-colors">
+                        <a href="post-36-rooftop-bars-lima.html" class="p-6 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#6F42C1]/50 transition-colors">
                             <h4 class="font-medium text-white mb-2">Rooftop Bars</h4>
-                            <p class="text-sm text-gray-500">Para después del brunch</p>
+                            <p class="text-sm text-[#888]">Para después del brunch</p>
                         </a>
 
-                        <a href="post-46-craft-beer-lima.html" class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-lime-500/50 transition-colors">
+                        <a href="post-46-craft-beer-lima.html" class="p-6 bg-white/[0.06] rounded-xl border border-white/10 hover:border-[#6F42C1]/50 transition-colors">
                             <h4 class="font-medium text-white mb-2">Cerveza Artesanal</h4>
-                            <p class="text-sm text-gray-500">Bebidas locales</p>
+                            <p class="text-sm text-[#888]">Bebidas locales</p>
                         </a>
 
                     </div>
@@ -144,17 +152,15 @@
         </div>
     </article>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 border-t border-gray-800 pt-12 pb-8">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <a href="https://limaeventos.app" class="text-xl font-bold text-lime-400 block mb-4">🍊 Lime</a>
-            <div class="flex justify-center gap-8 mb-6 text-sm text-gray-500">
-                <a href="https://limaeventos.app" class="hover:text-white">Inicio</a>
-                <a href="https://limaeventos.app/blog.html" class="hover:text-white">Blog</a>
-            </div>
-            <p class="text-xs text-gray-600">© 2026 Lime. Todos los derechos reservados.</p>
+    <footer class="w-full border-t border-white/5 mt-12 py-6">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <a href="../../index.html" class="text-sm text-[#A0A0A0] hover:text-[#8B5CF6] transition-colors flex items-center gap-1.5">
+                <i data-lucide="calendar-days" class="w-4 h-4" stroke-width="1.5"></i>
+                Volver al calendario
+            </a>
         </div>
     </footer>
+    <script>if (typeof lucide !== 'undefined') lucide.createIcons();</script>
 
     <!-- FAQ Schema -->
     <script type="application/ld+json">
