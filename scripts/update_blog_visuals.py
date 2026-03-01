@@ -14,7 +14,7 @@ NAV_REPLACEMENT = """    <header class="w-full h-14 px-4 md:px-6 flex items-cent
             <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#FFC107] to-[#6F42C1] flex items-center justify-center">
                 <i data-lucide="sun" class="w-3.5 h-3.5 text-white" stroke-width="2"></i>
             </div>
-            <span class="text-base font-semibold tracking-tight text-white">Lima</span>
+            <span class="text-base font-semibold tracking-tight text-white">Eventis</span>
         </a>
         <div class="w-5 h-5"></div>
     </header>"""
@@ -39,7 +39,7 @@ NAV_V3 = """    <header class="w-full h-14 px-4 md:px-6 flex items-center justif
             <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-[#FFC107] to-[#6F42C1] flex items-center justify-center">
                 <i data-lucide="sun" class="w-3.5 h-3.5 text-white" stroke-width="2"></i>
             </div>
-            <span class="text-base font-semibold tracking-tight text-white">Lima</span>
+            <span class="text-base font-semibold tracking-tight text-white">Eventis</span>
         </a>
         <div class="w-5 h-5"></div>
     </header>"""
