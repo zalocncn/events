@@ -39,5 +39,18 @@ events/
 ├── requirements.txt  # Python dependencies
 └── .gitignore
 ```
-# events
-# events
+
+## Weekly email digest
+
+Users can sign up in the footer to receive a **weekly roster of events** (every **Sunday at 12:00 noon ET**). The digest is sent via [Resend](https://resend.com).
+
+### Setup (Vercel)
+
+1. **Resend** — Create an account at resend.com, get an API key. Optionally create an Audience and Segment so only digest subscribers are listed.
+2. **Environment variables** (Vercel → Settings → Environment Variables):
+   - `RESEND_API_KEY` (required)
+   - `SITE_URL` (required, e.g. `https://yoursite.vercel.app`)
+   - `CRON_SECRET` (recommended; Vercel sends it when triggering the cron)
+   - `RESEND_SEGMENT_ID` (optional; segment ID so only digest subscribers get the email)
+   - `RESEND_FROM_EMAIL` (optional; default `onboarding@resend.dev`)
+3. **Cron** — In `vercel.json` the job runs every Sunday at 17:00 UTC (noon ET). For noon EDT use schedule `0 16 * * 0`.

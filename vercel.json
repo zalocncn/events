@@ -1,4 +1,10 @@
 {
-    "buildCommand": null,
-    "outputDirectory": "."
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "crons": [
+    {
+      "path": "/api/send-weekly-digest",
+      "schedule": "0 17 * * 0"
+    }
+  ]
 }

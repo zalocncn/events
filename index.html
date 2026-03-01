@@ -23,8 +23,9 @@
         .event-item:hover { background: rgba(255,255,255,0.06); }
         #calendar-container .cal-grid-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; }
         @media (min-width: 640px) { #calendar-container .cal-grid-wrapper { overflow-x: visible; } }
-        #event-preview { z-index: 1000; pointer-events: none; }
-        #event-preview.visible { pointer-events: auto; }
+        #event-preview { z-index: 1000; pointer-events: none; transition: opacity 150ms ease, transform 280ms cubic-bezier(0.25,0.46,0.45,0.94); }
+        #event-preview.visible { pointer-events: auto; transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.35); }
+        #event-preview.visible #event-preview-image { transform: scale(1.03); opacity: 1; }
         .accordion-panel { max-height: 0; overflow: hidden; transition: max-height 0.25s ease-out; }
         .accordion-day.is-open .accordion-panel { max-height: 2000px; transition: max-height 0.35s ease-in; }
         .accordion-day.is-open .accordion-chevron { transform: rotate(180deg); }
@@ -109,7 +110,21 @@
             </button>
         </div>
 
-        <footer class="w-full border-t border-white/5 mt-8 sm:mt-12 pt-6 pb-8 flex justify-center">
+        <footer class="w-full border-t border-white/5 mt-8 sm:mt-12 pt-6 pb-8 flex flex-col items-center gap-6">
+            <!-- Weekly digest signup -->
+            <section class="w-full max-w-md mx-auto px-4" aria-labelledby="digest-heading">
+                <h2 id="digest-heading" class="text-sm font-semibold text-white mb-2 text-center">Resumen semanal en tu correo</h2>
+                <p class="text-xs text-[#A0A0A0] text-center mb-3">Cada domingo a las 12:00 (ET) te enviamos todos los eventos de la semana.</p>
+                <form id="digest-signup-form" class="flex flex-col sm:flex-row gap-2">
+                    <label for="digest-email" class="sr-only">Correo electrónico</label>
+                    <input type="email" id="digest-email" name="email" required placeholder="tu@correo.com" class="flex-1 min-w-0 h-10 px-3 rounded-lg bg-[#242428] border border-[rgba(255,255,255,0.08)] text-white placeholder-[#666] text-sm focus:outline-none focus:ring-2 focus:ring-[#6F42C1]/50 focus:border-[#6F42C1]/50">
+                    <button type="submit" id="digest-submit" class="h-10 px-4 rounded-lg bg-[#6F42C1] hover:bg-[#7C4FCF] text-white text-sm font-medium transition-colors flex items-center justify-center gap-2 disabled:opacity-60">
+                        <span class="submit-text">Suscribirme</span>
+                        <i data-lucide="loader-2" class="w-4 h-4 hidden animate-spin" id="digest-spinner"></i>
+                    </button>
+                </form>
+                <p id="digest-message" class="mt-2 text-xs text-center min-h-[1.25rem]" role="status" aria-live="polite"></p>
+            </section>
             <a href="blog.html" class="text-sm text-[#A0A0A0] hover:text-[#8B5CF6] transition-colors flex items-center gap-1.5">
                 <i data-lucide="file-text" class="w-4 h-4" stroke-width="1.5"></i>
                 Blog
@@ -118,22 +133,35 @@
     </main>
 
     <!-- Event hover preview popover -->
-    <div id="event-preview" class="fixed hidden opacity-0 transition-opacity duration-150 w-[min(320px,calc(100vw-24px))] rounded-xl border border-white/10 bg-[#242428] shadow-[0_12px_40px_rgba(0,0,0,0.5)] overflow-hidden" aria-hidden="true">
-        <div class="aspect-video bg-[#2A2A2E] bg-cover bg-center" id="event-preview-image"></div>
-        <div class="p-3 sm:p-4 space-y-2">
-            <p class="text-[10px] sm:text-xs font-medium uppercase tracking-wide text-[#6F42C1]" id="event-preview-type"></p>
-            <h3 class="text-sm sm:text-base font-semibold text-white line-clamp-2 leading-snug" id="event-preview-title"></h3>
-            <div class="flex flex-wrap gap-x-3 gap-y-1 text-xs text-[#A0A0A0]">
-                <span class="flex items-center gap-1" id="event-preview-time"></span>
-                <span class="flex items-center gap-1" id="event-preview-venue"></span>
-            </div>
-            <p class="text-xs text-[#C0C0C0]" id="event-preview-price"></p>
-            <p class="text-[11px] text-[#888]" id="event-preview-schedule"></p>
-            <a id="event-preview-link" href="#" target="_blank" rel="noopener" class="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-[#8B5CF6] hover:text-[#A78BFA]">
-                Ver evento <i data-lucide="external-link" class="w-3.5 h-3.5" stroke-width="1.5"></i>
-            </a>
+    <article id="event-preview" class="fixed hidden opacity-0 w-[min(320px,calc(100vw-24px))] rounded-[14px] bg-[#242428] border border-[rgba(255,255,255,0.06)] shadow-[0_6px_20px_rgba(0,0,0,0.28)] overflow-hidden flex flex-col" aria-hidden="true">
+        <!-- Image header -->
+        <div class="relative w-full overflow-hidden bg-[#2E2E32] shrink-0 aspect-video">
+            <div id="event-preview-image" class="w-full h-full bg-cover bg-center transition-transform duration-500 ease-out opacity-95"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#242428] via-transparent to-transparent opacity-90" aria-hidden="true"></div>
         </div>
-    </div>
+        <!-- Content -->
+        <div class="flex flex-col p-3 sm:p-4 gap-2">
+            <div class="flex flex-col gap-1.5">
+                <span class="text-[10px] sm:text-xs font-medium uppercase tracking-[0.02em] text-[#6F42C1]" id="event-preview-type"></span>
+                <h3 class="text-sm sm:text-base font-semibold leading-snug tracking-tight text-[#FFFFFF] line-clamp-2" id="event-preview-title"></h3>
+            </div>
+            <div class="flex flex-col gap-1 text-xs text-[#C0C0C0] font-normal">
+                <div class="flex items-center gap-2 flex-wrap" id="event-preview-meta-row">
+                    <span id="event-preview-time"></span>
+                    <span class="h-1 w-1 rounded-full bg-[rgba(255,255,255,0.2)] shrink-0" id="event-preview-dot"></span>
+                    <span id="event-preview-venue"></span>
+                </div>
+                <p class="text-[#999999]" id="event-preview-schedule"></p>
+                <p class="text-[#C0C0C0]" id="event-preview-price"></p>
+            </div>
+            <div class="mt-1 pt-3 border-t border-[rgba(255,255,255,0.05)]">
+                <a id="event-preview-link" href="#" target="_blank" rel="noopener" class="group/link inline-flex items-center gap-1.5 text-xs font-medium text-[#6F42C1] transition-colors duration-200 hover:text-[#8B5CF6]">
+                    Ver evento
+                    <i data-lucide="external-link" stroke-width="1.5" class="h-3.5 w-3.5 transition-transform duration-200 ease-out group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"></i>
+                </a>
+            </div>
+        </div>
+    </article>
 
     <script>
         const WEEKDAYS = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
@@ -395,7 +423,9 @@
             const venueText = limaFix([ev.venue, ev.district].filter(Boolean).join(', ') || '—');
             venueEl.textContent = venueText;
             venueEl.style.display = venueText !== '—' ? '' : 'none';
-            priceEl.textContent = (ev.price || '').trim() ? 'Precio: ' + (ev.price || '').trim() : '';
+            const dotEl = document.getElementById('event-preview-dot');
+            if (dotEl) dotEl.style.display = venueText !== '—' ? '' : 'none';
+            priceEl.textContent = (ev.price || '').trim() ? (ev.price || '').trim() : '';
             priceEl.style.display = priceEl.textContent ? '' : 'none';
             scheduleEl.textContent = limaFix(ev.schedule || '');
             scheduleEl.style.display = scheduleEl.textContent ? '' : 'none';
@@ -527,6 +557,43 @@
             });
 
             if (typeof lucide !== 'undefined') lucide.createIcons();
+
+            // Weekly digest signup
+            var digestForm = document.getElementById('digest-signup-form');
+            if (digestForm) {
+                digestForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    var input = document.getElementById('digest-email');
+                    var btn = document.getElementById('digest-submit');
+                    var msgEl = document.getElementById('digest-message');
+                    var spinner = document.getElementById('digest-spinner');
+                    var submitText = btn && btn.querySelector('.submit-text');
+                    var email = (input && input.value || '').trim().toLowerCase();
+                    if (!email) return;
+                    if (btn) { btn.disabled = true; if (spinner) spinner.classList.remove('hidden'); if (submitText) submitText.textContent = 'Enviando…'; }
+                    if (msgEl) msgEl.textContent = '';
+                    fetch('/api/subscribe', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ email: email })
+                    })
+                        .then(function(r) {
+                            if (r.ok) return r.json();
+                            return r.json().then(function(d) { throw new Error(d.error || 'Error al suscribirse'); });
+                        })
+                        .then(function() {
+                            if (msgEl) { msgEl.textContent = 'Listo. Revisa tu correo el próximo domingo.'; msgEl.classList.remove('text-red-400'); msgEl.classList.add('text-[#8B5CF6]'); }
+                            if (input) input.value = '';
+                        })
+                        .catch(function(err) {
+                            if (msgEl) { msgEl.textContent = err.message || 'Error. Intenta de nuevo.'; msgEl.classList.remove('text-[#8B5CF6]'); msgEl.classList.add('text-red-400'); }
+                        })
+                        .finally(function() {
+                            if (btn) { btn.disabled = false; if (spinner) spinner.classList.add('hidden'); if (submitText) submitText.textContent = 'Suscribirme'; }
+                            if (typeof lucide !== 'undefined') lucide.createIcons();
+                        });
+                });
+            }
         }
         document.addEventListener('DOMContentLoaded', init);
     </script>
