@@ -7,3 +7,4 @@ venv/
 monitor.log
 node_modules/
 .next/
+.vercel

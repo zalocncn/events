@@ -578,15 +578,29 @@
                         body: JSON.stringify({ email: email })
                     })
                         .then(function(r) {
-                            if (r.ok) return r.json();
-                            return r.json().then(function(d) { throw new Error(d.error || 'Error al suscribirse'); });
+                            var ct = (r.headers.get('content-type') || '').toLowerCase();
+                            if (r.ok) {
+                                if (ct.indexOf('application/json') !== -1) return r.json();
+                                return {};
+                            }
+                            if (ct.indexOf('application/json') !== -1) {
+                                return r.json().then(function(d) { throw new Error(d.error || 'Error al suscribirse'); });
+                            }
+                            return r.text().then(function(text) {
+                                if (/^\s*</.test(text)) throw new Error('La suscripción no está disponible en esta URL. Despliega el proyecto en Vercel para usar el formulario.');
+                                throw new Error(text || 'Error al suscribirse');
+                            });
                         })
                         .then(function() {
                             if (msgEl) { msgEl.textContent = 'Listo. Revisa tu correo el próximo domingo.'; msgEl.classList.remove('text-red-400'); msgEl.classList.add('text-[#8B5CF6]'); }
                             if (input) input.value = '';
                         })
                         .catch(function(err) {
-                            if (msgEl) { msgEl.textContent = err.message || 'Error. Intenta de nuevo.'; msgEl.classList.remove('text-[#8B5CF6]'); msgEl.classList.add('text-red-400'); }
+                            var msg = err.message || 'Error. Intenta de nuevo.';
+                            if (msg.indexOf('<!DOCTYPE') !== -1 || msg.indexOf('is not valid JSON') !== -1) {
+                                msg = 'La suscripción no está disponible aquí. Abre la web desplegada en Vercel (tu enlace .vercel.app) para suscribirte.';
+                            }
+                            if (msgEl) { msgEl.textContent = msg; msgEl.classList.remove('text-[#8B5CF6]'); msgEl.classList.add('text-red-400'); }
                         })
                         .finally(function() {
                             if (btn) { btn.disabled = false; if (spinner) spinner.classList.add('hidden'); if (submitText) submitText.textContent = 'Suscribirme'; }
