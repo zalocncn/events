@@ -101,9 +101,12 @@ function buildDigestHtml(eventsByDay, siteUrl) {
 }
 
 export async function GET(request) {
+  const url = new URL(request.url);
+  const previewTo = url.searchParams.get('preview'); // e.g. ?preview=zalocn@gmail.com — send digest only to this email
+
   const auth = request.headers.get('authorization') || '';
   const secret = process.env.CRON_SECRET;
-  if (secret && auth !== `Bearer ${secret}`) {
+  if (!previewTo && secret && auth !== `Bearer ${secret}`) {
     return jsonResponse({ error: 'Unauthorized' }, 401);
   }
 
@@ -119,24 +122,32 @@ export async function GET(request) {
   }
 
   try {
-    const segmentId = process.env.RESEND_SEGMENT_ID || null;
-    const listUrl = segmentId
-      ? `${RESEND_API}/contacts?segment_id=${encodeURIComponent(segmentId)}`
-      : `${RESEND_API}/contacts`;
-    const listRes = await fetch(listUrl, {
-      headers: { Authorization: `Bearer ${apiKey}` },
-    });
-    if (!listRes.ok) {
-      const err = await listRes.text();
-      console.error('Resend list contacts:', err);
-      return jsonResponse({ error: 'Failed to list contacts' }, 503);
-    }
-    const listData = await listRes.json();
-    const contacts = listData.data || [];
-    const emails = contacts.filter((c) => !c.unsubscribed).map((c) => c.email).filter(Boolean);
-
-    if (emails.length === 0) {
-      return jsonResponse({ ok: true, sent: 0, message: 'No subscribers' });
+    let emailsToSend = [];
+    if (previewTo) {
+      const email = previewTo.trim().toLowerCase();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        return jsonResponse({ error: 'Invalid email in preview parameter' }, 400);
+      }
+      emailsToSend = [email];
+    } else {
+      const segmentId = process.env.RESEND_SEGMENT_ID || null;
+      const listUrl = segmentId
+        ? `${RESEND_API}/contacts?segment_id=${encodeURIComponent(segmentId)}`
+        : `${RESEND_API}/contacts`;
+      const listRes = await fetch(listUrl, {
+        headers: { Authorization: `Bearer ${apiKey}` },
+      });
+      if (!listRes.ok) {
+        const err = await listRes.text();
+        console.error('Resend list contacts:', err);
+        return jsonResponse({ error: 'Failed to list contacts' }, 503);
+      }
+      const listData = await listRes.json();
+      const contacts = listData.data || [];
+      emailsToSend = contacts.filter((c) => !c.unsubscribed).map((c) => c.email).filter(Boolean);
+      if (emailsToSend.length === 0) {
+        return jsonResponse({ ok: true, sent: 0, message: 'No subscribers' });
+      }
     }
 
     const eventsUrl = `${siteUrl.replace(/\/$/, '')}/events_by_day.json`;
@@ -153,8 +164,10 @@ export async function GET(request) {
     }
     const html = buildDigestHtml(weekEventsByDay, siteUrl);
 
+    const subject = `Resumen semanal — Eventos en Lima (${formatDayHeader(weekDates[0])} – ${formatDayHeader(weekDates[6])})`;
+
     let sent = 0;
-    for (const to of emails) {
+    for (const to of emailsToSend) {
       const sendRes = await fetch(`${RESEND_API}/emails`, {
         method: 'POST',
         headers: {
@@ -164,7 +177,7 @@ export async function GET(request) {
         body: JSON.stringify({
           from: fromEmail,
           to: [to],
-          subject: `Resumen semanal — Eventos en Lima (${formatDayHeader(weekDates[0])} – ${formatDayHeader(weekDates[6])})`,
+          subject,
           html,
         }),
       });
@@ -172,7 +185,11 @@ export async function GET(request) {
       else console.error('Resend send failed for', to, await sendRes.text());
     }
 
-    return jsonResponse({ ok: true, sent, total: emails.length });
+    return jsonResponse(
+      previewTo
+        ? { ok: true, preview: true, sent, to: emailsToSend[0], message: 'Preview digest sent to ' + emailsToSend[0] }
+        : { ok: true, sent, total: emailsToSend.length }
+    );
   } catch (e) {
     console.error('send-weekly-digest error:', e);
     return jsonResponse({ error: String(e.message || e) }, 500);

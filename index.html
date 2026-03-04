@@ -31,27 +31,23 @@
         .accordion-day.is-open .accordion-chevron { transform: rotate(180deg); }
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .mobile-date-pill { touch-action: manipulation; cursor: pointer; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col antialiased selection:bg-[#6F42C1] selection:text-white pb-12">
 
     <header class="w-full h-14 px-4 md:px-6 flex items-center justify-between border-b border-white/5 bg-[#1A1A1D] sticky top-0 z-50">
-        <div class="w-5 h-5"></div>
-        <div class="flex items-center gap-2">
+        <a href="/" class="flex items-center gap-2 shrink-0" aria-label="Eventis, ir al inicio">
             <img src="logo3.png" alt="Eventis" class="h-24 w-auto" />
-        </div>
-        <div class="w-5 h-5"></div>
+        </a>
     </header>
 
     <main class="flex-1 w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 flex flex-col items-center">
         <h1 class="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-white text-center mb-1">
             Que planes?
         </h1>
-        <p class="text-[#A0A0A0] text-sm sm:text-base font-medium text-center mb-2">
+        <p class="text-[#A0A0A0] text-sm sm:text-base font-medium text-center mb-10">
             Eventos en Lima
-        </p>
-        <p class="text-[#888] text-xs sm:text-sm mb-10 text-center max-w-xl">
-            De <a href="https://enlima.pe/" target="_blank" rel="noopener" class="text-[#8B5CF6] hover:underline">EnLima</a>, <a href="https://www.eventbrite.com.pe/d/peru--miraflores/events/" target="_blank" rel="noopener" class="text-[#8B5CF6] hover:underline">Eventbrite</a> y <a href="https://teleticket.com.pe/todos" target="_blank" rel="noopener" class="text-[#8B5CF6] hover:underline">Teleticket</a>
         </p>
 
         <div id="calendar-container" class="w-full space-y-8 sm:space-y-12 lg:space-y-16">
@@ -312,13 +308,6 @@
             const scrollerEl = document.getElementById('mobile-dash-scroller');
             if (scrollerEl) scrollerEl.innerHTML = scrollerHtml;
 
-            scrollerEl.querySelectorAll('.mobile-date-pill').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    mobileDashState.selectedDateKey = this.getAttribute('data-date');
-                    buildMobileDashboard(cachedEventsByDay);
-                });
-            });
-
             const events = sortEventsByTime(eventsByDay[selectedKey] || []);
             const eventsEl = document.getElementById('mobile-dash-events');
             if (!eventsEl) return;
@@ -367,6 +356,22 @@
             const [y, m] = [todayKey.split('-')[0], todayKey.split('-')[1]];
             mobileDashState = { year: parseInt(y, 10), month: parseInt(m, 10), selectedDateKey: todayKey };
             buildMobileDashboard(eventsByDay);
+
+            const scrollerEl = document.getElementById('mobile-dash-scroller');
+            if (scrollerEl && !scrollerEl._mobileDayClickBound) {
+                scrollerEl._mobileDayClickBound = true;
+                scrollerEl.addEventListener('click', function(e) {
+                    const pill = e.target.closest('.mobile-date-pill');
+                    if (!pill) return;
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const dateKey = pill.getAttribute('data-date');
+                    if (dateKey) {
+                        mobileDashState.selectedDateKey = dateKey;
+                        buildMobileDashboard(cachedEventsByDay);
+                    }
+                });
+            }
 
             document.getElementById('mobile-dash-prev').onclick = function() {
                 if (mobileDashState.year === 2026 && mobileDashState.month <= 2) return;
@@ -605,8 +610,8 @@
                         .finally(function() {
                             if (btn) { btn.disabled = false; if (spinner) spinner.classList.add('hidden'); if (submitText) submitText.textContent = 'Suscribirme'; }
                             if (typeof lucide !== 'undefined') lucide.createIcons();
-                        });
-                });
+            });
+        });
             }
         }
         document.addEventListener('DOMContentLoaded', init);
