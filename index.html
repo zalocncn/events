@@ -53,21 +53,15 @@
         <div id="calendar-container" class="w-full space-y-8 sm:space-y-12 lg:space-y-16">
             <!-- Desktop: grid calendar (md and up) -->
             <div id="calendar-grid-view" class="hidden md:block space-y-8 sm:space-y-12 lg:space-y-16">
-            <section class="w-full">
-                <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-white mb-3 sm:mb-4 flex items-center gap-2">
-                    <i data-lucide="calendar-days" class="w-5 h-5 sm:w-6 sm:h-6 text-[#6F42C1]"></i>
-                    Febrero 2026
-                </h2>
-                <div id="cal-feb-2026" class="rounded-lg sm:rounded-[10px] border border-white/5 bg-[#242428] overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.2)] sm:shadow-[0_6px_20px_rgba(0,0,0,0.28)]"></div>
-            </section>
-
-            <section class="w-full">
-                <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-white mb-3 sm:mb-4 flex items-center gap-2">
-                    <i data-lucide="calendar-days" class="w-5 h-5 sm:w-6 sm:h-6 text-[#6F42C1]"></i>
-                    Marzo 2026
-                </h2>
-                <div id="cal-mar-2026" class="rounded-lg sm:rounded-[10px] border border-white/5 bg-[#242428] overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.2)] sm:shadow-[0_6px_20px_rgba(0,0,0,0.28)]"></div>
-            </section>
+                <div id="calendar-months-main" class="space-y-8 sm:space-y-12 lg:space-y-16"></div>
+                <section class="w-full" id="calendar-archived-section" style="display: none;">
+                    <button type="button" id="calendar-archived-toggle" class="w-full flex items-center justify-center gap-2 py-3 text-sm font-medium text-[#A0A0A0] hover:text-[#8B5CF6] transition-colors border border-white/5 rounded-lg hover:border-[#6F42C1]/30 bg-[#242428]/50" aria-expanded="false">
+                        <i data-lucide="archive" class="w-4 h-4" stroke-width="1.5"></i>
+                        <span>Meses anteriores</span>
+                        <i data-lucide="chevron-down" class="w-4 h-4 calendar-archived-chevron" stroke-width="1.5"></i>
+                    </button>
+                    <div id="calendar-archived-container" class="mt-4 space-y-8 sm:space-y-12 lg:space-y-16 hidden"></div>
+                </section>
             </div>
 
             <!-- Mobile: Schedule Dashboard (date scroller + event cards) -->
@@ -374,7 +368,6 @@
             }
 
             document.getElementById('mobile-dash-prev').onclick = function() {
-                if (mobileDashState.year === 2026 && mobileDashState.month <= 2) return;
                 mobileDashState.month--;
                 if (mobileDashState.month < 1) { mobileDashState.month = 12; mobileDashState.year--; }
                 const lastDay = new Date(mobileDashState.year, mobileDashState.month, 0).getDate();
@@ -383,7 +376,6 @@
                 buildMobileDashboard(cachedEventsByDay);
             };
             document.getElementById('mobile-dash-next').onclick = function() {
-                if (mobileDashState.year === 2026 && mobileDashState.month >= 3) return;
                 mobileDashState.month++;
                 if (mobileDashState.month > 12) { mobileDashState.month = 1; mobileDashState.year++; }
                 mobileDashState.selectedDateKey = `${mobileDashState.year}-${String(mobileDashState.month).padStart(2,'0')}-01`;
@@ -509,11 +501,39 @@
 
         let cachedEventsByDay = null;
 
+        function getCurrentYearMonth() {
+            const t = new Date();
+            return { year: t.getFullYear(), month: t.getMonth() + 1 };
+        }
+
+        function addMonthSection(container, year, month, eventsByDay) {
+            const monthName = MONTHS[month];
+            const sectionEl = document.createElement('section');
+            sectionEl.className = 'w-full';
+            const calId = 'cal-' + year + '-' + month;
+            sectionEl.innerHTML = '<h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-white mb-3 sm:mb-4 flex items-center gap-2"><i data-lucide="calendar-days" class="w-5 h-5 sm:w-6 sm:h-6 text-[#6F42C1]"></i>' + monthName + ' ' + year + '</h2><div id="' + calId + '" class="rounded-lg sm:rounded-[10px] border border-white/5 bg-[#242428] overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.2)] sm:shadow-[0_6px_20px_rgba(0,0,0,0.28)]"></div>';
+            container.appendChild(sectionEl);
+            buildMonthCalendar(calId, year, month, eventsByDay);
+        }
+
         function renderCalendars() {
             if (!cachedEventsByDay) return;
-            buildMonthCalendar('cal-feb-2026', 2026, 2, cachedEventsByDay);
-            buildMonthCalendar('cal-mar-2026', 2026, 3, cachedEventsByDay);
+            const { year: currentYear, month: currentMonth } = getCurrentYearMonth();
+            const mainContainer = document.getElementById('calendar-months-main');
+            if (!mainContainer) return;
+            mainContainer.innerHTML = '';
+            for (let offset = 0; offset < 3; offset++) {
+                let y = currentYear, m = currentMonth + offset;
+                while (m > 12) { m -= 12; y++; }
+                addMonthSection(mainContainer, y, m, cachedEventsByDay);
+            }
             buildMobileDashboard(cachedEventsByDay);
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+            const archivedSection = document.getElementById('calendar-archived-section');
+            if (archivedSection) {
+                const hasPastMonths = currentMonth > 1 || currentYear > new Date().getFullYear() - 1;
+                archivedSection.style.display = hasPastMonths ? 'block' : 'none';
+            }
         }
 
         function init() {
@@ -527,11 +547,9 @@
                 })
                 .catch(() => {
                     const msg = '<div class="p-8 text-center text-[#A0A0A0]">Cargando eventos… Ejecuta <code class="text-[#6F42C1]">python3 enlima_calendar.py</code> y recarga.</div>';
-                    const calFeb = document.getElementById('cal-feb-2026');
-                    const calMar = document.getElementById('cal-mar-2026');
+                    const mainContainer = document.getElementById('calendar-months-main');
                     const dash = document.getElementById('calendar-mobile-dashboard');
-                    if (calFeb) calFeb.innerHTML = msg;
-                    if (calMar) calMar.innerHTML = '';
+                    if (mainContainer) mainContainer.innerHTML = msg;
                     if (dash) dash.innerHTML = '<div class="p-8 text-center text-[#A0A0A0]">' + msg + '</div>';
                 });
 
@@ -542,15 +560,12 @@
                 if (section.style.display === 'none') {
                     section.style.display = 'block';
                     if (typeof lucide !== 'undefined' && icon) icon.setAttribute('data-lucide', 'chevron-up');
-                    // Load Apr–Dec 2026 on first expand
                     if (container && container.children.length === 0 && cachedEventsByDay) {
-                        for (let month = 4; month <= 12; month++) {
-                            const monthName = MONTHS[month];
-                            const sectionEl = document.createElement('section');
-                            sectionEl.className = 'w-full';
-                            sectionEl.innerHTML = '<h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-white mb-3 sm:mb-4 flex items-center gap-2"><i data-lucide="calendar-days" class="w-5 h-5 sm:w-6 sm:h-6 text-[#6F42C1]"></i>' + monthName + ' 2026</h2><div id="cal-' + month + '-2026" class="rounded-lg sm:rounded-[10px] border border-white/5 bg-[#242428] overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.2)] sm:shadow-[0_6px_20px_rgba(0,0,0,0.28)]"></div>';
-                            container.appendChild(sectionEl);
-                            buildMonthCalendar('cal-' + month + '-2026', 2026, month, cachedEventsByDay);
+                        const { year: currentYear, month: currentMonth } = getCurrentYearMonth();
+                        for (let offset = 3; offset < 12; offset++) {
+                            let y = currentYear, m = currentMonth + offset;
+                            while (m > 12) { m -= 12; y++; }
+                            addMonthSection(container, y, m, cachedEventsByDay);
                         }
                         if (typeof lucide !== 'undefined') lucide.createIcons();
                     }
@@ -559,6 +574,27 @@
                     if (typeof lucide !== 'undefined' && icon) icon.setAttribute('data-lucide', 'chevron-down');
                 }
                 if (typeof lucide !== 'undefined') lucide.createIcons();
+            });
+
+            document.getElementById('calendar-archived-toggle')?.addEventListener('click', function() {
+                const container = document.getElementById('calendar-archived-container');
+                const chevron = document.querySelector('.calendar-archived-chevron');
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                if (!isExpanded && container && container.children.length === 0 && cachedEventsByDay) {
+                    const { year: currentYear, month: currentMonth } = getCurrentYearMonth();
+                    for (let m = currentMonth - 1; m >= 1; m--) {
+                        addMonthSection(container, currentYear, m, cachedEventsByDay);
+                    }
+                    if (currentYear > 2025) {
+                        for (let y = currentYear - 1; y >= 2025; y--) {
+                            for (let m = 12; m >= 1; m--) addMonthSection(container, y, m, cachedEventsByDay);
+                        }
+                    }
+                    if (typeof lucide !== 'undefined') lucide.createIcons();
+                }
+                if (container) container.classList.toggle('hidden', isExpanded);
+                this.setAttribute('aria-expanded', !isExpanded);
+                if (chevron) chevron.style.transform = isExpanded ? '' : 'rotate(180deg)';
             });
 
             if (typeof lucide !== 'undefined') lucide.createIcons();
