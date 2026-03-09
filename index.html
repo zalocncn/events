@@ -262,6 +262,18 @@
             return `${t.getFullYear()}-${String(t.getMonth() + 1).padStart(2,'0')}-${String(t.getDate()).padStart(2,'0')}`;
         }
 
+        /** True if event on dateKey at timeStr has already started (for mobile/tablet: hide past events). */
+        function isEventPast(dateKey, timeStr) {
+            const todayKey = getTodayKey();
+            if (dateKey < todayKey) return true;
+            if (dateKey > todayKey) return false;
+            const mins = timeToMinutes(timeStr);
+            if (mins === 9999) return false;
+            const now = new Date();
+            const nowMins = now.getHours() * 60 + now.getMinutes();
+            return mins < nowMins;
+        }
+
         function buildMobileDashboard(eventsByDay) {
             const todayKey = getTodayKey();
             if (!mobileDashState.selectedDateKey || mobileDashState.selectedDateKey < todayKey)
@@ -282,7 +294,8 @@
             for (let d = 1; d <= daysInMonth; d++) {
                 const dateKey = `${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
                 if (dateKey < todayKey) continue;
-                const events = eventsByDay[dateKey] || [];
+                const rawEvents = eventsByDay[dateKey] || [];
+                const events = dateKey === todayKey ? rawEvents.filter(ev => !isEventPast(dateKey, ev.time)) : rawEvents;
                 const weekday = new Date(y, m - 1, d).getDay();
                 const wd = WEEKDAYS[weekday];
                 const isActive = dateKey === selectedKey;
@@ -302,14 +315,16 @@
             const scrollerEl = document.getElementById('mobile-dash-scroller');
             if (scrollerEl) scrollerEl.innerHTML = scrollerHtml;
 
-            const events = sortEventsByTime(eventsByDay[selectedKey] || []);
+            const rawDayEvents = eventsByDay[selectedKey] || [];
+            const events = selectedKey === todayKey ? rawDayEvents.filter(ev => !isEventPast(selectedKey, ev.time)) : rawDayEvents;
+            const eventsSorted = sortEventsByTime(events);
             const eventsEl = document.getElementById('mobile-dash-events');
             if (!eventsEl) return;
-            if (events.length === 0) {
+            if (eventsSorted.length === 0) {
                 eventsEl.innerHTML = '<p class="text-[#666] text-sm py-4 text-center">Sin eventos este día.</p>';
             } else {
                 const accentBySource = { Teleticket: '#3B82F6', Eventbrite: '#FFC107', EnLima: '#5CB85C' };
-                eventsEl.innerHTML = events.map((ev) => {
+                eventsEl.innerHTML = eventsSorted.map((ev) => {
                     const typeLabel = ev.type || ev.source || '';
                     const accent = accentBySource[ev.source] || '#6F42C1';
                     const timeLabel = toAmPm(ev.time) || '—';
